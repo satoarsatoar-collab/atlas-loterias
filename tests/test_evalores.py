@@ -68,3 +68,19 @@ def test_sin_mirar_el_futuro():
     a = [x for x in M1.aciertos if x["fecha"] <= corte]
     b = [x for x in M2.aciertos if x["fecha"] <= corte]
     assert a == b
+    a = [x for x in M1.metodos_res if x["fecha"] <= corte]
+    b = [x for x in M2.metodos_res if x["fecha"] <= corte]
+    assert a == b and len(a) > 0
+
+
+def test_listas_de_numeros_posibles():
+    m, s = sintetico(4, seed=9)
+    M = P.Motor(m, s).correr()
+    p = M.predecir("seco", "loteria-de-medellin", "2026-02-06")
+    assert set(p["listas"]) == set(P.METODOS)
+    for k, v in p["listas"].items():
+        assert len(v) == len(set(v)) <= 10 and all(len(x) == 4 and x.isdigit() for x in v), k
+    ultimo = m[m.slug == "loteria-de-medellin"].sort_values("fecha").numero.iloc[-1]
+    assert p["listas"]["mayor_anterior"][0] == ultimo
+    assert P.Motor.lista_azar("loteria-de-medellin", "2026-02-06") == p["listas"]["azar"]   # reproducible
+    assert len(p["q_posiciones"]) == 4 and all(abs(sum(q) - 1) < 1e-3 for q in p["q_posiciones"])

@@ -26,6 +26,17 @@ que se actualizan solos.
 7. **Publica** el tablero (`site/index.html`) y un resumen legible en GitHub (`state/RESUMEN.md`). Si un patrón queda
    validado, abre un *issue* para avisarle.
 
+### Números posibles
+
+El tablero tiene una sección para cada sorteo próximo con seis listas de 10 números: el **combinador ATLAS**,
+**calientes**, **recientes**, **fríos**, **del mayor anterior** (ese número y combinaciones de sus cifras) y una lista
+**al azar** que sirve de grupo de control. Un marcador lleva la cuenta de cuántas veces acertó cada método frente a lo
+esperado por suerte, en el historial, en los datos nuevos y en las listas guardadas con huella antes de cada sorteo. Hay
+también un buscador: escriba un número y verá cuántas veces ha salido, la última vez y en qué listas aparece.
+
+«Acertar» significa que el número de 4 cifras salió en un seco con cualquier serie; para cobrar hace falta además la
+serie. Mientras ningún método le gane a la lista al azar con el paso de las semanas, todos valen lo mismo.
+
 ### Por qué no se deja engañar
 
 - Con sorteos aleatorios, E vale 1 en promedio y la probabilidad de que **alguna vez** llegue a 20 es menor que
@@ -106,7 +117,7 @@ Medellín,2026-10-23,seco,0047,003,10,Telemedellín
 pip install -r requirements-dev.txt
 python -m atlas.pipeline --scrape no     # solo con lo que haya en data/inbox/
 python -m atlas.pipeline                 # con descarga automática
-python -m pytest tests                   # 15 pruebas
+python -m pytest tests
 ```
 
 ## Estructura

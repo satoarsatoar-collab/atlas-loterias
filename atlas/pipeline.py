@@ -77,7 +77,7 @@ def _evaluar_registro(secos, mayores):
             if k not in vistos:
                 vistos[k] = (gen, p)
     S = secos[secos.clase == "seco"]
-    filas = []
+    filas = []; filas_met = []
     for (slug, fecha, tipo), (gen, p) in vistos.items():
         d = dt.date.fromisoformat(fecha)
         cand = [(d + dt.timedelta(days=j)).isoformat() for j in (0, 1, 2, 3, -1)]
@@ -98,9 +98,41 @@ def _evaluar_registro(secos, mayores):
                           premios=n, top=len(top), aciertos=len(hits), esperado_azar=n * len(top) / 1e4,
                           numeros_acertados=" ".join(hits), ultima_cifra_predicha=u,
                           aciertos_ultima_cifra=int((g.numero.str[-1] == str(u)).sum())))
+        for met, lst in p.get("listas", {}).items():
+            h = g[g.numero.isin(set(lst))].numero.tolist()
+            filas_met.append(dict(slug=slug, fecha=real, metodo=met, premios=n, aciertos=len(h),
+                                  esperado=n * len(set(lst)) / 1e4, numeros_acertados=" ".join(h)))
     cols = ["loteria", "slug", "fecha", "tipo", "predicho_el", "premios", "top", "aciertos", "esperado_azar",
             "numeros_acertados", "ultima_cifra_predicha", "aciertos_ultima_cifra"]
-    return pd.DataFrame(filas, columns=cols).sort_values(["fecha", "slug", "tipo"]) if filas else pd.DataFrame(columns=cols)
+    reg = pd.DataFrame(filas, columns=cols).sort_values(["fecha", "slug", "tipo"]) if filas else pd.DataFrame(columns=cols)
+    met = pd.DataFrame(filas_met, columns=["slug", "fecha", "metodo", "premios", "aciertos", "esperado", "numeros_acertados"])
+    return reg, met
+
+
+def _marcador(met_motor: pd.DataFrame, met_reg: pd.DataFrame) -> list[dict]:
+    """Aciertos de cada método de "números posibles": historial, datos nuevos y predicciones guardadas con huella."""
+    def resumen(g):
+        return dict(premios=int(g.premios.sum()), aciertos=int(g.aciertos.sum()), esperado=float(g.esperado.sum()),
+                    numeros=" ".join(x for x in g.numeros_acertados if x)[:200])
+    out = []
+    for met, (nombre, desc) in patterns.METODOS.items():
+        a = met_motor[met_motor.metodo == met]; b = met_reg[met_reg.metodo == met]
+        out.append(dict(id=met, nombre=nombre, descripcion=desc, historial=resumen(a[~a.prospectivo.astype(bool)]),
+                        nuevos=resumen(a[a.prospectivo.astype(bool)]), registrado=resumen(b)))
+    return out
+
+
+def _consulta(secos, mayores) -> dict:
+    """Para el buscador de números: veces que salió cada número (secos independientes y mayores) y la última vez."""
+    S = secos[secos.clase == "seco"][["numero", "fecha", "loteria"]].assign(t="s")
+    M = mayores[mayores.numero.str.fullmatch(r"\d{4}", na=False)][["numero", "fecha", "loteria"]].assign(t="m")
+    A = pd.concat([S, M]).sort_values("fecha")
+    out = {}
+    for n, g in A.groupby("numero"):
+        u = g.iloc[-1]
+        out[n] = [int((g.t == "s").sum()), int((g.t == "m").sum()), u.fecha, u.loteria, u.t]
+    return dict(numeros=out, secos_desde=S.fecha.min() if len(S) else "", mayores_desde=M.fecha.min() if len(M) else "",
+                total_secos=int(len(S)), total_mayores=int(len(M)))
 
 
 def _economia():
@@ -178,8 +210,9 @@ def ejecutar(descargar: bool = True, hoy: dt.date | None = None) -> dict:
     T.to_csv(os.path.join(STATE, "patrones.csv"), index=False)
     R["aciertos"].to_csv(os.path.join(STATE, "aciertos_por_sorteo.csv"), index=False)
     preds = _registro_predicciones(M, S, hoy, ahora)
-    reg = _evaluar_registro(t["secos"], t["mayores"])
+    reg, reg_met = _evaluar_registro(t["secos"], t["mayores"])
     reg.to_csv(os.path.join(STATE, "registro_aciertos.csv"), index=False)
+    reg_met.to_csv(os.path.join(STATE, "registro_metodos.csv"), index=False)
 
     res = R["resumen"]
     prin = T[T.id == res["principal"]].iloc[0].to_dict() if (T.id == res["principal"]).any() else {}
@@ -231,6 +264,8 @@ def ejecutar(descargar: bool = True, hoy: dt.date | None = None) -> dict:
         registro_resumen=dict(sorteos=int(len(reg)), aciertos=int(reg.aciertos.sum()) if len(reg) else 0,
                               esperado=float(reg.esperado_azar.sum()) if len(reg) else 0.0),
         economia=_economia(),
+        metodos=_marcador(R["metodos"], reg_met),
+        consulta=_consulta(t["secos"], t["mayores"]),
     )
     try:
         estado["preregistro"] = preregistro.evaluar(t["secos"], t["mayores"])

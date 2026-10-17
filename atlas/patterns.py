@@ -14,6 +14,8 @@ from __future__ import annotations
 
 import bisect
 import datetime as dt
+import hashlib
+import itertools
 import math
 from dataclasses import dataclass, field
 
@@ -42,6 +44,17 @@ RASGOS_TIPO = {"seco": ["d1", "d2", "d3", "d4", "t2", "estructura", "suma", "par
                "mayor": ["d1", "d2", "d3", "d4", "t2", "estructura", "suma"]}
 VENTANA_RECIENTE = {"seco": 28, "mayor": 182}   # días
 PESO_AZAR = 0.5                                  # peso previo del azar dentro de cada combinador
+
+# Listas de "números posibles": distintas maneras de escoger 10 números para los secos de un sorteo.
+# Todas se califican igual (aciertos frente a lo esperado por azar). "azar" es el grupo de control.
+METODOS = {
+    "combinador": ("Combinador ATLAS", "Mezcla todas las reglas según cómo les ha ido en esta lotería; el azar pesa la mitad."),
+    "calientes": ("Calientes", "En cada posición, las cifras que más han salido en esta lotería en todo el historial."),
+    "recientes": ("Recientes", "En cada posición, las cifras que más han salido en esta lotería en las últimas 4 semanas."),
+    "frios": ("Fríos", "En cada posición, las cifras que menos han salido últimamente («están por salir»)."),
+    "mayor_anterior": ("Del mayor anterior", "El último premio mayor de esta lotería y combinaciones de sus mismas cifras."),
+    "azar": ("Al azar (control)", "10 números escogidos al azar por la computadora. Sirven de vara para medir a los demás."),
+}
 
 ESTRATEGIAS = {
     "caliente": "lo que más ha salido en todo el historial seguirá saliendo más",
@@ -164,6 +177,8 @@ class Motor:
         self.comb = {k: dict(n=0, n_p=0, tray=[]) for k in comb_ids}
         self.aciertos = []      # una fila por sorteo: aciertos del top-k del combinador de números
         self.d4_top1 = []
+        self.metodos_res = []   # una fila por sorteo de secos y método de "números posibles"
+        self.prev_mayor_num = {}  # slug -> número del mayor anterior
 
     # -------------------------------------------------------------------------
     @staticmethod
@@ -245,6 +260,35 @@ class Motor:
         idx = idx[np.argsort(-P[idx])]
         return [f"{i:04d}" for i in idx], P[idx]
 
+    def _top_de(self, slug, estrategia, ford, qcache):
+        qs = []
+        for r in ("d1", "d2", "d3", "d4"):
+            p = self.pats.get(f"seco|{slug}|{r}|{estrategia}")
+            if p is None:
+                qs.append(U10); continue
+            qq = qcache.get(p.id)
+            if qq is None:
+                qq = qcache[p.id] = self.q(p, slug, ford)
+            qs.append(qq)
+        return self.top_numeros(qs)[0]
+
+    @staticmethod
+    def lista_azar(slug, fecha, k=10):
+        semilla = int(hashlib.sha256(f"{slug}|{fecha}".encode()).hexdigest()[:12], 16)
+        return [f"{x:04d}" for x in np.random.default_rng(semilla).choice(10000, k, replace=False)]
+
+    def lista_mayor_anterior(self, slug, k=10):
+        m = self.prev_mayor_num.get(slug)
+        if not m:
+            return []
+        perms = sorted({"".join(p) for p in itertools.permutations(m)} - {m, m[::-1]})
+        return list(dict.fromkeys([m, m[::-1]] + perms))[:k]
+
+    def listas(self, slug, fecha, ford, qcache, top_comb):
+        return dict(combinador=list(top_comb), calientes=self._top_de(slug, "caliente", ford, qcache),
+                    recientes=self._top_de(slug, "reciente", ford, qcache), frios=self._top_de(slug, "fria", ford, qcache),
+                    mayor_anterior=self.lista_mayor_anterior(slug), azar=self.lista_azar(slug, fecha))
+
     # -------------------------------------------------------------------------
     def correr(self):
         fechas = sorted({d["fecha"] for t in self.draws for d in self.draws[t]})
@@ -290,6 +334,12 @@ class Motor:
                     self.aciertos.append(dict(fecha=fecha, slug=slug, tipo=tipo, premios=len(d["nums"]),
                                               aciertos=len(hits), esperado=len(d["nums"]) * self.top_k / 1e4,
                                               numeros_acertados=" ".join(hits), prospectivo=prosp))
+                    if tipo == "seco":
+                        for met, lst in self.listas(slug, fecha, ford, qcache, top).items():
+                            sl = set(lst); h = [n for n in d["nums"] if n in sl]
+                            self.metodos_res.append(dict(fecha=fecha, slug=slug, metodo=met, premios=len(d["nums"]),
+                                                         aciertos=len(h), esperado=len(d["nums"]) * len(sl) / 1e4,
+                                                         numeros_acertados=" ".join(h), prospectivo=prosp))
                     best = int(np.argmax(qs["d4"]))
                     self.d4_top1.append(dict(fecha=fecha, slug=slug, tipo=tipo, n=len(d["nums"]),
                                              k=int((d["r"]["d4"] == best).sum()), prospectivo=prosp))
@@ -330,6 +380,7 @@ class Motor:
                 if tipo == "mayor":
                     for d in ds:
                         self.prev_mayor[d["slug"]] = d["r"]
+                        self.prev_mayor_num[d["slug"]] = d["nums"][0]
                     self.eco_mayor = rasgos([n for d in ds for n in d["nums"]])
             # E de cada combinador tocado hoy (con los puntajes ya actualizados)
             for tipo, slug in tocados:
@@ -348,7 +399,11 @@ class Motor:
             qs[r], usados[r] = self.mezcla(tipo, slug, r, ford, qcache)
         top, probs = self.top_numeros([qs[r] for r in ("d1", "d2", "d3", "d4")])
         t2 = np.argsort(-qs["t2"])[:5]
-        return dict(loteria=NOMBRE.get(slug, slug), slug=slug, fecha=fecha, tipo=tipo,
+        extra = {}
+        if tipo == "seco":
+            extra["listas"] = self.listas(slug, fecha, ford, qcache, top)
+            extra["q_posiciones"] = [[round(float(x), 5) for x in qs[r]] for r in ("d1", "d2", "d3", "d4")]
+        return dict(**extra, loteria=NOMBRE.get(slug, slug), slug=slug, fecha=fecha, tipo=tipo,
                     top_numeros=top, prob_top_numeros=[round(float(x), 7) for x in probs],
                     ultima_cifra=[dict(cifra=int(i), prob=round(float(qs["d4"][i]), 4)) for i in np.argsort(-qs["d4"])[:3]],
                     terminaciones=[dict(t2=f"{i:02d}", prob=round(float(qs["t2"][i]), 4)) for i in t2],
@@ -425,7 +480,9 @@ def tablas(M: Motor) -> dict:
     )
     ac = pd.DataFrame(M.aciertos)
     d4 = pd.DataFrame(M.d4_top1)
-    return dict(patrones=T, aciertos=ac, d4_top1=d4, resumen=resumen)
+    met = pd.DataFrame(M.metodos_res, columns=["fecha", "slug", "metodo", "premios", "aciertos", "esperado",
+                                                "numeros_acertados", "prospectivo"])
+    return dict(patrones=T, aciertos=ac, d4_top1=d4, metodos=met, resumen=resumen)
 
 
 def _fila_comb(id_, tipo, alcance, et, sr, n, n_p, desc):

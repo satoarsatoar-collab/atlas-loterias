@@ -1,12 +1,12 @@
 {
- "generado": "2026-10-17T14:09:43-05:00",
+ "generado": "2026-10-17T14:42:55-05:00",
  "hoy": "2026-10-17",
  "inicio_prospectivo": "2026-10-17",
  "dias_prospectivos": 0,
  "premios_prospectivos": 0,
  "migrado_ahora": false,
  "datos": {
-  "generado": "2026-10-17T14:09:44-05:00",
+  "generado": "2026-10-17T14:43:04-05:00",
   "mayores": 1386,
   "mayores_prospectivos": 0,
   "sorteos_con_secos": 107,
@@ -357,7 +357,20 @@
   "cuantias_completadas": 0
  },
  "descarga": {
-  "estado": "omitida"
+  "intentos": 4,
+  "sorteos_nuevos": 2,
+  "errores": [
+   "Bogotá 2026-10-15: se leyó el mayor pero no la tabla de secos",
+   "Quindío 2026-10-15: se leyó el mayor pero no la tabla de secos"
+  ],
+  "estado": "ok",
+  "reporte": {
+   "filas_agregadas": 0,
+   "cuantias_completadas": 0,
+   "sin_cambio": 2,
+   "conflictos": [],
+   "avisos": []
+  }
  },
  "motor": {
   "reglas": 838,

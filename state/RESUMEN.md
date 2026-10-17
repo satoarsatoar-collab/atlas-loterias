@@ -1,6 +1,6 @@
 # ATLAS · El seguimiento en datos nuevos empieza con el próximo sorteo
 
-_Actualizado sáb 17 oct 2026 14:09 (Colombia) · último sorteo con datos: vie 16 oct 2026_
+_Actualizado sáb 17 oct 2026 14:42 (Colombia) · último sorteo con datos: vie 16 oct 2026_
 
 > **Comenzando.** Desde el 17 de octubre de 2026 cada patrón apuesta antes de cada sorteo. Lo anterior a esa fecha ya se miró en el estudio y solo sirve de contexto.
 
@@ -186,7 +186,7 @@ _Actualizado sáb 17 oct 2026 14:09 (Colombia) · último sorteo con datos: vie 
 
 ## Datos
 
-- Descarga automática: omitida · sorteos nuevos: 0
+- Descarga automática: ok · sorteos nuevos: 2
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
 - Sorteos sin secos (últimas 4 semanas): Tolima 21 sep, Tolima 28 sep, Tolima 5 oct, Tolima 12 oct, Cruz Roja 29 sep, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 24 sep, Quindío 1 oct, Quindío 8 oct, Quindío 15 oct

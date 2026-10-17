@@ -1,0 +1,123 @@
+tipo,loteria,fecha,detalle
+sin_sorteo,Bogotá,2026-04-02,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Cundinamarca,2026-07-13,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Cundinamarca,2026-06-08,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Cundinamarca,2026-05-18,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Cundinamarca,2026-03-23,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Risaralda,2026-04-03,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Santander,2026-05-01,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Quindío,2026-06-04,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Quindío,2026-05-28,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Quindío,2026-05-21,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Quindío,2026-05-14,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Quindío,2026-05-07,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Quindío,2026-04-30,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Quindío,2026-04-02,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Tolima,2026-06-08,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Tolima,2026-05-18,La fuente marca la fecha como 'sin sorteo'
+sin_sorteo,Tolima,2026-03-23,La fuente marca la fecha como 'sin sorteo'
+mayor_dia_atipico,Bogotá,2026-03-31,9072/421 sorteo 2840: dia_atipico(mar)
+mayor_dia_atipico,Bogotá,2025-12-31,6497/457 sorteo 2827: dia_atipico(mié)
+mayor_dia_atipico,Bogotá,2025-12-26,2636/450 sorteo 2826: dia_atipico(vie)
+mayor_dia_atipico,Bogotá,2025-08-06,3158/083 sorteo 2806: dia_atipico(mié)
+mayor_dia_atipico,Bogotá,2025-05-03,1223/284 sorteo 2792: dia_atipico(sáb)
+mayor_dia_atipico,Bogotá,2025-04-16,2325/129 sorteo 2790: dia_atipico(mié)
+mayor_dia_atipico,Cundinamarca,2026-10-13,5793/251 sorteo 4824: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-08-18,4413/225 sorteo 4816: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-08-14,1339/208 sorteo 4815: dia_atipico(vie)
+mayor_dia_atipico,Cundinamarca,2026-07-21,5802/272 sorteo 4812: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-07-14,1980/006 sorteo 4811: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-06-30,5191/204 sorteo 4809: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-06-16,0139/170 sorteo 4807: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-06-09,2766/249 sorteo 4806: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-05-19,5376/019 sorteo 4803: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-03-24,2746/183 sorteo 4795: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2026-01-13,5028/218 sorteo 4785: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-12-09,1488/055 sorteo 4780: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-11-18,9727/235 sorteo 4777: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-11-04,2120/186 sorteo 4775: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-10-14,8568/294 sorteo 4772: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-08-19,4457/023 sorteo 4764: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-07-01,6220/188 sorteo 4757: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-06-24,6642/279 sorteo 4756: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-06-03,6952/014 sorteo 4753: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-03-25,7356/249 sorteo 4743: dia_atipico(mar)
+mayor_dia_atipico,Cundinamarca,2025-01-07,2050/067 sorteo 4732: dia_atipico(mar)
+mayor_dia_atipico,Cruz Roja,2026-08-13,6751/071 sorteo 3166: dia_atipico(jue)
+mayor_dia_atipico,Manizales,2026-08-14,8703/379 sorteo 4968: dia_atipico(vie)
+mayor_dia_atipico,Manizales,2025-01-02,0324/156 sorteo 4884: dia_atipico(jue)
+mayor_dia_atipico,Manizales,2024-12-26,2574/025 sorteo 2883: dia_atipico(jue)
+mayor_dia_atipico,Medellín,2026-08-08,4366/280 sorteo 4847: dia_atipico(sáb)
+mayor_dia_atipico,Medellín,2026-05-02,0708/409 sorteo 4833: dia_atipico(sáb)
+mayor_dia_atipico,Medellín,2026-04-04,9656/364 sorteo 4829: dia_atipico(sáb)
+mayor_dia_atipico,Medellín,2025-04-19,9060/018 sorteo 4779: dia_atipico(sáb)
+mayor_dia_atipico,Risaralda,2026-08-06,5634/118 sorteo 2962: dia_atipico(jue)
+mayor_dia_atipico,Risaralda,2026-04-30,6501/035 sorteo 2948: dia_atipico(jue)
+mayor_dia_atipico,Risaralda,2026-01-03,5634/042 sorteo 2932: dia_atipico(sáb)
+mayor_dia_atipico,Santander,2026-08-08,7191/178 sorteo 5082: dia_atipico(sáb)
+mayor_dia_atipico,Santander,2026-05-02,5048/246 sorteo 5068: dia_atipico(sáb)
+mayor_dia_atipico,Santander,2026-04-01,7112/083 sorteo 5064: dia_atipico(mié)
+mayor_dia_atipico,Santander,2025-04-15,3272/045 sorteo 5014: dia_atipico(mar)
+mayor_dia_atipico,Huila,2026-08-13,1806/053 sorteo 4768: dia_atipico(jue)
+mayor_dia_atipico,Meta,2026-08-14,5370/016 sorteo 3311: dia_atipico(vie)
+mayor_serie_faltante,Meta,2025-01-02,7073/ sorteo 3227: serie_faltante;dia_atipico(jue)
+mayor_dia_atipico,Meta,2024-12-26,3749/132 sorteo 3226: dia_atipico(jue)
+mayor_dia_atipico,Quindío,2025-12-30,2392/097 sorteo 2996: dia_atipico(mar)
+mayor_dia_atipico,Quindío,2025-12-23,5966/179 sorteo 2995: dia_atipico(mar)
+mayor_dia_atipico,Quindío,2025-08-05,0306/046 sorteo 2975: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-10-13,3256/070 sorteo 4191: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-08-18,0777/142 sorteo 4183: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-08-13,1536/109 sorteo 4182: dia_atipico(jue)
+mayor_dia_atipico,Tolima,2026-07-21,3805/025 sorteo 4179: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-06-30,5678/273 sorteo 4176: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-06-16,6724/275 sorteo 4174: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-06-09,3299/198 sorteo 4173: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-05-19,2111/177 sorteo 4170: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-03-24,8595/238 sorteo 4162: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2026-01-13,1495/128 sorteo 4152: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-12-09,8889/101 sorteo 4147: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-11-18,4293/022 sorteo 4144: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-11-04,4620/175 sorteo 4142: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-10-14,2241/079 sorteo 4139: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-08-19,3737/228 sorteo 4131: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-07-01,0831/071 sorteo 4124: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-06-24,1873/157 sorteo 4123: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-06-03,3180/040 sorteo 4120: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-03-25,9300/122 sorteo 4110: dia_atipico(mar)
+mayor_dia_atipico,Tolima,2025-01-07,1861/006 sorteo 4099: dia_atipico(mar)
+mayor_dia_atipico,Valle,2026-08-14,8134/284 sorteo 4861: dia_atipico(vie)
+mayor_serie_faltante,Valle,2025-01-02,7447/ sorteo 4777: serie_faltante;dia_atipico(jue)
+mayor_dia_atipico,Valle,2024-12-24,4098/204 sorteo 4776: dia_atipico(mar)
+salto_numeracion,Manizales,2024-12-26,sorteo 2883: salto de -1999 respecto al anterior
+salto_numeracion,Manizales,2025-01-02,sorteo 4884: salto de 2001 respecto al anterior
+salto_numeracion,Huila,2025-04-01,sorteo 4697: salto de 2 respecto al anterior
+salto_numeracion,Huila,2025-06-10,sorteo 4707: salto de 2 respecto al anterior
+sorteo_duplicado,Meta,2025-01-02,número de sorteo 3227 repetido
+sorteo_duplicado,Meta,2025-01-08,número de sorteo 3227 repetido
+salto_numeracion,Meta,2025-01-29,sorteo 3231: salto de 2 respecto al anterior
+salto_numeracion,Quindío,2025-05-08,sorteo 2962: salto de 2 respecto al anterior
+sorteo_duplicado,Valle,2025-01-02,número de sorteo 4777 repetido
+sorteo_duplicado,Valle,2025-01-08,número de sorteo 4777 repetido
+salto_numeracion,Valle,2025-01-15,sorteo 4779: salto de 2 respecto al anterior
+sorteo_sin_secos,Bogotá,2026-10-15,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Cruz Roja,2026-09-08,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Cruz Roja,2026-09-29,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Cruz Roja,2026-10-06,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Quindío,2026-09-03,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Quindío,2026-09-10,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Quindío,2026-09-17,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Quindío,2026-09-24,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Quindío,2026-10-01,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Quindío,2026-10-08,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Quindío,2026-10-15,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Tolima,2026-09-07,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Tolima,2026-09-14,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Tolima,2026-09-21,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Tolima,2026-09-28,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Tolima,2026-10-05,La página del sorteo no publica tabla de secos
+sorteo_sin_secos,Tolima,2026-10-13,La página del sorteo no publica tabla de secos
+cuantia_corregida,Medellín,2026-09-25,Telemedellín rotula 0840/259 y 8629/177 como $100M; el plan exige 2 secos de $1.000M: se reasignan
+discrepancia_fuentes,Medellín,2026-09-25,3967/489 aparece en telemedellin y no en LoteríaYa
+seco_sin_confirmar,Boyacá,2026-09-19,9322/352 no figura en la fuente con cuantías
+seco_sin_confirmar,Boyacá,2026-09-19,9986/172 no figura en la fuente con cuantías
+seco_sin_confirmar,Medellín,2026-09-25,3697/489 no figura en la fuente con cuantías

@@ -1,0 +1,4 @@
+prueba,menor,resto,p,metodo,n_menor,n_resto
+Distancia al seco más cercano del mismo sorteo (mediana),57.5,77.0,0.0003162838948045475,Mann-Whitney,,
+Terminación de 2 cifras ya vista en el sorteo anterior de la misma lotería,0.45977011494252873,0.4180672268907563,0.27772730856957073,Fisher,261.0,476.0
+Terminación de 2 cifras presente en otra lotería el mismo día,0.47101449275362317,0.5465346534653466,0.05134609923898677,Fisher,276.0,505.0

@@ -1,0 +1,34 @@
+{
+ "S_estimado": {
+  "loteria-de-bogota": 470,
+  "loteria-de-boyaca": 470,
+  "loteria-de-cundinamarca": 350,
+  "loteria-de-la-cruz-roja": 330,
+  "loteria-de-manizales": 400,
+  "loteria-de-medellin": 500,
+  "loteria-de-risaralda": 300,
+  "loteria-de-santander": 340,
+  "loteria-del-cauca": 310,
+  "loteria-del-huila": 180,
+  "loteria-del-meta": 150,
+  "loteria-del-quindio": 200,
+  "loteria-del-tolima": 280,
+  "loteria-del-valle": 310
+ },
+ "serie_max_observada": {
+  "loteria-de-bogota": 469,
+  "loteria-de-boyaca": 469,
+  "loteria-de-cundinamarca": 349,
+  "loteria-de-la-cruz-roja": 329,
+  "loteria-de-manizales": 399,
+  "loteria-de-medellin": 497,
+  "loteria-de-risaralda": 295,
+  "loteria-de-santander": 339,
+  "loteria-del-cauca": 308,
+  "loteria-del-huila": 179,
+  "loteria-del-meta": 148,
+  "loteria-del-quindio": 196,
+  "loteria-del-tolima": 278,
+  "loteria-del-valle": 309
+ }
+}

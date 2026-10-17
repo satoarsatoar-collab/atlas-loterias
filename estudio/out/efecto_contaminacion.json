@@ -1,0 +1,22 @@
+{
+ "crudo (todas las filas publicadas)": {
+  "filas": 5158,
+  "colisiones_terminacion": 1389,
+  "esperadas": 1310.5,
+  "razon": 1.06,
+  "p": 0.03239828322431875,
+  "estructura_chi2": 10.0,
+  "estructura_p": 0.04056403669133592,
+  "pares_misma_serie_en_sorteo": 2641
+ },
+ "depurado (solo secos independientes)": {
+  "filas": 4809,
+  "colisiones_terminacion": 1113,
+  "esperadas": 1145.8,
+  "razon": 0.97,
+  "p": 0.33958563491579286,
+  "estructura_chi2": 4.2,
+  "estructura_p": 0.37873106344682766,
+  "pares_misma_serie_en_sorteo": 367
+ }
+}

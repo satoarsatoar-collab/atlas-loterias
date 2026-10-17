@@ -1,0 +1,36 @@
+{
+ "replicas": 300,
+ "pruebas_por_replica": 71,
+ "nulo_mediana_min_p": 0.009671040803085465,
+ "nulo_p05_min_p": 0.0008674338083503373,
+ "nulo_media_p_menor_005": 3.51,
+ "nulo_p95_p_menor_005": 7.0,
+ "nulo_frac_replicas_con_descubrimiento_BH": 0.11333333333333333,
+ "real_min_p": 0.001770759372426619,
+ "real_p_menor_005": 5,
+ "real_descubrimientos_BH": 0,
+ "percentil_real_min_p_en_nulo": 0.12666666666666668,
+ "menor_cuantia": {
+  "n": 276,
+  "conteos": [
+   31,
+   19,
+   31,
+   20,
+   44,
+   14,
+   28,
+   40,
+   24,
+   25
+  ],
+  "cifra_4": 44,
+  "prop_4": 0.15942028985507245,
+  "ic95_4": [
+   0.12095110634013509,
+   0.20724027049590357
+  ],
+  "p_binomial_sin_ajustar": 0.002411380850206737,
+  "p_ajustada_por_eleccion_de_cifra": 0.014085
+ }
+}

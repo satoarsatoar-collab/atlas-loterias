@@ -1,0 +1,9 @@
+conjunto,id,prueba,n,observado,p,p_holm
+"formulación (Medellín, Manizales, Boyacá; post hoc)",R1,"P(cifra final 4 | menor cuantía) > 0,10",276,44/276 = 15.9 %,0.0013763714339465128,0.002818657032132309
+"formulación (Medellín, Manizales, Boyacá; post hoc)",R2,Última cifra uniforme en menor cuantía,276,chi² = 28.3,0.0008342041972897905,0.002818657032132309
+"formulación (Medellín, Manizales, Boyacá; post hoc)",R3,Última cifra igual en menor cuantía y resto,781,V = 0.19,0.0007046642580330772,0.002818657032132309
+"formulación (Medellín, Manizales, Boyacá; post hoc)",R4,Distancia al seco más cercano igual en menor y resto,781,mediana 58 vs 77 (dif. log -0.30),0.0007998400319936012,0.002818657032132309
+"replicación independiente (Bogotá, 6 sorteos)",R1,"P(cifra final 4 | menor cuantía) > 0,10",179,21/179 = 11.7 %,0.25235184039761144,0.7570555211928343
+"replicación independiente (Bogotá, 6 sorteos)",R2,Última cifra uniforme en menor cuantía,179,chi² = 6.8,0.6626943670495844,1.0
+"replicación independiente (Bogotá, 6 sorteos)",R3,Última cifra igual en menor cuantía y resto,317,V = 0.23,0.04936324581652669,0.19745298326610675
+"replicación independiente (Bogotá, 6 sorteos)",R4,Distancia al seco más cercano igual en menor y resto,317,mediana 50 vs 62 (dif. log -0.01),0.947010597880424,1.0

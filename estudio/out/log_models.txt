@@ -1,0 +1,63 @@
+           objetivo                             periodo               modelo    n  delta_vs_uniforme  delta_ic95_lo  delta_ic95_hi  habilidad_pct  acierto_top1    ece
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)          M0_uniforme 1122            -0.0000        -0.0000        -0.0000         0.0000        0.0989 0.0000
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)      M1_frec_loteria 1122             0.0710         0.0454         0.0963        -3.0854        0.1105 0.0266
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)       M2_frec_global 1122             0.0104         0.0023         0.0187        -0.4529        0.1034 0.0127
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)       M3_dirichlet20 1122             0.0013        -0.0039         0.0066        -0.0547        0.1105 0.0096
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)        M4_jerarquico 1122             0.0261         0.0107         0.0418        -1.1342        0.1114 0.0185
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)          M5_caliente 1122             0.0953         0.0674         0.1256        -4.1396        0.1061 0.0330
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)              M6_fria 1122             0.1310         0.0995         0.1602        -5.6898        0.0998 0.0373
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)            M7_markov 1122             0.0539         0.0323         0.0764        -2.3397        0.1034 0.0253
+mayor: última cifra  desarrollo (nov-2024..16-ago-2026)         M8_logistica 1122             0.0369         0.0142         0.0596        -1.6005        0.1176 0.0229
+mayor: última cifra holdout final (17-ago..16-oct-2026)          M0_uniforme  124            -0.0000        -0.0000        -0.0000         0.0000        0.1048 0.0000
+mayor: última cifra holdout final (17-ago..16-oct-2026)      M1_frec_loteria  124             0.0173        -0.0322         0.0708        -0.7513        0.0968 0.0307
+mayor: última cifra holdout final (17-ago..16-oct-2026)       M2_frec_global  124            -0.0109        -0.0248         0.0032         0.4719        0.1210 0.0252
+mayor: última cifra holdout final (17-ago..16-oct-2026)       M3_dirichlet20  124            -0.0033        -0.0209         0.0146         0.1429        0.0968 0.0268
+mayor: última cifra holdout final (17-ago..16-oct-2026)        M4_jerarquico  124            -0.0005        -0.0355         0.0378         0.0197        0.0968 0.0237
+mayor: última cifra holdout final (17-ago..16-oct-2026)          M5_caliente  124             0.1552         0.0647         0.2464        -6.7393        0.1048 0.0419
+mayor: última cifra holdout final (17-ago..16-oct-2026)              M6_fria  124             0.0733        -0.0171         0.1685        -3.1827        0.1452 0.0301
+mayor: última cifra holdout final (17-ago..16-oct-2026)            M7_markov  124             0.0323        -0.0193         0.0896        -1.4020        0.1371 0.0238
+mayor: última cifra holdout final (17-ago..16-oct-2026)         M8_logistica  124             0.0285        -0.0345         0.0894        -1.2357        0.0887 0.0278
+ mayor: dos últimas  desarrollo (nov-2024..16-ago-2026)          M0_uniforme 1122            -0.0000        -0.0000        -0.0000         0.0000        0.0098 0.0000
+ mayor: dos últimas  desarrollo (nov-2024..16-ago-2026)      M1_frec_loteria 1122             0.0731         0.0502         0.0960        -1.5869        0.0116 0.0035
+ mayor: dos últimas  desarrollo (nov-2024..16-ago-2026)       M2_frec_global 1122             0.0652         0.0438         0.0868        -1.4168        0.0107 0.0030
+ mayor: dos últimas  desarrollo (nov-2024..16-ago-2026)       M3_dirichlet20 1122            -0.0007        -0.0026         0.0013         0.0149        0.0116 0.0004
+ mayor: dos últimas  desarrollo (nov-2024..16-ago-2026)        M4_jerarquico 1122             0.2465         0.2049         0.2899        -5.3522        0.0143 0.0059
+ mayor: dos últimas  desarrollo (nov-2024..16-ago-2026)          M5_caliente 1122             0.0379         0.0210         0.0551        -0.8223        0.0089 0.0024
+ mayor: dos últimas  desarrollo (nov-2024..16-ago-2026)              M6_fria 1122             0.0255         0.0131         0.0383        -0.5526        0.0089 0.0014
+ mayor: dos últimas holdout final (17-ago..16-oct-2026)          M0_uniforme  124            -0.0000        -0.0000        -0.0000         0.0000        0.0242 0.0000
+ mayor: dos últimas holdout final (17-ago..16-oct-2026)      M1_frec_loteria  124             0.1074         0.0160         0.2057        -2.3313        0.0161 0.0041
+ mayor: dos últimas holdout final (17-ago..16-oct-2026)       M2_frec_global  124             0.0072        -0.0378         0.0545        -0.1573        0.0000 0.0016
+ mayor: dos últimas holdout final (17-ago..16-oct-2026)       M3_dirichlet20  124            -0.0009        -0.0092         0.0084         0.0191        0.0161 0.0017
+ mayor: dos últimas holdout final (17-ago..16-oct-2026)        M4_jerarquico  124             0.2376         0.1001         0.3917        -5.1584        0.0242 0.0058
+ mayor: dos últimas holdout final (17-ago..16-oct-2026)          M5_caliente  124             0.0719         0.0206         0.1232        -1.5612        0.0161 0.0035
+ mayor: dos últimas holdout final (17-ago..16-oct-2026)              M6_fria  124             0.0111        -0.0274         0.0529        -0.2417        0.0161 0.0007
+ seco: última cifra         desarrollo (24-ago..26-sep)          M0_uniforme 2780            -0.0000        -0.0000        -0.0000         0.0000        0.0996 0.0000
+ seco: última cifra         desarrollo (24-ago..26-sep)      M1_frec_loteria 2780             0.0252         0.0147         0.0366        -1.0954        0.1115 0.0177
+ seco: última cifra         desarrollo (24-ago..26-sep)       M2_frec_global 2780             0.0011        -0.0009         0.0032        -0.0493        0.1014 0.0060
+ seco: última cifra         desarrollo (24-ago..26-sep)       M3_dirichlet20 2780             0.0012        -0.0023         0.0048        -0.0537        0.1115 0.0063
+ seco: última cifra         desarrollo (24-ago..26-sep)        M4_jerarquico 2780             0.0113         0.0043         0.0185        -0.4902        0.1126 0.0131
+ seco: última cifra         desarrollo (24-ago..26-sep)          M5_caliente 2780             0.0312         0.0201         0.0427        -1.3537        0.1061 0.0198
+ seco: última cifra         desarrollo (24-ago..26-sep)              M6_fria 2780             0.1907         0.1629         0.2187        -8.2820        0.0946 0.0402
+ seco: última cifra         desarrollo (24-ago..26-sep) M7_cond_mayor_previo 2780             0.0333         0.0200         0.0486        -1.4481        0.0939 0.0168
+ seco: última cifra      holdout final (27-sep..16-oct)          M0_uniforme 1412            -0.0000        -0.0000        -0.0000         0.0000        0.0907 0.0000
+ seco: última cifra      holdout final (27-sep..16-oct)      M1_frec_loteria 1412             0.0187         0.0094         0.0285        -0.8138        0.0892 0.0164
+ seco: última cifra      holdout final (27-sep..16-oct)       M2_frec_global 1412             0.0022        -0.0009         0.0051        -0.0953        0.0864 0.0076
+ seco: última cifra      holdout final (27-sep..16-oct)       M3_dirichlet20 1412             0.0072         0.0015         0.0130        -0.3117        0.0892 0.0114
+ seco: última cifra      holdout final (27-sep..16-oct)        M4_jerarquico 1412             0.0149         0.0068         0.0236        -0.6474        0.0907 0.0162
+ seco: última cifra      holdout final (27-sep..16-oct)          M5_caliente 1412             0.0228         0.0106         0.0339        -0.9922        0.0963 0.0192
+ seco: última cifra      holdout final (27-sep..16-oct)              M6_fria 1412             0.2099         0.1682         0.2529        -9.1167        0.0970 0.0425
+ seco: última cifra      holdout final (27-sep..16-oct) M7_cond_mayor_previo 1412             0.0107         0.0034         0.0178        -0.4659        0.0892 0.0132
+  seco: dos últimas         desarrollo (24-ago..26-sep)          M0_uniforme 2780            -0.0000        -0.0000        -0.0000         0.0000        0.0072 0.0000
+  seco: dos últimas         desarrollo (24-ago..26-sep)      M1_frec_loteria 2780             0.1059         0.0911         0.1201        -2.3000        0.0101 0.0037
+  seco: dos últimas         desarrollo (24-ago..26-sep)       M2_frec_global 2780             0.0293         0.0208         0.0386        -0.6369        0.0094 0.0019
+  seco: dos últimas         desarrollo (24-ago..26-sep)       M3_dirichlet20 2780             0.0012        -0.0004         0.0029        -0.0263        0.0101 0.0005
+  seco: dos últimas         desarrollo (24-ago..26-sep)        M4_jerarquico 2780             0.2262         0.2012         0.2529        -4.9115        0.0122 0.0051
+  seco: dos últimas         desarrollo (24-ago..26-sep)          M5_caliente 2780             0.1082         0.0922         0.1239        -2.3488        0.0108 0.0037
+  seco: dos últimas         desarrollo (24-ago..26-sep)              M6_fria 2780             0.0410         0.0287         0.0540        -0.8907        0.0097 0.0021
+  seco: dos últimas      holdout final (27-sep..16-oct)          M0_uniforme 1412            -0.0000        -0.0000        -0.0000         0.0000        0.0078 0.0000
+  seco: dos últimas      holdout final (27-sep..16-oct)      M1_frec_loteria 1412             0.1112         0.0849         0.1411        -2.4138        0.0106 0.0036
+  seco: dos últimas      holdout final (27-sep..16-oct)       M2_frec_global 1412             0.0138         0.0059         0.0219        -0.2990        0.0092 0.0014
+  seco: dos últimas      holdout final (27-sep..16-oct)       M3_dirichlet20 1412             0.0049         0.0010         0.0096        -0.1070        0.0106 0.0009
+  seco: dos últimas      holdout final (27-sep..16-oct)        M4_jerarquico 1412             0.1665         0.1289         0.2078        -3.6155        0.0085 0.0041
+  seco: dos últimas      holdout final (27-sep..16-oct)          M5_caliente 1412             0.1261         0.0996         0.1547        -2.7383        0.0099 0.0040
+  seco: dos últimas      holdout final (27-sep..16-oct)              M6_fria 1412             0.0345         0.0181         0.0497        -0.7481        0.0106 0.0019

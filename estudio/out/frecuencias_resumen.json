@@ -1,0 +1,14 @@
+{
+ "mayores nov-2024..16-ago-2026": {
+  "max_desviacion_pp": -1.6798732171156896,
+  "posicion": "decenas",
+  "digito": 1,
+  "celdas_fuera_ic_simultaneo": 0
+ },
+ "secos 17-ago..16-oct": {
+  "max_desviacion_pp": 0.7714701601164489,
+  "posicion": "centenas",
+  "digito": 3,
+  "celdas_fuera_ic_simultaneo": 0
+ }
+}

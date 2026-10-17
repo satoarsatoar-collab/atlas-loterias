@@ -1,0 +1,85 @@
+name: ATLAS
+
+on:
+  schedule:
+    - cron: "15 5 * * *"     # 00:15 en Colombia: después de los sorteos de la noche
+    - cron: "30 11 * * *"    # 06:30 en Colombia: segundo intento, por si la fuente publicó tarde
+  push:
+    branches: [main]
+    paths: ["data/inbox/**"] # al subir un archivo de resultados
+  workflow_dispatch:          # botón "Run workflow"
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: atlas
+  cancel-in-progress: false
+
+jobs:
+  ciclo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar ATLAS (descargar, ingerir, auditar, buscar patrones, publicar)
+        run: python -m atlas.pipeline --scrape si
+
+      - name: Guardar datos y resultados en el repositorio
+        run: |
+          git config user.name "atlas-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data state site
+          if git diff --cached --quiet; then
+            echo "Sin cambios."
+          else
+            git commit -m "ATLAS: actualización $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Avisar si apareció un patrón validado
+        if: hashFiles('state/alerta_nueva.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "ATLAS: patrón validado $(date +%F)" --body-file state/alerta_nueva.md
+
+      - name: Guardar tablas completas como artefacto (30 días)
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-tablas
+          path: |
+            site/
+            state/
+          retention-days: 30
+
+      - name: Preparar publicación del tablero
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publicar:
+    # Requiere Settings → Pages → Source: "GitHub Actions". En un repositorio privado con plan gratuito
+    # GitHub Pages no está disponible: este paso falla sin afectar lo demás.
+    needs: ciclo
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4

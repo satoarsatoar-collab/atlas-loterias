@@ -1,0 +1,28 @@
+{
+ "sorteos_ventana": 124,
+ "sorteos_con_secos": 107,
+ "filas_secos": 5158,
+ "clases": {
+  "seco": 4809,
+  "derivado_permutacion_mayor": 245,
+  "derivado_mayor_pm1": 40,
+  "derivado_permutacion_seco": 34,
+  "serie_000_ambigua": 27,
+  "serie_faltante": 2,
+  "duplicado_en_sorteo": 1
+ },
+ "mayores_total": 1386,
+ "mayores_ventana": 124,
+ "secos_con_cuantia": 1099,
+ "eventos_auditoria": {
+  "mayor_dia_atipico": 70,
+  "sin_sorteo": 17,
+  "sorteo_sin_secos": 17,
+  "salto_numeracion": 7,
+  "sorteo_duplicado": 4,
+  "seco_sin_confirmar": 3,
+  "mayor_serie_faltante": 2,
+  "cuantia_corregida": 1,
+  "discrepancia_fuentes": 1
+ }
+}

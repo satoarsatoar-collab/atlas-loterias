@@ -1,0 +1,15 @@
+# Nube propia: docker compose up -d   ->   http://<su-servidor>:8080
+services:
+  atlas:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      ATLAS_CADA_HORAS: "6"
+      ATLAS_DESCARGA: "si"
+      ATLAS_TOKEN: "${ATLAS_TOKEN:-}"   # defínalo (archivo .env) para poder subir CSV desde /subir
+    volumes:                            # los datos viven en las carpetas del repositorio, fuera del contenedor
+      - ./data:/app/data
+      - ./state:/app/state
+      - ./site:/app/site

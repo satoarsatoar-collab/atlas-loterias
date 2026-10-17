@@ -1,0 +1,50 @@
+                                                                  0                    1                  2                  3
+loteria                                         Lotería de Medellín  Lotería de Medellín  Lotería de Bogotá  Lotería de Bogotá
+S_supuesto                                                      500                  450                470                420
+precio_billete                                                21000                21000              18000              18000
+VE_bruto                                                8434.596268          8966.099053        7250.271287        7635.450045
+VE_neto                                                 6692.570668           7049.18172        5945.018521        6198.810045
+VE_neto_comprando_fracciones                            6860.234668          7216.808386        6146.189585        6399.930045
+VE_bruto_si_premios_acumulables                         8859.951256          9397.671173        8006.619917        8403.716394
+retorno_bruto_pct                                         40.164744             42.69571          40.279285          42.419167
+retorno_neto_pct                                          31.869384            33.567532          33.027881          34.437834
+perdida_esperada_por_billete                           14307.429332          13950.81828       12054.981479       11801.189955
+prob_algun_premio                                          0.114649             0.114805           0.116883           0.116642
+prob_mayor                                                      0.0                  0.0                0.0                0.0
+prob_algun_seco                                            0.000009              0.00001           0.000011           0.000013
+multiplicador_necesario                                    3.137808             2.979069           3.027745           2.903783
+VE_neto_si_acierta_última cifra                        53516.283907         56494.225569       49124.566167       51266.579699
+VE_neto_si_no_acierta_última cifra                      1489.935863          1555.287959        1147.291005        1191.280083
+prob_necesaria_última cifra_para_equilibrio                0.375004             0.353933           0.351264           0.335669
+VE_neto_con_última cifra_al_doble_de_lo_normal         11895.205472         12543.075481       10742.746037       11206.340006
+VE_neto_si_acierta_dos últimas                        294610.441582        319659.094183      263708.725631      284163.793242
+VE_neto_si_no_acierta_dos últimas                       3784.309345          3891.505836        3341.344712        3391.082942
+prob_necesaria_dos últimas_para_equilibrio                 0.059196             0.054181             0.0563           0.052031
+VE_neto_con_dos últimas_al_doble_de_lo_normal            9600.83199         10206.857603         8548.69233        9006.537148
+                                             0                  1
+semanas                                     52                 52
+gasto_total                            1092000             936000
+resultado_medio                 -825724.344605      -638142.06738
+resultado_mediano                    -929350.0          -762510.0
+prob_terminar_ganando                  0.00747            0.00923
+prob_perder_mas_del_80pct                0.783           0.604715
+percentil_99                         -528614.0          -502266.0
+loteria                    Lotería de Medellín  Lotería de Bogotá
+Lotería de Medellín VE bruto 8435
+   premio 16000000000 aporta 3200 (37.9%)
+   premio 25301 aporta 2286 (27.1%)
+   premio 36145 aporta 802 (9.5%)
+   premio 5000000 aporta 499 (5.9%)
+   premio 1000000000 aporta 400 (4.7%)
+   premio 700000000 aporta 280 (3.3%)
+   premio 6000000 aporta 216 (2.6%)
+   premio 500000000 aporta 200 (2.4%)
+Lotería de Bogotá VE bruto 7250
+   premio 12000000000 aporta 2553 (35.2%)
+   premio 21686 aporta 1888 (26.0%)
+   premio 43374 aporta 1122 (15.5%)
+   premio 6000000 aporta 599 (8.3%)
+   premio 65060 aporta 245 (3.4%)
+   premio 1000000000 aporta 213 (2.9%)
+   premio 200000000 aporta 128 (1.8%)
+   premio 2000000 aporta 110 (1.5%)

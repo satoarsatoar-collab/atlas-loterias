@@ -1,0 +1,46 @@
+EXPLORACIÓN: 128 pruebas | candidatas: 6
+             id                                                                    hipotesis_nula    N       stat        p   p_holm     q_bh   efecto
+  SC-menor-unif                        Última cifra uniforme dentro de los secos de menor cuantía  180  32.111111 0.000191 0.024385 0.024385 0.422368
+  SA-Medellín-4                                             Medellín: dígito de unidades uniforme  264  26.378788 0.001771 0.224886 0.089065 0.316101
+SC-última cifra             Distribución de la última cifra: igual en menor cuantía y en el resto  481  25.942818 0.002087 0.263020 0.089065 0.232239
+            SE1                 Terminaciones compartidas entre loterías del mismo día según azar 3397 736.000000 0.003498 0.437281 0.111944 0.084715
+       SF-Huila                                      Huila: serie uniforme en [0,180) (10 tramos)  161  22.540373 0.007315 0.907109 0.187274 0.374169
+    MD4-ingenua [Prueba defectuosa a propósito] intervalos ~ Geométrica(0,1) sin corregir censura   38  47.986024 0.009400 1.000000 0.200523 1.123739
+    SA-Tolima-2                                               Tolima: dígito de centenas uniforme   96  19.833333 0.018969 1.000000 0.346867 0.454530
+   SA-Quindío-1                                              Quindío: dígito de millares uniforme   74  18.702703 0.027843 1.000000 0.445485 0.502732
+            MB9                                        Número de dígitos pares ~ Binomial(4, 1/2)  124  10.322581 0.035331 1.000000 0.496125 0.288525
+ SA-Risaralda-3                                             Risaralda: dígito de decenas uniforme  191  17.534031 0.040981 1.000000 0.496125 0.302987
+    SA-Boyacá-4                                               Boyacá: dígito de unidades uniforme  354  17.412429 0.042636 1.000000 0.496125 0.221783
+ SA-Santander-2                                            Santander: dígito de centenas uniforme  413  16.370460 0.059537 1.000000 0.635061 0.199093
+       SF-Cauca                                      Cauca: serie uniforme en [0,310) (10 tramos)  215  15.930233 0.068353 1.000000 0.673013 0.272202
+      SF-Tolima                                     Tolima: serie uniforme en [0,280) (10 tramos)   96  15.666667 0.074177 1.000000 0.678192 0.403973
+  SC-categorias Última cifra independiente de la categoría de cuantía (estratificado por lotería)  481 183.603140 0.109890 1.000000 0.782881      NaN
+
+CONFIRMACIÓN (familia candidatas+primarias):
+             id                                                                       hipotesis_nula    N       stat        p   p_holm     q_bh evaluada_por
+    MD4-ingenua    [Prueba defectuosa a propósito] intervalos ~ Geométrica(0,1) sin corregir censura 1122  52.974722 0.000583 0.007578 0.007578    candidata
+  SC-menor-unif                           Última cifra uniforme dentro de los secos de menor cuantía   96  12.333333 0.195163 1.000000 0.910449    candidata
+SC-última cifra                Distribución de la última cifra: igual en menor cuantía y en el resto  300  11.478238 0.244346 1.000000 0.910449    candidata
+            SA4                                                          Dígito de unidades uniforme 1412  10.124646 0.340489 1.000000 0.910449     primaria
+       SF-Huila                                         Huila: serie uniforme en [0,180) (10 tramos)   81   9.493827 0.392992 1.000000 0.910449    candidata
+            SE1                    Terminaciones compartidas entre loterías del mismo día según azar 1412 292.000000 0.451274 1.000000 0.910449    candidata
+            SA3                                                           Dígito de decenas uniforme 1412   7.773371 0.557137 1.000000 0.910449     primaria
+            SD1 Las terminaciones (2 cifras) no se arrastran al sorteo siguiente de la misma lotería 1412 324.000000 0.696652 1.000000 0.910449     primaria
+            SB1                                            Dos últimas cifras uniformes (100 celdas) 1412  89.133144 0.753225 1.000000 0.910449     primaria
+  SA-Medellín-4                                                Medellín: dígito de unidades uniforme  131   5.717557 0.767820 1.000000 0.910449    candidata
+            SA1                                                          Dígito de millares uniforme 1412   5.691218 0.770380 1.000000 0.910449     primaria
+            SA2                                                          Dígito de centenas uniforme 1412   4.062323 0.907263 1.000000 0.924489     primaria
+            SF1               Cifra de unidades de la serie uniforme (supone emisión múltiplo de 10) 1412   3.793201 0.924489 1.000000 0.924489     primaria
+
+VENTANA COMPLETA top:
+             id                                                                    hipotesis_nula    N         stat        p   p_holm     q_bh
+SC-última cifra             Distribución de la última cifra: igual en menor cuantía y en el resto  781    28.784097 0.000705 0.033119 0.019604
+  SC-menor-unif                        Última cifra uniforme dentro de los secos de menor cuantía  276    28.347826 0.000834 0.038373 0.019604
+   SF-Manizales                                  Manizales: serie uniforme en [0,400) (10 tramos)  458    23.965066 0.004357 0.196060 0.068258
+            SE1                 Terminaciones compartidas entre loterías del mismo día según azar 4809  1028.000000 0.006497 0.285857 0.076337
+  SC-categorias Última cifra independiente de la categoría de cuantía (estratificado por lotería)  781   206.246407 0.012987 0.558442 0.122078
+       SF-Huila                                      Huila: serie uniforme en [0,180) (10 tramos)  242    18.330579 0.031526 1.000000 0.246956
+      SF-Tolima                                     Tolima: serie uniforme en [0,280) (10 tramos)   96    15.666667 0.074177 1.000000 0.494836
+            SB6                                 Dígitos estrictamente ascendentes con p = 210/10⁴ 4809     0.024537 0.087310 1.000000 0.494836
+            SB5                                                         Palíndromos con p = 1/100 4809     0.012477 0.094756 1.000000 0.494836
+        SC-suma                              Suma de dígitos igual en menor cuantía y en el resto  781 74442.500000 0.114381 1.000000 0.537592

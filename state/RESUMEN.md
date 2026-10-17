@@ -1,12 +1,12 @@
 # ATLAS · El seguimiento en datos nuevos empieza con el próximo sorteo
 
-_Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 16 oct 2026_
+_Actualizado sáb 17 oct 2026 16:55 (Colombia) · último sorteo con datos: vie 16 oct 2026_
 
 > **Comenzando.** Desde el 17 de octubre de 2026 cada patrón apuesta antes de cada sorteo. Lo anterior a esa fecha ya se miró en el estudio y solo sirve de contexto.
 
 | Indicador | Valor |
 |---|---|
-| Premios guardados | 4.809 secos independientes · 1.386 mayores |
+| Premios guardados | 4.846 secos independientes · 1.386 mayores |
 | Seguimiento en datos nuevos | 0 días · 0 premios |
 | Patrones vigilados | 1.093 (validar uno exige E ≥ 10.920) |
 | Combinador principal | E = 0,60 (retrospectivo; se valida con E ≥ 20) |
@@ -18,8 +18,8 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 |---|---|---|---|
 | Última cifra de los secos (Medellín): lo que más ha salido en las últimas semanas seguirá saliendo más | sin datos nuevos | — | 165 |
 | Última cifra de los secos (Medellín): lo que más ha salido en todo el historial seguirá saliendo más | sin datos nuevos | — | 104 |
-| Última cifra de los secos (menor cuantía): lo que más ha salido en las últimas semanas seguirá saliendo más | sin datos nuevos | — | 43 |
-| Última cifra de los secos (menor cuantía): lo que más ha salido en todo el historial seguirá saliendo más | sin datos nuevos | — | 36 |
+| Última cifra de los secos (menor cuantía): lo que más ha salido en las últimas semanas seguirá saliendo más | sin datos nuevos | — | 27 |
+| Última cifra de los secos (menor cuantía): lo que más ha salido en todo el historial seguirá saliendo más | sin datos nuevos | — | 19 |
 | Estructura (par, trío…) de los secos (Quindío): lo que menos ha salido últimamente 'está por salir' | sin datos nuevos | — | 18 |
 | Combinador: última cifra de los secos de Medellín, mezclando todas las reglas según cómo les ha ido en esa lotería (el azar pesa la mitad al comienzo) | sin datos nuevos | — | 15 |
 | Estructura (par, trío…) de los premios mayores (Quindío): lo que menos ha salido últimamente 'está por salir' | sin datos nuevos | — | 12 |
@@ -42,7 +42,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Boyacá · sáb 17 oct**
 
-- Combinador ATLAS: `4870 4370 0870 5870 0370 5370 4880 4270 4970 4380`
+- Combinador ATLAS: `4870 4370 0870 4270 4880 5870 0370 4970 4670 0270`
 - Calientes: `4826 1826 4836 4846 4626 1836 1846 4896 4876 5826`
 - Recientes: `4970 9970 4670 0970 4920 5970 9670 4570 4270 2970`
 - Fríos: `6047 3047 6045 3045 6049 6007 1047 7047 6044 6043`
@@ -51,7 +51,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Cauca · sáb 17 oct**
 
-- Combinador ATLAS: `0372 7372 5372 0272 7272 4372 5272 0352 7352 4272`
+- Combinador ATLAS: `0272 0372 7272 7372 4272 4372 0252 5272 0352 5372`
 - Calientes: `7222 7221 3222 7322 0222 1222 7272 3221 6222 7321`
 - Recientes: `6952 3952 5952 3956 5956 6956 5252 6972 3972 3252`
 - Fríos: `8547 8747 2547 8517 4547 8548 8597 8717 2747 2517`
@@ -60,7 +60,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Cundinamarca · lun 19 oct**
 
-- Combinador ATLAS: `2384 2784 2284 2884 2484 2984 2684 2184 2584 2084`
+- Combinador ATLAS: `2284 2384 2784 2884 2484 2984 2584 2684 2184 2084`
 - Calientes: `2784 2788 2744 2748 2782 2787 2734 2704 2484 2742`
 - Recientes: `7289 7286 7282 0289 2286 2289 0286 0282 2282 7209`
 - Fríos: `6825 6325 6895 6525 6875 6395 6025 6375 6595 1825`
@@ -69,7 +69,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Tolima · lun 19 oct**
 
-- Combinador ATLAS: `9376 9386 9336 2376 8376 9346 2386 3376 8386 1376`
+- Combinador ATLAS: `9376 9386 9336 2376 8376 9346 3376 2386 8386 3386`
 - Calientes: `9305 9375 9335 9385 2375 2335 2305 9315 8305 8375`
 - Recientes: `9999 9998 9997 9996 9995 9994 9993 9992 9991 9990`
 - Fríos: `9999 9998 9997 9996 9995 9994 9993 9992 9991 9990`
@@ -78,7 +78,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Cruz Roja · mar 20 oct**
 
-- Combinador ATLAS: `1374 1474 1774 1372 1974 1274 1874 1472 1379 1574`
+- Combinador ATLAS: `1374 1274 1474 1774 1974 1874 1574 1372 1272 1074`
 - Calientes: `1565 1575 1578 1568 1525 1585 1562 1572 1588 1528`
 - Recientes: `1425 1225 1325 1725 1025 1525 5425 5025 5325 5225`
 - Fríos: `2158 2148 2188 2948 2958 2648 2848 2688 2888 2658`
@@ -87,7 +87,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Huila · mar 20 oct**
 
-- Combinador ATLAS: `0084 0088 8084 0087 7084 0004 8088 7088 0484 0008`
+- Combinador ATLAS: `0084 0088 0087 7084 8084 0004 7088 8088 0008 0484`
 - Calientes: `5677 5627 7627 7677 5678 5628 5607 5177 5127 7678`
 - Recientes: `0040 0050 0010 8010 8040 8050 0059 0019 0049 0020`
 - Fríos: `3683 4683 3983 3883 5983 5683 4883 4983 5883 9883`
@@ -96,7 +96,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Manizales · mié 21 oct**
 
-- Combinador ATLAS: `5774 5474 5874 5174 5772 5274 5784 5472 5872 5374`
+- Combinador ATLAS: `5774 5274 5874 5474 5174 5772 5272 5872 5784 5284`
 - Calientes: `5104 5704 5504 5100 5102 6104 5174 5404 5700 5702`
 - Recientes: `5772 5771 5774 5172 5071 5171 5072 0772 0771 5174`
 - Fríos: `1327 1367 1337 6327 1927 3327 6367 2327 8327 1317`
@@ -105,7 +105,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Meta · mié 21 oct**
 
-- Combinador ATLAS: `7333 2333 5333 7336 2336 7339 5336 2339 7313 2313`
+- Combinador ATLAS: `7333 2333 5333 7336 2336 7339 2339 5336 7313 2313`
 - Calientes: `2317 2315 2337 2335 2325 2327 2313 7315 7317 2333`
 - Recientes: `5435 5433 5439 7435 5436 7433 7439 5135 5434 5139`
 - Fríos: `3000 3002 3080 3082 3092 3090 3001 3007 3062 3060`
@@ -114,7 +114,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Valle · mié 21 oct**
 
-- Combinador ATLAS: `0477 4477 5477 2477 0417 4417 0377 0977 4377 4977`
+- Combinador ATLAS: `4477 0477 4417 0417 5477 4977 0977 2477 4377 0377`
 - Calientes: `4616 4116 4117 4617 4176 4676 9616 9116 4177 4677`
 - Recientes: `5014 5074 5114 5094 6014 5012 5010 5174 6074 5194`
 - Fríos: `1437 1487 1489 1439 7437 7487 1431 1438 1436 1481`
@@ -123,7 +123,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Bogotá · jue 22 oct**
 
-- Combinador ATLAS: `4889 4859 4881 4389 4882 4879 7889 4886 4851 4359`
+- Combinador ATLAS: `4889 4859 4882 4881 4389 4879 7889 4886 4852 4884`
 - Calientes: `2351 2353 0351 2851 2358 2354 0353 7351 2853 0851`
 - Recientes: `4858 4888 4853 4058 7858 4883 4851 4088 7888 7853`
 - Fríos: `0742 0242 3242 3742 0342 0642 0745 0749 0245 0249`
@@ -132,16 +132,16 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Quindío · jue 22 oct**
 
-- Combinador ATLAS: `4577 4587 4578 4575 4588 0577 4557 4585 4517 4573`
-- Calientes: `3477 3277 3487 3417 3473 3472 3272 3217 3273 3287`
-- Recientes: `9999 9998 9997 9996 9995 9994 9993 9992 9991 9990`
-- Fríos: `9999 9998 9997 9996 9995 9994 9993 9992 9991 9990`
+- Combinador ATLAS: `4261 0261 4361 4561 4461 4262 0361 0561 4267 4266`
+- Calientes: `4283 4289 4203 4273 4282 4209 4279 4287 4253 4213`
+- Recientes: `4289 4253 4283 4209 0209 4203 0203 0259 0283 0289`
+- Fríos: `3361 5361 3331 3371 3311 3461 3761 2361 3161 3661`
 - Del mayor anterior: `5418 8145 1458 1485 1548 1584 1845 1854 4158 4185`
 - Al azar (control): `8385 6418 4450 0733 6675 3844 1593 0769 8537 8777`
 
 **Medellín · vie 23 oct**
 
-- Combinador ATLAS: `8242 2242 8442 8742 9242 2442 8642 2742 2642 8542`
+- Combinador ATLAS: `8242 2242 9242 8442 8742 8642 2442 8542 2742 2642`
 - Calientes: `8842 8852 2842 2852 8942 9842 8952 2942 8042 9852`
 - Recientes: `8378 8398 8098 8078 2098 2378 2398 2078 8048 8348`
 - Fríos: `6261 6231 6661 6631 6561 7231 4231 6731 6221 6761`
@@ -150,7 +150,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Risaralda · vie 23 oct**
 
-- Combinador ATLAS: `4346 4342 4246 4242 4046 4042 4446 4746 4146 4846`
+- Combinador ATLAS: `4246 4346 4242 4342 4046 4042 4446 4746 4846 4146`
 - Calientes: `4047 4347 4345 4045 4247 4245 4547 4545 4077 4377`
 - Recientes: `3047 3347 7347 7047 3447 7447 7037 3037 7337 3337`
 - Fríos: `8910 8950 8990 8920 2990 2950 2910 9950 1950 1910`
@@ -159,7 +159,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Santander · vie 23 oct**
 
-- Combinador ATLAS: `9487 9477 9488 4487 9478 9457 4477 9437 4488 9417`
+- Combinador ATLAS: `9287 9277 4287 9288 9257 4277 9278 9237 4288 4257`
 - Calientes: `4388 0388 4348 4318 4398 0348 4386 4488 0398 0318`
 - Recientes: `9789 9889 9781 9788 9786 9739 4789 9886 9888 9489`
 - Fríos: `7277 7577 7077 6277 7377 7977 5277 6077 6577 7270`
@@ -168,7 +168,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Boyacá · sáb 24 oct**
 
-- Combinador ATLAS: `4870 5870 0870 4370 5370 4270 0370 5270 0270 9870`
+- Combinador ATLAS: `4870 4270 0870 0270 5870 5270 4370 4880 4280 0370`
 - Calientes: `4826 1826 4836 4846 4626 1836 1846 4896 4876 5826`
 - Recientes: `9970 5970 2970 0970 8970 9270 9370 9930 4970 9950`
 - Fríos: `1007 7007 1507 6007 7507 6507 1107 1097 1027 1047`
@@ -177,7 +177,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 
 **Cauca · sáb 24 oct**
 
-- Combinador ATLAS: `7372 7382 7352 7272 7282 0372 7252 0382 7371 0352`
+- Combinador ATLAS: `7272 7282 7252 7372 7382 7352 0272 0282 0252 0372`
 - Calientes: `7222 7221 3222 7322 0222 1222 7272 3221 6222 7321`
 - Recientes: `3952 3352 3356 3382 3982 3956 3652 3452 3252 3386`
 - Fríos: `8598 8597 8547 8528 8527 8548 8595 2598 8537 8538`
@@ -191,7 +191,7 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 | vie 16 oct | Santander | 3167-129 | 69 | completo |
 | vie 16 oct | Risaralda | 5475-176 | 32 | completo |
 | vie 16 oct | Medellín | 1271-087 | 44 | completo |
-| jue 15 oct | Quindío | 5418-182 | 0 | sin secos |
+| jue 15 oct | Quindío | 5418-182 | 37 | completo |
 | jue 15 oct | Bogotá | 4486-335 | 0 | sin secos |
 | mié 14 oct | Valle | 5091-003 | 34 | completo |
 | mié 14 oct | Meta | 3415-143 | 42 | completo |
@@ -209,8 +209,8 @@ _Actualizado sáb 17 oct 2026 15:09 (Colombia) · último sorteo con datos: vie 
 ## Datos
 
 - Descarga automática: ok · sorteos nuevos: 2
-- Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
+- Última carga manual: 1 archivo(s), 37 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Tolima 21 sep, Tolima 28 sep, Tolima 5 oct, Tolima 12 oct, Cruz Roja 29 sep, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 24 sep, Quindío 1 oct, Quindío 8 oct, Quindío 15 oct
+- Sorteos sin secos (últimas 4 semanas): Tolima 21 sep, Tolima 28 sep, Tolima 5 oct, Tolima 12 oct, Cruz Roja 29 sep, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 24 sep, Quindío 1 oct, Quindío 8 oct
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

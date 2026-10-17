@@ -13,6 +13,7 @@ import hashlib
 import json
 import math
 import os
+import re
 import traceback
 
 import numpy as np
@@ -181,6 +182,48 @@ def _veredicto(res, principal, dias_p, n_p):
                       "combinación le gana al azar de forma sostenida.")
 
 
+def _repo() -> tuple[str, str]:
+    """Repositorio de GitHub (dueño/nombre) y rama, para que el tablero arme el enlace de carga."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    rama = os.environ.get("GITHUB_REF_NAME", "") or "main"
+    if not repo:
+        try:
+            import subprocess
+            url = subprocess.run(["git", "remote", "get-url", "origin"], cwd=RAIZ, capture_output=True, text=True,
+                                 timeout=5).stdout.strip()
+            m = re.search(r"github\.com[:/]([^/]+/[^/.]+)", url)
+            repo = m.group(1) if m else ""
+        except Exception:  # noqa: BLE001
+            repo = ""
+    return repo, rama
+
+
+def _recientes(secos, mayores, faltantes, hoy, dias=8) -> list[dict]:
+    """Sorteos de los últimos días con lo que se tiene de cada uno, para confirmarlos o completarlos."""
+    desde = (hoy - dt.timedelta(days=dias)).isoformat()
+    M = mayores[mayores.fecha >= desde].set_index(["slug", "fecha"])
+    S = secos[secos.fecha >= desde]
+    claves = set(M.index) | set(zip(S.slug, S.fecha))
+    out = []
+    for slug, fecha in claves:
+        g = S[(S.slug == slug) & (S.fecha == fecha)].sort_values("fila")
+        m = M.loc[(slug, fecha)] if (slug, fecha) in M.index else None
+        fuentes = sorted({f for f in list(g.fuente) + ([m.fuente] if m is not None else []) if f})
+        out.append(dict(slug=slug, loteria=NOMBRE.get(slug, slug), fecha=fecha,
+                        mayor=f"{m.numero}-{m.serie}" if m is not None else "", secos=int(len(g)),
+                        independientes=int((g.clase == "seco").sum()), con_cuantia=int(g.cuantia.notna().sum()),
+                        fuentes=fuentes, verificar=scrape.URL_RES.format(slug=slug, fecha=fecha),
+                        lista=[[r.numero, r.serie, "" if pd.isna(r.cuantia) else f"{r.cuantia:g}", r.clase]
+                               for r in g.itertuples()],
+                        estado="completo" if (len(g) and m is not None) else ("sin secos" if m is not None else "sin mayor")))
+    for r in faltantes.itertuples():
+        if desde <= r.fecha_esperada < hoy.isoformat() and not r.tiene_mayor:
+            out.append(dict(slug=r.slug, loteria=r.loteria, fecha=r.fecha_esperada, mayor="", secos=0, independientes=0,
+                            con_cuantia=0, fuentes=[], verificar=scrape.URL_RES.format(slug=r.slug, fecha=r.fecha_esperada),
+                            lista=[], estado="sin datos"))
+    return sorted(out, key=lambda x: (x["fecha"], x["loteria"]), reverse=True)
+
+
 def ejecutar(descargar: bool = True, hoy: dt.date | None = None) -> dict:
     ahora = dt.datetime.now(TZ)
     hoy = hoy or ahora.date()
@@ -265,6 +308,8 @@ def ejecutar(descargar: bool = True, hoy: dt.date | None = None) -> dict:
                               esperado=float(reg.esperado_azar.sum()) if len(reg) else 0.0),
         economia=_economia(),
         metodos=_marcador(R["metodos"], reg_met),
+        recientes=_recientes(t["secos"], t["mayores"], t["faltantes"], hoy),
+        repo=_repo()[0], rama=_repo()[1],
         consulta=_consulta(t["secos"], t["mayores"]),
     )
     try:

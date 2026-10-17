@@ -203,7 +203,85 @@ maxlength="4" placeholder="Ej. 0047" aria-label="Número de 4 cifras"><button ty
 </section>"""
 
 
-JS = """<script>
+ESTADO_SORTEO = {"completo": ("✓", "completo"), "sin secos": ("◐", "sin secos"), "sin mayor": ("◐", "sin premio mayor"),
+                 "sin datos": ("○", "sin datos")}
+
+
+def seccion_recientes(S: dict) -> str:
+    rec = S.get("recientes", [])
+    if not rec:
+        return ""
+    bloques, fecha_act = [], None
+    for r in rec:
+        if r["fecha"] != fecha_act:
+            if fecha_act is not None:
+                bloques.append("</div>")
+            fecha_act = r["fecha"]
+            bloques.append(f'<h3 class="dia">{e(fecha_larga(r["fecha"]))}</h3><div class="sorteos-dia">')
+        ico, txt = ESTADO_SORTEO.get(r["estado"], ("·", r["estado"]))
+        resumen = (f'{r["secos"]} secos' + (f' ({r["con_cuantia"]} con valor)' if r["con_cuantia"] else "")) if r["secos"] else "sin secos"
+        chips = "".join(
+            f'<span class="num{" num-ex" if c != "seco" else ""}" title="{e(c if c != "seco" else "seco independiente")}">'
+            f'{e(n)}<small>-{e(se or "—")}{(" · $" + e(cu) + " M") if cu else ""}</small></span>' for n, se, cu, c in r["lista"])
+        fuentes = ", ".join(r["fuentes"]) or "—"
+        bloques.append(f"""<details class="srt est-{e(r['estado'].replace(' ', '-'))}"><summary>
+<span class="srt-est" aria-label="{e(txt)}">{ico}</span><b>{e(r['loteria'])}</b>
+<span class="mono">{e(r['mayor'] or '—')}</span><span class="tenue">{e(resumen + ' · ' + txt if r['secos'] else txt)}</span></summary>
+<div class="srt-cuerpo"><p class="tenue">Fuente: {e(fuentes)} · <a href="{e(r['verificar'])}" target="_blank" rel="noopener">verificar en LoteríaYa ↗</a>
+{' · los números grises no cuentan en el análisis (derivados o repetidos)' if r['secos'] > r['independientes'] else ''}</p>
+{'<div class="chips">' + chips + '</div>' if chips else ''}
+<button type="button" class="btn-sec agregar-btn" data-slug="{e(r['slug'])}" data-fecha="{e(r['fecha'])}">{'Agregar o confirmar secos' if r['secos'] else 'Agregar secos'}</button>
+</div></details>""")
+    bloques.append("</div>")
+    n_comp = sum(r["estado"] == "completo" for r in rec)
+    return f"""<section id="recientes"><h2>Últimos sorteos</h2>
+<p class="nota">Lo que entró en los últimos 8 días: {n_comp} de {len(rec)} sorteos completos. Abra uno para ver sus secos y
+compararlos con la fuente. Si falta algo, el botón lo lleva al formulario con la lotería y la fecha ya puestas.</p>
+{"".join(bloques)}</section>"""
+
+
+def seccion_agregar(S: dict) -> str:
+    from .config import LOTERIAS
+    ops = "".join(f'<option value="{e(k)}" data-dia="{v[1]}">{e(v[0])}</option>' for k, v in
+                  sorted(LOTERIAS.items(), key=lambda kv: kv[1][0]))
+    repo = S.get("repo", ""); rama = S.get("rama", "main")
+    return f"""<section id="agregar"><h2>Agregar resultados</h2>
+<p class="nota">Pegue la lista de secos tal como la copie de la página de la lotería (Telemedellín, la web oficial,
+el periódico). Un premio por línea: número, serie y, si lo sabe, el valor. Si el sorteo ya tiene secos, su lista sirve para
+<b>confirmarlos</b> y agregarles el valor: los que coincidan se completan y los que no, quedan marcados para revisión.</p>
+<form id="form-agregar" class="form-ag" data-repo="{e(repo)}" data-rama="{e(rama)}" autocomplete="off">
+<div class="fila-form">
+<label>Lotería<select id="ag-lot" required>{ops}</select></label>
+<label>Fecha del sorteo<input id="ag-fecha" type="date" required></label>
+</div>
+<div class="fila-form">
+<label>Premio mayor (opcional)<input id="ag-mayor" inputmode="numeric" maxlength="4" placeholder="Número, ej. 1271"></label>
+<label>Serie del mayor<input id="ag-mayor-serie" inputmode="numeric" maxlength="3" placeholder="ej. 087"></label>
+</div>
+<label class="ancho">Secos<textarea id="ag-secos" rows="8" placeholder="0060 113&#10;2369 073 10&#10;Seco 3 · 3816 · 040 · $10.000.000"></textarea></label>
+<div class="fila-form">
+<label>Valor de estos secos en millones (opcional)<input id="ag-cuantia" inputmode="decimal" placeholder="ej. 10"></label>
+<label>Fuente<input id="ag-fuente" placeholder="ej. Telemedellín"></label>
+</div>
+<p class="tenue" id="ag-aviso-dia"></p>
+<button type="submit">Revisar</button>
+</form>
+<div id="ag-resultado" hidden>
+<p id="ag-resumen"></p>
+<div class="tabla-env"><table id="ag-tabla"><thead><tr><th>#</th><th>Tipo</th><th>Número</th><th>Serie</th><th>Valor (M)</th></tr></thead><tbody></tbody></table></div>
+<ul id="ag-malas" class="lista"></ul>
+<div class="acciones">
+{'<button type="button" id="ag-github">Guardar en GitHub</button>' if repo else ''}
+<button type="button" class="btn-sec" id="ag-descargar">Descargar CSV</button>
+<button type="button" class="btn-sec" id="ag-copiar">Copiar CSV</button>
+</div>
+<p class="tenue">{'«Guardar en GitHub» abre su repositorio con el archivo listo (y además lo copia): solo pulse <b>Commit changes</b>. Si el archivo aparece vacío, pegue con Cmd + V. ' if repo else ''}
+También puede descargar el CSV y subirlo a <code>data/inbox</code> con <i>Add file → Upload files</i>. El tablero se actualiza en unos 2 minutos.</p>
+</div>
+</section>"""
+
+
+JS = r"""<script>
 (function () {
   var el = document.getElementById('datos-numeros');
   if (!el) return;
@@ -242,6 +320,104 @@ JS = """<script>
     out.textContent = txt;
   });
 })();
+(function () {
+  var f = document.getElementById('form-agregar');
+  if (!f) return;
+  var $ = function (id) { return document.getElementById(id); };
+  var hoy = new Date(); hoy.setMinutes(hoy.getMinutes() - hoy.getTimezoneOffset());
+  $('ag-fecha').value = hoy.toISOString().slice(0, 10);
+  var DIAS = ['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];
+  function avisoDia() {
+    var op = $('ag-lot').selectedOptions[0], v = $('ag-fecha').value, a = $('ag-aviso-dia');
+    if (!op || !v) { a.textContent = ''; return; }
+    var d = new Date(v + 'T12:00:00'), wd = (d.getDay() + 6) % 7, juega = +op.dataset.dia;
+    a.textContent = wd === juega ? '' : 'Ojo: ' + op.textContent + ' juega los ' + DIAS[juega] + ' y esa fecha es ' + DIAS[wd] +
+      '. Solo es correcto si el sorteo se corrió por un festivo.';
+  }
+  $('ag-lot').addEventListener('change', avisoDia); $('ag-fecha').addEventListener('change', avisoDia);
+  document.querySelectorAll('.agregar-btn').forEach(function (b) {
+    b.addEventListener('click', function () {
+      $('ag-lot').value = b.dataset.slug; $('ag-fecha').value = b.dataset.fecha; avisoDia();
+      document.getElementById('agregar').scrollIntoView({behavior: 'smooth'}); $('ag-secos').focus();
+    });
+  });
+  function millones(x) {
+    var t = x.replace(/\s/g, '');
+    if (/^\d{1,3}(\.\d{3})+$/.test(t)) t = t.replace(/\./g, '');
+    t = t.replace(',', '.'); var v = parseFloat(t);
+    if (isNaN(v)) return '';
+    return String(v >= 1e5 ? v / 1e6 : v);
+  }
+  function parsear(texto, cuDef) {
+    var filas = [], malas = [];
+    texto.split(/\r?\n/).forEach(function (l, i) {
+      var s = l.trim(); if (!s) return;
+      var cu = '';
+      s = s.replace(/\$\s*([\d.,]+)/g, function (m, x) { cu = millones(x); return ' '; });
+      s = s.replace(/(\d+(?:[.,]\d+)?)\s*(millones|millón|millon|mill)\b/gi, function (m, x) { cu = millones(x); return ' '; });
+      s = s.replace(/^\s*(seco|premio|n[°ºo.]*)\s*\d+\s*[:.)\-·]?\s*/i, '');
+      s = s.replace(/^\s*\d{1,2}\s*[.)\-]\s+/, '');
+      var t = s.match(/\d+/g) || [];
+      var k = -1;
+      for (var j = 0; j < t.length; j++) if (t[j].length === 4) { k = j; break; }
+      if (k < 0) for (j = 0; j < t.length; j++) if (t[j].length < 4) { k = j; break; }
+      if (k < 0) { malas.push('Línea ' + (i + 1) + ': no encontré un número de 4 cifras («' + l.trim() + '»)'); return; }
+      var ser = t[k + 1] && t[k + 1].length <= 3 ? t[k + 1] : '';
+      if (!ser) { malas.push('Línea ' + (i + 1) + ': falta la serie («' + l.trim() + '»)'); return; }
+      if (!cu && t[k + 2]) cu = t[k + 2];
+      filas.push({tipo: 'seco', num: ('0000' + t[k]).slice(-4), ser: ('000' + ser).slice(-3), cu: cu || cuDef});
+    });
+    return {filas: filas, malas: malas};
+  }
+  var csv = '', nombre = '';
+  var q = function (x) { x = String(x || ''); return /[",\n]/.test(x) ? '"' + x.replace(/"/g, '""') + '"' : x; };
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var lot = $('ag-lot').value, fecha = $('ag-fecha').value, fuente = $('ag-fuente').value.trim() || 'carga manual';
+    var cuDef = $('ag-cuantia').value.trim() ? millones($('ag-cuantia').value) : '';
+    var r = parsear($('ag-secos').value, cuDef);
+    var my = $('ag-mayor').value.trim(), ms = $('ag-mayor-serie').value.trim();
+    if (my) {
+      if (/^\d{1,4}$/.test(my) && /^\d{1,3}$/.test(ms)) r.filas.unshift({tipo: 'mayor', num: ('0000' + my).slice(-4), ser: ('000' + ms).slice(-3), cu: ''});
+      else r.malas.unshift('Premio mayor: escriba el número (4 cifras) y la serie (3 cifras).');
+    }
+    var vistos = {}, rep = 0;
+    r.filas = r.filas.filter(function (x) { var k = x.tipo + x.num + x.ser; if (vistos[k]) { rep++; return false; } vistos[k] = 1; return true; });
+    if (rep) r.malas.push(rep + ' línea(s) repetida(s) se quitaron.');
+    var tb = $('ag-tabla').querySelector('tbody'); tb.innerHTML = '';
+    r.filas.forEach(function (x, i) {
+      var tr = document.createElement('tr');
+      [i + 1, x.tipo, x.num, x.ser, x.cu || '—'].forEach(function (v) { var td = document.createElement('td'); td.textContent = v; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+    var ul = $('ag-malas'); ul.innerHTML = '';
+    r.malas.forEach(function (m) { var li = document.createElement('li'); li.textContent = m; ul.appendChild(li); });
+    var futuro = fecha > new Date(Date.now() + 864e5).toISOString().slice(0, 10);
+    $('ag-resumen').textContent = (r.filas.length ? r.filas.length + ' fila(s) listas para ' + $('ag-lot').selectedOptions[0].textContent +
+      ', ' + fecha + '.' : 'No hay filas válidas todavía.') + (futuro ? ' Ojo: la fecha es futura y el sistema la rechazará.' : '');
+    csv = 'loteria,fecha,tipo,numero,serie,cuantia_millones,fuente\n' + r.filas.map(function (x) {
+      return [lot, fecha, x.tipo, x.num, x.ser, x.cu, q(fuente)].join(',');
+    }).join('\n') + '\n';
+    var hh = new Date().toTimeString().slice(0, 8).replace(/:/g, '');
+    nombre = 'manual_' + lot + '_' + fecha + '_' + hh + '.csv';
+    $('ag-resultado').hidden = false;
+    ['ag-github', 'ag-descargar', 'ag-copiar'].forEach(function (id) { if ($(id)) $(id).disabled = !r.filas.length; });
+    $('ag-resultado').scrollIntoView({behavior: 'smooth', block: 'nearest'});
+  });
+  function copiar() { try { navigator.clipboard.writeText(csv).catch(function () {}); } catch (e) {} }
+  if ($('ag-github')) $('ag-github').addEventListener('click', function () {
+    copiar();
+    var repo = f.dataset.repo, rama = f.dataset.rama || 'main';
+    window.open('https://github.com/' + repo + '/new/' + rama + '/data/inbox?filename=' + encodeURIComponent(nombre) +
+      '&value=' + encodeURIComponent(csv), '_blank', 'noopener');
+  });
+  $('ag-descargar').addEventListener('click', function () {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([csv], {type: 'text/csv'})); a.download = nombre;
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+  $('ag-copiar').addEventListener('click', function () { copiar(); this.textContent = 'Copiado'; var b = this; setTimeout(function () { b.textContent = 'Copiar CSV'; }, 1500); });
+})();
 </script>"""
 
 
@@ -278,6 +454,8 @@ def render(S: dict) -> str:
     ]) + "</section>")
 
     out.append(seccion_numeros(S))
+    out.append(seccion_recientes(S))
+    out.append(seccion_agregar(S))
 
     # ---------------------------------------------------------------- evidencia en el tiempo
     colores = ["var(--s1)", "var(--s2)", "var(--s3)"]
@@ -489,6 +667,22 @@ background:var(--surface);border:1px solid var(--ring);font-variant-numeric:tabu
 .consulta{display:flex;gap:8px;flex-wrap:wrap}.consulta input{width:9em;font-family:ui-monospace,Menlo,Consolas,monospace}
 .res-num{color:var(--ink2);max-width:80ch;min-height:1.5em}
 [hidden]{display:none!important}
+h3.dia{font-size:.95rem;color:var(--ink2);margin:1.1em 0 .4em}h3.dia::first-letter{text-transform:uppercase}
+.sorteos-dia{display:grid;gap:6px}
+details.srt{border:1px solid var(--ring);border-radius:8px;padding:8px 12px;background:var(--plane)}
+details.srt summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;color:var(--ink);cursor:pointer}
+.srt-est{width:1.2em;text-align:center;color:var(--ink2)}.est-completo .srt-est{color:var(--ok)}
+.est-sin-secos .srt-est,.est-sin-mayor .srt-est,.est-sin-datos .srt-est{color:var(--obs)}
+.srt-cuerpo{margin-top:8px}.num small{color:var(--muted);font-size:.78em}.num-ex{opacity:.5}
+.btn-sec{background:var(--surface);color:var(--accent);border-color:var(--base);margin-top:10px}
+.form-ag{display:grid;gap:12px;max-width:760px}
+.form-ag label{display:grid;gap:4px;font-size:.88rem;color:var(--ink2);font-weight:600}
+.fila-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+textarea{font:inherit;font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--ink);background:var(--surface);
+border:1px solid var(--base);border-radius:8px;padding:8px 10px;width:100%}
+.form-ag button[type=submit]{justify-self:start}
+.acciones{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.acciones .btn-sec{margin-top:0}
+button:disabled{opacity:.5;cursor:not-allowed}
 </style></head><body><main>
 {{CUERPO}}
 </main></body></html>"""
@@ -524,6 +718,11 @@ def render_md(S: dict) -> str:
         if p["tipo"] == "seco" and p.get("listas"):
             L += ["", f"**{p['loteria']} · {fecha_larga(p['fecha'])[:-5]}**", ""]
             L += [f"- {nombres.get(k, k)}: `{' '.join(v)}`" for k, v in p["listas"].items() if v]
+    rec = S.get("recientes", [])
+    if rec:
+        L += ["", "## Últimos sorteos", "", "| Fecha | Lotería | Premio mayor | Secos | Estado |", "|---|---|---|---|---|"]
+        for r in rec[:25]:
+            L.append(f"| {fecha_larga(r['fecha'])[:-5]} | {r['loteria']} | {r['mayor'] or '—'} | {r['secos']} | {r['estado']} |")
     ing = S["ingesta"]; desc = S.get("descarga", {})
     L += ["", "## Datos", "",
           f"- Descarga automática: {desc.get('estado', '—')} · sorteos nuevos: {desc.get('sorteos_nuevos', 0)}",

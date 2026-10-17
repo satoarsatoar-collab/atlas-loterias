@@ -147,7 +147,8 @@ def descargar(store: pd.DataFrame, hoy: dt.date | None = None, max_paginas: int 
                                    serie=s, fuente="LoteríaYa", url=url))
             info["sorteos_nuevos"] += 1
             if not p["secos"]:
-                info["errores"].append(f"{NOMBRE[slug]} {f}: se leyó el mayor pero no la tabla de secos")
+                info["errores"].append(f"{NOMBRE[slug]} {f}: LoteríaYa publicó el premio mayor pero no la lista de secos "
+                                       "(puede agregarla a mano)")
     if nuevas:
         store = st.incorporar(store, pd.DataFrame(nuevas), rep)
     info["reporte"] = rep.dict()

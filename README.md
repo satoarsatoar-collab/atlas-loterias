@@ -37,6 +37,15 @@ también un buscador: escriba un número y verá cuántas veces ha salido, la ú
 «Acertar» significa que el número de 4 cifras salió en un seco con cualquier serie; para cobrar hace falta además la
 serie. Mientras ningún método le gane a la lista al azar con el paso de las semanas, todos valen lo mismo.
 
+### Series
+
+Cada lotería juega un rango de series (por ejemplo, Medellín 000-499). Las series entran al motor como cualquier otro
+rasgo, siempre dentro de cada lotería: última cifra de la serie, franja del rango (décimos) y serie completa, con reglas
+calientes, recientes, frías y «la serie del mayor anterior». El combinador sugiere 10 series por sorteo frente a 10 series
+al azar, y la sección «Series: ¿salen todas por igual?» prueba, lotería por lotería, si alguna serie o franja sale más de
+lo normal (con corrección por comparaciones múltiples). El buscador acepta número y serie: dice si ese billete exacto ha
+ganado un seco y cuántas veces salió esa serie.
+
 ### Por qué no se deja engañar
 
 - Con sorteos aleatorios, E vale 1 en promedio y la probabilidad de que **alguna vez** llegue a 20 es menor que
@@ -94,6 +103,16 @@ docker compose up -d
 - Si lo expone a internet, póngalo detrás de HTTPS (por ejemplo Caddy o un túnel de Cloudflare).
 
 Sin Docker: `pip install -r requirements.txt && python -m atlas.servidor`.
+
+## Confirmar y agregar resultados desde el tablero
+
+- **Últimos sorteos**: cada sorteo de los últimos 8 días con su premio mayor, sus secos, la fuente y un enlace para
+  verificarlo en LoteríaYa. Los que no tienen secos traen un botón «Agregar secos».
+- **Agregar resultados**: elija lotería y fecha, pegue la lista de secos como la copie de la página de la lotería
+  (un premio por línea: número, serie y, si lo sabe, el valor), pulse «Revisar» y luego «Guardar en GitHub». Se abre su
+  repositorio con el archivo listo en `data/inbox/`; solo pulse **Commit changes** (GitHub le pide su sesión, así que solo
+  usted puede agregar). Si el archivo aparece vacío, pegue con Cmd + V: el botón también lo copia. Alternativa: «Descargar
+  CSV» y subirlo con *Add file → Upload files*.
 
 ## Agregar resultados a mano
 

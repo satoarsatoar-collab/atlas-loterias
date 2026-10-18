@@ -26,10 +26,15 @@ def test_ciclo_completo(tmp_path):
     assert e["premios_prospectivos"] == 3                    # 1 mayor + 2 secos posteriores al inicio prospectivo
     assert (dst / "site" / "index.html").exists() and (dst / "state" / "RESUMEN.md").exists()
     assert list((dst / "state" / "predicciones").glob("*.json.sha256"))
-    assert [m["id"] for m in e["metodos"]][-1] == "azar" and len(e["metodos"]) == 6
+    assert [m["id"] for m in e["metodos"]] == ["combinador", "calientes", "recientes", "frios", "mayor_anterior", "azar",
+                                               "series_combinador", "series_azar"]
+    assert len(e["series"]["loterias"]) == 14 and e["series_en_juego"]["loteria-de-medellin"] == 500
     assert e["consulta"]["numeros"]["0047"][0] >= 1                 # el seco cargado aparece en el buscador
     html = (dst / "site" / "index.html").read_text(encoding="utf-8")
     assert 'id="numeros"' in html and 'id="datos-numeros"' in html
+    assert 'id="recientes"' in html and 'id="form-agregar"' in html and 'id="series"' in html
+    boy = [r for r in e["recientes"] if r["slug"] == "loteria-de-boyaca" and r["fecha"] == "2026-10-17"]
+    assert boy and boy[0]["estado"] == "completo" and boy[0]["mayor"] == "4321-111"
     filas = (dst / "data" / "store" / "resultados.csv").read_text(encoding="utf-8").count("\n")
     assert not (dst / "data" / "inbox" / "nuevos.csv").exists()
     r = run(); assert r.returncode == 0, r.stderr               # segunda corrida: nada se duplica

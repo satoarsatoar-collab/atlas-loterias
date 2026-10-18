@@ -19,7 +19,7 @@ import traceback
 import numpy as np
 import pandas as pd
 
-from . import build, ingest, patterns, preregistro, scrape, store
+from . import build, ingest, patterns, preregistro, scrape, series, store
 from .config import (ALFA_FDR, E_OBSERVACION, INBOX, INICIO_PROSPECTIVO, NOMBRE, RAIZ, SITE, STATE,
                      proximos_sorteos)
 
@@ -103,6 +103,14 @@ def _evaluar_registro(secos, mayores):
             h = g[g.numero.isin(set(lst))].numero.tolist()
             filas_met.append(dict(slug=slug, fecha=real, metodo=met, premios=n, aciertos=len(h),
                                   esperado=n * len(set(lst)) / 1e4, numeros_acertados=" ".join(h)))
+        if p.get("listas_series") and p.get("series_posibles"):
+            S = p.get("series_en_juego", 1000)
+            val = g[g.serie.astype(str).str.fullmatch(r"\d{3}") & (g.serie.astype(str) != "000")]
+            val = val[val.serie.astype(int) < S]
+            for met, lst in p["listas_series"].items():
+                h = val[val.serie.isin(set(lst))].serie.tolist()
+                filas_met.append(dict(slug=slug, fecha=real, metodo=met, premios=len(val), aciertos=len(h),
+                                      esperado=len(val) * len(set(lst)) / p["series_posibles"], numeros_acertados=" ".join(h)))
     cols = ["loteria", "slug", "fecha", "tipo", "predicho_el", "premios", "top", "aciertos", "esperado_azar",
             "numeros_acertados", "ultima_cifra_predicha", "aciertos_ultima_cifra"]
     reg = pd.DataFrame(filas, columns=cols).sort_values(["fecha", "slug", "tipo"]) if filas else pd.DataFrame(columns=cols)
@@ -116,7 +124,7 @@ def _marcador(met_motor: pd.DataFrame, met_reg: pd.DataFrame) -> list[dict]:
         return dict(premios=int(g.premios.sum()), aciertos=int(g.aciertos.sum()), esperado=float(g.esperado.sum()),
                     numeros=" ".join(x for x in g.numeros_acertados if x)[:200])
     out = []
-    for met, (nombre, desc) in patterns.METODOS.items():
+    for met, (nombre, desc) in {**patterns.METODOS, **patterns.METODOS_SERIE}.items():
         a = met_motor[met_motor.metodo == met]; b = met_reg[met_reg.metodo == met]
         out.append(dict(id=met, nombre=nombre, descripcion=desc, historial=resumen(a[~a.prospectivo.astype(bool)]),
                         nuevos=resumen(a[a.prospectivo.astype(bool)]), registrado=resumen(b)))
@@ -125,7 +133,15 @@ def _marcador(met_motor: pd.DataFrame, met_reg: pd.DataFrame) -> list[dict]:
 
 def _consulta(secos, mayores) -> dict:
     """Para el buscador de números: veces que salió cada número (secos independientes y mayores) y la última vez."""
-    S = secos[secos.clase == "seco"][["numero", "fecha", "loteria"]].assign(t="s")
+    from .config import INICIO_SERIES
+    Si = secos[secos.clase == "seco"]
+    lots = sorted(Si.slug.unique())
+    pares = {}
+    for r in Si.itertuples():
+        pares.setdefault(r.numero, []).append([lots.index(r.slug), r.serie])
+    cuenta_series = {s: g[g.fecha >= INICIO_SERIES].serie.value_counts().to_dict() for s, g in Si.groupby("slug")}
+    n_series = {s: int((g.fecha >= INICIO_SERIES).sum()) for s, g in Si.groupby("slug")}
+    S = Si[["numero", "fecha", "loteria"]].assign(t="s")
     M = mayores[mayores.numero.str.fullmatch(r"\d{4}", na=False)][["numero", "fecha", "loteria"]].assign(t="m")
     A = pd.concat([S, M]).sort_values("fecha")
     out = {}
@@ -133,7 +149,8 @@ def _consulta(secos, mayores) -> dict:
         u = g.iloc[-1]
         out[n] = [int((g.t == "s").sum()), int((g.t == "m").sum()), u.fecha, u.loteria, u.t]
     return dict(numeros=out, secos_desde=S.fecha.min() if len(S) else "", mayores_desde=M.fecha.min() if len(M) else "",
-                total_secos=int(len(S)), total_mayores=int(len(M)))
+                total_secos=int(len(S)), total_mayores=int(len(M)), lots=lots, nombres_lots=[NOMBRE.get(x, x) for x in lots],
+                pares=pares, series=cuenta_series, n_series=n_series, series_desde=INICIO_SERIES)
 
 
 def _economia():
@@ -308,6 +325,8 @@ def ejecutar(descargar: bool = True, hoy: dt.date | None = None) -> dict:
                               esperado=float(reg.esperado_azar.sum()) if len(reg) else 0.0),
         economia=_economia(),
         metodos=_marcador(R["metodos"], reg_met),
+        series=series.analizar(M),
+        series_en_juego={k: int(v) for k, v in M.S.items()},
         recientes=_recientes(t["secos"], t["mayores"], t["faltantes"], hoy),
         repo=_repo()[0], rama=_repo()[1],
         consulta=_consulta(t["secos"], t["mayores"]),

@@ -40,6 +40,16 @@ LOTERIAS = {
 }
 NOMBRE = {k: v[0] for k, v in LOTERIAS.items()}
 
+# Series en juego por lotería (series 000 a S-1), estimadas en el estudio con los secos del 17-ago al 16-oct-2026.
+# Si aparece una serie mayor, el sistema amplía S solo (redondeando a la decena).
+SERIES_EMISION = {
+    "loteria-de-bogota": 470, "loteria-de-boyaca": 470, "loteria-de-cundinamarca": 350, "loteria-de-la-cruz-roja": 330,
+    "loteria-de-manizales": 400, "loteria-de-medellin": 500, "loteria-de-risaralda": 300, "loteria-de-santander": 340,
+    "loteria-del-cauca": 310, "loteria-del-huila": 180, "loteria-del-meta": 150, "loteria-del-quindio": 200,
+    "loteria-del-tolima": 280, "loteria-del-valle": 310,
+}
+INICIO_SERIES = "2026-08-17"   # antes de esta fecha la emisión de series de algunas loterías era otra
+
 
 def normalizar_texto(s: str) -> str:
     s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower().strip()

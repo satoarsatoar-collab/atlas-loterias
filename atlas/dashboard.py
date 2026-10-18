@@ -132,7 +132,7 @@ ETIQUETA = {"senal": "Señal", "observacion": "En observación", "inicio": "Come
 
 def estado_chip(est):
     c = {"validado": "ok", "validado (prueba principal)": "ok", "en observación": "obs", "se sostiene": "obs",
-         "se rechaza H0: hay señal": "obs"}.get(est, "neutro")
+         "se rechaza H0: hay señal": "obs", "desigual: revisar": "obs"}.get(est, "neutro")
     return f'<span class="chip {c}">{e(est)}</span>'
 
 
@@ -167,6 +167,23 @@ def seccion_numeros(S: dict) -> str:
                             f'<div class="met-d">{e(m["descripcion"])}</div><div class="chips">{chips}</div>'
                             f'<div class="met-r">Historial, 14 loterías: {m["historial"]["aciertos"] if m["historial"]["premios"] else "—"} '
                             f'aciertos; el azar daba {n_es(m["historial"].get("esperado", 0), 1)}.{nuevos}</div></div>')
+        ls = p.get("listas_series")
+        if ls:
+            def _rec(mid):
+                m = metodos.get(mid)
+                return (f'{m["historial"]["aciertos"]} aciertos; el azar daba {n_es(m["historial"]["esperado"], 1)}'
+                        if m and m["historial"]["premios"] else "sin historial")
+            fr = p.get("franja_serie", {})
+            tarjetas.append(
+                f'<div class="met met-serie"><div class="met-t">Series</div>'
+                f'<div class="met-d">En esta lotería juegan las series 001–{p["series_en_juego"] - 1:03d}: cada una tiene 1 entre '
+                f'{n_es(p["series_posibles"])} de salir en cada seco. Franja que más pesa el combinador: '
+                f'{e(fr.get("desde", ""))}–{e(fr.get("hasta", ""))} ({n_es(100 * fr.get("prob", 0), 1)} % frente a '
+                f'{n_es(100 * fr.get("azar", 0), 1)} %).</div>'
+                f'<div class="met-sub">Combinador</div><div class="chips">{"".join(f"<span class=num>{e(x)}</span>" for x in ls["series_combinador"])}</div>'
+                f'<div class="met-r">Historial, 14 loterías: {_rec("series_combinador")}.</div>'
+                f'<div class="met-sub">Al azar (control)</div><div class="chips">{"".join(f"<span class=num>{e(x)}</span>" for x in ls["series_azar"])}</div>'
+                f'<div class="met-r">Historial: {_rec("series_azar")}.</div></div>')
         cab = (f'<p class="sorteo-cab"><b>{e(p["loteria"])}</b>, {e(fecha_larga(p["fecha"]))}. '
                f'Premio mayor (5 del combinador): <span class="mono">{" ".join(may["top_numeros"]) if may else "—"}</span> · '
                f'última cifra más probable para los secos: <b>{u["cifra"]}</b> ({n_es(100 * u["prob"], 1)} % frente a 10 %) · '
@@ -182,7 +199,10 @@ def seccion_numeros(S: dict) -> str:
     c = S.get("consulta", {})
     datos = dict(numeros=c.get("numeros", {}), total_secos=c.get("total_secos", 0), total_mayores=c.get("total_mayores", 0),
                  secos_desde=c.get("secos_desde", ""), mayores_desde=c.get("mayores_desde", ""), q=datos_q, listas=datos_l,
-                 nombres=nombres, metodos={k: v["nombre"] for k, v in metodos.items()})
+                 nombres=nombres, metodos={k: v["nombre"] for k, v in metodos.items()}, lots=c.get("lots", []),
+                 nombres_lots=c.get("nombres_lots", []), pares=c.get("pares", {}), series=c.get("series", {}),
+                 n_series=c.get("n_series", {}), series_desde=c.get("series_desde", ""), S=S.get("series_en_juego", {}),
+                 lista_series={f"{p['slug']}|{p['fecha']}": p.get("listas_series", {}) for p in preds})
     js_datos = json.dumps(datos, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     return f"""<section id="numeros"><h2>Números posibles</h2>
 <p class="aviso"><b>Antes de usarlos:</b> ningún método ha demostrado acertar más que el azar. Cada número de 4 cifras tiene
@@ -192,12 +212,14 @@ si con el tiempo los demás métodos no le ganan, no son mejores que escoger a c
 <label class="sel">Sorteo <select id="sel-sorteo">{"".join(opciones)}</select></label>
 {"".join(bloques)}
 <h3>Marcador: ¿algún método le gana al azar?</h3>
-<p class="nota">Aciertos de cada lista de 10 números frente a los esperados por pura suerte. Con tan pocos aciertos,
-diferencias de 2 o 3 son ruido normal. «Guardadas» son las listas publicadas con huella digital antes de cada sorteo.</p>
-{tabla(['Método', 'Historial', 'Datos nuevos', 'Guardadas', 'Números que acertaron (historial)'], filas)}
+<p class="nota">Aciertos de cada lista de 10 números (o de 10 series) frente a los esperados por pura suerte. En las
+filas de series, «acierto» es que un seco salió con una de esas series, con cualquier número. Con pocos aciertos,
+diferencias pequeñas son ruido normal. «Guardadas» son las listas publicadas con huella digital antes de cada sorteo.</p>
+{tabla(['Método', 'Historial', 'Datos nuevos', 'Guardadas', 'Acertados (historial)'], filas)}
 <h3>Consulte un número</h3>
 <form id="form-num" class="consulta" autocomplete="off"><input id="in-num" inputmode="numeric" pattern="[0-9]{{1,4}}"
-maxlength="4" placeholder="Ej. 0047" aria-label="Número de 4 cifras"><button type="submit">Consultar</button></form>
+maxlength="4" placeholder="Número, ej. 0047" aria-label="Número de 4 cifras"><input id="in-serie" inputmode="numeric"
+pattern="[0-9]{{1,3}}" maxlength="3" placeholder="Serie (opcional)" aria-label="Serie de 3 cifras"><button type="submit">Consultar</button></form>
 <p id="res-num" class="res-num" aria-live="polite"></p>
 <script id="datos-numeros" type="application/json">{js_datos}</script>
 </section>"""
@@ -205,6 +227,36 @@ maxlength="4" placeholder="Ej. 0047" aria-label="Número de 4 cifras"><button ty
 
 ESTADO_SORTEO = {"completo": ("✓", "completo"), "sin secos": ("◐", "sin secos"), "sin mayor": ("◐", "sin premio mayor"),
                  "sin datos": ("○", "sin datos")}
+
+
+def seccion_series(S: dict) -> str:
+    A = S.get("series") or {}
+    lot = A.get("loterias", [])
+    if not lot:
+        return ""
+    filas = []
+    for f in sorted(lot, key=lambda x: x["loteria"]):
+        if f.get("estado") != "ok":
+            filas.append([f"<b>{e(f['loteria'])}</b>", e(f["rango"]), n_es(f["secos"]), "—", "—", "—", "—", '<span class="tenue">pocos datos</span>'])
+            continue
+        top = " ".join(f"{x}<small>×{c}</small>" for x, c in f["mas_repetidas"][:3])
+        nota = " (menos repetición de lo normal)" if f["max_veces"] < int(f["max_normal"].split("–")[0]) else ""
+        filas.append([f"<b>{e(f['loteria'])}</b>", f'<span class="mono">{e(f["rango"])}</span>', n_es(f["secos"]), f'<span class="mono">{top}</span>',
+                      f"{f['max_veces']} veces; lo normal {e(f['max_normal'])}{nota}",
+                      n_es(f["p_franjas"], 3).replace(",000", ""), n_es(f["p_ultima"], 3), estado_chip(f["veredicto"])])
+    des = A.get("desiguales", [])
+    concl = ("Ninguna lotería muestra series «calientes»: todas se reparten como el azar." if not des else
+             f"Desigual en: {', '.join(des)}. Antes de pensar en un sesgo, revise los datos: una serie mal copiada o un cambio "
+             "en la cantidad de series en juego producen lo mismo.")
+    return f"""<section id="series"><h2>Series: ¿salen todas por igual?</h2>
+<p class="nota">Para ganar un seco hace falta el número y la serie. Aquí se revisa, lotería por lotería y desde el
+17-ago-2026, si algunas series salen más que otras. Para cada una: las series más repetidas, si esa repetición es normal
+y dos pruebas (por franjas del rango y por última cifra de la serie). Un valor p pequeño sugiere desigualdad; como se
+hacen {A.get('pruebas', 0)} pruebas, el veredicto ya corrige por comparaciones múltiples (Holm).</p>
+<p class="aviso"><b>{e(concl)}</b></p>
+{tabla(['Lotería', 'Series', 'Secos', 'Más repetidas', 'Serie más repetida', 'p franjas', 'p última cifra', 'Veredicto'], filas)}
+<p class="nota">Las series también entran al motor de patrones (calientes, recientes, frías y «la serie del mayor anterior»)
+y al combinador de cada lotería, y se califican igual que los números.</p></section>"""
 
 
 def seccion_recientes(S: dict) -> str:
@@ -302,8 +354,11 @@ JS = r"""<script>
   form.addEventListener('submit', function (ev) {
     ev.preventDefault();
     var t = document.getElementById('in-num').value.trim();
+    var ts = document.getElementById('in-serie').value.trim();
     if (!/^[0-9]{1,4}$/.test(t)) { out.textContent = 'Escriba un número de hasta 4 cifras.'; return; }
+    if (ts && !/^[0-9]{1,3}$/.test(ts)) { out.textContent = 'La serie es de hasta 3 cifras.'; return; }
     var n = ('0000' + t).slice(-4), r = D.numeros[n] || [0, 0, null, null, null];
+    var se = ts ? ('000' + ts).slice(-3) : null, pares = D.pares[n] || [];
     var es = D.total_secos / 1e4, em = D.total_mayores / 1e4;
     var txt = 'El ' + n + ' ha salido ' + r[0] + (r[0] === 1 ? ' vez' : ' veces') + ' como seco (desde el ' + fecha(D.secos_desde) +
       ') y ' + r[1] + (r[1] === 1 ? ' vez' : ' veces') + ' como premio mayor (desde el ' + fecha(D.mayores_desde) + '). ';
@@ -316,6 +371,26 @@ JS = r"""<script>
         .map(function (k) { return D.metodos[k] || k; });
       txt += 'Para ' + D.nombres[id] + ', el combinador le da ' + num(f, 2) + ' veces la probabilidad del azar (no validado)' +
         (en.length ? ' y aparece en: ' + en.join(', ') + '.' : '; no aparece en ninguna lista.');
+    }
+    if (pares.length) {
+      txt += ' Como seco salió con ' + (pares.length === 1 ? 'la serie ' : 'las series ') + pares.map(function (x) {
+        return x[1] + ' (' + D.nombres_lots[x[0]] + ')'; }).join(', ') + '. ';
+    }
+    if (se) {
+      var exacto = pares.filter(function (x) { return x[1] === se; });
+      txt += exacto.length ? 'El billete ' + n + '-' + se + ' ganó un seco en: ' + exacto.map(function (x) { return D.nombres_lots[x[0]]; }).join(', ') + '. '
+        : 'El billete exacto ' + n + '-' + se + ' no ha ganado ningún seco en los datos guardados. ';
+      var slug = id ? id.split('|')[0] : null;
+      if (slug && D.S[slug]) {
+        var Sx = D.S[slug], ns = D.n_series[slug] || 0, c = (D.series[slug] || {})[se] || 0;
+        if (+se >= Sx || se === '000') txt += 'Ojo: en ' + D.nombres[id].split(' · ')[0] + ' juegan las series 001 a ' + ('000' + (Sx - 1)).slice(-3) + '. ';
+        else {
+          txt += 'En ' + D.nombres[id].split(' · ')[0] + ', la serie ' + se + ' ha salido ' + c + (c === 1 ? ' vez' : ' veces') +
+            ' en los secos desde el ' + fecha(D.series_desde) + ' (lo normal: ' + num(ns / (Sx - 1), 1) + ').';
+          var ls = D.lista_series[id] || {};
+          if ((ls.series_combinador || []).indexOf(se) >= 0) txt += ' Está entre las series del combinador para ese sorteo (no validado).';
+        }
+      }
     }
     out.textContent = txt;
   });
@@ -454,6 +529,7 @@ def render(S: dict) -> str:
     ]) + "</section>")
 
     out.append(seccion_numeros(S))
+    out.append(seccion_series(S))
     out.append(seccion_recientes(S))
     out.append(seccion_agregar(S))
 
@@ -664,7 +740,9 @@ button{cursor:pointer;background:var(--accent);color:#fff;border-color:var(--acc
 .num{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:1rem;padding:3px 7px;border-radius:6px;
 background:var(--surface);border:1px solid var(--ring);font-variant-numeric:tabular-nums}
 .met-r{color:var(--muted);font-size:.78rem;margin-top:.7em}
-.consulta{display:flex;gap:8px;flex-wrap:wrap}.consulta input{width:9em;font-family:ui-monospace,Menlo,Consolas,monospace}
+.met-serie{grid-column:1/-1}.met-sub{font-size:.8rem;font-weight:600;color:var(--ink2);margin:.6em 0 .3em}
+td small{color:var(--muted)}
+.consulta{display:flex;gap:8px;flex-wrap:wrap}.consulta input{width:11em;font-family:ui-monospace,Menlo,Consolas,monospace}
 .res-num{color:var(--ink2);max-width:80ch;min-height:1.5em}
 [hidden]{display:none!important}
 h3.dia{font-size:.95rem;color:var(--ink2);margin:1.1em 0 .4em}h3.dia::first-letter{text-transform:uppercase}
@@ -718,6 +796,13 @@ def render_md(S: dict) -> str:
         if p["tipo"] == "seco" and p.get("listas"):
             L += ["", f"**{p['loteria']} · {fecha_larga(p['fecha'])[:-5]}**", ""]
             L += [f"- {nombres.get(k, k)}: `{' '.join(v)}`" for k, v in p["listas"].items() if v]
+    A = S.get("series") or {}
+    if A.get("loterias"):
+        L += ["", "## Series", "", "| Lotería | Series | Secos | Más repetida | Veredicto |", "|---|---|---|---|---|"]
+        for f in sorted(A["loterias"], key=lambda x: x["loteria"]):
+            if f.get("estado") == "ok":
+                x, c = f["mas_repetidas"][0]
+                L.append(f"| {f['loteria']} | {f['rango']} | {f['secos']} | {x} ({c} veces; normal {f['max_normal']}) | {f['veredicto']} |")
     rec = S.get("recientes", [])
     if rec:
         L += ["", "## Últimos sorteos", "", "| Fecha | Lotería | Premio mayor | Secos | Estado |", "|---|---|---|---|---|"]

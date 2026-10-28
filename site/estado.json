@@ -1,12 +1,12 @@
 {
- "generado": "2026-10-28T06:22:38-05:00",
+ "generado": "2026-10-28T12:15:03-05:00",
  "hoy": "2026-10-28",
  "inicio_prospectivo": "2026-10-17",
  "dias_prospectivos": 11,
  "premios_prospectivos": 899,
  "migrado_ahora": false,
  "datos": {
-  "generado": "2026-10-28T06:22:47-05:00",
+  "generado": "2026-10-28T12:15:04-05:00",
   "mayores": 1406,
   "mayores_prospectivos": 20,
   "sorteos_con_secos": 128,
@@ -322,12 +322,12 @@
   "cuantias_completadas": 0
  },
  "descarga": {
-  "intentos": 4,
-  "sorteos_nuevos": 2,
+  "intentos": 0,
+  "sorteos_nuevos": 0,
   "errores": [],
   "estado": "ok",
   "reporte": {
-   "filas_agregadas": 77,
+   "filas_agregadas": 0,
    "cuantias_completadas": 0,
    "sin_cambio": 0,
    "conflictos": [],

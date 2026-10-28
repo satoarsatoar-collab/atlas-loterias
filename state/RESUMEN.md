@@ -1,6 +1,6 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado mié 28 oct 2026 06:22 (Colombia) · último sorteo con datos: mar 27 oct 2026_
+_Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 27 oct 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
@@ -237,7 +237,7 @@ _Actualizado mié 28 oct 2026 06:22 (Colombia) · último sorteo con datos: mar 
 
 ## Datos
 
-- Descarga automática: ok · sorteos nuevos: 2
+- Descarga automática: ok · sorteos nuevos: 0
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
 - Sorteos sin secos (últimas 4 semanas): Tolima 5 oct, Tolima 12 oct, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 1 oct, Quindío 8 oct

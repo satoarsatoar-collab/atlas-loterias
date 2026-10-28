@@ -363,8 +363,11 @@ def ejecutar(descargar: bool = True, hoy: dt.date | None = None) -> dict:
 def main():
     ap = argparse.ArgumentParser(description="Ejecuta el ciclo completo de ATLAS")
     ap.add_argument("--scrape", choices=["si", "no"], default="si", help="descargar resultados nuevos de internet")
+    ap.add_argument("--hoy", default=os.environ.get("ATLAS_HOY"),
+                    help="fecha de corrida AAAA-MM-DD (solo para pruebas; por defecto, hoy en Colombia)")
     a = ap.parse_args()
-    e = ejecutar(descargar=a.scrape == "si")
+    hoy = dt.date.fromisoformat(a.hoy) if a.hoy else None
+    e = ejecutar(descargar=a.scrape == "si", hoy=hoy)
     d = e["datos"]; m = e["motor"]
     print(f"[ATLAS] {e['generado']} | último dato {d['ultimo_dato']} | secos independientes {d['secos_independientes']} "
           f"| mayores {d['mayores']} | descarga: {e['descarga'].get('estado')} ({e['descarga'].get('sorteos_nuevos', 0)} sorteos)")

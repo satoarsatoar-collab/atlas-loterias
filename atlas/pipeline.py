@@ -104,9 +104,9 @@ def _evaluar_registro(secos, mayores):
             filas_met.append(dict(slug=slug, fecha=real, metodo=met, premios=n, aciertos=len(h),
                                   esperado=n * len(set(lst)) / 1e4, numeros_acertados=" ".join(h)))
         if p.get("listas_series") and p.get("series_posibles"):
-            S = p.get("series_en_juego", 1000)
+            n_series = p.get("series_en_juego", 1000)
             val = g[g.serie.astype(str).str.fullmatch(r"\d{3}") & (g.serie.astype(str) != "000")]
-            val = val[val.serie.astype(int) < S]
+            val = val[val.serie.astype(int) < n_series]
             for met, lst in p["listas_series"].items():
                 h = val[val.serie.isin(set(lst))].serie.tolist()
                 filas_met.append(dict(slug=slug, fecha=real, metodo=met, premios=len(val), aciertos=len(h),

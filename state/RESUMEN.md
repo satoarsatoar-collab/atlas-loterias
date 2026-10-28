@@ -1,31 +1,31 @@
-# ATLAS · Todo sigue siendo compatible con el azar
+# ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado lun 19 oct 2026 12:38 (Colombia) · último sorteo con datos: sáb 17 oct 2026_
+_Actualizado mar 27 oct 2026 19:43 (Colombia) · último sorteo con datos: lun 26 oct 2026_
 
-> **Azar.** Tras 1 día y 97 premios nuevos, ningún patrón ni combinación le gana al azar de forma sostenida.
+> **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
 | Indicador | Valor |
 |---|---|
-| Premios guardados | 4.941 secos independientes · 1.388 mayores |
-| Seguimiento en datos nuevos | 1 días · 97 premios |
+| Premios guardados | 5.653 secos independientes · 1.404 mayores |
+| Seguimiento en datos nuevos | 10 días · 825 premios |
 | Patrones vigilados | 1.463 (validar uno exige E ≥ 14.620) |
-| Combinador principal | E = 1,00 (datos nuevos; se valida con E ≥ 20) |
-| Validados / en observación | 0 / 0 |
+| Combinador principal | E = 0,76 (datos nuevos; se valida con E ≥ 20) |
+| Validados / en observación | 0 / 3 |
 
 ## Patrones con más evidencia
 
 | Patrón | Estado | E nuevos | E historial |
 |---|---|---|---|
-| Estructura (par, trío…) de los secos (Cauca): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 5,05 | < 0,01 |
-| Cuántas cifras pares de los secos (todas las loterías): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 4,05 | < 0,01 |
-| 2.ª cifra de los secos (Cauca): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 2,99 | 0,63 |
-| Cuántas cifras pares de los secos (Boyacá): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 2,83 | < 0,01 |
-| Serie completa de los secos (Cauca): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 2,80 | < 0,01 |
-| 2.ª cifra de los secos (Cauca): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 2,35 | 0,61 |
-| Franja de la serie (décimos del rango) de los secos (Boyacá): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 2,07 | 0,02 |
-| 2.ª cifra de los secos (todas las loterías): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 2,02 | < 0,01 |
-| Serie completa de los secos (Cauca): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 1,93 | < 0,01 |
-| Última cifra de la serie de los premios mayores (Boyacá): lo que tuvo el premio mayor anterior de la misma lotería se repite | sin evidencia | 1,90 | 4,05 |
+| Suma de las cifras de los secos (todas las loterías): lo que más ha salido en las últimas semanas seguirá saliendo más | en observación | 73 | < 0,01 |
+| Última cifra de los secos (Cruz Roja): lo que tuvo el premio mayor anterior de la misma lotería se repite | en observación | 68 | < 0,01 |
+| Suma de las cifras de los secos (todas las loterías): lo que más ha salido en todo el historial seguirá saliendo más | en observación | 30 | < 0,01 |
+| Dos últimas cifras de los secos (Cruz Roja): lo que tuvo el premio mayor anterior de la misma lotería se repite | sin evidencia | 16 | < 0,01 |
+| Última cifra de la serie de los secos (Quindío): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 14 | 5,21 |
+| Dos últimas cifras de los premios mayores (Manizales): lo que tuvo el premio mayor anterior de la misma lotería se repite | sin evidencia | 11 | < 0,01 |
+| Dos últimas cifras de los secos (Huila): las terminaciones de los secos del sorteo anterior se repiten | sin evidencia | 9,77 | < 0,01 |
+| Serie completa de los secos (Meta): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 9,30 | < 0,01 |
+| Última cifra de los secos (Quindío): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 9,18 | 7,06 |
+| 1.ª cifra de los secos (Risaralda): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 8,43 | 17 |
 
 ## Números posibles
 
@@ -33,202 +33,204 @@ _Actualizado lun 19 oct 2026 12:38 (Colombia) · último sorteo con datos: sáb 
 
 | Método | Aciertos historial | Esperados por azar | Datos nuevos | Guardadas |
 |---|---|---|---|---|
-| Combinador ATLAS | 4 | 4,8 | 0 de 0,1 | — |
-| Calientes | 0 | 4,8 | 0 de 0,1 | — |
-| Recientes | 2 | 4,8 | 0 de 0,1 | — |
-| Fríos | 3 | 4,8 | 0 de 0,1 | — |
-| Del mayor anterior | 4 | 4,6 | 0 de 0,1 | — |
-| Al azar (control) | 2 | 4,8 | 0 de 0,1 | — |
-| Series · combinador | 157 | 155,8 | 3 de 2,4 | — |
-| Series · al azar (control) | 159 | 155,8 | 0 de 2,4 | — |
+| Combinador ATLAS | 4 | 4,8 | 1 de 0,8 | 1 de 0,7 |
+| Calientes | 0 | 4,8 | 1 de 0,8 | 0 de 0,7 |
+| Recientes | 2 | 4,8 | 0 de 0,8 | 1 de 0,7 |
+| Fríos | 3 | 4,8 | 1 de 0,8 | 2 de 0,7 |
+| Del mayor anterior | 4 | 4,6 | 2 de 0,8 | 2 de 0,7 |
+| Al azar (control) | 2 | 4,8 | 0 de 0,8 | 0 de 0,7 |
+| Series · combinador | 157 | 155,8 | 24 de 25,6 | 20 de 23,2 |
+| Series · al azar (control) | 159 | 155,8 | 21 de 25,6 | 21 de 23,2 |
 
-**Cundinamarca · lun 19 oct**
+**Cruz Roja · mar 27 oct**
 
-- Combinador ATLAS: `2284 2384 2784 2884 2984 2484 2584 2684 2184 2289`
-- Calientes: `2784 2788 2744 2748 2782 2787 2734 2704 2484 2742`
-- Recientes: `7286 7289 7282 0286 2286 0289 2289 0282 2282 7206`
-- Fríos: `6825 6325 6895 6395 6525 6875 6375 6025 6595 1825`
-- Del mayor anterior: `5793 3975 3579 3597 3759 3795 3957 5379 5397 5739`
-- Al azar (control): `2081 9593 2752 9581 3336 1217 0281 7993 4400 3632`
+- Combinador ATLAS: `1774 1274 1474 1734 1234 1779 1724 1434 1279 1224`
+- Calientes: `1563 1063 1565 1568 1963 1065 1068 1564 1363 1573`
+- Recientes: `6723 6023 1723 1023 6063 6763 1063 1763 3723 3023`
+- Fríos: `2148 2141 2648 2641 4148 8148 8141 2848 9148 9141`
+- Del mayor anterior: `8572 2758 2578 2587 2785 2857 2875 5278 5287 5728`
+- Al azar (control): `2443 9242 7476 6673 2564 7487 1499 3772 3000 0746`
 
-**Tolima · lun 19 oct**
+**Huila · mar 27 oct**
 
-- Combinador ATLAS: `9376 9386 8376 2376 9346 8386 9336 2386 9316 3376`
-- Calientes: `9305 9335 9375 9385 2305 2335 2375 9315 8305 8375`
-- Recientes: `9976 9977 9978 9979 9980 9981 9982 9983 9968 9969`
-- Fríos: `9976 9977 9978 9979 9980 9981 9982 9983 9968 9969`
-- Del mayor anterior: `3256 6523 2356 2365 2536 2563 2635 2653 3265 3526`
-- Al azar (control): `8601 1351 5094 5529 2489 0551 4123 2326 1616 6101`
+- Combinador ATLAS: `8474 8478 8479 8444 8434 8404 8484 8454 8424 0474`
+- Calientes: `5607 5608 7607 5627 5107 5407 7608 5628 7627 8607`
+- Recientes: `8448 8447 0448 0447 8048 8047 8446 8440 8458 8457`
+- Fríos: `1583 5583 5573 5533 5593 1573 1533 1593 5883 1883`
+- Del mayor anterior: `8852 2588 2858 2885 5288 5828 5882 8258 8285 8528`
+- Al azar (control): `1208 3413 0287 0935 8946 4049 4565 2473 6570 3405`
 
-**Cruz Roja · mar 20 oct**
+**Manizales · mié 28 oct**
 
-- Combinador ATLAS: `1374 1274 1774 1372 1974 1272 1874 1474 1772 1972`
-- Calientes: `1565 1575 1568 1578 1525 1585 1572 1562 1528 1588`
-- Recientes: `1225 1725 1425 1525 1325 1025 5225 5425 5525 5025`
-- Fríos: `2188 2158 2148 2108 2858 2848 2648 2888 2948 2958`
-- Del mayor anterior: `7623 3267 2367 2376 2637 2673 2736 2763 3276 3627`
-- Al azar (control): `2287 1753 0853 9101 4979 5615 3650 2847 4031 9989`
+- Combinador ATLAS: `5289 5239 5209 5279 5219 5269 5249 5299 0289 5229`
+- Calientes: `5104 5102 5100 5704 5702 6104 5134 6102 5700 5132`
+- Recientes: `0211 5211 5219 0219 5111 0111 0281 0261 5261 5281`
+- Fríos: `3427 6427 4427 2427 3497 8427 3627 3527 3927 9427`
+- Del mayor anterior: `2624 4262 2246 2264 2426 2462 2642 4226 4622 6224`
+- Al azar (control): `2457 5286 5343 4207 0683 3983 1584 4385 9219 1102`
 
-**Huila · mar 20 oct**
+**Meta · mié 28 oct**
 
-- Combinador ATLAS: `0088 0084 0087 7088 7084 0008 0004 0488 7087 8088`
-- Calientes: `5627 5677 7627 7677 5628 5678 5607 5127 5177 7678`
-- Recientes: `0040 0010 0050 8040 8050 8010 0049 0059 0019 0070`
-- Fríos: `3983 4983 4883 4683 5883 3683 5983 3883 5683 9883`
-- Del mayor anterior: `0338 8330 0383 0833 3038 3083 3308 3380 3803 3830`
-- Al azar (control): `2393 5988 0397 7682 0777 5685 0304 2041 9702 5869`
+- Combinador ATLAS: `7423 1423 7123 1123 7433 7473 5423 1433 7133 1473`
+- Calientes: `2313 2323 2413 2423 7313 7323 7413 7423 1313 2333`
+- Recientes: `5123 5193 5423 7123 1123 5153 5113 5493 7193 1193`
+- Fríos: `6800 6000 4800 9800 2000 4000 2800 9000 6700 9700`
+- Del mayor anterior: `1847 7481 1478 1487 1748 1784 1874 4178 4187 4718`
+- Al azar (control): `7953 3745 4779 5234 4751 6263 7245 1398 6731 7677`
 
-**Manizales · mié 21 oct**
+**Valle · mié 28 oct**
 
-- Combinador ATLAS: `5772 5272 5872 5782 5472 5282 5882 5172 5372 5702`
-- Calientes: `5104 5704 5504 5100 5102 6104 5174 5404 5702 5700`
-- Recientes: `5771 5772 5774 5072 5171 5071 5172 0771 0772 5074`
-- Fríos: `1327 1367 1337 6327 1927 3327 8327 2327 1397 4327`
-- Del mayor anterior: `2024 4202 0224 0242 0422 2042 2204 2240 2402 2420`
-- Al azar (control): `7557 9240 0955 1969 8220 9708 0549 6135 9937 9144`
+- Combinador ATLAS: `4236 4232 3236 4276 3232 4272 4136 4132 3276 3272`
+- Calientes: `9617 9616 8617 8616 4616 4617 9676 9677 9116 9117`
+- Recientes: `5134 6134 5131 5130 5174 5194 8134 6130 6131 5135`
+- Fríos: `1446 1449 0449 0446 0489 0486 1489 1486 1442 0448`
+- Del mayor anterior: `8084 4808 0488 0848 0884 4088 4880 8048 8408 8480`
+- Al azar (control): `1272 8510 6604 4926 1383 8736 7727 1232 3455 4174`
 
-**Meta · mié 21 oct**
+**Bogotá · jue 29 oct**
 
-- Combinador ATLAS: `7333 2333 5333 7336 7313 2336 7339 2313 5336 2339`
-- Calientes: `2315 2317 2327 2325 2337 2335 2313 7315 7317 2333`
-- Recientes: `5435 5439 5433 7435 5436 7433 7439 5135 5434 5139`
-- Fríos: `3000 3002 3090 3092 3080 3082 3007 3001 3060 3070`
-- Del mayor anterior: `3415 5143 1345 1354 1435 1453 1534 1543 3145 3154`
-- Al azar (control): `9379 0184 1739 8304 2123 7153 9859 0382 9677 6553`
+- Combinador ATLAS: `4236 4276 3236 4234 4336 3276 4274 4231 9236 1236`
+- Calientes: `0353 0358 0357 0958 0957 0953 0351 0354 0338 0333`
+- Recientes: `4771 4773 4774 4731 4571 4770 4778 4777 4751 4734`
+- Fríos: `5662 5692 5602 1602 3692 3602 2692 2662 3662 7662`
+- Del mayor anterior: `9392 2939 2399 2993 3299 3929 3992 9239 9293 9329`
+- Al azar (control): `9634 8533 9601 7663 7414 8448 5801 3444 8181 0735`
 
-**Valle · mié 21 oct**
+**Quindío · jue 29 oct**
 
-- Combinador ATLAS: `0477 4477 0417 7477 5477 4417 0977 0377 4977 4377`
-- Calientes: `4116 4616 4117 4676 4176 4617 9116 9616 4677 4177`
-- Recientes: `5014 5094 6014 5114 5074 5012 5010 6094 5174 6114`
-- Fríos: `1487 1437 7437 7487 1439 1489 7489 7439 1436 1438`
-- Del mayor anterior: `5091 1905 0159 0195 0519 0591 0915 0951 1059 1095`
-- Al azar (control): `9369 3409 1592 2502 8069 6500 4558 0487 2211 5163`
+- Combinador ATLAS: `4225 4265 7225 3225 4275 1225 9225 7265 3265 7275`
+- Calientes: `3219 9219 4219 9217 4217 3217 4209 9209 3209 3207`
+- Recientes: `9209 7219 7209 9219 7299 9299 1209 1219 7201 7214`
+- Fríos: `5765 5725 5825 5865 5775 5425 5465 5325 3765 5365`
+- Del mayor anterior: `2398 8932 2389 2839 2893 2938 2983 3289 3298 3829`
+- Al azar (control): `3696 0141 2769 9349 1406 8954 9378 2257 1324 7577`
 
-**Bogotá · jue 22 oct**
+**Medellín · vie 30 oct**
 
-- Combinador ATLAS: `4889 4859 7889 4389 4882 4881 7859 4886 4359 4852`
-- Calientes: `2351 2353 0351 2851 0353 2358 2354 7351 2853 0851`
-- Recientes: `4858 4888 4853 4058 7858 4883 4851 7888 4088 4053`
-- Fríos: `0242 0742 3242 3742 0342 0642 0749 0745 0249 0245`
-- Del mayor anterior: `4486 6844 4468 4648 4684 4846 4864 6448 6484 8446`
-- Al azar (control): `1220 5477 3356 9927 6832 9340 2300 2243 2350 8171`
+- Combinador ATLAS: `8244 8744 2244 8254 9244 2744 1244 8844 8444 0244`
+- Calientes: `8842 8342 8852 8352 8344 8844 2342 2842 8142 8354`
+- Recientes: `8373 8313 8343 8393 8379 2373 8173 8973 8399 8349`
+- Fríos: `5786 7786 5286 7286 3286 3786 4286 4786 7226 5266`
+- Del mayor anterior: `3755 5573 3557 3575 5357 5375 5537 5735 5753 7355`
+- Al azar (control): `7911 5133 6840 3649 6552 0150 8746 3854 8151 2665`
 
-**Quindío · jue 22 oct**
+**Risaralda · vie 30 oct**
 
-- Combinador ATLAS: `4261 0261 4561 4361 0561 4461 0361 4262 0461 4661`
-- Calientes: `4283 4289 4203 4273 4282 4209 4287 4279 4253 4213`
-- Recientes: `0203 0209 0259 0253 0289 0283 4289 4283 4209 4253`
-- Fríos: `3361 5361 3311 3331 3371 2361 3461 3761 3161 5311`
-- Del mayor anterior: `5418 8145 1458 1485 1548 1584 1845 1854 4158 4185`
-- Al azar (control): `8385 6418 4450 0733 6675 3844 1593 0769 8537 8777`
+- Combinador ATLAS: `4276 4277 4176 4376 4177 4377 4246 4247 4146 4346`
+- Calientes: `4547 4345 4347 4545 4045 4047 4575 4577 4375 4377`
+- Recientes: `4177 4147 4175 4477 4148 4145 4447 4178 4127 7147`
+- Fríos: `2950 2282 2280 2980 2982 2250 2252 2952 9252 9952`
+- Del mayor anterior: `7470 0747 0477 0774 4077 4707 4770 7047 7074 7407`
+- Al azar (control): `4703 8286 3085 9368 1507 5587 7556 9301 1213 0353`
 
-**Medellín · vie 23 oct**
+**Santander · vie 30 oct**
 
-- Combinador ATLAS: `8242 2242 9242 8742 8442 2742 8642 5242 2442 8542`
-- Calientes: `8842 8852 2842 2852 8942 9842 8952 2942 8042 9852`
-- Recientes: `8378 8398 8098 8078 2098 2398 2078 2378 8048 8348`
-- Fríos: `6231 6261 6561 7231 6461 6631 4261 6661 6266 7261`
-- Del mayor anterior: `1271 1721 1127 1172 1217 1712 2117 2171 2711 7112`
-- Al azar (control): `0325 7840 0977 1261 6371 9238 5203 1875 1152 5617`
+- Combinador ATLAS: `8239 8279 8249 8289 8238 8278 8259 8233 8273 8248`
+- Calientes: `4348 4448 4398 4498 4388 4488 0448 0348 4346 4446`
+- Recientes: `8428 8448 8441 8421 8488 8458 3428 3448 8481 8451`
+- Fríos: `6077 6977 6577 6017 5077 6177 5577 6517 5977 6917`
+- Del mayor anterior: `0579 9750 0597 0759 0795 0957 0975 5079 5097 5709`
+- Al azar (control): `7731 5216 5936 1938 2883 6492 6902 6411 1436 4702`
 
-**Risaralda · vie 23 oct**
+**Boyacá · sáb 31 oct**
 
-- Combinador ATLAS: `4246 4346 4242 4342 4046 4746 4846 4042 4446 4742`
-- Calientes: `4047 4347 4345 4045 4247 4245 4547 4545 4377 4077`
-- Recientes: `3047 3347 7047 7347 3447 7447 3037 7337 3337 7037`
-- Fríos: `8990 8910 8950 8920 2910 2990 2950 9950 1990 9910`
-- Del mayor anterior: `5475 5745 4557 4575 4755 5457 5547 5574 5754 7455`
-- Al azar (control): `3696 8659 2985 3468 6514 4972 7715 8267 2201 5689`
+- Combinador ATLAS: `4276 4271 4272 3276 1276 7276 4278 4236 3271 0276`
+- Calientes: `4846 1846 4876 4806 4836 5846 7846 3846 4826 4842`
+- Recientes: `3251 3951 3351 3253 3953 3751 5251 5951 3353 5351`
+- Fríos: `2564 2524 2064 6564 2024 6524 6064 2664 1564 1524`
+- Del mayor anterior: `5707 7075 0577 0757 0775 5077 5770 7057 7507 7570`
+- Al azar (control): `1155 3196 4873 8576 8119 1005 5414 0656 6736 8907`
 
-**Santander · vie 23 oct**
+**Cauca · sáb 31 oct**
 
-- Combinador ATLAS: `9287 4287 9288 9257 9277 9217 4288 4257 9258 4277`
-- Calientes: `4388 0388 4348 4398 4318 0348 4386 4488 0318 0398`
-- Recientes: `9789 9889 9788 9781 9786 9739 4789 9888 9881 9886`
-- Fríos: `7277 6277 7577 7077 7977 7377 5277 6077 6577 7270`
-- Del mayor anterior: `3167 7613 1367 1376 1637 1673 1736 1763 3176 3617`
-- Al azar (control): `9398 7094 6413 3490 8924 0066 3370 8646 0589 8986`
+- Combinador ATLAS: `3272 7272 3273 7273 3472 7472 3473 7473 3275 3372`
+- Calientes: `7222 7272 3222 7922 0222 7322 3272 7282 3922 7972`
+- Recientes: `3419 3412 3413 7419 7412 7413 3483 3482 3489 5412`
+- Fríos: `9131 9137 1137 1131 1134 1138 9138 9134 1141 9147`
+- Del mayor anterior: `9458 8549 4589 4598 4859 4895 4958 4985 5489 5498`
+- Al azar (control): `1212 4926 4139 2191 9361 5859 6627 3957 5983 2206`
 
-**Boyacá · sáb 24 oct**
+**Cundinamarca · mar 3 nov**
 
-- Combinador ATLAS: `7272 7276 0272 7872 0276 7876 0872 0876 4272 4276`
-- Calientes: `5846 5826 5876 7846 4826 5836 1826 4846 7826 1846`
-- Recientes: `9973 9970 5973 5970 0973 0970 3970 3973 9971 5971`
-- Fríos: `6067 1067 6097 1097 6027 6167 1027 6567 6667 1167`
-- Del mayor anterior: `5480 0845 0458 0485 0548 0584 0854 4058 4085 4508`
-- Al azar (control): `2407 6675 0562 2907 8532 8830 0580 5572 8321 5546`
+- Combinador ATLAS: `2233 2733 2433 2273 3233 2333 2133 2933 2833 2773`
+- Calientes: `2788 2789 2786 2784 2708 2706 2736 2709 2738 2739`
+- Recientes: `2289 2229 2239 2139 2129 2189 2269 3229 3239 3289`
+- Fríos: `0392 7392 0397 0312 7312 7397 8392 0317 1392 7317`
+- Del mayor anterior: `7099 9907 0799 0979 0997 7909 7990 9079 9097 9709`
+- Al azar (control): `0795 3737 5619 8698 4816 1071 6882 9698 7496 0280`
 
-**Cauca · sáb 24 oct**
+**Cruz Roja · mar 3 nov**
 
-- Combinador ATLAS: `7382 7386 7282 7352 7286 7312 7356 7316 7383 7252`
-- Calientes: `7222 7322 7272 7282 7922 7372 1222 3222 7221 7252`
-- Recientes: `3386 3356 3916 3956 3316 3986 3382 3912 7316 3312`
-- Fríos: `8528 8128 8520 8527 8028 8538 8828 8598 8548 8120`
-- Del mayor anterior: `0869 9680 0689 0698 0896 0968 0986 6089 6098 6809`
-- Al azar (control): `2743 5189 1087 3826 2960 5639 4473 9941 5256 8919`
+- Combinador ATLAS: `1274 1279 1774 1224 1474 1779 1229 1479 1234 1724`
+- Calientes: `1563 1063 1565 1568 1963 1065 1068 1564 1363 1573`
+- Recientes: `6723 6023 1723 1023 6063 6763 1063 1763 3723 3023`
+- Fríos: `2148 2141 2648 2641 4148 8148 8141 2848 9148 9141`
+- Del mayor anterior: `8572 2758 2578 2587 2785 2857 2875 5278 5287 5728`
+- Al azar (control): `5011 4223 9308 3015 1845 6766 8449 4945 8484 0438`
 
-**Cundinamarca · lun 26 oct**
+**Huila · mar 3 nov**
 
-- Combinador ATLAS: `2289 2389 2789 2889 0289 0389 0789 2489 0889 2689`
-- Calientes: `2784 2788 2744 2748 2782 2787 2734 2704 2484 2742`
-- Recientes: `0289 2289 2286 0286 0239 2239 0236 2236 7289 7286`
-- Fríos: `6995 6895 1895 1995 1195 6195 6595 1395 6395 1595`
-- Del mayor anterior: `5793 3975 3579 3597 3759 3795 3957 5379 5397 5739`
-- Al azar (control): `5198 6197 5307 5562 8948 1770 8108 2134 1174 1918`
+- Combinador ATLAS: `8474 8478 0474 7474 8434 8444 0478 7478 8424 8404`
+- Calientes: `5607 5608 7607 5627 5107 5407 7608 5628 7627 8607`
+- Recientes: `8447 0441 8441 8445 8448 0447 0448 0445 2441 2445`
+- Fríos: `4333 4383 5333 4393 1333 5383 1383 1393 5393 4933`
+- Del mayor anterior: `8852 2588 2858 2885 5288 5828 5882 8258 8285 8528`
+- Al azar (control): `8913 3267 6510 5454 7195 7320 3895 2261 8989 6328`
 
-**Tolima · lun 26 oct**
+**Tolima · mar 3 nov**
 
-- Combinador ATLAS: `9376 9386 2376 8376 2386 9336 9316 9356 8386 9346`
-- Calientes: `9305 9335 9375 9385 2305 2335 2375 9315 8305 8375`
-- Recientes: `9976 9977 9978 9979 9980 9981 9982 9983 9968 9969`
-- Fríos: `9976 9977 9978 9979 9980 9981 9982 9983 9968 9969`
-- Del mayor anterior: `3256 6523 2356 2365 2536 2563 2635 2653 3265 3526`
-- Al azar (control): `4325 5182 3397 9974 9043 9189 0406 5512 1195 6848`
+- Combinador ATLAS: `1272 9272 4272 7272 1232 9232 2272 8272 4232 0272`
+- Calientes: `9335 9305 9375 9385 9338 9334 8335 9304 9308 9374`
+- Recientes: `1238 7238 4238 7234 1234 1138 7138 7208 1288 7278`
+- Fríos: `0550 5550 2550 5551 2551 0551 5850 8550 2850 0850`
+- Del mayor anterior: `0902 2090 0029 0092 0209 0290 0920 2009 2900 9002`
+- Al azar (control): `7204 4008 1647 8761 3472 0255 0936 4348 5396 5200`
 
 ## Series
 
 | Lotería | Series | Secos | Más repetida | Veredicto |
 |---|---|---|---|---|
-| Bogotá | 001–469 | 423 | 195 (5 veces; normal 4–6) | pareja, como el azar |
-| Boyacá | 001–469 | 531 | 242 (5 veces; normal 4–7) | pareja, como el azar |
-| Cauca | 001–309 | 323 | 043 (4 veces; normal 4–6) | pareja, como el azar |
-| Cruz Roja | 001–329 | 245 | 107 (4 veces; normal 3–5) | pareja, como el azar |
-| Cundinamarca | 001–349 | 547 | 067 (6 veces; normal 5–8) | pareja, como el azar |
-| Huila | 001–179 | 242 | 103 (5 veces; normal 4–7) | pareja, como el azar |
-| Manizales | 001–399 | 458 | 352 (6 veces; normal 4–7) | pareja, como el azar |
-| Medellín | 001–499 | 395 | 028 (5 veces; normal 4–6) | pareja, como el azar |
-| Meta | 001–149 | 376 | 037 (8 veces; normal 6–9) | pareja, como el azar |
-| Quindío | 001–199 | 111 | 002 (4 veces; normal 3–5) | pareja, como el azar |
-| Risaralda | 001–299 | 286 | 006 (5 veces; normal 4–6) | pareja, como el azar |
-| Santander | 001–339 | 620 | 046 (5 veces; normal 6–8) | pareja, como el azar |
-| Tolima | 001–279 | 96 | 065 (4 veces; normal 2–4) | pareja, como el azar |
-| Valle | 001–309 | 288 | 233 (5 veces; normal 4–6) | pareja, como el azar |
+| Bogotá | 001–469 | 476 | 195 (5 veces; normal 4–6) | pareja, como el azar |
+| Boyacá | 001–469 | 589 | 074 (5 veces; normal 5–7) | pareja, como el azar |
+| Cauca | 001–309 | 359 | 027 (4 veces; normal 4–7) | pareja, como el azar |
+| Cruz Roja | 001–329 | 290 | 107 (4 veces; normal 4–6) | pareja, como el azar |
+| Cundinamarca | 001–349 | 669 | 207 (7 veces; normal 6–9) | pareja, como el azar |
+| Huila | 001–179 | 269 | 070 (5 veces; normal 5–7) | pareja, como el azar |
+| Manizales | 001–399 | 509 | 352 (7 veces; normal 5–7) | pareja, como el azar |
+| Medellín | 001–499 | 439 | 028 (5 veces; normal 4–6) | pareja, como el azar |
+| Meta | 001–149 | 418 | 037 (9 veces; normal 7–10) | pareja, como el azar |
+| Quindío | 001–199 | 148 | 002 (4 veces; normal 3–5) | pareja, como el azar |
+| Risaralda | 001–299 | 318 | 006 (5 veces; normal 4–6) | pareja, como el azar |
+| Santander | 001–339 | 689 | 228 (6 veces; normal 6–9) | pareja, como el azar |
+| Tolima | 001–279 | 160 | 065 (4 veces; normal 3–5) | pareja, como el azar |
+| Valle | 001–309 | 320 | 065 (6 veces; normal 4–6) | pareja, como el azar |
 
 ## Últimos sorteos
 
 | Fecha | Lotería | Premio mayor | Secos | Estado |
 |---|---|---|---|---|
-| sáb 17 oct | Cauca | 0869-197 | 36 | completo |
-| sáb 17 oct | Boyacá | 5480-426 | 59 | completo |
-| vie 16 oct | Santander | 3167-129 | 69 | completo |
-| vie 16 oct | Risaralda | 5475-176 | 32 | completo |
-| vie 16 oct | Medellín | 1271-087 | 44 | completo |
-| jue 15 oct | Quindío | 5418-182 | 37 | completo |
-| jue 15 oct | Bogotá | 4486-335 | 0 | sin secos |
-| mié 14 oct | Valle | 5091-003 | 34 | completo |
-| mié 14 oct | Meta | 3415-143 | 42 | completo |
-| mié 14 oct | Manizales | 2024-015 | 52 | completo |
-| mar 13 oct | Tolima | 3256-070 | 0 | sin secos |
-| mar 13 oct | Huila | 0338-174 | 30 | completo |
-| mar 13 oct | Cundinamarca | 5793-251 | 61 | completo |
-| mar 13 oct | Cruz Roja | 7623-160 | 45 | completo |
+| lun 26 oct | Tolima | 0902-082 | 41 | completo |
+| lun 26 oct | Cundinamarca | 7099-028 | 67 | completo |
+| sáb 24 oct | Cauca | 9458-226 | 53 | completo |
+| sáb 24 oct | Boyacá | 5707-232 | 59 | completo |
+| vie 23 oct | Santander | 0579-251 | 70 | completo |
+| vie 23 oct | Risaralda | 7470-190 | 51 | completo |
+| vie 23 oct | Medellín | 3755-188 | 44 | completo |
+| jue 22 oct | Quindío | 2398-107 | 56 | completo |
+| jue 22 oct | Bogotá | 9392-449 | 61 | completo |
+| mié 21 oct | Valle | 8084-258 | 34 | completo |
+| mié 21 oct | Meta | 1847-108 | 43 | completo |
+| mié 21 oct | Manizales | 2624-288 | 60 | completo |
+| mar 20 oct | Huila | 8852-006 | 37 | completo |
+| mar 20 oct | Cruz Roja | 8572-156 | 45 | completo |
+| lun 19 oct | Tolima | 2891-273 | 50 | completo |
+| lun 19 oct | Cundinamarca | 0901-026 | 69 | completo |
 
 ## Datos
 
-- Descarga automática: ok · sorteos nuevos: 0
+- Descarga automática: ok · sorteos nuevos: 16
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Tolima 21 sep, Tolima 28 sep, Tolima 5 oct, Tolima 12 oct, Cruz Roja 29 sep, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 24 sep, Quindío 1 oct, Quindío 8 oct
+- Sorteos sin secos (últimas 4 semanas): Tolima 5 oct, Tolima 12 oct, Cruz Roja 29 sep, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 1 oct, Quindío 8 oct
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

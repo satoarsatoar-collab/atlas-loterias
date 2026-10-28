@@ -17,7 +17,8 @@ def test_ciclo_completo(tmp_path):
         "Boyacá,2026-10-17,seco,47,3,10,prueba\n"
         "Boyacá,2026-10-17,seco,5821,190,,prueba\n"
         "Narnia,2026-10-17,seco,1111,111,,prueba\n", encoding="utf-8")
-    run = lambda: subprocess.run([sys.executable, "-m", "atlas.pipeline", "--scrape", "no"], cwd=dst,
+    # Fecha fija: la sección "Últimos sorteos" solo muestra los 8 días anteriores a la corrida
+    run = lambda: subprocess.run([sys.executable, "-m", "atlas.pipeline", "--scrape", "no", "--hoy", "2026-10-18"], cwd=dst,
                                  capture_output=True, text=True, timeout=600)
     r = run(); assert r.returncode == 0, r.stderr
     e = json.load(open(dst / "site" / "estado.json", encoding="utf-8"))

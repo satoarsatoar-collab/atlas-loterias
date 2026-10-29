@@ -1,13 +1,13 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 27 oct 2026_
+_Actualizado jue 29 oct 2026 06:33 (Colombia) · último sorteo con datos: mié 28 oct 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
 | Indicador | Valor |
 |---|---|
-| Premios guardados | 5.725 secos independientes · 1.406 mayores |
-| Seguimiento en datos nuevos | 11 días · 899 premios |
+| Premios guardados | 5.725 secos independientes · 1.409 mayores |
+| Seguimiento en datos nuevos | 12 días · 902 premios |
 | Patrones vigilados | 1.463 (validar uno exige E ≥ 14.620) |
 | Combinador principal | E = 0,73 (datos nuevos; se valida con E ≥ 20) |
 | Validados / en observación | 0 / 2 |
@@ -20,9 +20,9 @@ _Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 
 | Última cifra de los secos (Cruz Roja): lo que tuvo el premio mayor anterior de la misma lotería se repite | en observación | 25 | < 0,01 |
 | Suma de las cifras de los secos (todas las loterías): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 17 | < 0,01 |
 | Última cifra de la serie de los secos (Quindío): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 14 | 5,21 |
-| Dos últimas cifras de los premios mayores (Manizales): lo que tuvo el premio mayor anterior de la misma lotería se repite | sin evidencia | 11 | < 0,01 |
 | Última cifra de la serie de los secos (Huila): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 11 | 0,05 |
 | Suma de las cifras de los secos (todas las loterías): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 11 | < 0,01 |
+| Dos últimas cifras de los premios mayores (Manizales): lo que tuvo el premio mayor anterior de la misma lotería se repite | sin evidencia | 9,81 | < 0,01 |
 | Serie completa de los secos (Meta): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 9,30 | < 0,01 |
 | Última cifra de los secos (Quindío): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 9,18 | 7,06 |
 | 1.ª cifra de los secos (Risaralda): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 8,43 | 17 |
@@ -41,33 +41,6 @@ _Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 
 | Al azar (control) | 2 | 4,8 | 0 de 0,9 | 0 de 0,7 |
 | Series · combinador | 157 | 155,8 | 29 de 28,5 | 20 de 23,2 |
 | Series · al azar (control) | 159 | 155,8 | 25 de 28,5 | 21 de 23,2 |
-
-**Manizales · mié 28 oct**
-
-- Combinador ATLAS: `5289 5239 5209 5279 5219 5269 5249 5284 5234 5204`
-- Calientes: `5104 5102 5100 5704 5702 6104 5134 6102 5700 5132`
-- Recientes: `0211 5211 5219 0219 0111 5111 5261 0281 0261 5281`
-- Fríos: `3427 6427 2427 4427 3497 8427 3927 3627 3527 9427`
-- Del mayor anterior: `2624 4262 2246 2264 2426 2462 2642 4226 4622 6224`
-- Al azar (control): `2457 5286 5343 4207 0683 3983 1584 4385 9219 1102`
-
-**Meta · mié 28 oct**
-
-- Combinador ATLAS: `7423 7123 1423 1123 7473 5423 7173 7433 1473 5123`
-- Calientes: `2323 2313 2413 2423 7313 7323 7423 7413 2333 1323`
-- Recientes: `5123 5193 1123 7123 5423 5113 5153 7193 1193 5493`
-- Fríos: `6000 6800 9000 6700 2800 4800 4000 9800 2000 2700`
-- Del mayor anterior: `1847 7481 1478 1487 1748 1784 1874 4178 4187 4718`
-- Al azar (control): `7953 3745 4779 5234 4751 6263 7245 1398 6731 7677`
-
-**Valle · mié 28 oct**
-
-- Combinador ATLAS: `4236 4232 4276 4272 4136 4132 4176 4172 4736 4336`
-- Calientes: `9616 9617 8616 8617 4617 4616 9676 9677 9117 9116`
-- Recientes: `5134 6134 5131 5130 5194 5174 6131 6130 8134 5135`
-- Fríos: `0449 0446 1446 1449 0443 1442 0442 0448 1443 1448`
-- Del mayor anterior: `8084 4808 0488 0848 0884 4088 4880 8048 8408 8480`
-- Al azar (control): `1272 8510 6604 4926 1383 8736 7727 1232 3455 4174`
 
 **Bogotá · jue 29 oct**
 
@@ -174,7 +147,7 @@ _Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 
 - Calientes: `5104 5102 5100 5704 5702 6104 5134 6102 5700 5132`
 - Recientes: `0711 0761 0211 0261 0111 0161 0201 0701 5711 5211`
 - Fríos: `3927 3947 3957 3925 3987 3937 3997 3977 3945 2927`
-- Del mayor anterior: `2624 4262 2246 2264 2426 2462 2642 4226 4622 6224`
+- Del mayor anterior: `4241 1424 1244 1442 2144 2414 2441 4124 4142 4214`
 - Al azar (control): `3621 3209 7770 8162 0376 2769 7332 4437 8072 4844`
 
 **Meta · mié 4 nov**
@@ -183,7 +156,7 @@ _Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 
 - Calientes: `2323 2313 2413 2423 7313 7323 7423 7413 2333 1323`
 - Recientes: `5473 7473 7433 1473 5433 5423 7423 1423 1433 7443`
 - Fríos: `0880 0800 0881 0850 0860 0807 0801 0887 2800 2880`
-- Del mayor anterior: `1847 7481 1478 1487 1748 1784 1874 4178 4187 4718`
+- Del mayor anterior: `7443 3447 3474 3744 4347 4374 4437 4473 4734 4743`
 - Al azar (control): `7710 4958 4896 1578 5131 5420 4165 9145 0352 9354`
 
 **Valle · mié 4 nov**
@@ -192,8 +165,26 @@ _Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 
 - Calientes: `9616 9617 8616 8617 4617 4616 9676 9677 9117 9116`
 - Recientes: `5131 6131 8131 5130 5191 5171 3131 5231 5631 5137`
 - Fríos: `0462 0362 0962 0442 0342 0942 0452 0466 0402 0369`
-- Del mayor anterior: `8084 4808 0488 0848 0884 4088 4880 8048 8408 8480`
+- Del mayor anterior: `7544 4457 4475 4547 4574 4745 4754 5447 5474 5744`
 - Al azar (control): `1511 8787 1558 6800 1973 0007 4544 3810 4104 2570`
+
+**Bogotá · jue 5 nov**
+
+- Combinador ATLAS: `4276 3276 8276 9276 4476 0276 4274 4776 3476 4271`
+- Calientes: `0358 0353 0357 0958 0957 0953 0354 0351 0333 0338`
+- Recientes: `9977 9777 9775 9770 9975 9970 4977 4777 9577 9937`
+- Fríos: `7619 7611 7612 7119 7689 7019 1619 7819 1019 1119`
+- Del mayor anterior: `9392 2939 2399 2993 3299 3929 3992 9239 9293 9329`
+- Al azar (control): `6905 4601 6314 9691 8232 2773 3834 4173 1942 7541`
+
+**Quindío · jue 5 nov**
+
+- Combinador ATLAS: `4225 7225 9225 3225 8225 1225 4275 7275 4265 7265`
+- Calientes: `4219 3219 9219 4217 3217 9217 9209 3209 4209 4207`
+- Recientes: `9209 9219 7209 7219 7299 9299 1219 1209 7214 7201`
+- Fríos: `5725 5765 5825 5325 3725 5365 5775 5865 5425 5465`
+- Del mayor anterior: `2398 8932 2389 2839 2893 2938 2983 3289 3298 3829`
+- Al azar (control): `7468 6109 5470 7566 3319 6024 7583 8592 9860 4362`
 
 ## Series
 
@@ -218,6 +209,9 @@ _Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 
 
 | Fecha | Lotería | Premio mayor | Secos | Estado |
 |---|---|---|---|---|
+| mié 28 oct | Valle | 7544-022 | 0 | sin secos |
+| mié 28 oct | Meta | 7443-028 | 0 | sin secos |
+| mié 28 oct | Manizales | 4241-183 | 0 | sin secos |
 | mar 27 oct | Huila | 8262-153 | 30 | completo |
 | mar 27 oct | Cruz Roja | 8663-218 | 45 | completo |
 | lun 26 oct | Tolima | 0902-082 | 41 | completo |
@@ -232,14 +226,12 @@ _Actualizado mié 28 oct 2026 12:15 (Colombia) · último sorteo con datos: mar 
 | mié 21 oct | Valle | 8084-258 | 34 | completo |
 | mié 21 oct | Meta | 1847-108 | 43 | completo |
 | mié 21 oct | Manizales | 2624-288 | 60 | completo |
-| mar 20 oct | Huila | 8852-006 | 37 | completo |
-| mar 20 oct | Cruz Roja | 8572-156 | 45 | completo |
 
 ## Datos
 
-- Descarga automática: ok · sorteos nuevos: 0
+- Descarga automática: ok · sorteos nuevos: 3
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Tolima 5 oct, Tolima 12 oct, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 1 oct, Quindío 8 oct
+- Sorteos sin secos (últimas 4 semanas): Tolima 5 oct, Tolima 12 oct, Cruz Roja 6 oct, Manizales 28 oct, Meta 28 oct, Valle 28 oct, Bogotá 15 oct, Quindío 1 oct, Quindío 8 oct
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

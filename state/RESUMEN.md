@@ -1,6 +1,6 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado dom 1 nov 2026 12:13 (Colombia) · último sorteo con datos: sáb 31 oct 2026_
+_Actualizado lun 2 nov 2026 08:33 (Colombia) · último sorteo con datos: sáb 31 oct 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
@@ -168,6 +168,24 @@ _Actualizado dom 1 nov 2026 12:13 (Colombia) · último sorteo con datos: sáb 3
 - Del mayor anterior: `1355 5531 1535 1553 3155 3515 3551 5135 5153 5315`
 - Al azar (control): `5828 3204 3940 4627 1499 9113 3244 6476 9273 2622`
 
+**Cundinamarca · lun 9 nov**
+
+- Combinador ATLAS: `2233 2733 2433 2333 2933 2133 2633 2833 2033 2533`
+- Calientes: `2788 2789 2786 2784 2708 2706 2736 2709 2738 2739`
+- Recientes: `2289 2229 2239 2139 2129 2189 2269 3229 3239 3289`
+- Fríos: `0392 7392 0397 0312 7312 7397 8392 0317 1392 7317`
+- Del mayor anterior: `7099 9907 0799 0979 0997 7909 7990 9079 9097 9709`
+- Al azar (control): `4305 8581 4291 6990 0836 6250 1563 7476 6243 1679`
+
+**Tolima · lun 9 nov**
+
+- Combinador ATLAS: `1232 9232 4232 7232 0232 8232 6232 2232 3232 5232`
+- Calientes: `9335 9305 9375 9385 9338 9334 8335 9304 9308 9374`
+- Recientes: `1238 7238 4238 7234 1234 1138 7138 7208 1288 7278`
+- Fríos: `0550 5550 2550 5551 2551 0551 5850 8550 2850 0850`
+- Del mayor anterior: `0902 2090 0029 0092 0209 0290 0920 2009 2900 9002`
+- Al azar (control): `6023 6847 5511 4069 4013 1966 8169 5042 6958 2866`
+
 ## Series
 
 | Lotería | Series | Secos | Más repetida | Veredicto |
@@ -205,12 +223,10 @@ _Actualizado dom 1 nov 2026 12:13 (Colombia) · último sorteo con datos: sáb 3
 | mar 27 oct | Cruz Roja | 8663-218 | 45 | completo |
 | lun 26 oct | Tolima | 0902-082 | 41 | completo |
 | lun 26 oct | Cundinamarca | 7099-028 | 67 | completo |
-| sáb 24 oct | Cauca | 9458-226 | 53 | completo |
-| sáb 24 oct | Boyacá | 5707-232 | 59 | completo |
 
 ## Datos
 
-- Descarga automática: ok · sorteos nuevos: 2
+- Descarga automática: ok · sorteos nuevos: 0
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
 - Sorteos sin secos (últimas 4 semanas): Tolima 5 oct, Tolima 12 oct, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 8 oct

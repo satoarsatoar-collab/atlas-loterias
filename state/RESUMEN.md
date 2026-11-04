@@ -1,6 +1,6 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado mar 3 nov 2026 13:33 (Colombia) · último sorteo con datos: sáb 31 oct 2026_
+_Actualizado mié 4 nov 2026 08:01 (Colombia) · último sorteo con datos: sáb 31 oct 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
@@ -41,24 +41,6 @@ _Actualizado mar 3 nov 2026 13:33 (Colombia) · último sorteo con datos: sáb 3
 | Al azar (control) | 2 | 4,8 | 0 de 1,3 | 0 de 1,2 |
 | Series · combinador | 157 | 155,8 | 45 de 43,0 | 36 de 37,7 |
 | Series · al azar (control) | 159 | 155,8 | 41 de 43,0 | 37 de 37,7 |
-
-**Cruz Roja · mar 3 nov**
-
-- Combinador ATLAS: `1973 1073 1923 1933 1023 1033 1983 1963 1083 1473`
-- Calientes: `1963 1063 1973 7963 1073 1983 7063 1968 1965 1083`
-- Recientes: `6923 6023 6973 6963 6073 6063 1023 1923 7023 7923`
-- Fríos: `4149 2149 2249 4249 2549 4849 2849 4549 4246 4248`
-- Del mayor anterior: `8663 3668 3686 3866 6368 6386 6638 6683 6836 6863`
-- Al azar (control): `5011 4223 9308 3015 1845 6766 8449 4945 8484 0438`
-
-**Huila · mar 3 nov**
-
-- Combinador ATLAS: `2774 2734 0774 2724 2784 0734 0724 0784 2744 2771`
-- Calientes: `5047 5147 4147 7647 5647 4647 7047 7147 4047 5007`
-- Recientes: `2741 2441 0741 0441 2747 2744 2745 2447 2444 2445`
-- Fríos: `5333 5933 5233 5533 5373 5983 5383 5973 5633 1333`
-- Del mayor anterior: `8262 2628 2268 2286 2682 2826 2862 6228 6282 6822`
-- Al azar (control): `8913 3267 6510 5454 7195 7320 3895 2261 8989 6328`
 
 **Manizales · mié 4 nov**
 
@@ -186,6 +168,33 @@ _Actualizado mar 3 nov 2026 13:33 (Colombia) · último sorteo con datos: sáb 3
 - Del mayor anterior: `8262 2628 2268 2286 2682 2826 2862 6228 6282 6822`
 - Al azar (control): `7444 0726 3081 6305 5781 1767 2681 2852 4965 5458`
 
+**Manizales · mié 11 nov**
+
+- Combinador ATLAS: `5230 5240 5200 5280 5290 5260 5231 5210 5270 5220`
+- Calientes: `5134 5734 5130 5104 5132 5730 5704 5732 5100 5102`
+- Recientes: `2239 2339 2330 2230 2331 2332 2232 2231 2830 2139`
+- Fríos: `4977 4477 8477 4975 4475 8977 4907 4407 8475 4978`
+- Del mayor anterior: `4241 1424 1244 1442 2144 2414 2441 4124 4142 4214`
+- Al azar (control): `1454 2047 2268 5427 5222 1233 6830 2967 8197 1576`
+
+**Meta · mié 11 nov**
+
+- Combinador ATLAS: `8433 1433 7433 2433 5433 9433 3433 4433 8333 0433`
+- Calientes: `2333 2433 7333 7433 2313 1333 2323 5333 2413 7313`
+- Recientes: `8433 8431 8463 8493 3433 1433 8133 8333 5433 8533`
+- Fríos: `6887 6878 6877 4808 4807 4818 4817 6858 4857 4858`
+- Del mayor anterior: `7443 3447 3474 3744 4347 4374 4437 4473 4734 4743`
+- Al azar (control): `5366 8068 6726 6678 2315 8923 5705 1875 8504 0670`
+
+**Valle · mié 11 nov**
+
+- Combinador ATLAS: `4236 8236 4232 4736 8232 4336 4436 4636 8736 4732`
+- Calientes: `9616 9676 4676 4616 6616 6676 8616 8676 9617 9677`
+- Recientes: `5631 8631 7631 9631 5531 5731 5331 5231 5621 8331`
+- Fríos: `0143 0943 0947 0147 0945 0142 0942 0149 0144 0148`
+- Del mayor anterior: `7544 4457 4475 4547 4574 4745 4754 5447 5474 5744`
+- Al azar (control): `2184 3646 3474 7308 1188 1127 9000 3180 6885 8622`
+
 ## Series
 
 | Lotería | Series | Secos | Más repetida | Veredicto |
@@ -221,14 +230,12 @@ _Actualizado mar 3 nov 2026 13:33 (Colombia) · último sorteo con datos: sáb 3
 | mié 28 oct | Manizales | 4241-183 | 60 | completo |
 | mar 27 oct | Huila | 8262-153 | 30 | completo |
 | mar 27 oct | Cruz Roja | 8663-218 | 45 | completo |
-| lun 26 oct | Tolima | 0902-082 | 41 | completo |
-| lun 26 oct | Cundinamarca | 7099-028 | 67 | completo |
 
 ## Datos
 
 - Descarga automática: fallo · sorteos nuevos: 0
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Tolima 12 oct, Cruz Roja 6 oct, Bogotá 15 oct, Quindío 8 oct
+- Sorteos sin secos (últimas 4 semanas): Tolima 12 oct, Bogotá 15 oct, Quindío 8 oct
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

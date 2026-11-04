@@ -1,12 +1,12 @@
 {
- "generado": "2026-11-04T08:01:56-05:00",
+ "generado": "2026-11-04T13:45:23-05:00",
  "hoy": "2026-11-04",
  "inicio_prospectivo": "2026-10-17",
  "dias_prospectivos": 15,
  "premios_prospectivos": 1363,
  "migrado_ahora": false,
  "datos": {
-  "generado": "2026-11-04T08:05:57-05:00",
+  "generado": "2026-11-04T13:49:25-05:00",
   "mayores": 1416,
   "mayores_prospectivos": 30,
   "sorteos_con_secos": 138,
@@ -304,12 +304,12 @@
   "intentos": 8,
   "sorteos_nuevos": 0,
   "errores": [
-   "Cundinamarca: página principal no disponible (HTTPError: 504 Server Error: Gateway Timeout for url: https://www.loteriaya.com.co/loteria/loteria-de-cundinamarca)",
-   "Cundinamarca 2026-11-02: HTTPError: 504 Server Error: Gateway Timeout for url: https://www.loteriaya.com.co/loteria/loteria-de-cundinamarca/resultado/2026-11-02",
-   "Tolima: página principal no disponible (HTTPError: 504 Server Error: Gateway Timeout for url: https://www.loteriaya.com.co/loteria/loteria-del-tolima)",
-   "Tolima 2026-11-02: ReadTimeout: HTTPSConnectionPool(host='www.loteriaya.com.co', port=443): Read timed out. (read timeout=30)",
-   "Cruz Roja: página principal no disponible (ReadTimeout: HTTPSConnectionPool(host='www.loteriaya.com.co', port=443): Read timed out. (read timeout=30))",
-   "Cruz Roja 2026-11-03: HTTPError: 504 Server Error: Gateway Timeout for url: https://www.loteriaya.com.co/loteria/loteria-de-la-cruz-roja/resultado/2026-11-03",
+   "Cundinamarca: página principal no disponible (ReadTimeout: HTTPSConnectionPool(host='www.loteriaya.com.co', port=443): Read timed out. (read timeout=30))",
+   "Cundinamarca 2026-11-02: ReadTimeout: HTTPSConnectionPool(host='www.loteriaya.com.co', port=443): Read timed out. (read timeout=30)",
+   "Tolima: página principal no disponible (ReadTimeout: HTTPSConnectionPool(host='www.loteriaya.com.co', port=443): Read timed out. (read timeout=30))",
+   "Tolima 2026-11-02: HTTPError: 504 Server Error: Gateway Timeout for url: https://www.loteriaya.com.co/loteria/loteria-del-tolima/resultado/2026-11-02",
+   "Cruz Roja: página principal no disponible (HTTPError: 504 Server Error: Gateway Timeout for url: https://www.loteriaya.com.co/loteria/loteria-de-la-cruz-roja)",
+   "Cruz Roja 2026-11-03: ReadTimeout: HTTPSConnectionPool(host='www.loteriaya.com.co', port=443): Read timed out. (read timeout=30)",
    "Huila: página principal no disponible (HTTPError: 504 Server Error: Gateway Timeout for url: https://www.loteriaya.com.co/loteria/loteria-del-huila)",
    "Huila 2026-11-03: HTTPError: 504 Server Error: Gateway Timeout for url: https://www.loteriaya.com.co/loteria/loteria-del-huila/resultado/2026-11-03"
   ],

@@ -1,6 +1,6 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado mié 4 nov 2026 13:45 (Colombia) · último sorteo con datos: sáb 31 oct 2026_
+_Actualizado jue 5 nov 2026 08:14 (Colombia) · último sorteo con datos: sáb 31 oct 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
@@ -41,33 +41,6 @@ _Actualizado mié 4 nov 2026 13:45 (Colombia) · último sorteo con datos: sáb 
 | Al azar (control) | 2 | 4,8 | 0 de 1,3 | 0 de 1,2 |
 | Series · combinador | 157 | 155,8 | 45 de 43,0 | 36 de 37,7 |
 | Series · al azar (control) | 159 | 155,8 | 41 de 43,0 | 37 de 37,7 |
-
-**Manizales · mié 4 nov**
-
-- Combinador ATLAS: `5231 5201 5241 5271 5281 5291 5211 5261 5221 5251`
-- Calientes: `5134 5734 5130 5104 5132 5730 5704 5732 5100 5102`
-- Recientes: `0731 0231 5231 5731 0791 0211 0711 0761 0261 0291`
-- Fríos: `4925 4927 3925 3927 8927 8925 6927 6925 9927 9925`
-- Del mayor anterior: `4241 1424 1244 1442 2144 2414 2441 4124 4142 4214`
-- Al azar (control): `3621 3209 7770 8162 0376 2769 7332 4437 8072 4844`
-
-**Meta · mié 4 nov**
-
-- Combinador ATLAS: `7433 5433 1433 8433 2433 9433 7333 5333 3433 6433`
-- Calientes: `2333 2433 7333 7433 2313 1333 2323 5333 2413 7313`
-- Recientes: `5433 7433 8433 5333 5533 1433 9433 3433 7333 8533`
-- Fríos: `0008 0808 4008 4808 0807 4000 4007 0800 4807 4800`
-- Del mayor anterior: `7443 3447 3474 3744 4347 4374 4437 4473 4734 4743`
-- Al azar (control): `7710 4958 4896 1578 5131 5420 4165 9145 0352 9354`
-
-**Valle · mié 4 nov**
-
-- Combinador ATLAS: `8276 4276 8236 3276 4236 7276 3236 8776 7236 8272`
-- Calientes: `9616 9676 4676 4616 6616 6676 8616 8676 9617 9677`
-- Recientes: `5171 5131 5191 6171 6131 6191 8171 5175 5071 5671`
-- Fríos: `0462 0968 0962 0468 0362 0368 0464 0463 0467 0967`
-- Del mayor anterior: `7544 4457 4475 4547 4574 4745 4754 5447 5474 5744`
-- Al azar (control): `1511 8787 1558 6800 1973 0007 4544 3810 4104 2570`
 
 **Bogotá · jue 5 nov**
 
@@ -195,6 +168,24 @@ _Actualizado mié 4 nov 2026 13:45 (Colombia) · último sorteo con datos: sáb 
 - Del mayor anterior: `7544 4457 4475 4547 4574 4745 4754 5447 5474 5744`
 - Al azar (control): `2184 3646 3474 7308 1188 1127 9000 3180 6885 8622`
 
+**Bogotá · jue 12 nov**
+
+- Combinador ATLAS: `4233 4234 4236 4237 3233 3234 4231 8233 3236 8234`
+- Calientes: `2354 2350 2357 2353 0350 0354 2351 0353 0357 2358`
+- Recientes: `4700 4900 4770 8700 4960 8900 4760 4970 4400 4200`
+- Fríos: `6619 6612 6649 6699 6689 6642 1619 6819 6682 6692`
+- Del mayor anterior: `0500 0050 0005 5000`
+- Al azar (control): `3503 1790 6003 4968 4911 0368 4553 3550 1275 4121`
+
+**Quindío · jue 12 nov**
+
+- Combinador ATLAS: `3223 4223 8223 7223 3226 3225 9223 1223 2223 4226`
+- Calientes: `3202 3209 3212 3219 3272 3282 3279 3289 3292 3299`
+- Recientes: `3211 2211 3261 3201 3291 3611 2291 2201 2261 7211`
+- Fríos: `4823 4723 4423 4426 4726 4425 4725 4826 4825 0723`
+- Del mayor anterior: `2506 6052 0256 0265 0526 0562 0625 0652 2056 2065`
+- Al azar (control): `2646 1880 0205 8380 6154 5747 9521 0674 2865 5847`
+
 ## Series
 
 | Lotería | Series | Secos | Más repetida | Veredicto |
@@ -228,8 +219,6 @@ _Actualizado mié 4 nov 2026 13:45 (Colombia) · último sorteo con datos: sáb 
 | mié 28 oct | Valle | 7544-022 | 34 | completo |
 | mié 28 oct | Meta | 7443-028 | 43 | completo |
 | mié 28 oct | Manizales | 4241-183 | 60 | completo |
-| mar 27 oct | Huila | 8262-153 | 30 | completo |
-| mar 27 oct | Cruz Roja | 8663-218 | 45 | completo |
 
 ## Datos
 

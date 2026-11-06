@@ -255,3 +255,19 @@ loteria-del-valle,2026-11-04,mayor_anterior,32,0,0.032,
 loteria-del-valle,2026-11-04,recientes,32,0,0.032,
 loteria-del-valle,2026-11-04,series_azar,32,0,1.035598705501618,
 loteria-del-valle,2026-11-04,series_combinador,32,1,1.035598705501618,003
+loteria-de-bogota,2026-11-05,azar,53,0,0.053,
+loteria-de-bogota,2026-11-05,calientes,53,0,0.053,
+loteria-de-bogota,2026-11-05,combinador,53,1,0.053,8276
+loteria-de-bogota,2026-11-05,frios,53,0,0.053,
+loteria-de-bogota,2026-11-05,mayor_anterior,53,1,0.053,9329
+loteria-de-bogota,2026-11-05,recientes,53,0,0.053,
+loteria-de-bogota,2026-11-05,series_azar,53,1,1.1300639658848615,371
+loteria-de-bogota,2026-11-05,series_combinador,53,1,1.1300639658848615,158
+loteria-del-quindio,2026-11-05,azar,36,0,0.036,
+loteria-del-quindio,2026-11-05,calientes,36,1,0.036,9219
+loteria-del-quindio,2026-11-05,combinador,36,1,0.036,1225
+loteria-del-quindio,2026-11-05,frios,36,0,0.036,
+loteria-del-quindio,2026-11-05,mayor_anterior,36,0,0.036,
+loteria-del-quindio,2026-11-05,recientes,36,1,0.036,9219
+loteria-del-quindio,2026-11-05,series_azar,36,3,1.8090452261306533,072 166 197
+loteria-del-quindio,2026-11-05,series_combinador,36,2,1.8090452261306533,106 051

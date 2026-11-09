@@ -1,6 +1,6 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado dom 8 nov 2026 12:10 (Colombia) · último sorteo con datos: sáb 7 nov 2026_
+_Actualizado lun 9 nov 2026 08:56 (Colombia) · último sorteo con datos: sáb 7 nov 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
@@ -168,6 +168,24 @@ _Actualizado dom 8 nov 2026 12:10 (Colombia) · último sorteo con datos: sáb 7
 - Del mayor anterior: `2073 3702 0237 0273 0327 0372 0723 0732 2037 2307`
 - Al azar (control): `2304 7639 8116 1586 0343 1308 1356 6674 4601 9617`
 
+**Cundinamarca · mar 17 nov**
+
+- Combinador ATLAS: `8231 8431 8331 8631 8731 8931 8831 8031 8131 8531`
+- Calientes: `2739 2789 2738 2788 2749 2734 2736 2709 2439 2786`
+- Recientes: `8033 8023 8233 8223 8225 8235 8035 8025 8083 8283`
+- Fríos: `4392 4397 4597 4592 4391 6392 6397 4192 4197 4591`
+- Del mayor anterior: `9251 1529 1259 1295 1592 1925 1952 2159 2195 2519`
+- Al azar (control): `0099 5790 6612 4778 5548 4321 7557 6636 1390 9398`
+
+**Tolima · mar 17 nov**
+
+- Combinador ATLAS: `9238 4238 8238 7238 9278 1238 2238 6238 0238 3238`
+- Calientes: `9378 9375 9335 9338 9377 9305 9308 9337 9371 9374`
+- Recientes: `9273 9177 9277 9272 9173 9172 9178 9278 4177 4272`
+- Fríos: `2810 2815 2890 2895 3810 3815 2715 2710 3715 3710`
+- Del mayor anterior: `8708 8078 0788 0878 0887 7088 7808 7880 8087 8780`
+- Al azar (control): `7577 1949 4207 2557 4584 0254 3672 7415 6656 2847`
+
 ## Series
 
 | Lotería | Series | Secos | Más repetida | Veredicto |
@@ -205,8 +223,6 @@ _Actualizado dom 8 nov 2026 12:10 (Colombia) · último sorteo con datos: sáb 7
 | mar 3 nov | Huila | 6639-167 | 37 | completo |
 | mar 3 nov | Cundinamarca | 9251-149 | 78 | completo |
 | mar 3 nov | Cruz Roja | 8607-153 | 45 | completo |
-| sáb 31 oct | Cauca | 1355-147 | 36 | completo |
-| sáb 31 oct | Boyacá | 5748-202 | 59 | completo |
 
 ## Datos
 

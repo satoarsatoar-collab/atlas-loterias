@@ -1,13 +1,13 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado lun 9 nov 2026 16:31 (Colombia) · último sorteo con datos: sáb 7 nov 2026_
+_Actualizado mar 10 nov 2026 08:30 (Colombia) · último sorteo con datos: lun 9 nov 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
 | Indicador | Valor |
 |---|---|
-| Premios guardados | 6.697 secos independientes · 1.429 mayores |
-| Seguimiento en datos nuevos | 22 días · 1.894 premios |
+| Premios guardados | 6.697 secos independientes · 1.431 mayores |
+| Seguimiento en datos nuevos | 24 días · 1.896 premios |
 | Patrones vigilados | 1.463 (validar uno exige E ≥ 14.620) |
 | Combinador principal | E = 1,28 (datos nuevos; se valida con E ≥ 20) |
 | Validados / en observación | 0 / 4 |
@@ -41,24 +41,6 @@ _Actualizado lun 9 nov 2026 16:31 (Colombia) · último sorteo con datos: sáb 7
 | Al azar (control) | 2 | 4,8 | 0 de 1,9 | 0 de 1,7 |
 | Series · combinador | 157 | 155,8 | 61 de 59,2 | 54 de 53,9 |
 | Series · al azar (control) | 159 | 155,8 | 53 de 59,2 | 49 de 53,9 |
-
-**Cundinamarca · lun 9 nov**
-
-- Combinador ATLAS: `2233 8233 2433 8433 2733 8733 2333 2633 8333 8633`
-- Calientes: `2739 2738 2789 2788 2736 2734 2709 2749 2439 2784`
-- Recientes: `2239 2039 2229 2233 8239 2029 3239 2839 2439 2289`
-- Fríos: `7392 0392 7391 7397 0391 0397 1392 1391 1397 4392`
-- Del mayor anterior: `9251 1529 1259 1295 1592 1925 1952 2159 2195 2519`
-- Al azar (control): `4305 8581 4291 6990 0836 6250 1563 7476 6243 1679`
-
-**Tolima · lun 9 nov**
-
-- Combinador ATLAS: `9238 4238 8238 9278 7238 1238 4278 2238 3238 6238`
-- Calientes: `9378 9375 9335 9338 9377 9308 9305 9337 9374 9371`
-- Recientes: `4278 9278 9238 4268 9268 4238 4272 4277 9277 9272`
-- Fríos: `5850 5890 5810 2850 0850 0810 5550 2810 5450 0890`
-- Del mayor anterior: `8708 8078 0788 0878 0887 7088 7808 7880 8087 8780`
-- Al azar (control): `6023 6847 5511 4069 4013 1966 8169 5042 6958 2866`
 
 **Cruz Roja · mar 10 nov**
 
@@ -174,16 +156,34 @@ _Actualizado lun 9 nov 2026 16:31 (Colombia) · último sorteo con datos: sáb 7
 - Calientes: `2739 2738 2789 2788 2736 2734 2709 2749 2439 2784`
 - Recientes: `8023 8233 8223 8033 8235 8035 8025 8225 8923 8283`
 - Fríos: `4397 4392 4597 4592 4391 4192 6397 4197 6392 4591`
-- Del mayor anterior: `9251 1529 1259 1295 1592 1925 1952 2159 2195 2519`
+- Del mayor anterior: `0474 4740 0447 0744 4047 4074 4407 4470 4704 7044`
 - Al azar (control): `0099 5790 6612 4778 5548 4321 7557 6636 1390 9398`
+
+**Cruz Roja · mar 17 nov**
+
+- Combinador ATLAS: `7271 7272 7251 7252 7281 7282 7231 7232 7273 7261`
+- Calientes: `1963 1063 7963 1263 1563 7063 1973 1965 1962 1968`
+- Recientes: `9251 9951 9953 9253 9961 9651 9261 9252 9952 9263`
+- Fríos: `3539 3739 3339 3439 3537 3337 3437 3737 3534 3530`
+- Del mayor anterior: `8607 7068 0678 0687 0768 0786 0867 0876 6078 6087`
+- Al azar (control): `2949 9814 5518 2071 7174 8991 0275 9825 3740 7354`
+
+**Huila · mar 17 nov**
+
+- Combinador ATLAS: `2638 2678 2648 2688 2628 2658 2608 2632 4638 2698`
+- Calientes: `7648 7647 7627 7628 4648 4647 7644 4627 4628 7677`
+- Recientes: `2612 2642 2712 2742 2614 2644 2641 2611 2711 2714`
+- Fríos: `5200 5260 3200 3260 3266 3265 5205 5203 8200 8260`
+- Del mayor anterior: `6639 9366 3669 3696 3966 6369 6396 6693 6936 6963`
+- Al azar (control): `0475 0685 7940 0097 3752 2387 0121 8996 8842 4570`
 
 **Tolima · mar 17 nov**
 
-- Combinador ATLAS: `9238 4238 8238 7238 9278 1238 2238 6238 0238 3238`
+- Combinador ATLAS: `9239 4239 8239 7239 9279 1239 2239 6239 0239 3239`
 - Calientes: `9378 9375 9335 9338 9377 9308 9305 9337 9374 9371`
 - Recientes: `9273 9272 9277 9177 9172 9173 9178 9278 4277 4272`
 - Fríos: `2815 2810 2895 2890 2715 2710 3815 3810 3890 3715`
-- Del mayor anterior: `8708 8078 0788 0878 0887 7088 7808 7880 8087 8780`
+- Del mayor anterior: `8349 9438 3489 3498 3849 3894 3948 3984 4389 4398`
 - Al azar (control): `7577 1949 4207 2557 4584 0254 3672 7415 6656 2847`
 
 ## Series
@@ -209,6 +209,8 @@ _Actualizado lun 9 nov 2026 16:31 (Colombia) · último sorteo con datos: sáb 7
 
 | Fecha | Lotería | Premio mayor | Secos | Estado |
 |---|---|---|---|---|
+| lun 9 nov | Tolima | 8349-243 | 0 | sin secos |
+| lun 9 nov | Cundinamarca | 0474-015 | 0 | sin secos |
 | sáb 7 nov | Cauca | 2073-040 | 36 | completo |
 | sáb 7 nov | Boyacá | 1552-312 | 0 | sin secos |
 | vie 6 nov | Santander | 7151-204 | 69 | completo |
@@ -226,9 +228,9 @@ _Actualizado lun 9 nov 2026 16:31 (Colombia) · último sorteo con datos: sáb 7
 
 ## Datos
 
-- Descarga automática: ok · sorteos nuevos: 1
+- Descarga automática: ok · sorteos nuevos: 3
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Tolima 12 oct, Meta 4 nov, Bogotá 15 oct, Boyacá 7 nov
+- Sorteos sin secos (últimas 4 semanas): Cundinamarca 9 nov, Tolima 9 nov, Meta 4 nov, Bogotá 15 oct, Boyacá 7 nov
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

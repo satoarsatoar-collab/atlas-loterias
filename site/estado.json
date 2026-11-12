@@ -1,14 +1,14 @@
 {
- "generado": "2026-11-11T13:49:44-05:00",
- "hoy": "2026-11-11",
+ "generado": "2026-11-12T08:47:39-05:00",
+ "hoy": "2026-11-12",
  "inicio_prospectivo": "2026-10-17",
- "dias_prospectivos": 25,
- "premios_prospectivos": 1898,
+ "dias_prospectivos": 26,
+ "premios_prospectivos": 1900,
  "migrado_ahora": false,
  "datos": {
-  "generado": "2026-11-11T13:50:04-05:00",
-  "mayores": 1433,
-  "mayores_prospectivos": 47,
+  "generado": "2026-11-12T08:48:09-05:00",
+  "mayores": 1435,
+  "mayores_prospectivos": 49,
   "sorteos_con_secos": 150,
   "filas_secos": 7302,
   "secos_independientes": 6697,
@@ -32,8 +32,8 @@
    "mayor_serie_faltante": 2,
    "discrepancia_fuentes": 1
   },
-  "sorteos_sin_secos": 22,
-  "ultimo_dato": "2026-11-10"
+  "sorteos_sin_secos": 25,
+  "ultimo_dato": "2026-11-11"
  },
  "cobertura": [
   {
@@ -104,26 +104,26 @@
    "loteria": "Manizales",
    "slug": "loteria-de-manizales",
    "dia": "mié",
-   "sorteos_esperados": 12,
-   "con_mayor": 12,
+   "sorteos_esperados": 13,
+   "con_mayor": 13,
    "con_secos": 12,
-   "cobertura_secos_pct": 100.0,
+   "cobertura_secos_pct": 92.3,
    "filas_secos": 691,
    "secos_independientes": 611,
    "excluidos": 80,
    "sorteos_con_cuantia": 5,
-   "mayores_historial": 105,
+   "mayores_historial": 106,
    "historial_desde": "2024-11-06",
-   "ultimo_dato": "2026-11-04"
+   "ultimo_dato": "2026-11-11"
   },
   {
    "loteria": "Meta",
    "slug": "loteria-del-meta",
    "dia": "mié",
-   "sorteos_esperados": 12,
+   "sorteos_esperados": 13,
    "con_mayor": 11,
    "con_secos": 11,
-   "cobertura_secos_pct": 91.7,
+   "cobertura_secos_pct": 84.6,
    "filas_secos": 466,
    "secos_independientes": 460,
    "excluidos": 6,
@@ -136,17 +136,17 @@
    "loteria": "Valle",
    "slug": "loteria-del-valle",
    "dia": "mié",
-   "sorteos_esperados": 12,
-   "con_mayor": 12,
+   "sorteos_esperados": 13,
+   "con_mayor": 13,
    "con_secos": 12,
-   "cobertura_secos_pct": 100.0,
+   "cobertura_secos_pct": 92.3,
    "filas_secos": 408,
    "secos_independientes": 384,
    "excluidos": 24,
    "sorteos_con_cuantia": 0,
-   "mayores_historial": 103,
+   "mayores_historial": 104,
    "historial_desde": "2024-11-20",
-   "ultimo_dato": "2026-11-04"
+   "ultimo_dato": "2026-11-11"
   },
   {
    "loteria": "Bogotá",
@@ -291,10 +291,31 @@
    "festivo": false
   },
   {
+   "loteria": "Manizales",
+   "slug": "loteria-de-manizales",
+   "fecha_esperada": "2026-11-11",
+   "tiene_mayor": true,
+   "festivo": false
+  },
+  {
    "loteria": "Meta",
    "slug": "loteria-del-meta",
    "fecha_esperada": "2026-11-04",
    "tiene_mayor": false,
+   "festivo": false
+  },
+  {
+   "loteria": "Meta",
+   "slug": "loteria-del-meta",
+   "fecha_esperada": "2026-11-11",
+   "tiene_mayor": false,
+   "festivo": false
+  },
+  {
+   "loteria": "Valle",
+   "slug": "loteria-del-valle",
+   "fecha_esperada": "2026-11-11",
+   "tiene_mayor": true,
    "festivo": false
   },
   {
@@ -329,17 +350,20 @@
   "cuantias_completadas": 0
  },
  "descarga": {
-  "intentos": 9,
-  "sorteos_nuevos": 4,
+  "intentos": 14,
+  "sorteos_nuevos": 6,
   "errores": [
    "Cundinamarca 2026-11-09: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)",
    "Tolima 2026-11-09: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)",
    "Cruz Roja 2026-11-10: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)",
-   "Huila 2026-11-10: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)"
+   "Huila 2026-11-10: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)",
+   "Manizales 2026-11-11: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)",
+   "Meta 2026-11-11: ValueError: no aparece la frase del número ganador (¿sorteo no publicado aún o formato cambiado?)",
+   "Valle 2026-11-11: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)"
   ],
   "estado": "ok",
   "reporte": {
-   "filas_agregadas": 0,
+   "filas_agregadas": 2,
    "cuantias_completadas": 0,
    "sin_cambio": 4,
    "conflictos": [],
@@ -566,24 +590,6 @@
    "estado": "sin evidencia"
   },
   {
-   "id": "mayor|loteria-de-manizales|t2|arrastre_mayor",
-   "clase": "regla",
-   "tipo": "mayor",
-   "alcance": "Manizales",
-   "rasgo": "dos últimas cifras",
-   "estrategia": "arrastre_mayor",
-   "descripcion": "Dos últimas cifras de los premios mayores (Manizales): lo que tuvo el premio mayor anterior de la misma lotería se repite",
-   "premios_evaluados": 105,
-   "log10E_total": -2.592411041307604,
-   "premios_prospectivos": 3,
-   "log10E_prosp": 0.9459115168192732,
-   "max_log10E_prosp": 1.0374264979406234,
-   "ventaja_pct_total": -5.526420407101174,
-   "ventaja_pct_prosp": 106.68256323554121,
-   "validado_eBH": false,
-   "estado": "sin evidencia"
-  },
-  {
    "id": "seco|loteria-del-cauca|suma|caliente",
    "clase": "regla",
    "tipo": "seco",
@@ -634,6 +640,24 @@
    "max_log10E_prosp": 0.927533703281249,
    "ventaja_pct_total": -0.4168440697880804,
    "ventaja_pct_prosp": 1.2208728157744098,
+   "validado_eBH": false,
+   "estado": "sin evidencia"
+  },
+  {
+   "id": "mayor|loteria-de-manizales|t2|arrastre_mayor",
+   "clase": "regla",
+   "tipo": "mayor",
+   "alcance": "Manizales",
+   "rasgo": "dos últimas cifras",
+   "estrategia": "arrastre_mayor",
+   "descripcion": "Dos últimas cifras de los premios mayores (Manizales): lo que tuvo el premio mayor anterior de la misma lotería se repite",
+   "premios_evaluados": 106,
+   "log10E_total": -2.6381685318682786,
+   "premios_prospectivos": 4,
+   "log10E_prosp": 0.9001540262585981,
+   "max_log10E_prosp": 1.0374264979406234,
+   "ventaja_pct_total": -5.569646031774022,
+   "ventaja_pct_prosp": 67.89528752784719,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -897,13 +921,13 @@
    "rasgo": "3.ª cifra",
    "estrategia": "caliente",
    "descripcion": "3.ª cifra de los premios mayores (todas las loterías): lo que más ha salido en todo el historial seguirá saliendo más",
-   "premios_evaluados": 1433,
-   "log10E_total": -1.9051397864875241,
-   "premios_prospectivos": 47,
-   "log10E_prosp": 0.5378167383757513,
-   "max_log10E_prosp": 0.546117249786374,
-   "ventaja_pct_total": -0.3056551914008887,
-   "ventaja_pct_prosp": 2.6698456988494934,
+   "premios_evaluados": 1435,
+   "log10E_total": -1.9030421868417977,
+   "premios_prospectivos": 49,
+   "log10E_prosp": 0.5399143380214777,
+   "max_log10E_prosp": 0.5653798019216829,
+   "ventaja_pct_total": -0.30489429019645575,
+   "ventaja_pct_prosp": 2.569599550738455,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -1522,1278 +1546,6 @@
   {
    "listas": {
     "combinador": [
-     "5230",
-     "5200",
-     "5280",
-     "5290",
-     "5270",
-     "5240",
-     "5250",
-     "5260",
-     "5210",
-     "5220"
-    ],
-    "calientes": [
-     "5100",
-     "5700",
-     "5104",
-     "5130",
-     "5704",
-     "5730",
-     "5102",
-     "5134",
-     "6100",
-     "5200"
-    ],
-    "recientes": [
-     "2330",
-     "2230",
-     "2130",
-     "2390",
-     "2290",
-     "2730",
-     "2190",
-     "2350",
-     "2150",
-     "2830"
-    ],
-    "frios": [
-     "8425",
-     "8427",
-     "8927",
-     "8925",
-     "8423",
-     "4425",
-     "4427",
-     "8477",
-     "8475",
-     "8447"
-    ],
-    "mayor_anterior": [
-     "2570",
-     "0752",
-     "0257",
-     "0275",
-     "0527",
-     "0572",
-     "0725",
-     "2057",
-     "2075",
-     "2507"
-    ],
-    "azar": [
-     "1454",
-     "2047",
-     "2268",
-     "5427",
-     "5222",
-     "1233",
-     "6830",
-     "2967",
-     "8197",
-     "1576"
-    ]
-   },
-   "q_posiciones": [
-    [
-     0.10002,
-     0.09996,
-     0.10022,
-     0.10007,
-     0.09934,
-     0.10053,
-     0.10014,
-     0.10015,
-     0.09936,
-     0.10021
-    ],
-    [
-     0.09949,
-     0.0999,
-     0.10098,
-     0.10033,
-     0.09997,
-     0.09947,
-     0.09995,
-     0.10023,
-     0.09995,
-     0.09973
-    ],
-    [
-     0.10007,
-     0.09994,
-     0.09991,
-     0.10011,
-     0.09998,
-     0.09997,
-     0.09994,
-     0.1,
-     0.10004,
-     0.10003
-    ],
-    [
-     0.10908,
-     0.10558,
-     0.10166,
-     0.09388,
-     0.10227,
-     0.09222,
-     0.10235,
-     0.09075,
-     0.0975,
-     0.1047
-    ]
-   ],
-   "listas_series": {
-    "series_combinador": [
-     "360",
-     "240",
-     "011",
-     "191",
-     "251",
-     "367",
-     "352",
-     "295",
-     "113",
-     "041"
-    ],
-    "series_azar": [
-     "014",
-     "019",
-     "064",
-     "158",
-     "197",
-     "231",
-     "272",
-     "291",
-     "298",
-     "341"
-    ]
-   },
-   "series_en_juego": 400,
-   "series_posibles": 399,
-   "franja_serie": {
-    "desde": "240",
-    "hasta": "279",
-    "prob": 0.1045,
-    "azar": 0.1003
-   },
-   "loteria": "Manizales",
-   "slug": "loteria-de-manizales",
-   "fecha": "2026-11-11",
-   "tipo": "seco",
-   "top_numeros": [
-    "5230",
-    "5200",
-    "5280",
-    "5290",
-    "5270",
-    "5240",
-    "5250",
-    "5260",
-    "5210",
-    "5220"
-   ],
-   "prob_top_numeros": [
-    0.0001109,
-    0.0001108,
-    0.0001108,
-    0.0001108,
-    0.0001107,
-    0.0001107,
-    0.0001107,
-    0.0001107,
-    0.0001107,
-    0.0001106
-   ],
-   "ultima_cifra": [
-    {
-     "cifra": 0,
-     "prob": 0.1091
-    },
-    {
-     "cifra": 1,
-     "prob": 0.1056
-    },
-    {
-     "cifra": 9,
-     "prob": 0.1047
-    }
-   ],
-   "terminaciones": [
-    {
-     "t2": "86",
-     "prob": 0.0101
-    },
-    {
-     "t2": "70",
-     "prob": 0.0101
-    },
-    {
-     "t2": "30",
-     "prob": 0.0101
-    },
-    {
-     "t2": "11",
-     "prob": 0.01
-    },
-    {
-     "t2": "09",
-     "prob": 0.01
-    }
-   ],
-   "reglas_usadas": {
-    "d1": [
-     {
-      "regla": "azar",
-      "peso": 0.945
-     },
-     {
-      "regla": "seco|loteria-de-manizales|d1|caliente",
-      "peso": 0.027
-     },
-     {
-      "regla": "seco|loteria-de-manizales|d1|reciente",
-      "peso": 0.016
-     }
-    ],
-    "d2": [
-     {
-      "regla": "azar",
-      "peso": 0.89
-     },
-     {
-      "regla": "seco|todas|d2|caliente",
-      "peso": 0.071
-     },
-     {
-      "regla": "seco|todas|d2|reciente",
-      "peso": 0.021
-     }
-    ],
-    "d3": [
-     {
-      "regla": "azar",
-      "peso": 0.985
-     },
-     {
-      "regla": "seco|todas|d3|caliente",
-      "peso": 0.006
-     },
-     {
-      "regla": "seco|loteria-de-manizales|d3|caliente",
-      "peso": 0.004
-     }
-    ],
-    "d4": [
-     {
-      "regla": "azar",
-      "peso": 0.348
-     },
-     {
-      "regla": "seco|loteria-de-manizales|d4|reciente",
-      "peso": 0.327
-     },
-     {
-      "regla": "seco|loteria-de-manizales|d4|caliente",
-      "peso": 0.137
-     }
-    ],
-    "t2": [
-     {
-      "regla": "azar",
-      "peso": 0.949
-     },
-     {
-      "regla": "seco|loteria-de-manizales|t2|reciente",
-      "peso": 0.037
-     },
-     {
-      "regla": "seco|todas|t2|reciente",
-      "peso": 0.004
-     }
-    ]
-   }
-  },
-  {
-   "loteria": "Manizales",
-   "slug": "loteria-de-manizales",
-   "fecha": "2026-11-11",
-   "tipo": "mayor",
-   "top_numeros": [
-    "8725",
-    "3725",
-    "8726",
-    "0725",
-    "2725"
-   ],
-   "prob_top_numeros": [
-    0.0001141,
-    0.0001134,
-    0.0001134,
-    0.0001134,
-    0.0001133
-   ],
-   "ultima_cifra": [
-    {
-     "cifra": 5,
-     "prob": 0.1057
-    },
-    {
-     "cifra": 6,
-     "prob": 0.105
-    },
-    {
-     "cifra": 1,
-     "prob": 0.1039
-    }
-   ],
-   "terminaciones": [
-    {
-     "t2": "97",
-     "prob": 0.0103
-    },
-    {
-     "t2": "24",
-     "prob": 0.0103
-    },
-    {
-     "t2": "41",
-     "prob": 0.0102
-    },
-    {
-     "t2": "18",
-     "prob": 0.0102
-    },
-    {
-     "t2": "70",
-     "prob": 0.0102
-    }
-   ],
-   "reglas_usadas": {
-    "d1": [
-     {
-      "regla": "azar",
-      "peso": 0.658
-     },
-     {
-      "regla": "mayor|todas|d1|caliente",
-      "peso": 0.105
-     },
-     {
-      "regla": "mayor|todas|d1|reciente",
-      "peso": 0.096
-     }
-    ],
-    "d2": [
-     {
-      "regla": "azar",
-      "peso": 0.526
-     },
-     {
-      "regla": "mayor|todas|d2|caliente",
-      "peso": 0.194
-     },
-     {
-      "regla": "mayor|todas|d2|reciente",
-      "peso": 0.11
-     }
-    ],
-    "d3": [
-     {
-      "regla": "azar",
-      "peso": 0.743
-     },
-     {
-      "regla": "mayor|loteria-de-manizales|d3|caliente",
-      "peso": 0.089
-     },
-     {
-      "regla": "mayor|loteria-de-manizales|d3|reciente",
-      "peso": 0.069
-     }
-    ],
-    "d4": [
-     {
-      "regla": "azar",
-      "peso": 0.617
-     },
-     {
-      "regla": "mayor|loteria-de-manizales|d4|fria",
-      "peso": 0.156
-     },
-     {
-      "regla": "mayor|loteria-de-manizales|d4|markov",
-      "peso": 0.085
-     }
-    ],
-    "t2": [
-     {
-      "regla": "azar",
-      "peso": 0.746
-     },
-     {
-      "regla": "mayor|loteria-de-manizales|t2|caliente",
-      "peso": 0.096
-     },
-     {
-      "regla": "mayor|loteria-de-manizales|t2|reciente",
-      "peso": 0.073
-     }
-    ]
-   }
-  },
-  {
-   "listas": {
-    "combinador": [
-     "8433",
-     "1433",
-     "7433",
-     "5433",
-     "2433",
-     "9433",
-     "8333",
-     "3433",
-     "1333",
-     "4433"
-    ],
-    "calientes": [
-     "2333",
-     "2433",
-     "7333",
-     "7433",
-     "2313",
-     "1333",
-     "2323",
-     "5333",
-     "2413",
-     "7313"
-    ],
-    "recientes": [
-     "8433",
-     "8431",
-     "1433",
-     "8493",
-     "3433",
-     "8463",
-     "8133",
-     "5433",
-     "8333",
-     "8533"
-    ],
-    "frios": [
-     "4808",
-     "4887",
-     "4807",
-     "6808",
-     "6877",
-     "4818",
-     "6888",
-     "4817",
-     "6878",
-     "6887"
-    ],
-    "mayor_anterior": [
-     "7443",
-     "3447",
-     "3474",
-     "3744",
-     "4347",
-     "4374",
-     "4437",
-     "4473",
-     "4734",
-     "4743"
-    ],
-    "azar": [
-     "5366",
-     "8068",
-     "6726",
-     "6678",
-     "2315",
-     "8923",
-     "5705",
-     "1875",
-     "8504",
-     "0670"
-    ]
-   },
-   "q_posiciones": [
-    [
-     0.09961,
-     0.10027,
-     0.10011,
-     0.09981,
-     0.09972,
-     0.10013,
-     0.09965,
-     0.10023,
-     0.10043,
-     0.10004
-    ],
-    [
-     0.09666,
-     0.09912,
-     0.10248,
-     0.103,
-     0.10354,
-     0.0981,
-     0.09992,
-     0.09893,
-     0.09863,
-     0.09963
-    ],
-    [
-     0.09925,
-     0.10007,
-     0.10021,
-     0.10136,
-     0.09999,
-     0.09953,
-     0.09998,
-     0.09996,
-     0.09965,
-     0.10001
-    ],
-    [
-     0.09788,
-     0.10284,
-     0.09965,
-     0.1042,
-     0.10074,
-     0.09866,
-     0.10039,
-     0.09711,
-     0.09755,
-     0.10098
-    ]
-   ],
-   "listas_series": {
-    "series_combinador": [
-     "120",
-     "022",
-     "050",
-     "060",
-     "063",
-     "070",
-     "137",
-     "013",
-     "047",
-     "091"
-    ],
-    "series_azar": [
-     "017",
-     "018",
-     "021",
-     "039",
-     "045",
-     "059",
-     "084",
-     "101",
-     "117",
-     "145"
-    ]
-   },
-   "series_en_juego": 150,
-   "series_posibles": 149,
-   "franja_serie": {
-    "desde": "060",
-    "hasta": "074",
-    "prob": 0.1035,
-    "azar": 0.1007
-   },
-   "loteria": "Meta",
-   "slug": "loteria-del-meta",
-   "fecha": "2026-11-11",
-   "tipo": "seco",
-   "top_numeros": [
-    "8433",
-    "1433",
-    "7433",
-    "5433",
-    "2433",
-    "9433",
-    "8333",
-    "3433",
-    "1333",
-    "4433"
-   ],
-   "prob_top_numeros": [
-    0.0001098,
-    0.0001096,
-    0.0001096,
-    0.0001095,
-    0.0001095,
-    0.0001094,
-    0.0001092,
-    0.0001091,
-    0.0001091,
-    0.0001091
-   ],
-   "ultima_cifra": [
-    {
-     "cifra": 3,
-     "prob": 0.1042
-    },
-    {
-     "cifra": 1,
-     "prob": 0.1028
-    },
-    {
-     "cifra": 9,
-     "prob": 0.101
-    }
-   ],
-   "terminaciones": [
-    {
-     "t2": "43",
-     "prob": 0.0102
-    },
-    {
-     "t2": "34",
-     "prob": 0.0101
-    },
-    {
-     "t2": "31",
-     "prob": 0.0101
-    },
-    {
-     "t2": "60",
-     "prob": 0.0101
-    },
-    {
-     "t2": "64",
-     "prob": 0.0101
-    }
-   ],
-   "reglas_usadas": {
-    "d1": [
-     {
-      "regla": "azar",
-      "peso": 0.936
-     },
-     {
-      "regla": "seco|loteria-del-meta|d1|reciente",
-      "peso": 0.028
-     },
-     {
-      "regla": "seco|loteria-del-meta|d1|caliente",
-      "peso": 0.019
-     }
-    ],
-    "d2": [
-     {
-      "regla": "azar",
-      "peso": 0.509
-     },
-     {
-      "regla": "seco|todas|d2|caliente",
-      "peso": 0.22
-     },
-     {
-      "regla": "seco|loteria-del-meta|d2|reciente",
-      "peso": 0.104
-     }
-    ],
-    "d3": [
-     {
-      "regla": "azar",
-      "peso": 0.891
-     },
-     {
-      "regla": "seco|loteria-del-meta|d3|caliente",
-      "peso": 0.036
-     },
-     {
-      "regla": "seco|todas|d3|caliente",
-      "peso": 0.028
-     }
-    ],
-    "d4": [
-     {
-      "regla": "azar",
-      "peso": 0.736
-     },
-     {
-      "regla": "seco|loteria-del-meta|d4|reciente",
-      "peso": 0.163
-     },
-     {
-      "regla": "seco|loteria-del-meta|d4|markov",
-      "peso": 0.047
-     }
-    ],
-    "t2": [
-     {
-      "regla": "azar",
-      "peso": 0.867
-     },
-     {
-      "regla": "seco|loteria-del-meta|t2|reciente",
-      "peso": 0.043
-     },
-     {
-      "regla": "seco|todas|t2|reciente",
-      "peso": 0.03
-     }
-    ]
-   }
-  },
-  {
-   "loteria": "Meta",
-   "slug": "loteria-del-meta",
-   "fecha": "2026-11-11",
-   "tipo": "mayor",
-   "top_numeros": [
-    "0702",
-    "9702",
-    "2702",
-    "8702",
-    "5702"
-   ],
-   "prob_top_numeros": [
-    0.0001238,
-    0.0001238,
-    0.0001234,
-    0.000123,
-    0.0001228
-   ],
-   "ultima_cifra": [
-    {
-     "cifra": 2,
-     "prob": 0.1075
-    },
-    {
-     "cifra": 8,
-     "prob": 0.1043
-    },
-    {
-     "cifra": 1,
-     "prob": 0.1036
-    }
-   ],
-   "terminaciones": [
-    {
-     "t2": "51",
-     "prob": 0.0107
-    },
-    {
-     "t2": "72",
-     "prob": 0.0106
-    },
-    {
-     "t2": "34",
-     "prob": 0.0106
-    },
-    {
-     "t2": "04",
-     "prob": 0.0106
-    },
-    {
-     "t2": "56",
-     "prob": 0.0106
-    }
-   ],
-   "reglas_usadas": {
-    "d1": [
-     {
-      "regla": "azar",
-      "peso": 0.729
-     },
-     {
-      "regla": "mayor|todas|d1|caliente",
-      "peso": 0.073
-     },
-     {
-      "regla": "mayor|loteria-del-meta|d1|reciente",
-      "peso": 0.072
-     }
-    ],
-    "d2": [
-     {
-      "regla": "azar",
-      "peso": 0.455
-     },
-     {
-      "regla": "mayor|todas|d2|reciente",
-      "peso": 0.263
-     },
-     {
-      "regla": "mayor|todas|d2|caliente",
-      "peso": 0.175
-     }
-    ],
-    "d3": [
-     {
-      "regla": "mayor|todas|d3|caliente",
-      "peso": 0.466
-     },
-     {
-      "regla": "azar",
-      "peso": 0.291
-     },
-     {
-      "regla": "mayor|todas|d3|reciente",
-      "peso": 0.137
-     }
-    ],
-    "d4": [
-     {
-      "regla": "azar",
-      "peso": 0.547
-     },
-     {
-      "regla": "mayor|todas|d4|markov",
-      "peso": 0.216
-     },
-     {
-      "regla": "mayor|loteria-del-meta|d4|fria",
-      "peso": 0.133
-     }
-    ],
-    "t2": [
-     {
-      "regla": "azar",
-      "peso": 0.597
-     },
-     {
-      "regla": "mayor|todas|t2|caliente",
-      "peso": 0.204
-     },
-     {
-      "regla": "mayor|todas|t2|reciente",
-      "peso": 0.074
-     }
-    ]
-   }
-  },
-  {
-   "listas": {
-    "combinador": [
-     "7234",
-     "9234",
-     "8234",
-     "7634",
-     "7734",
-     "9634",
-     "7434",
-     "4234",
-     "7334",
-     "9734"
-    ],
-    "calientes": [
-     "9676",
-     "4676",
-     "4672",
-     "9672",
-     "6676",
-     "4616",
-     "9616",
-     "9677",
-     "4677",
-     "6672"
-    ],
-    "recientes": [
-     "5631",
-     "5731",
-     "5632",
-     "3631",
-     "7631",
-     "5630",
-     "5636",
-     "5634",
-     "6631",
-     "9631"
-    ],
-    "frios": [
-     "0163",
-     "0165",
-     "0145",
-     "0143",
-     "0865",
-     "0843",
-     "0167",
-     "0863",
-     "0168",
-     "0147"
-    ],
-    "mayor_anterior": [
-     "7932",
-     "2397",
-     "2379",
-     "2739",
-     "2793",
-     "2937",
-     "2973",
-     "3279",
-     "3297",
-     "3729"
-    ],
-    "azar": [
-     "2184",
-     "3646",
-     "3474",
-     "7308",
-     "1188",
-     "1127",
-     "9000",
-     "3180",
-     "6885",
-     "8622"
-    ]
-   },
-   "q_posiciones": [
-    [
-     0.09884,
-     0.09968,
-     0.09987,
-     0.10016,
-     0.10027,
-     0.09989,
-     0.0996,
-     0.10067,
-     0.10046,
-     0.10057
-    ],
-    [
-     0.0999,
-     0.09981,
-     0.10047,
-     0.10002,
-     0.10008,
-     0.09966,
-     0.10018,
-     0.10009,
-     0.09983,
-     0.09996
-    ],
-    [
-     0.09945,
-     0.09982,
-     0.10013,
-     0.10144,
-     0.09938,
-     0.09957,
-     0.09874,
-     0.10074,
-     0.10038,
-     0.10037
-    ],
-    [
-     0.10022,
-     0.0997,
-     0.1008,
-     0.0995,
-     0.10135,
-     0.10004,
-     0.09973,
-     0.09951,
-     0.09953,
-     0.09963
-    ]
-   ],
-   "listas_series": {
-    "series_combinador": [
-     "065",
-     "133",
-     "236",
-     "049",
-     "305",
-     "125",
-     "205",
-     "017",
-     "082",
-     "128"
-    ],
-    "series_azar": [
-     "013",
-     "058",
-     "073",
-     "088",
-     "111",
-     "169",
-     "199",
-     "221",
-     "228",
-     "256"
-    ]
-   },
-   "series_en_juego": 310,
-   "series_posibles": 309,
-   "franja_serie": {
-    "desde": "186",
-    "hasta": "216",
-    "prob": 0.1007,
-    "azar": 0.1003
-   },
-   "loteria": "Valle",
-   "slug": "loteria-del-valle",
-   "fecha": "2026-11-11",
-   "tipo": "seco",
-   "top_numeros": [
-    "7234",
-    "9234",
-    "8234",
-    "7634",
-    "7734",
-    "9634",
-    "7434",
-    "4234",
-    "7334",
-    "9734"
-   ],
-   "prob_top_numeros": [
-    0.000104,
-    0.0001039,
-    0.0001038,
-    0.0001037,
-    0.0001036,
-    0.0001036,
-    0.0001036,
-    0.0001036,
-    0.0001035,
-    0.0001035
-   ],
-   "ultima_cifra": [
-    {
-     "cifra": 4,
-     "prob": 0.1014
-    },
-    {
-     "cifra": 2,
-     "prob": 0.1008
-    },
-    {
-     "cifra": 0,
-     "prob": 0.1002
-    }
-   ],
-   "terminaciones": [
-    {
-     "t2": "92",
-     "prob": 0.0106
-    },
-    {
-     "t2": "31",
-     "prob": 0.0106
-    },
-    {
-     "t2": "78",
-     "prob": 0.0105
-    },
-    {
-     "t2": "79",
-     "prob": 0.0104
-    },
-    {
-     "t2": "96",
-     "prob": 0.0104
-    }
-   ],
-   "reglas_usadas": {
-    "d1": [
-     {
-      "regla": "azar",
-      "peso": 0.863
-     },
-     {
-      "regla": "seco|todas|d1|reciente",
-      "peso": 0.073
-     },
-     {
-      "regla": "seco|todas|d1|caliente",
-      "peso": 0.036
-     }
-    ],
-    "d2": [
-     {
-      "regla": "azar",
-      "peso": 0.948
-     },
-     {
-      "regla": "seco|todas|d2|reciente",
-      "peso": 0.021
-     },
-     {
-      "regla": "seco|todas|d2|caliente",
-      "peso": 0.02
-     }
-    ],
-    "d3": [
-     {
-      "regla": "azar",
-      "peso": 0.852
-     },
-     {
-      "regla": "seco|todas|d3|caliente",
-      "peso": 0.071
-     },
-     {
-      "regla": "seco|loteria-del-valle|d3|reciente",
-      "peso": 0.028
-     }
-    ],
-    "d4": [
-     {
-      "regla": "azar",
-      "peso": 0.881
-     },
-     {
-      "regla": "seco|loteria-del-valle|d4|markov",
-      "peso": 0.079
-     },
-     {
-      "regla": "seco|todas|d4|caliente",
-      "peso": 0.014
-     }
-    ],
-    "t2": [
-     {
-      "regla": "azar",
-      "peso": 0.692
-     },
-     {
-      "regla": "seco|loteria-del-valle|t2|reciente",
-      "peso": 0.143
-     },
-     {
-      "regla": "seco|loteria-del-valle|t2|caliente",
-      "peso": 0.129
-     }
-    ]
-   }
-  },
-  {
-   "loteria": "Valle",
-   "slug": "loteria-del-valle",
-   "fecha": "2026-11-11",
-   "tipo": "mayor",
-   "top_numeros": [
-    "4471",
-    "4441",
-    "4451",
-    "4271",
-    "4241"
-   ],
-   "prob_top_numeros": [
-    0.0001389,
-    0.0001386,
-    0.0001385,
-    0.0001378,
-    0.0001376
-   ],
-   "ultima_cifra": [
-    {
-     "cifra": 1,
-     "prob": 0.1072
-    },
-    {
-     "cifra": 8,
-     "prob": 0.1042
-    },
-    {
-     "cifra": 9,
-     "prob": 0.0999
-    }
-   ],
-   "terminaciones": [
-    {
-     "t2": "34",
-     "prob": 0.0102
-    },
-    {
-     "t2": "01",
-     "prob": 0.0101
-    },
-    {
-     "t2": "40",
-     "prob": 0.0101
-    },
-    {
-     "t2": "60",
-     "prob": 0.0101
-    },
-    {
-     "t2": "46",
-     "prob": 0.0101
-    }
-   ],
-   "reglas_usadas": {
-    "d1": [
-     {
-      "regla": "azar",
-      "peso": 0.556
-     },
-     {
-      "regla": "mayor|todas|d1|fria",
-      "peso": 0.306
-     },
-     {
-      "regla": "mayor|loteria-del-valle|d1|reciente",
-      "peso": 0.048
-     }
-    ],
-    "d2": [
-     {
-      "regla": "azar",
-      "peso": 0.669
-     },
-     {
-      "regla": "mayor|todas|d2|reciente",
-      "peso": 0.094
-     },
-     {
-      "regla": "mayor|loteria-del-valle|d2|fria",
-      "peso": 0.09
-     }
-    ],
-    "d3": [
-     {
-      "regla": "azar",
-      "peso": 0.723
-     },
-     {
-      "regla": "mayor|loteria-del-valle|d3|fria",
-      "peso": 0.092
-     },
-     {
-      "regla": "mayor|loteria-del-valle|d3|reciente",
-      "peso": 0.047
-     }
-    ],
-    "d4": [
-     {
-      "regla": "azar",
-      "peso": 0.537
-     },
-     {
-      "regla": "mayor|todas|d4|markov",
-      "peso": 0.167
-     },
-     {
-      "regla": "mayor|loteria-del-valle|d4|reciente",
-      "peso": 0.083
-     }
-    ],
-    "t2": [
-     {
-      "regla": "azar",
-      "peso": 0.782
-     },
-     {
-      "regla": "mayor|loteria-del-valle|t2|reciente",
-      "peso": 0.074
-     },
-     {
-      "regla": "mayor|loteria-del-valle|t2|caliente",
-      "peso": 0.05
-     }
-    ]
-   }
-  },
-  {
-   "listas": {
-    "combinador": [
      "9235",
      "7235",
      "8235",
@@ -3093,31 +1845,31 @@
    "fecha": "2026-11-12",
    "tipo": "mayor",
    "top_numeros": [
-    "9961",
-    "9361",
-    "9561",
-    "9861",
-    "0961"
+    "9964",
+    "9364",
+    "9564",
+    "9864",
+    "0964"
    ],
    "prob_top_numeros": [
-    0.0001146,
-    0.0001146,
-    0.0001144,
-    0.0001142,
-    0.0001141
+    0.0001167,
+    0.0001167,
+    0.0001165,
+    0.0001163,
+    0.000116
    ],
    "ultima_cifra": [
     {
-     "cifra": 1,
-     "prob": 0.1069
-    },
-    {
      "cifra": 4,
-     "prob": 0.1047
+     "prob": 0.1085
     },
     {
-     "cifra": 8,
-     "prob": 0.1029
+     "cifra": 1,
+     "prob": 0.1031
+    },
+    {
+     "cifra": 7,
+     "prob": 0.1018
     }
    ],
    "terminaciones": [
@@ -3524,24 +2276,24 @@
     "7399"
    ],
    "prob_top_numeros": [
-    0.0001168,
-    0.0001163,
-    0.0001159,
-    0.0001154,
-    0.0001154
+    0.000117,
+    0.0001165,
+    0.0001161,
+    0.0001156,
+    0.0001156
    ],
    "ultima_cifra": [
     {
      "cifra": 9,
-     "prob": 0.1037
+     "prob": 0.1038
     },
     {
      "cifra": 0,
-     "prob": 0.103
+     "prob": 0.1031
     },
     {
      "cifra": 7,
-     "prob": 0.1025
+     "prob": 0.1021
     }
    ],
    "terminaciones": [
@@ -3941,26 +2693,26 @@
    "fecha": "2026-11-13",
    "tipo": "mayor",
    "top_numeros": [
-    "7001",
-    "0001",
     "7007",
     "0007",
-    "9001"
+    "7001",
+    "9007",
+    "0001"
    ],
    "prob_top_numeros": [
-    0.0001155,
-    0.0001152,
-    0.0001152,
-    0.000115,
-    0.0001148
+    0.0001146,
+    0.0001143,
+    0.0001143,
+    0.0001141,
+    0.000114
    ],
    "ultima_cifra": [
     {
-     "cifra": 1,
-     "prob": 0.1019
+     "cifra": 7,
+     "prob": 0.102
     },
     {
-     "cifra": 7,
+     "cifra": 1,
      "prob": 0.1017
     },
     {
@@ -4365,31 +3117,31 @@
    "fecha": "2026-11-13",
    "tipo": "mayor",
    "top_numeros": [
-    "8734",
     "8434",
+    "8734",
     "8134",
-    "8731",
+    "0434",
     "0734"
    ],
    "prob_top_numeros": [
-    0.0001143,
-    0.0001142,
+    0.0001146,
+    0.0001145,
+    0.000114,
     0.0001137,
-    0.0001133,
-    0.0001133
+    0.0001136
    ],
    "ultima_cifra": [
     {
      "cifra": 4,
-     "prob": 0.1028
+     "prob": 0.1031
     },
     {
      "cifra": 1,
-     "prob": 0.1019
+     "prob": 0.1017
     },
     {
      "cifra": 8,
-     "prob": 0.1006
+     "prob": 0.1004
     }
    ],
    "terminaciones": [
@@ -4789,31 +3541,31 @@
    "fecha": "2026-11-13",
    "tipo": "mayor",
    "top_numeros": [
-    "0190",
     "0197",
+    "0190",
+    "0137",
     "0130",
-    "0170",
-    "0137"
+    "0177"
    ],
    "prob_top_numeros": [
-    0.0001254,
-    0.0001249,
-    0.0001239,
-    0.0001235,
-    0.0001234
+    0.0001257,
+    0.0001255,
+    0.000124,
+    0.0001238,
+    0.0001236
    ],
    "ultima_cifra": [
     {
-     "cifra": 0,
-     "prob": 0.1039
+     "cifra": 7,
+     "prob": 0.1042
     },
     {
-     "cifra": 7,
-     "prob": 0.1035
+     "cifra": 0,
+     "prob": 0.104
     },
     {
      "cifra": 9,
-     "prob": 0.1009
+     "prob": 0.101
     }
    ],
    "terminaciones": [
@@ -5214,22 +3966,22 @@
    "tipo": "mayor",
    "top_numeros": [
     "0704",
-    "0702",
     "8704",
-    "8702",
-    "2704"
+    "2704",
+    "5704",
+    "7704"
    ],
    "prob_top_numeros": [
-    0.0001112,
-    0.0001111,
-    0.000111,
-    0.000111,
-    0.0001109
+    0.0001129,
+    0.0001128,
+    0.0001126,
+    0.0001125,
+    0.0001122
    ],
    "ultima_cifra": [
     {
      "cifra": 4,
-     "prob": 0.1041
+     "prob": 0.1059
     },
     {
      "cifra": 2,
@@ -5237,7 +3989,7 @@
     },
     {
      "cifra": 8,
-     "prob": 0.1025
+     "prob": 0.1008
     }
    ],
    "terminaciones": [
@@ -5640,24 +4392,24 @@
     "4551",
     "4558",
     "4501",
-    "4581",
-    "4451"
+    "4556",
+    "4581"
    ],
    "prob_top_numeros": [
-    0.0001795,
-    0.0001786,
+    0.00018,
+    0.0001791,
+    0.0001788,
     0.0001783,
-    0.0001778,
-    0.0001777
+    0.0001783
    ],
    "ultima_cifra": [
     {
      "cifra": 1,
-     "prob": 0.1028
+     "prob": 0.1019
     },
     {
      "cifra": 8,
-     "prob": 0.1022
+     "prob": 0.1013
     },
     {
      "cifra": 6,
@@ -6068,11 +4820,11 @@
     "5701"
    ],
    "prob_top_numeros": [
-    0.0001187,
-    0.0001183,
-    0.0001183,
-    0.0001178,
-    0.0001177
+    0.0001185,
+    0.0001185,
+    0.0001181,
+    0.000118,
+    0.0001175
    ],
    "ultima_cifra": [
     {
@@ -6081,7 +4833,7 @@
     },
     {
      "cifra": 4,
-     "prob": 0.1035
+     "prob": 0.1037
     },
     {
      "cifra": 8,
@@ -6492,20 +5244,20 @@
     "8604"
    ],
    "prob_top_numeros": [
-    0.0001268,
-    0.0001255,
-    0.0001252,
-    0.0001252,
-    0.0001241
+    0.000126,
+    0.0001247,
+    0.0001244,
+    0.0001243,
+    0.0001243
    ],
    "ultima_cifra": [
     {
      "cifra": 8,
-     "prob": 0.1049
+     "prob": 0.1046
     },
     {
      "cifra": 4,
-     "prob": 0.1027
+     "prob": 0.1032
     },
     {
      "cifra": 6,
@@ -6912,20 +5664,20 @@
     "8808",
     "8888",
     "8878",
-    "8008",
-    "0808"
+    "0808",
+    "8848"
    ],
    "prob_top_numeros": [
-    0.000147,
-    0.0001442,
-    0.0001435,
-    0.0001402,
-    0.0001399
+    0.0001412,
+    0.0001386,
+    0.0001379,
+    0.0001344,
+    0.0001344
    ],
    "ultima_cifra": [
     {
      "cifra": 8,
-     "prob": 0.116
+     "prob": 0.1111
     },
     {
      "cifra": 6,
@@ -7333,31 +6085,31 @@
    "fecha": "2026-11-17",
    "tipo": "mayor",
    "top_numeros": [
-    "3108",
-    "8108",
-    "3101",
     "3198",
-    "8101"
+    "3108",
+    "8198",
+    "8108",
+    "3191"
    ],
    "prob_top_numeros": [
-    0.0001455,
-    0.0001454,
-    0.0001453,
-    0.0001453,
-    0.0001452
+    0.0001446,
+    0.0001445,
+    0.0001445,
+    0.0001444,
+    0.0001444
    ],
    "ultima_cifra": [
     {
      "cifra": 8,
-     "prob": 0.1054
+     "prob": 0.1048
     },
     {
      "cifra": 1,
-     "prob": 0.1052
+     "prob": 0.1046
     },
     {
      "cifra": 4,
-     "prob": 0.1026
+     "prob": 0.1034
     }
    ],
    "terminaciones": [
@@ -7374,11 +6126,11 @@
      "prob": 0.0104
     },
     {
-     "t2": "41",
-     "prob": 0.0104
+     "t2": "34",
+     "prob": 0.0103
     },
     {
-     "t2": "34",
+     "t2": "84",
      "prob": 0.0103
     }
    ],
@@ -7506,16 +6258,12 @@
      "8965"
     ],
     "mayor_anterior": [
-     "2570",
-     "0752",
-     "0257",
-     "0275",
-     "0527",
-     "0572",
-     "0725",
-     "2057",
-     "2075",
-     "2507"
+     "9494",
+     "4949",
+     "4499",
+     "4994",
+     "9449",
+     "9944"
     ],
     "azar": [
      "4654",
@@ -7568,16 +6316,16 @@
      0.10005
     ],
     [
-     0.10995,
+     0.11028,
      0.10552,
-     0.10037,
-     0.09481,
-     0.10356,
-     0.09229,
-     0.10261,
-     0.09466,
-     0.09672,
-     0.09951
+     0.10071,
+     0.09478,
+     0.10362,
+     0.09203,
+     0.10256,
+     0.09437,
+     0.09657,
+     0.09955
     ]
    ],
    "listas_series": {
@@ -7631,21 +6379,21 @@
     "5210"
    ],
    "prob_top_numeros": [
-    0.0001117,
-    0.0001117,
-    0.0001116,
-    0.0001116,
-    0.0001116,
-    0.0001116,
-    0.0001116,
-    0.0001115,
-    0.0001115,
-    0.0001115
+    0.000112,
+    0.000112,
+    0.000112,
+    0.000112,
+    0.000112,
+    0.0001119,
+    0.0001119,
+    0.0001118,
+    0.0001118,
+    0.0001118
    ],
    "ultima_cifra": [
     {
      "cifra": 0,
-     "prob": 0.1099
+     "prob": 0.1103
     },
     {
      "cifra": 1,
@@ -7757,31 +6505,31 @@
    "fecha": "2026-11-18",
    "tipo": "mayor",
    "top_numeros": [
-    "8725",
-    "8726",
-    "3725",
-    "0725",
-    "2725"
+    "8729",
+    "8709",
+    "3729",
+    "0729",
+    "8779"
    ],
    "prob_top_numeros": [
-    0.0001134,
-    0.0001128,
-    0.0001128,
-    0.0001127,
-    0.0001124
+    0.000109,
+    0.0001085,
+    0.0001085,
+    0.0001084,
+    0.0001083
    ],
    "ultima_cifra": [
     {
-     "cifra": 5,
-     "prob": 0.1053
-    },
-    {
-     "cifra": 6,
-     "prob": 0.1046
+     "cifra": 9,
+     "prob": 0.1024
     },
     {
      "cifra": 1,
-     "prob": 0.1036
+     "prob": 0.1016
+    },
+    {
+     "cifra": 6,
+     "prob": 0.1014
     }
    ],
    "terminaciones": [
@@ -7798,8 +6546,8 @@
      "prob": 0.0102
     },
     {
-     "t2": "70",
-     "prob": 0.0102
+     "t2": "51",
+     "prob": 0.0101
     },
     {
      "t2": "18",
@@ -7810,15 +6558,15 @@
     "d1": [
      {
       "regla": "azar",
-      "peso": 0.658
+      "peso": 0.659
      },
      {
       "regla": "mayor|todas|d1|caliente",
-      "peso": 0.105
+      "peso": 0.11
      },
      {
       "regla": "mayor|todas|d1|reciente",
-      "peso": 0.096
+      "peso": 0.088
      }
     ],
     "d2": [
@@ -7828,53 +6576,53 @@
      },
      {
       "regla": "mayor|todas|d2|caliente",
-      "peso": 0.194
+      "peso": 0.198
      },
      {
       "regla": "mayor|todas|d2|reciente",
-      "peso": 0.11
+      "peso": 0.113
      }
     ],
     "d3": [
      {
       "regla": "azar",
-      "peso": 0.743
+      "peso": 0.742
      },
      {
       "regla": "mayor|loteria-de-manizales|d3|caliente",
-      "peso": 0.089
+      "peso": 0.084
      },
      {
       "regla": "mayor|loteria-de-manizales|d3|reciente",
-      "peso": 0.069
+      "peso": 0.067
      }
     ],
     "d4": [
      {
       "regla": "azar",
-      "peso": 0.617
+      "peso": 0.664
      },
      {
       "regla": "mayor|loteria-de-manizales|d4|fria",
-      "peso": 0.156
+      "peso": 0.099
      },
      {
       "regla": "mayor|loteria-de-manizales|d4|markov",
-      "peso": 0.085
+      "peso": 0.088
      }
     ],
     "t2": [
      {
       "regla": "azar",
-      "peso": 0.746
+      "peso": 0.752
      },
      {
       "regla": "mayor|loteria-de-manizales|t2|caliente",
-      "peso": 0.096
+      "peso": 0.092
      },
      {
       "regla": "mayor|loteria-de-manizales|t2|reciente",
-      "peso": 0.073
+      "peso": 0.072
      }
     ]
    }
@@ -8188,11 +6936,11 @@
     "7702"
    ],
    "prob_top_numeros": [
-    0.0001244,
-    0.0001243,
-    0.0001238,
-    0.0001236,
-    0.0001231
+    0.0001242,
+    0.000124,
+    0.0001235,
+    0.0001232,
+    0.0001228
    ],
    "ultima_cifra": [
     {
@@ -8201,11 +6949,11 @@
     },
     {
      "cifra": 8,
-     "prob": 0.1041
+     "prob": 0.104
     },
     {
      "cifra": 1,
-     "prob": 0.1034
+     "prob": 0.1033
     }
    ],
    "terminaciones": [
@@ -8215,7 +6963,7 @@
     },
     {
      "t2": "72",
-     "prob": 0.0107
+     "prob": 0.0106
     },
     {
      "t2": "34",
@@ -8306,16 +7054,16 @@
   {
    "listas": {
     "combinador": [
-     "7274",
-     "7234",
-     "7674",
-     "9274",
-     "7634",
-     "9234",
-     "7284",
-     "7474",
-     "4274",
-     "7434"
+     "7272",
+     "7232",
+     "7276",
+     "7236",
+     "7672",
+     "9272",
+     "7632",
+     "9232",
+     "7279",
+     "7271"
     ],
     "calientes": [
      "9676",
@@ -8354,16 +7102,16 @@
      "0153"
     ],
     "mayor_anterior": [
-     "7932",
-     "2397",
-     "2379",
-     "2739",
-     "2793",
-     "2937",
-     "2973",
-     "3279",
-     "3297",
-     "3729"
+     "1067",
+     "7601",
+     "0167",
+     "0176",
+     "0617",
+     "0671",
+     "0716",
+     "0761",
+     "1076",
+     "1607"
     ],
     "azar": [
      "0336",
@@ -8416,16 +7164,16 @@
      0.10044
     ],
     [
-     0.10016,
-     0.09959,
-     0.10091,
-     0.0995,
-     0.10133,
-     0.10006,
-     0.09976,
-     0.09954,
-     0.09948,
-     0.09967
+     0.09995,
+     0.10001,
+     0.1003,
+     0.09992,
+     0.09998,
+     0.09981,
+     0.10015,
+     0.09998,
+     0.09989,
+     0.10002
     ]
    ],
    "listas_series": {
@@ -8467,41 +7215,41 @@
    "fecha": "2026-11-18",
    "tipo": "seco",
    "top_numeros": [
-    "7274",
-    "7234",
-    "7674",
-    "9274",
-    "7634",
-    "9234",
-    "7284",
-    "7474",
-    "4274",
-    "7434"
+    "7272",
+    "7232",
+    "7276",
+    "7236",
+    "7672",
+    "9272",
+    "7632",
+    "9232",
+    "7279",
+    "7271"
    ],
    "prob_top_numeros": [
-    0.0001035,
-    0.0001035,
-    0.0001033,
-    0.0001033,
-    0.0001033,
-    0.0001033,
-    0.0001032,
-    0.0001032,
-    0.0001032,
-    0.0001031
+    0.0001025,
+    0.0001025,
+    0.0001023,
+    0.0001023,
+    0.0001023,
+    0.0001023,
+    0.0001022,
+    0.0001022,
+    0.0001022,
+    0.0001022
    ],
    "ultima_cifra": [
     {
-     "cifra": 4,
-     "prob": 0.1013
-    },
-    {
      "cifra": 2,
-     "prob": 0.1009
+     "prob": 0.1003
     },
     {
-     "cifra": 0,
+     "cifra": 6,
      "prob": 0.1002
+    },
+    {
+     "cifra": 9,
+     "prob": 0.1
     }
    ],
    "terminaciones": [
@@ -8605,31 +7353,31 @@
    "fecha": "2026-11-18",
    "tipo": "mayor",
    "top_numeros": [
-    "4771",
-    "4471",
-    "4271",
-    "6771",
-    "4671"
+    "4774",
+    "4474",
+    "4674",
+    "4274",
+    "6774"
    ],
    "prob_top_numeros": [
-    0.0001391,
-    0.0001381,
-    0.0001371,
-    0.0001364,
-    0.0001359
+    0.0001452,
+    0.0001446,
+    0.0001433,
+    0.0001432,
+    0.0001423
    ],
    "ultima_cifra": [
     {
-     "cifra": 1,
-     "prob": 0.1072
+     "cifra": 4,
+     "prob": 0.109
     },
     {
      "cifra": 8,
-     "prob": 0.1043
+     "prob": 0.1025
     },
     {
-     "cifra": 9,
-     "prob": 0.0999
+     "cifra": 1,
+     "prob": 0.1021
     }
    ],
    "terminaciones": [
@@ -8638,11 +7386,11 @@
      "prob": 0.0102
     },
     {
-     "t2": "01",
+     "t2": "40",
      "prob": 0.0101
     },
     {
-     "t2": "40",
+     "t2": "01",
      "prob": 0.0101
     },
     {
@@ -8658,71 +7406,919 @@
     "d1": [
      {
       "regla": "azar",
-      "peso": 0.556
+      "peso": 0.511
      },
      {
       "regla": "mayor|todas|d1|fria",
-      "peso": 0.306
+      "peso": 0.355
      },
      {
-      "regla": "mayor|loteria-del-valle|d1|reciente",
-      "peso": 0.048
+      "regla": "mayor|loteria-del-valle|d1|fria",
+      "peso": 0.042
      }
     ],
     "d2": [
      {
       "regla": "azar",
-      "peso": 0.669
+      "peso": 0.695
      },
      {
       "regla": "mayor|todas|d2|reciente",
-      "peso": 0.094
+      "peso": 0.092
      },
      {
-      "regla": "mayor|loteria-del-valle|d2|fria",
-      "peso": 0.09
+      "regla": "mayor|todas|d2|caliente",
+      "peso": 0.056
      }
     ],
     "d3": [
      {
       "regla": "azar",
-      "peso": 0.723
+      "peso": 0.719
      },
      {
       "regla": "mayor|loteria-del-valle|d3|fria",
-      "peso": 0.092
+      "peso": 0.098
      },
      {
       "regla": "mayor|loteria-del-valle|d3|reciente",
-      "peso": 0.047
+      "peso": 0.046
      }
     ],
     "d4": [
      {
       "regla": "azar",
-      "peso": 0.537
+      "peso": 0.55
      },
      {
       "regla": "mayor|todas|d4|markov",
-      "peso": 0.167
+      "peso": 0.17
      },
      {
       "regla": "mayor|loteria-del-valle|d4|reciente",
+      "peso": 0.084
+     }
+    ],
+    "t2": [
+     {
+      "regla": "azar",
+      "peso": 0.78
+     },
+     {
+      "regla": "mayor|loteria-del-valle|t2|reciente",
+      "peso": 0.073
+     },
+     {
+      "regla": "mayor|loteria-del-valle|t2|caliente",
+      "peso": 0.049
+     }
+    ]
+   }
+  },
+  {
+   "listas": {
+    "combinador": [
+     "7235",
+     "4235",
+     "8235",
+     "9235",
+     "7285",
+     "7245",
+     "5235",
+     "7275",
+     "4285",
+     "7233"
+    ],
+    "calientes": [
+     "2353",
+     "5353",
+     "7353",
+     "5350",
+     "2350",
+     "9353",
+     "0353",
+     "5333",
+     "2333",
+     "2351"
+    ],
+    "recientes": [
+     "5205",
+     "5305",
+     "7305",
+     "7205",
+     "5300",
+     "5200",
+     "8305",
+     "8205",
+     "5345",
+     "5245"
+    ],
+    "frios": [
+     "3129",
+     "3139",
+     "3199",
+     "3829",
+     "3529",
+     "3029",
+     "0129",
+     "3099",
+     "3899",
+     "3039"
+    ],
+    "mayor_anterior": [
+     "0387",
+     "7830",
+     "0378",
+     "0738",
+     "0783",
+     "0837",
+     "0873",
+     "3078",
+     "3087",
+     "3708"
+    ],
+    "azar": [
+     "7719",
+     "2119",
+     "6838",
+     "9305",
+     "3573",
+     "1981",
+     "0207",
+     "9491",
+     "7107",
+     "9699"
+    ]
+   },
+   "q_posiciones": [
+    [
+     0.09968,
+     0.09961,
+     0.09997,
+     0.09983,
+     0.10027,
+     0.10006,
+     0.09968,
+     0.10044,
+     0.10026,
+     0.10021
+    ],
+    [
+     0.09955,
+     0.09845,
+     0.10256,
+     0.10059,
+     0.10077,
+     0.09841,
+     0.10058,
+     0.09977,
+     0.09955,
+     0.09977
+    ],
+    [
+     0.0999,
+     0.09952,
+     0.09993,
+     0.10049,
+     0.10012,
+     0.10005,
+     0.09966,
+     0.10009,
+     0.10024,
+     0.1
+    ],
+    [
+     0.09987,
+     0.10012,
+     0.10028,
+     0.10044,
+     0.10033,
+     0.10088,
+     0.09951,
+     0.0996,
+     0.09989,
+     0.09908
+    ]
+   ],
+   "listas_series": {
+    "series_combinador": [
+     "009",
+     "195",
+     "247",
+     "255",
+     "442",
+     "018",
+     "041",
+     "055",
+     "070",
+     "090"
+    ],
+    "series_azar": [
+     "045",
+     "076",
+     "130",
+     "148",
+     "219",
+     "224",
+     "227",
+     "255",
+     "265",
+     "402"
+    ]
+   },
+   "series_en_juego": 470,
+   "series_posibles": 469,
+   "franja_serie": {
+    "desde": "188",
+    "hasta": "234",
+    "prob": 0.1004,
+    "azar": 0.1002
+   },
+   "loteria": "Bogotá",
+   "slug": "loteria-de-bogota",
+   "fecha": "2026-11-19",
+   "tipo": "seco",
+   "top_numeros": [
+    "7235",
+    "4235",
+    "8235",
+    "9235",
+    "7285",
+    "7245",
+    "5235",
+    "7275",
+    "4285",
+    "7233"
+   ],
+   "prob_top_numeros": [
+    0.0001044,
+    0.0001043,
+    0.0001042,
+    0.0001042,
+    0.0001042,
+    0.0001041,
+    0.000104,
+    0.000104,
+    0.000104,
+    0.000104
+   ],
+   "ultima_cifra": [
+    {
+     "cifra": 5,
+     "prob": 0.1009
+    },
+    {
+     "cifra": 3,
+     "prob": 0.1004
+    },
+    {
+     "cifra": 4,
+     "prob": 0.1003
+    }
+   ],
+   "terminaciones": [
+    {
+     "t2": "43",
+     "prob": 0.0102
+    },
+    {
+     "t2": "00",
+     "prob": 0.0102
+    },
+    {
+     "t2": "21",
+     "prob": 0.0102
+    },
+    {
+     "t2": "50",
+     "prob": 0.0102
+    },
+    {
+     "t2": "73",
+     "prob": 0.0101
+    }
+   ],
+   "reglas_usadas": {
+    "d1": [
+     {
+      "regla": "azar",
+      "peso": 0.93
+     },
+     {
+      "regla": "seco|todas|d1|caliente",
+      "peso": 0.033
+     },
+     {
+      "regla": "seco|todas|d1|reciente",
+      "peso": 0.031
+     }
+    ],
+    "d2": [
+     {
+      "regla": "azar",
+      "peso": 0.764
+     },
+     {
+      "regla": "seco|todas|d2|reciente",
+      "peso": 0.122
+     },
+     {
+      "regla": "seco|todas|d2|caliente",
+      "peso": 0.096
+     }
+    ],
+    "d3": [
+     {
+      "regla": "azar",
+      "peso": 0.921
+     },
+     {
+      "regla": "seco|todas|d3|caliente",
+      "peso": 0.048
+     },
+     {
+      "regla": "seco|todas|d3|reciente",
+      "peso": 0.029
+     }
+    ],
+    "d4": [
+     {
+      "regla": "azar",
+      "peso": 0.881
+     },
+     {
+      "regla": "seco|loteria-de-bogota|d4|markov",
+      "peso": 0.064
+     },
+     {
+      "regla": "seco|loteria-de-bogota|d4|reciente",
+      "peso": 0.019
+     }
+    ],
+    "t2": [
+     {
+      "regla": "azar",
+      "peso": 0.888
+     },
+     {
+      "regla": "seco|loteria-de-bogota|t2|caliente",
+      "peso": 0.068
+     },
+     {
+      "regla": "seco|loteria-de-bogota|t2|reciente",
+      "peso": 0.031
+     }
+    ]
+   }
+  },
+  {
+   "loteria": "Bogotá",
+   "slug": "loteria-de-bogota",
+   "fecha": "2026-11-19",
+   "tipo": "mayor",
+   "top_numeros": [
+    "9964",
+    "9364",
+    "9864",
+    "9564",
+    "9904"
+   ],
+   "prob_top_numeros": [
+    0.0001171,
+    0.0001166,
+    0.0001166,
+    0.0001164,
+    0.0001163
+   ],
+   "ultima_cifra": [
+    {
+     "cifra": 4,
+     "prob": 0.1087
+    },
+    {
+     "cifra": 1,
+     "prob": 0.1031
+    },
+    {
+     "cifra": 7,
+     "prob": 0.1018
+    }
+   ],
+   "terminaciones": [
+    {
+     "t2": "51",
+     "prob": 0.0104
+    },
+    {
+     "t2": "34",
+     "prob": 0.0103
+    },
+    {
+     "t2": "72",
+     "prob": 0.0103
+    },
+    {
+     "t2": "04",
+     "prob": 0.0102
+    },
+    {
+     "t2": "31",
+     "prob": 0.0102
+    }
+   ],
+   "reglas_usadas": {
+    "d1": [
+     {
+      "regla": "azar",
+      "peso": 0.668
+     },
+     {
+      "regla": "mayor|loteria-de-bogota|d1|reciente",
+      "peso": 0.119
+     },
+     {
+      "regla": "mayor|loteria-de-bogota|d1|caliente",
+      "peso": 0.091
+     }
+    ],
+    "d2": [
+     {
+      "regla": "azar",
+      "peso": 0.741
+     },
+     {
+      "regla": "mayor|loteria-de-bogota|d2|reciente",
+      "peso": 0.099
+     },
+     {
+      "regla": "mayor|todas|d2|fria",
+      "peso": 0.06
+     }
+    ],
+    "d3": [
+     {
+      "regla": "azar",
+      "peso": 0.631
+     },
+     {
+      "regla": "mayor|loteria-de-bogota|d3|fria",
+      "peso": 0.143
+     },
+     {
+      "regla": "mayor|todas|d3|caliente",
+      "peso": 0.084
+     }
+    ],
+    "d4": [
+     {
+      "regla": "azar",
+      "peso": 0.527
+     },
+     {
+      "regla": "mayor|todas|d4|markov",
+      "peso": 0.119
+     },
+     {
+      "regla": "mayor|loteria-de-bogota|d4|caliente",
+      "peso": 0.093
+     }
+    ],
+    "t2": [
+     {
+      "regla": "azar",
+      "peso": 0.746
+     },
+     {
+      "regla": "mayor|loteria-de-bogota|t2|reciente",
+      "peso": 0.069
+     },
+     {
+      "regla": "mayor|loteria-de-bogota|t2|caliente",
+      "peso": 0.063
+     }
+    ]
+   }
+  },
+  {
+   "listas": {
+    "combinador": [
+     "7284",
+     "7287",
+     "7294",
+     "7214",
+     "7234",
+     "7297",
+     "7274",
+     "7217",
+     "7237",
+     "7277"
+    ],
+    "calientes": [
+     "3219",
+     "3212",
+     "3289",
+     "3213",
+     "7219",
+     "9219",
+     "3282",
+     "3299",
+     "3210",
+     "3217"
+    ],
+    "recientes": [
+     "3282",
+     "3280",
+     "3210",
+     "3212",
+     "3290",
+     "3292",
+     "3283",
+     "3285",
+     "3213",
+     "3215"
+    ],
+    "frios": [
+     "4127",
+     "4124",
+     "4121",
+     "4427",
+     "4424",
+     "6124",
+     "4724",
+     "4727",
+     "6127",
+     "4126"
+    ],
+    "mayor_anterior": [
+     "4879",
+     "9784",
+     "4789",
+     "4798",
+     "4897",
+     "4978",
+     "4987",
+     "7489",
+     "7498",
+     "7849"
+    ],
+    "azar": [
+     "6489",
+     "0045",
+     "1294",
+     "1413",
+     "3039",
+     "8875",
+     "7963",
+     "1224",
+     "1910",
+     "5493"
+    ]
+   },
+   "q_posiciones": [
+    [
+     0.09717,
+     0.09638,
+     0.09938,
+     0.09989,
+     0.1019,
+     0.09994,
+     0.09696,
+     0.10408,
+     0.1023,
+     0.102
+    ],
+    [
+     0.10909,
+     0.07782,
+     0.13593,
+     0.09506,
+     0.09088,
+     0.10713,
+     0.10658,
+     0.08188,
+     0.0925,
+     0.10312
+    ],
+    [
+     0.10012,
+     0.10064,
+     0.09804,
+     0.10062,
+     0.09889,
+     0.09974,
+     0.09885,
+     0.10051,
+     0.10169,
+     0.1009
+    ],
+    [
+     0.09516,
+     0.10381,
+     0.09565,
+     0.09802,
+     0.10706,
+     0.0975,
+     0.10066,
+     0.10674,
+     0.09774,
+     0.09765
+    ]
+   ],
+   "listas_series": {
+    "series_combinador": [
+     "106",
+     "017",
+     "070",
+     "116",
+     "125",
+     "153",
+     "135",
+     "150",
+     "166",
+     "191"
+    ],
+    "series_azar": [
+     "046",
+     "064",
+     "079",
+     "086",
+     "102",
+     "106",
+     "114",
+     "161",
+     "194",
+     "198"
+    ]
+   },
+   "series_en_juego": 200,
+   "series_posibles": 199,
+   "franja_serie": {
+    "desde": "180",
+    "hasta": "199",
+    "prob": 0.1042,
+    "azar": 0.1005
+   },
+   "loteria": "Quindío",
+   "slug": "loteria-del-quindio",
+   "fecha": "2026-11-19",
+   "tipo": "seco",
+   "top_numeros": [
+    "7284",
+    "7287",
+    "7294",
+    "7214",
+    "7234",
+    "7297",
+    "7274",
+    "7217",
+    "7237",
+    "7277"
+   ],
+   "prob_top_numeros": [
+    0.000154,
+    0.0001536,
+    0.0001528,
+    0.0001524,
+    0.0001524,
+    0.0001524,
+    0.0001522,
+    0.000152,
+    0.000152,
+    0.0001518
+   ],
+   "ultima_cifra": [
+    {
+     "cifra": 4,
+     "prob": 0.1071
+    },
+    {
+     "cifra": 7,
+     "prob": 0.1067
+    },
+    {
+     "cifra": 1,
+     "prob": 0.1038
+    }
+   ],
+   "terminaciones": [
+    {
+     "t2": "02",
+     "prob": 0.0109
+    },
+    {
+     "t2": "97",
+     "prob": 0.0109
+    },
+    {
+     "t2": "75",
+     "prob": 0.0109
+    },
+    {
+     "t2": "15",
+     "prob": 0.0109
+    },
+    {
+     "t2": "89",
+     "prob": 0.0109
+    }
+   ],
+   "reglas_usadas": {
+    "d1": [
+     {
+      "regla": "azar",
+      "peso": 0.34
+     },
+     {
+      "regla": "seco|todas|d1|reciente",
+      "peso": 0.315
+     },
+     {
+      "regla": "seco|todas|d1|caliente",
+      "peso": 0.291
+     }
+    ],
+    "d2": [
+     {
+      "regla": "seco|loteria-del-quindio|d2|caliente",
+      "peso": 0.63
+     },
+     {
+      "regla": "seco|loteria-del-quindio|d2|reciente",
+      "peso": 0.285
+     },
+     {
+      "regla": "azar",
+      "peso": 0.079
+     }
+    ],
+    "d3": [
+     {
+      "regla": "azar",
+      "peso": 0.647
+     },
+     {
+      "regla": "seco|loteria-del-quindio|d3|caliente",
+      "peso": 0.099
+     },
+     {
+      "regla": "seco|todas|d3|reciente",
+      "peso": 0.087
+     }
+    ],
+    "d4": [
+     {
+      "regla": "azar",
+      "peso": 0.601
+     },
+     {
+      "regla": "seco|loteria-del-quindio|d4|fria",
+      "peso": 0.253
+     },
+     {
+      "regla": "seco|todas|d4|reciente",
+      "peso": 0.045
+     }
+    ],
+    "t2": [
+     {
+      "regla": "azar",
+      "peso": 0.593
+     },
+     {
+      "regla": "seco|loteria-del-quindio|t2|fria",
+      "peso": 0.351
+     },
+     {
+      "regla": "seco|loteria-del-quindio|t2|reciente",
+      "peso": 0.025
+     }
+    ]
+   }
+  },
+  {
+   "loteria": "Quindío",
+   "slug": "loteria-del-quindio",
+   "fecha": "2026-11-19",
+   "tipo": "mayor",
+   "top_numeros": [
+    "0399",
+    "0799",
+    "0390",
+    "7399",
+    "0397"
+   ],
+   "prob_top_numeros": [
+    0.0001169,
+    0.0001164,
+    0.000116,
+    0.0001158,
+    0.0001156
+   ],
+   "ultima_cifra": [
+    {
+     "cifra": 9,
+     "prob": 0.1037
+    },
+    {
+     "cifra": 0,
+     "prob": 0.1029
+    },
+    {
+     "cifra": 7,
+     "prob": 0.1026
+    }
+   ],
+   "terminaciones": [
+    {
+     "t2": "56",
+     "prob": 0.0101
+    },
+    {
+     "t2": "79",
+     "prob": 0.0101
+    },
+    {
+     "t2": "40",
+     "prob": 0.0101
+    },
+    {
+     "t2": "98",
+     "prob": 0.0101
+    },
+    {
+     "t2": "32",
+     "prob": 0.0101
+    }
+   ],
+   "reglas_usadas": {
+    "d1": [
+     {
+      "regla": "azar",
+      "peso": 0.61
+     },
+     {
+      "regla": "mayor|loteria-del-quindio|d1|fria",
+      "peso": 0.125
+     },
+     {
+      "regla": "mayor|todas|d1|reciente",
+      "peso": 0.094
+     }
+    ],
+    "d2": [
+     {
+      "regla": "azar",
+      "peso": 0.633
+     },
+     {
+      "regla": "mayor|todas|d2|reciente",
+      "peso": 0.101
+     },
+     {
+      "regla": "mayor|todas|d2|caliente",
+      "peso": 0.096
+     }
+    ],
+    "d3": [
+     {
+      "regla": "azar",
+      "peso": 0.626
+     },
+     {
+      "regla": "mayor|todas|d3|reciente",
+      "peso": 0.11
+     },
+     {
+      "regla": "mayor|todas|d3|caliente",
+      "peso": 0.106
+     }
+    ],
+    "d4": [
+     {
+      "regla": "azar",
+      "peso": 0.637
+     },
+     {
+      "regla": "mayor|loteria-del-quindio|d4|caliente",
+      "peso": 0.093
+     },
+     {
+      "regla": "mayor|loteria-del-quindio|d4|markov",
       "peso": 0.083
      }
     ],
     "t2": [
      {
       "regla": "azar",
-      "peso": 0.782
+      "peso": 0.76
      },
      {
-      "regla": "mayor|loteria-del-valle|t2|reciente",
+      "regla": "mayor|loteria-del-quindio|t2|caliente",
       "peso": 0.074
      },
      {
-      "regla": "mayor|loteria-del-valle|t2|caliente",
-      "peso": 0.05
+      "regla": "mayor|loteria-del-quindio|t2|reciente",
+      "peso": 0.067
      }
     ]
    }
@@ -9862,12 +9458,40 @@
    "numeros_acertados": "",
    "ultima_cifra_predicha": 2,
    "aciertos_ultima_cifra": 0
+  },
+  {
+   "loteria": "Manizales",
+   "slug": "loteria-de-manizales",
+   "fecha": "2026-11-11",
+   "tipo": "mayor",
+   "predicho_el": "2026-11-04T13:45:23-05:00",
+   "premios": 1,
+   "top": 5,
+   "aciertos": 0,
+   "esperado_azar": 0.0005,
+   "numeros_acertados": "",
+   "ultima_cifra_predicha": 5,
+   "aciertos_ultima_cifra": 0
+  },
+  {
+   "loteria": "Valle",
+   "slug": "loteria-del-valle",
+   "fecha": "2026-11-11",
+   "tipo": "mayor",
+   "predicho_el": "2026-11-04T13:45:23-05:00",
+   "premios": 1,
+   "top": 5,
+   "aciertos": 0,
+   "esperado_azar": 0.0005,
+   "numeros_acertados": "",
+   "ultima_cifra_predicha": 4,
+   "aciertos_ultima_cifra": 0
   }
  ],
  "registro_resumen": {
-  "sorteos": 81,
+  "sorteos": 83,
   "aciertos": 4,
-  "esperado": 1.7054999999999998
+  "esperado": 1.7064999999999997
  },
  "economia": [
   {
@@ -10650,6 +10274,49 @@
   "loteria-del-valle": 310
  },
  "recientes": [
+  {
+   "slug": "loteria-del-valle",
+   "loteria": "Valle",
+   "fecha": "2026-11-11",
+   "mayor": "1067-198",
+   "secos": 0,
+   "independientes": 0,
+   "con_cuantia": 0,
+   "fuentes": [
+    "LoteríaYa"
+   ],
+   "verificar": "https://www.loteriaya.com.co/loteria/loteria-del-valle/resultado/2026-11-11",
+   "lista": [],
+   "estado": "sin secos"
+  },
+  {
+   "slug": "loteria-del-meta",
+   "loteria": "Meta",
+   "fecha": "2026-11-11",
+   "mayor": "",
+   "secos": 0,
+   "independientes": 0,
+   "con_cuantia": 0,
+   "fuentes": [],
+   "verificar": "https://www.loteriaya.com.co/loteria/loteria-del-meta/resultado/2026-11-11",
+   "lista": [],
+   "estado": "sin datos"
+  },
+  {
+   "slug": "loteria-de-manizales",
+   "loteria": "Manizales",
+   "fecha": "2026-11-11",
+   "mayor": "9494-020",
+   "secos": 0,
+   "independientes": 0,
+   "con_cuantia": 0,
+   "fuentes": [
+    "LoteríaYa"
+   ],
+   "verificar": "https://www.loteriaya.com.co/loteria/loteria-de-manizales/resultado/2026-11-11",
+   "lista": [],
+   "estado": "sin secos"
+  },
   {
    "slug": "loteria-del-huila",
    "loteria": "Huila",
@@ -13322,1264 +12989,6 @@
      "334",
      "",
      "derivado_permutacion_mayor"
-    ]
-   ],
-   "estado": "completo"
-  },
-  {
-   "slug": "loteria-del-tolima",
-   "loteria": "Tolima",
-   "fecha": "2026-11-03",
-   "mayor": "8708-133",
-   "secos": 39,
-   "independientes": 32,
-   "con_cuantia": 0,
-   "fuentes": [
-    "LoteríaYa"
-   ],
-   "verificar": "https://www.loteriaya.com.co/loteria/loteria-del-tolima/resultado/2026-11-03",
-   "lista": [
-    [
-     "9562",
-     "239",
-     "",
-     "seco"
-    ],
-    [
-     "9024",
-     "061",
-     "",
-     "seco"
-    ],
-    [
-     "6971",
-     "252",
-     "",
-     "seco"
-    ],
-    [
-     "7122",
-     "267",
-     "",
-     "seco"
-    ],
-    [
-     "0574",
-     "036",
-     "",
-     "seco"
-    ],
-    [
-     "5161",
-     "065",
-     "",
-     "seco"
-    ],
-    [
-     "8807",
-     "214",
-     "",
-     "seco"
-    ],
-    [
-     "0157",
-     "244",
-     "",
-     "seco"
-    ],
-    [
-     "1239",
-     "090",
-     "",
-     "seco"
-    ],
-    [
-     "4563",
-     "166",
-     "",
-     "seco"
-    ],
-    [
-     "5063",
-     "016",
-     "",
-     "seco"
-    ],
-    [
-     "0995",
-     "189",
-     "",
-     "seco"
-    ],
-    [
-     "2462",
-     "028",
-     "",
-     "seco"
-    ],
-    [
-     "4201",
-     "032",
-     "",
-     "seco"
-    ],
-    [
-     "4651",
-     "006",
-     "",
-     "seco"
-    ],
-    [
-     "6156",
-     "046",
-     "",
-     "seco"
-    ],
-    [
-     "6228",
-     "058",
-     "",
-     "seco"
-    ],
-    [
-     "7312",
-     "252",
-     "",
-     "seco"
-    ],
-    [
-     "8577",
-     "105",
-     "",
-     "seco"
-    ],
-    [
-     "9887",
-     "068",
-     "",
-     "seco"
-    ],
-    [
-     "2562",
-     "012",
-     "",
-     "seco"
-    ],
-    [
-     "2777",
-     "272",
-     "",
-     "seco"
-    ],
-    [
-     "3283",
-     "251",
-     "",
-     "seco"
-    ],
-    [
-     "3348",
-     "016",
-     "",
-     "seco"
-    ],
-    [
-     "3542",
-     "046",
-     "",
-     "seco"
-    ],
-    [
-     "4228",
-     "276",
-     "",
-     "seco"
-    ],
-    [
-     "4733",
-     "209",
-     "",
-     "seco"
-    ],
-    [
-     "8456",
-     "170",
-     "",
-     "seco"
-    ],
-    [
-     "8619",
-     "012",
-     "",
-     "seco"
-    ],
-    [
-     "9008",
-     "128",
-     "",
-     "seco"
-    ],
-    [
-     "9079",
-     "193",
-     "",
-     "seco"
-    ],
-    [
-     "9397",
-     "001",
-     "",
-     "seco"
-    ],
-    [
-     "0761",
-     "",
-     "",
-     "serie_faltante"
-    ],
-    [
-     "8078",
-     "133",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "8087",
-     "133",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "8807",
-     "133",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "8870",
-     "133",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "7880",
-     "133",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "0887",
-     "133",
-     "",
-     "derivado_permutacion_mayor"
-    ]
-   ],
-   "estado": "completo"
-  },
-  {
-   "slug": "loteria-del-huila",
-   "loteria": "Huila",
-   "fecha": "2026-11-03",
-   "mayor": "6639-167",
-   "secos": 37,
-   "independientes": 27,
-   "con_cuantia": 0,
-   "fuentes": [
-    "LoteríaYa"
-   ],
-   "verificar": "https://www.loteriaya.com.co/loteria/loteria-del-huila/resultado/2026-11-03",
-   "lista": [
-    [
-     "6621",
-     "114",
-     "",
-     "seco"
-    ],
-    [
-     "2842",
-     "039",
-     "",
-     "seco"
-    ],
-    [
-     "0972",
-     "142",
-     "",
-     "seco"
-    ],
-    [
-     "2159",
-     "158",
-     "",
-     "seco"
-    ],
-    [
-     "4433",
-     "115",
-     "",
-     "seco"
-    ],
-    [
-     "4972",
-     "022",
-     "",
-     "seco"
-    ],
-    [
-     "5654",
-     "092",
-     "",
-     "seco"
-    ],
-    [
-     "7229",
-     "058",
-     "",
-     "seco"
-    ],
-    [
-     "7558",
-     "159",
-     "",
-     "seco"
-    ],
-    [
-     "7743",
-     "096",
-     "",
-     "seco"
-    ],
-    [
-     "8018",
-     "128",
-     "",
-     "seco"
-    ],
-    [
-     "9932",
-     "004",
-     "",
-     "seco"
-    ],
-    [
-     "0722",
-     "112",
-     "",
-     "seco"
-    ],
-    [
-     "1078",
-     "019",
-     "",
-     "seco"
-    ],
-    [
-     "1634",
-     "147",
-     "",
-     "seco"
-    ],
-    [
-     "1687",
-     "103",
-     "",
-     "seco"
-    ],
-    [
-     "2510",
-     "004",
-     "",
-     "seco"
-    ],
-    [
-     "2641",
-     "046",
-     "",
-     "seco"
-    ],
-    [
-     "2679",
-     "158",
-     "",
-     "seco"
-    ],
-    [
-     "2886",
-     "125",
-     "",
-     "seco"
-    ],
-    [
-     "3637",
-     "014",
-     "",
-     "seco"
-    ],
-    [
-     "4703",
-     "054",
-     "",
-     "seco"
-    ],
-    [
-     "6028",
-     "010",
-     "",
-     "seco"
-    ],
-    [
-     "6855",
-     "024",
-     "",
-     "seco"
-    ],
-    [
-     "7684",
-     "166",
-     "",
-     "seco"
-    ],
-    [
-     "8342",
-     "010",
-     "",
-     "seco"
-    ],
-    [
-     "9408",
-     "014",
-     "",
-     "seco"
-    ],
-    [
-     "6638",
-     "167",
-     "",
-     "derivado_mayor_pm1"
-    ],
-    [
-     "6640",
-     "167",
-     "",
-     "derivado_mayor_pm1"
-    ],
-    [
-     "6396",
-     "167",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "6936",
-     "167",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "6963",
-     "167",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "3696",
-     "167",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "3966",
-     "167",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "9663",
-     "167",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "9636",
-     "167",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "9366",
-     "167",
-     "",
-     "derivado_permutacion_mayor"
-    ]
-   ],
-   "estado": "completo"
-  },
-  {
-   "slug": "loteria-de-cundinamarca",
-   "loteria": "Cundinamarca",
-   "fecha": "2026-11-03",
-   "mayor": "9251-149",
-   "secos": 78,
-   "independientes": 61,
-   "con_cuantia": 0,
-   "fuentes": [
-    "LoteríaYa"
-   ],
-   "verificar": "https://www.loteriaya.com.co/loteria/loteria-de-cundinamarca/resultado/2026-11-03",
-   "lista": [
-    [
-     "5478",
-     "243",
-     "",
-     "seco"
-    ],
-    [
-     "8975",
-     "258",
-     "",
-     "seco"
-    ],
-    [
-     "0732",
-     "301",
-     "",
-     "seco"
-    ],
-    [
-     "1283",
-     "165",
-     "",
-     "seco"
-    ],
-    [
-     "1600",
-     "135",
-     "",
-     "seco"
-    ],
-    [
-     "9143",
-     "267",
-     "",
-     "seco"
-    ],
-    [
-     "0127",
-     "212",
-     "",
-     "seco"
-    ],
-    [
-     "0846",
-     "198",
-     "",
-     "seco"
-    ],
-    [
-     "1379",
-     "100",
-     "",
-     "seco"
-    ],
-    [
-     "1443",
-     "086",
-     "",
-     "seco"
-    ],
-    [
-     "1596",
-     "254",
-     "",
-     "seco"
-    ],
-    [
-     "1889",
-     "145",
-     "",
-     "seco"
-    ],
-    [
-     "2954",
-     "127",
-     "",
-     "seco"
-    ],
-    [
-     "3005",
-     "177",
-     "",
-     "seco"
-    ],
-    [
-     "3816",
-     "186",
-     "",
-     "seco"
-    ],
-    [
-     "4280",
-     "241",
-     "",
-     "seco"
-    ],
-    [
-     "4749",
-     "236",
-     "",
-     "seco"
-    ],
-    [
-     "5145",
-     "329",
-     "",
-     "seco"
-    ],
-    [
-     "5233",
-     "148",
-     "",
-     "seco"
-    ],
-    [
-     "5312",
-     "217",
-     "",
-     "seco"
-    ],
-    [
-     "6808",
-     "179",
-     "",
-     "seco"
-    ],
-    [
-     "7787",
-     "077",
-     "",
-     "seco"
-    ],
-    [
-     "8069",
-     "068",
-     "",
-     "seco"
-    ],
-    [
-     "8075",
-     "268",
-     "",
-     "seco"
-    ],
-    [
-     "8398",
-     "060",
-     "",
-     "seco"
-    ],
-    [
-     "8414",
-     "245",
-     "",
-     "seco"
-    ],
-    [
-     "0038",
-     "291",
-     "",
-     "seco"
-    ],
-    [
-     "0259",
-     "318",
-     "",
-     "seco"
-    ],
-    [
-     "0614",
-     "073",
-     "",
-     "seco"
-    ],
-    [
-     "0653",
-     "050",
-     "",
-     "seco"
-    ],
-    [
-     "2461",
-     "090",
-     "",
-     "seco"
-    ],
-    [
-     "2610",
-     "100",
-     "",
-     "seco"
-    ],
-    [
-     "2736",
-     "170",
-     "",
-     "seco"
-    ],
-    [
-     "2843",
-     "214",
-     "",
-     "seco"
-    ],
-    [
-     "3805",
-     "164",
-     "",
-     "seco"
-    ],
-    [
-     "3965",
-     "202",
-     "",
-     "seco"
-    ],
-    [
-     "4264",
-     "333",
-     "",
-     "seco"
-    ],
-    [
-     "4534",
-     "095",
-     "",
-     "seco"
-    ],
-    [
-     "4832",
-     "193",
-     "",
-     "seco"
-    ],
-    [
-     "5267",
-     "063",
-     "",
-     "seco"
-    ],
-    [
-     "5955",
-     "060",
-     "",
-     "seco"
-    ],
-    [
-     "6006",
-     "320",
-     "",
-     "seco"
-    ],
-    [
-     "6021",
-     "329",
-     "",
-     "seco"
-    ],
-    [
-     "6034",
-     "076",
-     "",
-     "seco"
-    ],
-    [
-     "6578",
-     "286",
-     "",
-     "seco"
-    ],
-    [
-     "7013",
-     "216",
-     "",
-     "seco"
-    ],
-    [
-     "7333",
-     "060",
-     "",
-     "seco"
-    ],
-    [
-     "7428",
-     "218",
-     "",
-     "seco"
-    ],
-    [
-     "7429",
-     "189",
-     "",
-     "seco"
-    ],
-    [
-     "8019",
-     "104",
-     "",
-     "seco"
-    ],
-    [
-     "8227",
-     "348",
-     "",
-     "seco"
-    ],
-    [
-     "8384",
-     "105",
-     "",
-     "seco"
-    ],
-    [
-     "8453",
-     "090",
-     "",
-     "seco"
-    ],
-    [
-     "8695",
-     "005",
-     "",
-     "seco"
-    ],
-    [
-     "8749",
-     "232",
-     "",
-     "seco"
-    ],
-    [
-     "8803",
-     "007",
-     "",
-     "seco"
-    ],
-    [
-     "9158",
-     "237",
-     "",
-     "seco"
-    ],
-    [
-     "9222",
-     "059",
-     "",
-     "seco"
-    ],
-    [
-     "9348",
-     "049",
-     "",
-     "seco"
-    ],
-    [
-     "9429",
-     "238",
-     "",
-     "seco"
-    ],
-    [
-     "9636",
-     "263",
-     "",
-     "seco"
-    ],
-    [
-     "9512",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "9152",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "9125",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "2519",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "2159",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "2195",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "2915",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "5219",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "5129",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "5192",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "5912",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "1295",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "1259",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "1529",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "1592",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "1952",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ],
-    [
-     "1925",
-     "149",
-     "",
-     "derivado_permutacion_mayor"
-    ]
-   ],
-   "estado": "completo"
-  },
-  {
-   "slug": "loteria-de-la-cruz-roja",
-   "loteria": "Cruz Roja",
-   "fecha": "2026-11-03",
-   "mayor": "8607-153",
-   "secos": 45,
-   "independientes": 45,
-   "con_cuantia": 0,
-   "fuentes": [
-    "LoteríaYa"
-   ],
-   "verificar": "https://www.loteriaya.com.co/loteria/loteria-de-la-cruz-roja/resultado/2026-11-03",
-   "lista": [
-    [
-     "9662",
-     "093",
-     "",
-     "seco"
-    ],
-    [
-     "0840",
-     "161",
-     "",
-     "seco"
-    ],
-    [
-     "1556",
-     "324",
-     "",
-     "seco"
-    ],
-    [
-     "7980",
-     "142",
-     "",
-     "seco"
-    ],
-    [
-     "1471",
-     "216",
-     "",
-     "seco"
-    ],
-    [
-     "2563",
-     "187",
-     "",
-     "seco"
-    ],
-    [
-     "5192",
-     "008",
-     "",
-     "seco"
-    ],
-    [
-     "5201",
-     "172",
-     "",
-     "seco"
-    ],
-    [
-     "7810",
-     "178",
-     "",
-     "seco"
-    ],
-    [
-     "9886",
-     "168",
-     "",
-     "seco"
-    ],
-    [
-     "0259",
-     "162",
-     "",
-     "seco"
-    ],
-    [
-     "0552",
-     "117",
-     "",
-     "seco"
-    ],
-    [
-     "0761",
-     "026",
-     "",
-     "seco"
-    ],
-    [
-     "1344",
-     "010",
-     "",
-     "seco"
-    ],
-    [
-     "4113",
-     "241",
-     "",
-     "seco"
-    ],
-    [
-     "4242",
-     "249",
-     "",
-     "seco"
-    ],
-    [
-     "4724",
-     "139",
-     "",
-     "seco"
-    ],
-    [
-     "4861",
-     "314",
-     "",
-     "seco"
-    ],
-    [
-     "5186",
-     "139",
-     "",
-     "seco"
-    ],
-    [
-     "5666",
-     "217",
-     "",
-     "seco"
-    ],
-    [
-     "5668",
-     "011",
-     "",
-     "seco"
-    ],
-    [
-     "6208",
-     "214",
-     "",
-     "seco"
-    ],
-    [
-     "6875",
-     "231",
-     "",
-     "seco"
-    ],
-    [
-     "7190",
-     "014",
-     "",
-     "seco"
-    ],
-    [
-     "9222",
-     "312",
-     "",
-     "seco"
-    ],
-    [
-     "0771",
-     "061",
-     "",
-     "seco"
-    ],
-    [
-     "1043",
-     "087",
-     "",
-     "seco"
-    ],
-    [
-     "1203",
-     "279",
-     "",
-     "seco"
-    ],
-    [
-     "2273",
-     "004",
-     "",
-     "seco"
-    ],
-    [
-     "2659",
-     "065",
-     "",
-     "seco"
-    ],
-    [
-     "2745",
-     "019",
-     "",
-     "seco"
-    ],
-    [
-     "3251",
-     "204",
-     "",
-     "seco"
-    ],
-    [
-     "5030",
-     "299",
-     "",
-     "seco"
-    ],
-    [
-     "7328",
-     "023",
-     "",
-     "seco"
-    ],
-    [
-     "7699",
-     "282",
-     "",
-     "seco"
-    ],
-    [
-     "8137",
-     "285",
-     "",
-     "seco"
-    ],
-    [
-     "8441",
-     "197",
-     "",
-     "seco"
-    ],
-    [
-     "9254",
-     "220",
-     "",
-     "seco"
-    ],
-    [
-     "9296",
-     "157",
-     "",
-     "seco"
-    ],
-    [
-     "9318",
-     "257",
-     "",
-     "seco"
-    ],
-    [
-     "9625",
-     "080",
-     "",
-     "seco"
-    ],
-    [
-     "9797",
-     "322",
-     "",
-     "seco"
-    ],
-    [
-     "9805",
-     "128",
-     "",
-     "seco"
-    ],
-    [
-     "9902",
-     "079",
-     "",
-     "seco"
-    ],
-    [
-     "9966",
-     "251",
-     "",
-     "seco"
     ]
    ],
    "estado": "completo"
@@ -18658,10 +17067,10 @@
    ],
    "1067": [
     4,
-    0,
-    "2026-10-09",
-    "Risaralda",
-    "s"
+    1,
+    "2026-11-11",
+    "Valle",
+    "m"
    ],
    "1069": [
     1,
@@ -51768,10 +50177,10 @@
    ],
    "9494": [
     1,
-    0,
-    "2026-10-09",
-    "Santander",
-    "s"
+    1,
+    "2026-11-11",
+    "Manizales",
+    "m"
    ],
    "9495": [
     2,
@@ -53807,7 +52216,7 @@
   "secos_desde": "2026-08-18",
   "mayores_desde": "2024-08-29",
   "total_secos": 6697,
-  "total_mayores": 1433,
+  "total_mayores": 1435,
   "lots": [
    "loteria-de-bogota",
    "loteria-de-boyaca",
@@ -93980,8 +92389,8 @@
     "id": "H2",
     "enunciado": "Los premios mayores de loterías que juegan el mismo día comparten la última cifra más del 10 %.",
     "regla": "Binomial unilateral con las primeras 300 parejas; se sostiene si p < 0,01 y la proporción > 11 %.",
-    "progreso": "35 de 300 parejas",
-    "resultado": "3/35 = 8,6 %, p = 0,69",
+    "progreso": "36 de 300 parejas",
+    "resultado": "3/36 = 8,3 %, p = 0,71",
     "completa": false,
     "veredicto": "en curso"
    },

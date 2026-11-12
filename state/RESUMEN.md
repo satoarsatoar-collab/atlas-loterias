@@ -1,13 +1,13 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado mié 11 nov 2026 13:49 (Colombia) · último sorteo con datos: mar 10 nov 2026_
+_Actualizado jue 12 nov 2026 08:47 (Colombia) · último sorteo con datos: mié 11 nov 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
 | Indicador | Valor |
 |---|---|
-| Premios guardados | 6.697 secos independientes · 1.433 mayores |
-| Seguimiento en datos nuevos | 25 días · 1.898 premios |
+| Premios guardados | 6.697 secos independientes · 1.435 mayores |
+| Seguimiento en datos nuevos | 26 días · 1.900 premios |
 | Patrones vigilados | 1.463 (validar uno exige E ≥ 14.620) |
 | Combinador principal | E = 1,28 (datos nuevos; se valida con E ≥ 20) |
 | Validados / en observación | 0 / 4 |
@@ -41,33 +41,6 @@ _Actualizado mié 11 nov 2026 13:49 (Colombia) · último sorteo con datos: mar 
 | Al azar (control) | 2 | 4,8 | 0 de 1,9 | 0 de 1,7 |
 | Series · combinador | 157 | 155,8 | 61 de 59,2 | 54 de 53,9 |
 | Series · al azar (control) | 159 | 155,8 | 53 de 59,2 | 49 de 53,9 |
-
-**Manizales · mié 11 nov**
-
-- Combinador ATLAS: `5230 5200 5280 5290 5270 5240 5250 5260 5210 5220`
-- Calientes: `5100 5700 5104 5130 5704 5730 5102 5134 6100 5200`
-- Recientes: `2330 2230 2130 2390 2290 2730 2190 2350 2150 2830`
-- Fríos: `8425 8427 8927 8925 8423 4425 4427 8477 8475 8447`
-- Del mayor anterior: `2570 0752 0257 0275 0527 0572 0725 2057 2075 2507`
-- Al azar (control): `1454 2047 2268 5427 5222 1233 6830 2967 8197 1576`
-
-**Meta · mié 11 nov**
-
-- Combinador ATLAS: `8433 1433 7433 5433 2433 9433 8333 3433 1333 4433`
-- Calientes: `2333 2433 7333 7433 2313 1333 2323 5333 2413 7313`
-- Recientes: `8433 8431 1433 8493 3433 8463 8133 5433 8333 8533`
-- Fríos: `4808 4887 4807 6808 6877 4818 6888 4817 6878 6887`
-- Del mayor anterior: `7443 3447 3474 3744 4347 4374 4437 4473 4734 4743`
-- Al azar (control): `5366 8068 6726 6678 2315 8923 5705 1875 8504 0670`
-
-**Valle · mié 11 nov**
-
-- Combinador ATLAS: `7234 9234 8234 7634 7734 9634 7434 4234 7334 9734`
-- Calientes: `9676 4676 4672 9672 6676 4616 9616 9677 4677 6672`
-- Recientes: `5631 5731 5632 3631 7631 5630 5636 5634 6631 9631`
-- Fríos: `0163 0165 0145 0143 0865 0843 0167 0863 0168 0147`
-- Del mayor anterior: `7932 2397 2379 2739 2793 2937 2973 3279 3297 3729`
-- Al azar (control): `2184 3646 3474 7308 1188 1127 9000 3180 6885 8622`
 
 **Bogotá · jue 12 nov**
 
@@ -174,7 +147,7 @@ _Actualizado mié 11 nov 2026 13:49 (Colombia) · último sorteo con datos: mar 
 - Calientes: `5100 5700 5104 5130 5704 5730 5102 5134 6100 5200`
 - Recientes: `2190 2890 2790 2290 2390 2090 2750 5790 2800 5890`
 - Fríos: `1565 8565 1465 1515 8525 8465 8515 4565 1525 8965`
-- Del mayor anterior: `2570 0752 0257 0275 0527 0572 0725 2057 2075 2507`
+- Del mayor anterior: `9494 4949 4499 4994 9449 9944`
 - Al azar (control): `4654 3061 5024 1975 2380 8298 3735 1139 2667 4522`
 
 **Meta · mié 18 nov**
@@ -188,12 +161,30 @@ _Actualizado mié 11 nov 2026 13:49 (Colombia) · último sorteo con datos: mar 
 
 **Valle · mié 18 nov**
 
-- Combinador ATLAS: `7274 7234 7674 9274 7634 9234 7284 7474 4274 7434`
+- Combinador ATLAS: `7272 7232 7276 7236 7672 9272 7632 9232 7279 7271`
 - Calientes: `9676 4676 4672 9672 6676 4616 9616 9677 4677 6672`
 - Recientes: `7782 7682 7792 7772 7692 7689 7672 7722 7622 7082`
 - Fríos: `0150 0160 8160 8150 0140 0860 0850 0168 0158 0153`
-- Del mayor anterior: `7932 2397 2379 2739 2793 2937 2973 3279 3297 3729`
+- Del mayor anterior: `1067 7601 0167 0176 0617 0671 0716 0761 1076 1607`
 - Al azar (control): `0336 6746 9181 8290 1359 8517 0698 6741 4351 1909`
+
+**Bogotá · jue 19 nov**
+
+- Combinador ATLAS: `7235 4235 8235 9235 7285 7245 5235 7275 4285 7233`
+- Calientes: `2353 5353 7353 5350 2350 9353 0353 5333 2333 2351`
+- Recientes: `5205 5305 7305 7205 5300 5200 8305 8205 5345 5245`
+- Fríos: `3129 3139 3199 3829 3529 3029 0129 3099 3899 3039`
+- Del mayor anterior: `0387 7830 0378 0738 0783 0837 0873 3078 3087 3708`
+- Al azar (control): `7719 2119 6838 9305 3573 1981 0207 9491 7107 9699`
+
+**Quindío · jue 19 nov**
+
+- Combinador ATLAS: `7284 7287 7294 7214 7234 7297 7274 7217 7237 7277`
+- Calientes: `3219 3212 3289 3213 7219 9219 3282 3299 3210 3217`
+- Recientes: `3282 3280 3210 3212 3290 3292 3283 3285 3213 3215`
+- Fríos: `4127 4124 4121 4427 4424 6124 4724 4727 6127 4126`
+- Del mayor anterior: `4879 9784 4789 4798 4897 4978 4987 7489 7498 7849`
+- Al azar (control): `6489 0045 1294 1413 3039 8875 7963 1224 1910 5493`
 
 ## Series
 
@@ -218,6 +209,9 @@ _Actualizado mié 11 nov 2026 13:49 (Colombia) · último sorteo con datos: mar 
 
 | Fecha | Lotería | Premio mayor | Secos | Estado |
 |---|---|---|---|---|
+| mié 11 nov | Valle | 1067-198 | 0 | sin secos |
+| mié 11 nov | Meta | — | 0 | sin datos |
+| mié 11 nov | Manizales | 9494-020 | 0 | sin secos |
 | mar 10 nov | Huila | 4988-068 | 0 | sin secos |
 | mar 10 nov | Cruz Roja | 7341-163 | 0 | sin secos |
 | lun 9 nov | Tolima | 8349-243 | 0 | sin secos |
@@ -232,16 +226,12 @@ _Actualizado mié 11 nov 2026 13:49 (Colombia) · último sorteo con datos: mar 
 | mié 4 nov | Valle | 7932-040 | 34 | completo |
 | mié 4 nov | Meta | — | 0 | sin datos |
 | mié 4 nov | Manizales | 2570-334 | 69 | completo |
-| mar 3 nov | Tolima | 8708-133 | 39 | completo |
-| mar 3 nov | Huila | 6639-167 | 37 | completo |
-| mar 3 nov | Cundinamarca | 9251-149 | 78 | completo |
-| mar 3 nov | Cruz Roja | 8607-153 | 45 | completo |
 
 ## Datos
 
-- Descarga automática: ok · sorteos nuevos: 4
+- Descarga automática: ok · sorteos nuevos: 6
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Cundinamarca 9 nov, Tolima 9 nov, Cruz Roja 10 nov, Huila 10 nov, Meta 4 nov, Bogotá 15 oct, Boyacá 7 nov
+- Sorteos sin secos (últimas 4 semanas): Cundinamarca 9 nov, Tolima 9 nov, Cruz Roja 10 nov, Huila 10 nov, Manizales 11 nov, Meta 4 nov, Meta 11 nov, Valle 11 nov, Bogotá 15 oct, Boyacá 7 nov
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

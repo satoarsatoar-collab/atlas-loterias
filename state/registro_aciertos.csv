@@ -61,6 +61,8 @@ Tolima,loteria-del-tolima,2026-11-03,mayor,2026-10-27T19:43:26-05:00,1,5,0,0.000
 Tolima,loteria-del-tolima,2026-11-03,seco,2026-10-27T19:43:26-05:00,32,10,0,0.032,,2,6
 Manizales,loteria-de-manizales,2026-11-04,mayor,2026-10-28T12:15:03-05:00,1,5,0,0.0005,,1,0
 Manizales,loteria-de-manizales,2026-11-04,seco,2026-10-28T12:15:03-05:00,51,10,0,0.051,,1,7
+Meta,loteria-del-meta,2026-11-04,mayor,2026-10-28T12:15:03-05:00,1,5,0,0.0005,,4,0
+Meta,loteria-del-meta,2026-11-04,seco,2026-10-28T12:15:03-05:00,42,10,0,0.042,,3,5
 Valle,loteria-del-valle,2026-11-04,mayor,2026-10-28T12:15:03-05:00,1,5,0,0.0005,,3,0
 Valle,loteria-del-valle,2026-11-04,seco,2026-10-28T12:15:03-05:00,32,10,0,0.032,,6,3
 Bogotá,loteria-de-bogota,2026-11-05,mayor,2026-10-29T12:29:26-05:00,1,5,0,0.0005,,1,0
@@ -74,10 +76,13 @@ Risaralda,loteria-de-risaralda,2026-11-06,seco,2026-10-30T12:05:35-05:00,32,10,0
 Santander,loteria-de-santander,2026-11-06,mayor,2026-10-30T12:05:35-05:00,1,5,0,0.0005,,7,0
 Santander,loteria-de-santander,2026-11-06,seco,2026-10-30T12:05:35-05:00,69,10,0,0.069,,3,8
 Boyacá,loteria-de-boyaca,2026-11-07,mayor,2026-10-31T11:13:54-05:00,1,5,0,0.0005,,4,0
+Boyacá,loteria-de-boyaca,2026-11-07,seco,2026-10-31T11:13:54-05:00,59,10,0,0.059,,6,11
 Cauca,loteria-del-cauca,2026-11-07,mayor,2026-10-31T11:13:54-05:00,1,5,0,0.0005,,8,0
 Cauca,loteria-del-cauca,2026-11-07,seco,2026-10-31T11:13:54-05:00,36,10,0,0.036,,2,5
 Cundinamarca,loteria-de-cundinamarca,2026-11-09,mayor,2026-11-02T15:51:42-05:00,1,5,0,0.0005,,1,0
+Cundinamarca,loteria-de-cundinamarca,2026-11-09,seco,2026-11-02T15:51:42-05:00,60,10,0,0.06,,3,6
 Tolima,loteria-del-tolima,2026-11-09,mayor,2026-11-02T15:51:42-05:00,1,5,0,0.0005,,1,0
+Tolima,loteria-del-tolima,2026-11-09,seco,2026-11-02T15:51:42-05:00,32,10,0,0.032,,2,5
 Cruz Roja,loteria-de-la-cruz-roja,2026-11-10,mayor,2026-11-03T13:33:59-05:00,1,5,0,0.0005,,8,0
 Cruz Roja,loteria-de-la-cruz-roja,2026-11-10,seco,2026-11-03T13:33:59-05:00,45,10,0,0.045,,3,4
 Huila,loteria-del-huila,2026-11-10,mayor,2026-11-03T13:33:59-05:00,1,5,0,0.0005,,2,0

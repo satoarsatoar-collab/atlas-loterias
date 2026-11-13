@@ -1,329 +1,361 @@
-slug,fecha,metodo,premios,aciertos,esperado,numeros_acertados
-loteria-de-cundinamarca,2026-10-19,azar,61,0,0.061,
-loteria-de-cundinamarca,2026-10-19,calientes,61,0,0.061,
-loteria-de-cundinamarca,2026-10-19,combinador,61,0,0.061,
-loteria-de-cundinamarca,2026-10-19,frios,61,0,0.061,
-loteria-de-cundinamarca,2026-10-19,mayor_anterior,61,0,0.061,
-loteria-de-cundinamarca,2026-10-19,recientes,61,0,0.061,
-loteria-de-cundinamarca,2026-10-19,series_azar,61,3,1.7478510028653296,228 019 013
-loteria-de-cundinamarca,2026-10-19,series_combinador,61,0,1.7478510028653296,
-loteria-del-tolima,2026-10-19,azar,32,0,0.032,
-loteria-del-tolima,2026-10-19,calientes,32,0,0.032,
-loteria-del-tolima,2026-10-19,combinador,32,0,0.032,
-loteria-del-tolima,2026-10-19,frios,32,0,0.032,
-loteria-del-tolima,2026-10-19,mayor_anterior,32,0,0.032,
-loteria-del-tolima,2026-10-19,recientes,32,0,0.032,
-loteria-del-tolima,2026-10-19,series_azar,32,2,1.146953405017921,141 115
-loteria-del-tolima,2026-10-19,series_combinador,32,0,1.146953405017921,
-loteria-de-la-cruz-roja,2026-10-20,azar,45,0,0.045,
-loteria-de-la-cruz-roja,2026-10-20,calientes,45,0,0.045,
-loteria-de-la-cruz-roja,2026-10-20,combinador,45,0,0.045,
-loteria-de-la-cruz-roja,2026-10-20,frios,45,0,0.045,
-loteria-de-la-cruz-roja,2026-10-20,mayor_anterior,45,0,0.045,
-loteria-de-la-cruz-roja,2026-10-20,recientes,45,0,0.045,
-loteria-de-la-cruz-roja,2026-10-20,series_azar,45,1,1.3677811550151975,295
-loteria-de-la-cruz-roja,2026-10-20,series_combinador,45,1,1.3677811550151975,156
-loteria-del-huila,2026-10-20,azar,27,0,0.027,
-loteria-del-huila,2026-10-20,calientes,27,0,0.027,
-loteria-del-huila,2026-10-20,combinador,27,0,0.027,
-loteria-del-huila,2026-10-20,frios,27,0,0.027,
-loteria-del-huila,2026-10-20,mayor_anterior,27,0,0.027,
-loteria-del-huila,2026-10-20,recientes,27,0,0.027,
-loteria-del-huila,2026-10-20,series_azar,27,0,1.5083798882681565,
-loteria-del-huila,2026-10-20,series_combinador,27,0,1.5083798882681565,
-loteria-de-manizales,2026-10-21,azar,51,0,0.051,
-loteria-de-manizales,2026-10-21,calientes,51,0,0.051,
-loteria-de-manizales,2026-10-21,combinador,51,0,0.051,
-loteria-de-manizales,2026-10-21,frios,51,0,0.051,
-loteria-de-manizales,2026-10-21,mayor_anterior,51,1,0.051,2240
-loteria-de-manizales,2026-10-21,recientes,51,0,0.051,
-loteria-de-manizales,2026-10-21,series_azar,51,0,1.2781954887218046,
-loteria-de-manizales,2026-10-21,series_combinador,51,1,1.2781954887218046,352
-loteria-del-meta,2026-10-21,azar,42,0,0.042,
-loteria-del-meta,2026-10-21,calientes,42,0,0.042,
-loteria-del-meta,2026-10-21,combinador,42,0,0.042,
-loteria-del-meta,2026-10-21,frios,42,0,0.042,
-loteria-del-meta,2026-10-21,mayor_anterior,42,1,0.042,1453
-loteria-del-meta,2026-10-21,recientes,42,0,0.042,
-loteria-del-meta,2026-10-21,series_azar,42,2,2.8187919463087248,022 078
-loteria-del-meta,2026-10-21,series_combinador,42,6,2.8187919463087248,013 036 022 001 037 051
-loteria-del-valle,2026-10-21,azar,32,0,0.032,
-loteria-del-valle,2026-10-21,calientes,32,0,0.032,
-loteria-del-valle,2026-10-21,combinador,32,0,0.032,
-loteria-del-valle,2026-10-21,frios,32,0,0.032,
-loteria-del-valle,2026-10-21,mayor_anterior,32,0,0.032,
-loteria-del-valle,2026-10-21,recientes,32,0,0.032,
-loteria-del-valle,2026-10-21,series_azar,32,0,1.035598705501618,
-loteria-del-valle,2026-10-21,series_combinador,32,3,1.035598705501618,155 065 065
-loteria-de-bogota,2026-10-22,azar,53,0,0.053,
-loteria-de-bogota,2026-10-22,calientes,53,0,0.053,
-loteria-de-bogota,2026-10-22,combinador,53,0,0.053,
-loteria-de-bogota,2026-10-22,frios,53,0,0.053,
-loteria-de-bogota,2026-10-22,mayor_anterior,53,0,0.053,
-loteria-de-bogota,2026-10-22,recientes,53,0,0.053,
-loteria-de-bogota,2026-10-22,series_azar,53,1,1.1300639658848615,090
-loteria-de-bogota,2026-10-22,series_combinador,53,2,1.1300639658848615,041 247
-loteria-del-quindio,2026-10-22,azar,37,0,0.037,
-loteria-del-quindio,2026-10-22,calientes,37,0,0.037,
-loteria-del-quindio,2026-10-22,combinador,37,0,0.037,
-loteria-del-quindio,2026-10-22,frios,37,0,0.037,
-loteria-del-quindio,2026-10-22,mayor_anterior,37,0,0.037,
-loteria-del-quindio,2026-10-22,recientes,37,0,0.037,
-loteria-del-quindio,2026-10-22,series_azar,37,1,1.8592964824120604,037
-loteria-del-quindio,2026-10-22,series_combinador,37,1,1.8592964824120604,093
-loteria-de-medellin,2026-10-23,azar,44,0,0.044,
-loteria-de-medellin,2026-10-23,calientes,44,0,0.044,
-loteria-de-medellin,2026-10-23,combinador,44,0,0.044,
-loteria-de-medellin,2026-10-23,frios,44,1,0.044,7231
-loteria-de-medellin,2026-10-23,mayor_anterior,44,0,0.044,
-loteria-de-medellin,2026-10-23,recientes,44,0,0.044,
-loteria-de-medellin,2026-10-23,series_azar,44,0,0.8817635270541082,
-loteria-de-medellin,2026-10-23,series_combinador,44,0,0.8817635270541082,
-loteria-de-risaralda,2026-10-23,azar,32,0,0.032,
-loteria-de-risaralda,2026-10-23,calientes,32,0,0.032,
-loteria-de-risaralda,2026-10-23,combinador,32,0,0.032,
-loteria-de-risaralda,2026-10-23,frios,32,0,0.032,
-loteria-de-risaralda,2026-10-23,mayor_anterior,32,0,0.032,
-loteria-de-risaralda,2026-10-23,recientes,32,0,0.032,
-loteria-de-risaralda,2026-10-23,series_azar,32,2,1.0702341137123745,284 284
-loteria-de-risaralda,2026-10-23,series_combinador,32,0,1.0702341137123745,
-loteria-de-santander,2026-10-23,azar,69,0,0.069,
-loteria-de-santander,2026-10-23,calientes,69,0,0.069,
-loteria-de-santander,2026-10-23,combinador,69,0,0.069,
-loteria-de-santander,2026-10-23,frios,69,0,0.069,
-loteria-de-santander,2026-10-23,mayor_anterior,69,0,0.069,
-loteria-de-santander,2026-10-23,recientes,69,0,0.069,
-loteria-de-santander,2026-10-23,series_azar,69,2,2.0353982300884956,021 294
-loteria-de-santander,2026-10-23,series_combinador,69,3,2.0353982300884956,018 228 062
-loteria-de-boyaca,2026-10-24,azar,58,0,0.058,
-loteria-de-boyaca,2026-10-24,calientes,58,0,0.058,
-loteria-de-boyaca,2026-10-24,combinador,58,0,0.058,
-loteria-de-boyaca,2026-10-24,frios,58,1,0.058,1047
-loteria-de-boyaca,2026-10-24,mayor_anterior,58,0,0.058,
-loteria-de-boyaca,2026-10-24,recientes,58,0,0.058,
-loteria-de-boyaca,2026-10-24,series_azar,58,1,1.236673773987207,233
-loteria-de-boyaca,2026-10-24,series_combinador,58,1,1.236673773987207,044
-loteria-del-cauca,2026-10-24,azar,36,0,0.036,
-loteria-del-cauca,2026-10-24,calientes,36,0,0.036,
-loteria-del-cauca,2026-10-24,combinador,36,1,0.036,7372
-loteria-del-cauca,2026-10-24,frios,36,0,0.036,
-loteria-del-cauca,2026-10-24,mayor_anterior,36,0,0.036,
-loteria-del-cauca,2026-10-24,recientes,36,1,0.036,3952
-loteria-del-cauca,2026-10-24,series_azar,36,2,1.1650485436893203,054 184
-loteria-del-cauca,2026-10-24,series_combinador,36,1,1.1650485436893203,308
-loteria-de-cundinamarca,2026-10-26,azar,61,0,0.061,
-loteria-de-cundinamarca,2026-10-26,calientes,61,0,0.061,
-loteria-de-cundinamarca,2026-10-26,combinador,61,0,0.061,
-loteria-de-cundinamarca,2026-10-26,frios,61,0,0.061,
-loteria-de-cundinamarca,2026-10-26,mayor_anterior,61,0,0.061,
-loteria-de-cundinamarca,2026-10-26,recientes,61,0,0.061,
-loteria-de-cundinamarca,2026-10-26,series_azar,61,2,1.7478510028653296,287 105
-loteria-de-cundinamarca,2026-10-26,series_combinador,61,0,1.7478510028653296,
-loteria-del-tolima,2026-10-26,azar,32,0,0.032,
-loteria-del-tolima,2026-10-26,calientes,32,0,0.032,
-loteria-del-tolima,2026-10-26,combinador,32,0,0.032,
-loteria-del-tolima,2026-10-26,frios,32,0,0.032,
-loteria-del-tolima,2026-10-26,mayor_anterior,32,0,0.032,
-loteria-del-tolima,2026-10-26,recientes,32,0,0.032,
-loteria-del-tolima,2026-10-26,series_azar,32,2,1.146953405017921,177 033
-loteria-del-tolima,2026-10-26,series_combinador,32,1,1.146953405017921,096
-loteria-de-manizales,2026-10-28,azar,51,0,0.051,
-loteria-de-manizales,2026-10-28,calientes,51,0,0.051,
-loteria-de-manizales,2026-10-28,combinador,51,0,0.051,
-loteria-de-manizales,2026-10-28,frios,51,0,0.051,
-loteria-de-manizales,2026-10-28,mayor_anterior,51,0,0.051,
-loteria-de-manizales,2026-10-28,recientes,51,0,0.051,
-loteria-de-manizales,2026-10-28,series_azar,51,5,1.2781954887218046,251 346 307 307 251
-loteria-de-manizales,2026-10-28,series_combinador,51,3,1.2781954887218046,352 150 295
-loteria-del-meta,2026-10-28,azar,42,0,0.042,
-loteria-del-meta,2026-10-28,calientes,42,0,0.042,
-loteria-del-meta,2026-10-28,combinador,42,0,0.042,
-loteria-del-meta,2026-10-28,frios,42,0,0.042,
-loteria-del-meta,2026-10-28,mayor_anterior,42,0,0.042,
-loteria-del-meta,2026-10-28,recientes,42,0,0.042,
-loteria-del-meta,2026-10-28,series_azar,42,4,2.8187919463087248,010 033 099 112
-loteria-del-meta,2026-10-28,series_combinador,42,2,2.8187919463087248,013 022
-loteria-del-valle,2026-10-28,azar,32,0,0.032,
-loteria-del-valle,2026-10-28,calientes,32,0,0.032,
-loteria-del-valle,2026-10-28,combinador,32,0,0.032,
-loteria-del-valle,2026-10-28,frios,32,0,0.032,
-loteria-del-valle,2026-10-28,mayor_anterior,32,0,0.032,
-loteria-del-valle,2026-10-28,recientes,32,0,0.032,
-loteria-del-valle,2026-10-28,series_azar,32,0,1.035598705501618,
-loteria-del-valle,2026-10-28,series_combinador,32,0,1.035598705501618,
-loteria-de-bogota,2026-10-29,azar,52,0,0.052,
-loteria-de-bogota,2026-10-29,calientes,52,0,0.052,
-loteria-de-bogota,2026-10-29,combinador,52,0,0.052,
-loteria-de-bogota,2026-10-29,frios,52,0,0.052,
-loteria-de-bogota,2026-10-29,mayor_anterior,52,0,0.052,
-loteria-de-bogota,2026-10-29,recientes,52,0,0.052,
-loteria-de-bogota,2026-10-29,series_azar,52,4,1.1087420042643923,451 295 458 458
-loteria-de-bogota,2026-10-29,series_combinador,52,0,1.1087420042643923,
-loteria-del-quindio,2026-10-29,azar,37,0,0.037,
-loteria-del-quindio,2026-10-29,calientes,37,0,0.037,
-loteria-del-quindio,2026-10-29,combinador,37,0,0.037,
-loteria-del-quindio,2026-10-29,frios,37,0,0.037,
-loteria-del-quindio,2026-10-29,mayor_anterior,37,0,0.037,
-loteria-del-quindio,2026-10-29,recientes,37,0,0.037,
-loteria-del-quindio,2026-10-29,series_azar,37,1,1.8592964824120604,074
-loteria-del-quindio,2026-10-29,series_combinador,37,5,1.8592964824120604,106 191 106 091 074
-loteria-de-medellin,2026-10-30,azar,44,0,0.044,
-loteria-de-medellin,2026-10-30,calientes,44,0,0.044,
-loteria-de-medellin,2026-10-30,combinador,44,0,0.044,
-loteria-de-medellin,2026-10-30,frios,44,0,0.044,
-loteria-de-medellin,2026-10-30,mayor_anterior,44,0,0.044,
-loteria-de-medellin,2026-10-30,recientes,44,0,0.044,
-loteria-de-medellin,2026-10-30,series_azar,44,1,0.8817635270541082,282
-loteria-de-medellin,2026-10-30,series_combinador,44,2,0.8817635270541082,335 335
-loteria-de-risaralda,2026-10-30,azar,32,0,0.032,
-loteria-de-risaralda,2026-10-30,calientes,32,0,0.032,
-loteria-de-risaralda,2026-10-30,combinador,32,0,0.032,
-loteria-de-risaralda,2026-10-30,frios,32,0,0.032,
-loteria-de-risaralda,2026-10-30,mayor_anterior,32,0,0.032,
-loteria-de-risaralda,2026-10-30,recientes,32,0,0.032,
-loteria-de-risaralda,2026-10-30,series_azar,32,0,1.0702341137123745,
-loteria-de-risaralda,2026-10-30,series_combinador,32,0,1.0702341137123745,
-loteria-de-santander,2026-10-30,azar,69,0,0.069,
-loteria-de-santander,2026-10-30,calientes,69,0,0.069,
-loteria-de-santander,2026-10-30,combinador,69,0,0.069,
-loteria-de-santander,2026-10-30,frios,69,0,0.069,
-loteria-de-santander,2026-10-30,mayor_anterior,69,0,0.069,
-loteria-de-santander,2026-10-30,recientes,69,0,0.069,
-loteria-de-santander,2026-10-30,series_azar,69,0,2.0353982300884956,
-loteria-de-santander,2026-10-30,series_combinador,69,2,2.0353982300884956,010 008
-loteria-de-boyaca,2026-10-31,azar,59,0,0.059,
-loteria-de-boyaca,2026-10-31,calientes,59,0,0.059,
-loteria-de-boyaca,2026-10-31,combinador,59,1,0.059,4278
-loteria-de-boyaca,2026-10-31,frios,59,0,0.059,
-loteria-de-boyaca,2026-10-31,mayor_anterior,59,0,0.059,
-loteria-de-boyaca,2026-10-31,recientes,59,0,0.059,
-loteria-de-boyaca,2026-10-31,series_azar,59,0,1.2579957356076759,
-loteria-de-boyaca,2026-10-31,series_combinador,59,1,1.2579957356076759,027
-loteria-del-cauca,2026-10-31,azar,36,0,0.036,
-loteria-del-cauca,2026-10-31,calientes,36,0,0.036,
-loteria-del-cauca,2026-10-31,combinador,36,0,0.036,
-loteria-del-cauca,2026-10-31,frios,36,0,0.036,
-loteria-del-cauca,2026-10-31,mayor_anterior,36,0,0.036,
-loteria-del-cauca,2026-10-31,recientes,36,0,0.036,
-loteria-del-cauca,2026-10-31,series_azar,36,1,1.1650485436893203,163
-loteria-del-cauca,2026-10-31,series_combinador,36,1,1.1650485436893203,158
-loteria-de-cundinamarca,2026-11-03,azar,61,0,0.061,
-loteria-de-cundinamarca,2026-11-03,calientes,61,1,0.061,2736
-loteria-de-cundinamarca,2026-11-03,combinador,61,0,0.061,
-loteria-de-cundinamarca,2026-11-03,frios,61,0,0.061,
-loteria-de-cundinamarca,2026-11-03,mayor_anterior,61,0,0.061,
-loteria-de-cundinamarca,2026-11-03,recientes,61,0,0.061,
-loteria-de-cundinamarca,2026-11-03,series_azar,61,1,1.7478510028653296,076
-loteria-de-cundinamarca,2026-11-03,series_combinador,61,2,1.7478510028653296,291 105
-loteria-de-la-cruz-roja,2026-11-03,azar,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-03,calientes,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-03,combinador,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-03,frios,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-03,mayor_anterior,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-03,recientes,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-03,series_azar,45,0,1.3677811550151975,
-loteria-de-la-cruz-roja,2026-11-03,series_combinador,45,1,1.3677811550151975,187
-loteria-del-huila,2026-11-03,azar,27,0,0.027,
-loteria-del-huila,2026-11-03,calientes,27,0,0.027,
-loteria-del-huila,2026-11-03,combinador,27,0,0.027,
-loteria-del-huila,2026-11-03,frios,27,0,0.027,
-loteria-del-huila,2026-11-03,mayor_anterior,27,0,0.027,
-loteria-del-huila,2026-11-03,recientes,27,0,0.027,
-loteria-del-huila,2026-11-03,series_azar,27,1,1.5083798882681565,166
-loteria-del-huila,2026-11-03,series_combinador,27,2,1.5083798882681565,103 166
-loteria-del-tolima,2026-11-03,azar,32,0,0.032,
-loteria-del-tolima,2026-11-03,calientes,32,0,0.032,
-loteria-del-tolima,2026-11-03,combinador,32,0,0.032,
-loteria-del-tolima,2026-11-03,frios,32,0,0.032,
-loteria-del-tolima,2026-11-03,mayor_anterior,32,0,0.032,
-loteria-del-tolima,2026-11-03,recientes,32,0,0.032,
-loteria-del-tolima,2026-11-03,series_azar,32,1,1.146953405017921,001
-loteria-del-tolima,2026-11-03,series_combinador,32,1,1.146953405017921,189
-loteria-de-manizales,2026-11-04,azar,51,0,0.051,
-loteria-de-manizales,2026-11-04,calientes,51,0,0.051,
-loteria-de-manizales,2026-11-04,combinador,51,0,0.051,
-loteria-de-manizales,2026-11-04,frios,51,0,0.051,
-loteria-de-manizales,2026-11-04,mayor_anterior,51,0,0.051,
-loteria-de-manizales,2026-11-04,recientes,51,0,0.051,
-loteria-de-manizales,2026-11-04,series_azar,51,2,1.2781954887218046,196 028
-loteria-de-manizales,2026-11-04,series_combinador,51,1,1.2781954887218046,220
-loteria-del-valle,2026-11-04,azar,32,0,0.032,
-loteria-del-valle,2026-11-04,calientes,32,0,0.032,
-loteria-del-valle,2026-11-04,combinador,32,0,0.032,
-loteria-del-valle,2026-11-04,frios,32,0,0.032,
-loteria-del-valle,2026-11-04,mayor_anterior,32,0,0.032,
-loteria-del-valle,2026-11-04,recientes,32,0,0.032,
-loteria-del-valle,2026-11-04,series_azar,32,0,1.035598705501618,
-loteria-del-valle,2026-11-04,series_combinador,32,1,1.035598705501618,003
-loteria-de-bogota,2026-11-05,azar,53,0,0.053,
-loteria-de-bogota,2026-11-05,calientes,53,0,0.053,
-loteria-de-bogota,2026-11-05,combinador,53,1,0.053,8276
-loteria-de-bogota,2026-11-05,frios,53,0,0.053,
-loteria-de-bogota,2026-11-05,mayor_anterior,53,1,0.053,9329
-loteria-de-bogota,2026-11-05,recientes,53,0,0.053,
-loteria-de-bogota,2026-11-05,series_azar,53,1,1.1300639658848615,371
-loteria-de-bogota,2026-11-05,series_combinador,53,1,1.1300639658848615,158
-loteria-del-quindio,2026-11-05,azar,36,0,0.036,
-loteria-del-quindio,2026-11-05,calientes,36,1,0.036,9219
-loteria-del-quindio,2026-11-05,combinador,36,1,0.036,1225
-loteria-del-quindio,2026-11-05,frios,36,0,0.036,
-loteria-del-quindio,2026-11-05,mayor_anterior,36,0,0.036,
-loteria-del-quindio,2026-11-05,recientes,36,1,0.036,9219
-loteria-del-quindio,2026-11-05,series_azar,36,3,1.8090452261306533,072 166 197
-loteria-del-quindio,2026-11-05,series_combinador,36,2,1.8090452261306533,106 051
-loteria-de-medellin,2026-11-06,azar,44,0,0.044,
-loteria-de-medellin,2026-11-06,calientes,44,0,0.044,
-loteria-de-medellin,2026-11-06,combinador,44,0,0.044,
-loteria-de-medellin,2026-11-06,frios,44,0,0.044,
-loteria-de-medellin,2026-11-06,mayor_anterior,44,0,0.044,
-loteria-de-medellin,2026-11-06,recientes,44,0,0.044,
-loteria-de-medellin,2026-11-06,series_azar,44,2,0.8817635270541082,057 381
-loteria-de-medellin,2026-11-06,series_combinador,44,2,0.8817635270541082,122 122
-loteria-de-risaralda,2026-11-06,azar,32,0,0.032,
-loteria-de-risaralda,2026-11-06,calientes,32,0,0.032,
-loteria-de-risaralda,2026-11-06,combinador,32,0,0.032,
-loteria-de-risaralda,2026-11-06,frios,32,0,0.032,
-loteria-de-risaralda,2026-11-06,mayor_anterior,32,0,0.032,
-loteria-de-risaralda,2026-11-06,recientes,32,0,0.032,
-loteria-de-risaralda,2026-11-06,series_azar,32,0,1.0702341137123745,
-loteria-de-risaralda,2026-11-06,series_combinador,32,1,1.0702341137123745,293
-loteria-de-santander,2026-11-06,azar,69,0,0.069,
-loteria-de-santander,2026-11-06,calientes,69,1,0.069,4398
-loteria-de-santander,2026-11-06,combinador,69,0,0.069,
-loteria-de-santander,2026-11-06,frios,69,0,0.069,
-loteria-de-santander,2026-11-06,mayor_anterior,69,0,0.069,
-loteria-de-santander,2026-11-06,recientes,69,0,0.069,
-loteria-de-santander,2026-11-06,series_azar,69,0,2.0353982300884956,
-loteria-de-santander,2026-11-06,series_combinador,69,2,2.0353982300884956,008 008
-loteria-del-cauca,2026-11-07,azar,36,0,0.036,
-loteria-del-cauca,2026-11-07,calientes,36,0,0.036,
-loteria-del-cauca,2026-11-07,combinador,36,0,0.036,
-loteria-del-cauca,2026-11-07,frios,36,0,0.036,
-loteria-del-cauca,2026-11-07,mayor_anterior,36,0,0.036,
-loteria-del-cauca,2026-11-07,recientes,36,0,0.036,
-loteria-del-cauca,2026-11-07,series_azar,36,1,1.1650485436893203,129
-loteria-del-cauca,2026-11-07,series_combinador,36,2,1.1650485436893203,027 103
-loteria-de-la-cruz-roja,2026-11-10,azar,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-10,calientes,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-10,combinador,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-10,frios,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-10,mayor_anterior,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-10,recientes,45,0,0.045,
-loteria-de-la-cruz-roja,2026-11-10,series_azar,45,2,1.3677811550151975,020 004
-loteria-de-la-cruz-roja,2026-11-10,series_combinador,45,2,1.3677811550151975,240 143
-loteria-del-huila,2026-11-10,azar,27,0,0.027,
-loteria-del-huila,2026-11-10,calientes,27,0,0.027,
-loteria-del-huila,2026-11-10,combinador,27,0,0.027,
-loteria-del-huila,2026-11-10,frios,27,0,0.027,
-loteria-del-huila,2026-11-10,mayor_anterior,27,0,0.027,
-loteria-del-huila,2026-11-10,recientes,27,0,0.027,
-loteria-del-huila,2026-11-10,series_azar,27,1,1.5083798882681565,094
-loteria-del-huila,2026-11-10,series_combinador,27,3,1.5083798882681565,165 149 133
-loteria-del-meta,2026-11-11,azar,42,0,0.042,
-loteria-del-meta,2026-11-11,calientes,42,0,0.042,
-loteria-del-meta,2026-11-11,combinador,42,0,0.042,
-loteria-del-meta,2026-11-11,frios,42,0,0.042,
-loteria-del-meta,2026-11-11,mayor_anterior,42,0,0.042,
-loteria-del-meta,2026-11-11,recientes,42,0,0.042,
-loteria-del-meta,2026-11-11,series_azar,42,0,2.8187919463087248,
-loteria-del-meta,2026-11-11,series_combinador,42,2,2.8187919463087248,047 063
+slug,fecha,metodo,premios,aciertos,esperado,numeros_acertados,tipo,predicho_el
+loteria-de-cundinamarca,2026-10-19,azar,61,0,0.061,,seco,2026-10-17T20:02:23-05:00
+loteria-de-cundinamarca,2026-10-19,calientes,61,0,0.061,,seco,2026-10-17T20:02:23-05:00
+loteria-de-cundinamarca,2026-10-19,combinador,61,0,0.061,,seco,2026-10-17T20:02:23-05:00
+loteria-de-cundinamarca,2026-10-19,frios,61,0,0.061,,seco,2026-10-17T20:02:23-05:00
+loteria-de-cundinamarca,2026-10-19,mayor_anterior,61,0,0.061,,seco,2026-10-17T20:02:23-05:00
+loteria-de-cundinamarca,2026-10-19,recientes,61,0,0.061,,seco,2026-10-17T20:02:23-05:00
+loteria-de-cundinamarca,2026-10-19,series_azar,61,3,1.7478510028653296,228 019 013,seco,2026-10-17T20:02:23-05:00
+loteria-de-cundinamarca,2026-10-19,series_combinador,61,0,1.7478510028653296,,seco,2026-10-17T20:02:23-05:00
+loteria-del-tolima,2026-10-19,azar,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-tolima,2026-10-19,calientes,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-tolima,2026-10-19,combinador,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-tolima,2026-10-19,frios,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-tolima,2026-10-19,mayor_anterior,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-tolima,2026-10-19,recientes,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-tolima,2026-10-19,series_azar,32,2,1.146953405017921,141 115,seco,2026-10-17T20:02:23-05:00
+loteria-del-tolima,2026-10-19,series_combinador,32,0,1.146953405017921,,seco,2026-10-17T20:02:23-05:00
+loteria-de-la-cruz-roja,2026-10-20,azar,45,0,0.045,,seco,2026-10-17T20:02:23-05:00
+loteria-de-la-cruz-roja,2026-10-20,calientes,45,0,0.045,,seco,2026-10-17T20:02:23-05:00
+loteria-de-la-cruz-roja,2026-10-20,combinador,45,0,0.045,,seco,2026-10-17T20:02:23-05:00
+loteria-de-la-cruz-roja,2026-10-20,frios,45,0,0.045,,seco,2026-10-17T20:02:23-05:00
+loteria-de-la-cruz-roja,2026-10-20,mayor_anterior,45,0,0.045,,seco,2026-10-17T20:02:23-05:00
+loteria-de-la-cruz-roja,2026-10-20,recientes,45,0,0.045,,seco,2026-10-17T20:02:23-05:00
+loteria-de-la-cruz-roja,2026-10-20,series_azar,45,1,1.3677811550151975,295,seco,2026-10-17T20:02:23-05:00
+loteria-de-la-cruz-roja,2026-10-20,series_combinador,45,1,1.3677811550151975,156,seco,2026-10-17T20:02:23-05:00
+loteria-del-huila,2026-10-20,azar,27,0,0.027,,seco,2026-10-17T20:02:23-05:00
+loteria-del-huila,2026-10-20,calientes,27,0,0.027,,seco,2026-10-17T20:02:23-05:00
+loteria-del-huila,2026-10-20,combinador,27,0,0.027,,seco,2026-10-17T20:02:23-05:00
+loteria-del-huila,2026-10-20,frios,27,0,0.027,,seco,2026-10-17T20:02:23-05:00
+loteria-del-huila,2026-10-20,mayor_anterior,27,0,0.027,,seco,2026-10-17T20:02:23-05:00
+loteria-del-huila,2026-10-20,recientes,27,0,0.027,,seco,2026-10-17T20:02:23-05:00
+loteria-del-huila,2026-10-20,series_azar,27,0,1.5083798882681565,,seco,2026-10-17T20:02:23-05:00
+loteria-del-huila,2026-10-20,series_combinador,27,0,1.5083798882681565,,seco,2026-10-17T20:02:23-05:00
+loteria-de-manizales,2026-10-21,azar,51,0,0.051,,seco,2026-10-17T20:02:23-05:00
+loteria-de-manizales,2026-10-21,calientes,51,0,0.051,,seco,2026-10-17T20:02:23-05:00
+loteria-de-manizales,2026-10-21,combinador,51,0,0.051,,seco,2026-10-17T20:02:23-05:00
+loteria-de-manizales,2026-10-21,frios,51,0,0.051,,seco,2026-10-17T20:02:23-05:00
+loteria-de-manizales,2026-10-21,mayor_anterior,51,1,0.051,2240,seco,2026-10-17T20:02:23-05:00
+loteria-de-manizales,2026-10-21,recientes,51,0,0.051,,seco,2026-10-17T20:02:23-05:00
+loteria-de-manizales,2026-10-21,series_azar,51,0,1.2781954887218046,,seco,2026-10-17T20:02:23-05:00
+loteria-de-manizales,2026-10-21,series_combinador,51,1,1.2781954887218046,352,seco,2026-10-17T20:02:23-05:00
+loteria-del-meta,2026-10-21,azar,42,0,0.042,,seco,2026-10-17T20:02:23-05:00
+loteria-del-meta,2026-10-21,calientes,42,0,0.042,,seco,2026-10-17T20:02:23-05:00
+loteria-del-meta,2026-10-21,combinador,42,0,0.042,,seco,2026-10-17T20:02:23-05:00
+loteria-del-meta,2026-10-21,frios,42,0,0.042,,seco,2026-10-17T20:02:23-05:00
+loteria-del-meta,2026-10-21,mayor_anterior,42,1,0.042,1453,seco,2026-10-17T20:02:23-05:00
+loteria-del-meta,2026-10-21,recientes,42,0,0.042,,seco,2026-10-17T20:02:23-05:00
+loteria-del-meta,2026-10-21,series_azar,42,2,2.8187919463087248,022 078,seco,2026-10-17T20:02:23-05:00
+loteria-del-meta,2026-10-21,series_combinador,42,6,2.8187919463087248,013 036 022 001 037 051,seco,2026-10-17T20:02:23-05:00
+loteria-del-valle,2026-10-21,azar,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-valle,2026-10-21,calientes,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-valle,2026-10-21,combinador,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-valle,2026-10-21,frios,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-valle,2026-10-21,mayor_anterior,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-valle,2026-10-21,recientes,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-del-valle,2026-10-21,series_azar,32,0,1.035598705501618,,seco,2026-10-17T20:02:23-05:00
+loteria-del-valle,2026-10-21,series_combinador,32,3,1.035598705501618,155 065 065,seco,2026-10-17T20:02:23-05:00
+loteria-de-bogota,2026-10-22,azar,53,0,0.053,,seco,2026-10-17T20:02:23-05:00
+loteria-de-bogota,2026-10-22,calientes,53,0,0.053,,seco,2026-10-17T20:02:23-05:00
+loteria-de-bogota,2026-10-22,combinador,53,0,0.053,,seco,2026-10-17T20:02:23-05:00
+loteria-de-bogota,2026-10-22,frios,53,0,0.053,,seco,2026-10-17T20:02:23-05:00
+loteria-de-bogota,2026-10-22,mayor_anterior,53,0,0.053,,seco,2026-10-17T20:02:23-05:00
+loteria-de-bogota,2026-10-22,recientes,53,0,0.053,,seco,2026-10-17T20:02:23-05:00
+loteria-de-bogota,2026-10-22,series_azar,53,1,1.1300639658848615,090,seco,2026-10-17T20:02:23-05:00
+loteria-de-bogota,2026-10-22,series_combinador,53,2,1.1300639658848615,041 247,seco,2026-10-17T20:02:23-05:00
+loteria-del-quindio,2026-10-22,azar,37,0,0.037,,seco,2026-10-17T20:02:23-05:00
+loteria-del-quindio,2026-10-22,calientes,37,0,0.037,,seco,2026-10-17T20:02:23-05:00
+loteria-del-quindio,2026-10-22,combinador,37,0,0.037,,seco,2026-10-17T20:02:23-05:00
+loteria-del-quindio,2026-10-22,frios,37,0,0.037,,seco,2026-10-17T20:02:23-05:00
+loteria-del-quindio,2026-10-22,mayor_anterior,37,0,0.037,,seco,2026-10-17T20:02:23-05:00
+loteria-del-quindio,2026-10-22,recientes,37,0,0.037,,seco,2026-10-17T20:02:23-05:00
+loteria-del-quindio,2026-10-22,series_azar,37,1,1.8592964824120604,037,seco,2026-10-17T20:02:23-05:00
+loteria-del-quindio,2026-10-22,series_combinador,37,1,1.8592964824120604,093,seco,2026-10-17T20:02:23-05:00
+loteria-de-medellin,2026-10-23,azar,44,0,0.044,,seco,2026-10-17T20:02:23-05:00
+loteria-de-medellin,2026-10-23,calientes,44,0,0.044,,seco,2026-10-17T20:02:23-05:00
+loteria-de-medellin,2026-10-23,combinador,44,0,0.044,,seco,2026-10-17T20:02:23-05:00
+loteria-de-medellin,2026-10-23,frios,44,1,0.044,7231,seco,2026-10-17T20:02:23-05:00
+loteria-de-medellin,2026-10-23,mayor_anterior,44,0,0.044,,seco,2026-10-17T20:02:23-05:00
+loteria-de-medellin,2026-10-23,recientes,44,0,0.044,,seco,2026-10-17T20:02:23-05:00
+loteria-de-medellin,2026-10-23,series_azar,44,0,0.8817635270541082,,seco,2026-10-17T20:02:23-05:00
+loteria-de-medellin,2026-10-23,series_combinador,44,0,0.8817635270541082,,seco,2026-10-17T20:02:23-05:00
+loteria-de-risaralda,2026-10-23,azar,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-de-risaralda,2026-10-23,calientes,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-de-risaralda,2026-10-23,combinador,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-de-risaralda,2026-10-23,frios,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-de-risaralda,2026-10-23,mayor_anterior,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-de-risaralda,2026-10-23,recientes,32,0,0.032,,seco,2026-10-17T20:02:23-05:00
+loteria-de-risaralda,2026-10-23,series_azar,32,2,1.0702341137123745,284 284,seco,2026-10-17T20:02:23-05:00
+loteria-de-risaralda,2026-10-23,series_combinador,32,0,1.0702341137123745,,seco,2026-10-17T20:02:23-05:00
+loteria-de-santander,2026-10-23,azar,69,0,0.069,,seco,2026-10-17T20:02:23-05:00
+loteria-de-santander,2026-10-23,calientes,69,0,0.069,,seco,2026-10-17T20:02:23-05:00
+loteria-de-santander,2026-10-23,combinador,69,0,0.069,,seco,2026-10-17T20:02:23-05:00
+loteria-de-santander,2026-10-23,frios,69,0,0.069,,seco,2026-10-17T20:02:23-05:00
+loteria-de-santander,2026-10-23,mayor_anterior,69,0,0.069,,seco,2026-10-17T20:02:23-05:00
+loteria-de-santander,2026-10-23,recientes,69,0,0.069,,seco,2026-10-17T20:02:23-05:00
+loteria-de-santander,2026-10-23,series_azar,69,2,2.0353982300884956,021 294,seco,2026-10-17T20:02:23-05:00
+loteria-de-santander,2026-10-23,series_combinador,69,3,2.0353982300884956,018 228 062,seco,2026-10-17T20:02:23-05:00
+loteria-de-boyaca,2026-10-24,azar,58,0,0.058,,seco,2026-10-17T20:02:23-05:00
+loteria-de-boyaca,2026-10-24,calientes,58,0,0.058,,seco,2026-10-17T20:02:23-05:00
+loteria-de-boyaca,2026-10-24,combinador,58,0,0.058,,seco,2026-10-17T20:02:23-05:00
+loteria-de-boyaca,2026-10-24,frios,58,1,0.058,1047,seco,2026-10-17T20:02:23-05:00
+loteria-de-boyaca,2026-10-24,mayor_anterior,58,0,0.058,,seco,2026-10-17T20:02:23-05:00
+loteria-de-boyaca,2026-10-24,recientes,58,0,0.058,,seco,2026-10-17T20:02:23-05:00
+loteria-de-boyaca,2026-10-24,series_azar,58,1,1.236673773987207,233,seco,2026-10-17T20:02:23-05:00
+loteria-de-boyaca,2026-10-24,series_combinador,58,1,1.236673773987207,044,seco,2026-10-17T20:02:23-05:00
+loteria-del-cauca,2026-10-24,azar,36,0,0.036,,seco,2026-10-17T20:02:23-05:00
+loteria-del-cauca,2026-10-24,calientes,36,0,0.036,,seco,2026-10-17T20:02:23-05:00
+loteria-del-cauca,2026-10-24,combinador,36,1,0.036,7372,seco,2026-10-17T20:02:23-05:00
+loteria-del-cauca,2026-10-24,frios,36,0,0.036,,seco,2026-10-17T20:02:23-05:00
+loteria-del-cauca,2026-10-24,mayor_anterior,36,0,0.036,,seco,2026-10-17T20:02:23-05:00
+loteria-del-cauca,2026-10-24,recientes,36,1,0.036,3952,seco,2026-10-17T20:02:23-05:00
+loteria-del-cauca,2026-10-24,series_azar,36,2,1.1650485436893203,054 184,seco,2026-10-17T20:02:23-05:00
+loteria-del-cauca,2026-10-24,series_combinador,36,1,1.1650485436893203,308,seco,2026-10-17T20:02:23-05:00
+loteria-de-cundinamarca,2026-10-26,azar,61,0,0.061,,seco,2026-10-19T12:38:35-05:00
+loteria-de-cundinamarca,2026-10-26,calientes,61,0,0.061,,seco,2026-10-19T12:38:35-05:00
+loteria-de-cundinamarca,2026-10-26,combinador,61,0,0.061,,seco,2026-10-19T12:38:35-05:00
+loteria-de-cundinamarca,2026-10-26,frios,61,0,0.061,,seco,2026-10-19T12:38:35-05:00
+loteria-de-cundinamarca,2026-10-26,mayor_anterior,61,0,0.061,,seco,2026-10-19T12:38:35-05:00
+loteria-de-cundinamarca,2026-10-26,recientes,61,0,0.061,,seco,2026-10-19T12:38:35-05:00
+loteria-de-cundinamarca,2026-10-26,series_azar,61,2,1.7478510028653296,287 105,seco,2026-10-19T12:38:35-05:00
+loteria-de-cundinamarca,2026-10-26,series_combinador,61,0,1.7478510028653296,,seco,2026-10-19T12:38:35-05:00
+loteria-del-tolima,2026-10-26,azar,32,0,0.032,,seco,2026-10-19T12:38:35-05:00
+loteria-del-tolima,2026-10-26,calientes,32,0,0.032,,seco,2026-10-19T12:38:35-05:00
+loteria-del-tolima,2026-10-26,combinador,32,0,0.032,,seco,2026-10-19T12:38:35-05:00
+loteria-del-tolima,2026-10-26,frios,32,0,0.032,,seco,2026-10-19T12:38:35-05:00
+loteria-del-tolima,2026-10-26,mayor_anterior,32,0,0.032,,seco,2026-10-19T12:38:35-05:00
+loteria-del-tolima,2026-10-26,recientes,32,0,0.032,,seco,2026-10-19T12:38:35-05:00
+loteria-del-tolima,2026-10-26,series_azar,32,2,1.146953405017921,177 033,seco,2026-10-19T12:38:35-05:00
+loteria-del-tolima,2026-10-26,series_combinador,32,1,1.146953405017921,096,seco,2026-10-19T12:38:35-05:00
+loteria-de-manizales,2026-10-28,azar,51,0,0.051,,seco,2026-10-27T19:43:26-05:00
+loteria-de-manizales,2026-10-28,calientes,51,0,0.051,,seco,2026-10-27T19:43:26-05:00
+loteria-de-manizales,2026-10-28,combinador,51,0,0.051,,seco,2026-10-27T19:43:26-05:00
+loteria-de-manizales,2026-10-28,frios,51,0,0.051,,seco,2026-10-27T19:43:26-05:00
+loteria-de-manizales,2026-10-28,mayor_anterior,51,0,0.051,,seco,2026-10-27T19:43:26-05:00
+loteria-de-manizales,2026-10-28,recientes,51,0,0.051,,seco,2026-10-27T19:43:26-05:00
+loteria-de-manizales,2026-10-28,series_azar,51,5,1.2781954887218046,251 346 307 307 251,seco,2026-10-27T19:43:26-05:00
+loteria-de-manizales,2026-10-28,series_combinador,51,3,1.2781954887218046,352 150 295,seco,2026-10-27T19:43:26-05:00
+loteria-del-meta,2026-10-28,azar,42,0,0.042,,seco,2026-10-27T19:43:26-05:00
+loteria-del-meta,2026-10-28,calientes,42,0,0.042,,seco,2026-10-27T19:43:26-05:00
+loteria-del-meta,2026-10-28,combinador,42,0,0.042,,seco,2026-10-27T19:43:26-05:00
+loteria-del-meta,2026-10-28,frios,42,0,0.042,,seco,2026-10-27T19:43:26-05:00
+loteria-del-meta,2026-10-28,mayor_anterior,42,0,0.042,,seco,2026-10-27T19:43:26-05:00
+loteria-del-meta,2026-10-28,recientes,42,0,0.042,,seco,2026-10-27T19:43:26-05:00
+loteria-del-meta,2026-10-28,series_azar,42,4,2.8187919463087248,010 033 099 112,seco,2026-10-27T19:43:26-05:00
+loteria-del-meta,2026-10-28,series_combinador,42,2,2.8187919463087248,013 022,seco,2026-10-27T19:43:26-05:00
+loteria-del-valle,2026-10-28,azar,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-valle,2026-10-28,calientes,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-valle,2026-10-28,combinador,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-valle,2026-10-28,frios,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-valle,2026-10-28,mayor_anterior,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-valle,2026-10-28,recientes,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-valle,2026-10-28,series_azar,32,0,1.035598705501618,,seco,2026-10-27T19:43:26-05:00
+loteria-del-valle,2026-10-28,series_combinador,32,0,1.035598705501618,,seco,2026-10-27T19:43:26-05:00
+loteria-de-bogota,2026-10-29,azar,52,0,0.052,,seco,2026-10-27T19:43:26-05:00
+loteria-de-bogota,2026-10-29,calientes,52,0,0.052,,seco,2026-10-27T19:43:26-05:00
+loteria-de-bogota,2026-10-29,combinador,52,0,0.052,,seco,2026-10-27T19:43:26-05:00
+loteria-de-bogota,2026-10-29,frios,52,0,0.052,,seco,2026-10-27T19:43:26-05:00
+loteria-de-bogota,2026-10-29,mayor_anterior,52,0,0.052,,seco,2026-10-27T19:43:26-05:00
+loteria-de-bogota,2026-10-29,recientes,52,0,0.052,,seco,2026-10-27T19:43:26-05:00
+loteria-de-bogota,2026-10-29,series_azar,52,4,1.1087420042643923,451 295 458 458,seco,2026-10-27T19:43:26-05:00
+loteria-de-bogota,2026-10-29,series_combinador,52,0,1.1087420042643923,,seco,2026-10-27T19:43:26-05:00
+loteria-del-quindio,2026-10-29,azar,37,0,0.037,,seco,2026-10-27T19:43:26-05:00
+loteria-del-quindio,2026-10-29,calientes,37,0,0.037,,seco,2026-10-27T19:43:26-05:00
+loteria-del-quindio,2026-10-29,combinador,37,0,0.037,,seco,2026-10-27T19:43:26-05:00
+loteria-del-quindio,2026-10-29,frios,37,0,0.037,,seco,2026-10-27T19:43:26-05:00
+loteria-del-quindio,2026-10-29,mayor_anterior,37,0,0.037,,seco,2026-10-27T19:43:26-05:00
+loteria-del-quindio,2026-10-29,recientes,37,0,0.037,,seco,2026-10-27T19:43:26-05:00
+loteria-del-quindio,2026-10-29,series_azar,37,1,1.8592964824120604,074,seco,2026-10-27T19:43:26-05:00
+loteria-del-quindio,2026-10-29,series_combinador,37,5,1.8592964824120604,106 191 106 091 074,seco,2026-10-27T19:43:26-05:00
+loteria-de-medellin,2026-10-30,azar,44,0,0.044,,seco,2026-10-27T19:43:26-05:00
+loteria-de-medellin,2026-10-30,calientes,44,0,0.044,,seco,2026-10-27T19:43:26-05:00
+loteria-de-medellin,2026-10-30,combinador,44,0,0.044,,seco,2026-10-27T19:43:26-05:00
+loteria-de-medellin,2026-10-30,frios,44,0,0.044,,seco,2026-10-27T19:43:26-05:00
+loteria-de-medellin,2026-10-30,mayor_anterior,44,0,0.044,,seco,2026-10-27T19:43:26-05:00
+loteria-de-medellin,2026-10-30,recientes,44,0,0.044,,seco,2026-10-27T19:43:26-05:00
+loteria-de-medellin,2026-10-30,series_azar,44,1,0.8817635270541082,282,seco,2026-10-27T19:43:26-05:00
+loteria-de-medellin,2026-10-30,series_combinador,44,2,0.8817635270541082,335 335,seco,2026-10-27T19:43:26-05:00
+loteria-de-risaralda,2026-10-30,azar,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-de-risaralda,2026-10-30,calientes,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-de-risaralda,2026-10-30,combinador,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-de-risaralda,2026-10-30,frios,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-de-risaralda,2026-10-30,mayor_anterior,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-de-risaralda,2026-10-30,recientes,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-de-risaralda,2026-10-30,series_azar,32,0,1.0702341137123745,,seco,2026-10-27T19:43:26-05:00
+loteria-de-risaralda,2026-10-30,series_combinador,32,0,1.0702341137123745,,seco,2026-10-27T19:43:26-05:00
+loteria-de-santander,2026-10-30,azar,69,0,0.069,,seco,2026-10-27T19:43:26-05:00
+loteria-de-santander,2026-10-30,calientes,69,0,0.069,,seco,2026-10-27T19:43:26-05:00
+loteria-de-santander,2026-10-30,combinador,69,0,0.069,,seco,2026-10-27T19:43:26-05:00
+loteria-de-santander,2026-10-30,frios,69,0,0.069,,seco,2026-10-27T19:43:26-05:00
+loteria-de-santander,2026-10-30,mayor_anterior,69,0,0.069,,seco,2026-10-27T19:43:26-05:00
+loteria-de-santander,2026-10-30,recientes,69,0,0.069,,seco,2026-10-27T19:43:26-05:00
+loteria-de-santander,2026-10-30,series_azar,69,0,2.0353982300884956,,seco,2026-10-27T19:43:26-05:00
+loteria-de-santander,2026-10-30,series_combinador,69,2,2.0353982300884956,010 008,seco,2026-10-27T19:43:26-05:00
+loteria-de-boyaca,2026-10-31,azar,59,0,0.059,,seco,2026-10-27T19:43:26-05:00
+loteria-de-boyaca,2026-10-31,calientes,59,0,0.059,,seco,2026-10-27T19:43:26-05:00
+loteria-de-boyaca,2026-10-31,combinador,59,1,0.059,4278,seco,2026-10-27T19:43:26-05:00
+loteria-de-boyaca,2026-10-31,frios,59,0,0.059,,seco,2026-10-27T19:43:26-05:00
+loteria-de-boyaca,2026-10-31,mayor_anterior,59,0,0.059,,seco,2026-10-27T19:43:26-05:00
+loteria-de-boyaca,2026-10-31,recientes,59,0,0.059,,seco,2026-10-27T19:43:26-05:00
+loteria-de-boyaca,2026-10-31,series_azar,59,0,1.2579957356076759,,seco,2026-10-27T19:43:26-05:00
+loteria-de-boyaca,2026-10-31,series_combinador,59,1,1.2579957356076759,027,seco,2026-10-27T19:43:26-05:00
+loteria-del-cauca,2026-10-31,azar,36,0,0.036,,seco,2026-10-27T19:43:26-05:00
+loteria-del-cauca,2026-10-31,calientes,36,0,0.036,,seco,2026-10-27T19:43:26-05:00
+loteria-del-cauca,2026-10-31,combinador,36,0,0.036,,seco,2026-10-27T19:43:26-05:00
+loteria-del-cauca,2026-10-31,frios,36,0,0.036,,seco,2026-10-27T19:43:26-05:00
+loteria-del-cauca,2026-10-31,mayor_anterior,36,0,0.036,,seco,2026-10-27T19:43:26-05:00
+loteria-del-cauca,2026-10-31,recientes,36,0,0.036,,seco,2026-10-27T19:43:26-05:00
+loteria-del-cauca,2026-10-31,series_azar,36,1,1.1650485436893203,163,seco,2026-10-27T19:43:26-05:00
+loteria-del-cauca,2026-10-31,series_combinador,36,1,1.1650485436893203,158,seco,2026-10-27T19:43:26-05:00
+loteria-de-cundinamarca,2026-11-03,azar,61,0,0.061,,seco,2026-10-27T19:43:26-05:00
+loteria-de-cundinamarca,2026-11-03,calientes,61,1,0.061,2736,seco,2026-10-27T19:43:26-05:00
+loteria-de-cundinamarca,2026-11-03,combinador,61,0,0.061,,seco,2026-10-27T19:43:26-05:00
+loteria-de-cundinamarca,2026-11-03,frios,61,0,0.061,,seco,2026-10-27T19:43:26-05:00
+loteria-de-cundinamarca,2026-11-03,mayor_anterior,61,0,0.061,,seco,2026-10-27T19:43:26-05:00
+loteria-de-cundinamarca,2026-11-03,recientes,61,0,0.061,,seco,2026-10-27T19:43:26-05:00
+loteria-de-cundinamarca,2026-11-03,series_azar,61,1,1.7478510028653296,076,seco,2026-10-27T19:43:26-05:00
+loteria-de-cundinamarca,2026-11-03,series_combinador,61,2,1.7478510028653296,291 105,seco,2026-10-27T19:43:26-05:00
+loteria-de-la-cruz-roja,2026-11-03,azar,45,0,0.045,,seco,2026-10-27T19:43:26-05:00
+loteria-de-la-cruz-roja,2026-11-03,calientes,45,0,0.045,,seco,2026-10-27T19:43:26-05:00
+loteria-de-la-cruz-roja,2026-11-03,combinador,45,0,0.045,,seco,2026-10-27T19:43:26-05:00
+loteria-de-la-cruz-roja,2026-11-03,frios,45,0,0.045,,seco,2026-10-27T19:43:26-05:00
+loteria-de-la-cruz-roja,2026-11-03,mayor_anterior,45,0,0.045,,seco,2026-10-27T19:43:26-05:00
+loteria-de-la-cruz-roja,2026-11-03,recientes,45,0,0.045,,seco,2026-10-27T19:43:26-05:00
+loteria-de-la-cruz-roja,2026-11-03,series_azar,45,0,1.3677811550151975,,seco,2026-10-27T19:43:26-05:00
+loteria-de-la-cruz-roja,2026-11-03,series_combinador,45,1,1.3677811550151975,187,seco,2026-10-27T19:43:26-05:00
+loteria-del-huila,2026-11-03,azar,27,0,0.027,,seco,2026-10-27T19:43:26-05:00
+loteria-del-huila,2026-11-03,calientes,27,0,0.027,,seco,2026-10-27T19:43:26-05:00
+loteria-del-huila,2026-11-03,combinador,27,0,0.027,,seco,2026-10-27T19:43:26-05:00
+loteria-del-huila,2026-11-03,frios,27,0,0.027,,seco,2026-10-27T19:43:26-05:00
+loteria-del-huila,2026-11-03,mayor_anterior,27,0,0.027,,seco,2026-10-27T19:43:26-05:00
+loteria-del-huila,2026-11-03,recientes,27,0,0.027,,seco,2026-10-27T19:43:26-05:00
+loteria-del-huila,2026-11-03,series_azar,27,1,1.5083798882681565,166,seco,2026-10-27T19:43:26-05:00
+loteria-del-huila,2026-11-03,series_combinador,27,2,1.5083798882681565,103 166,seco,2026-10-27T19:43:26-05:00
+loteria-del-tolima,2026-11-03,azar,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-tolima,2026-11-03,calientes,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-tolima,2026-11-03,combinador,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-tolima,2026-11-03,frios,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-tolima,2026-11-03,mayor_anterior,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-tolima,2026-11-03,recientes,32,0,0.032,,seco,2026-10-27T19:43:26-05:00
+loteria-del-tolima,2026-11-03,series_azar,32,1,1.146953405017921,001,seco,2026-10-27T19:43:26-05:00
+loteria-del-tolima,2026-11-03,series_combinador,32,1,1.146953405017921,189,seco,2026-10-27T19:43:26-05:00
+loteria-de-manizales,2026-11-04,azar,51,0,0.051,,seco,2026-10-28T12:15:03-05:00
+loteria-de-manizales,2026-11-04,calientes,51,0,0.051,,seco,2026-10-28T12:15:03-05:00
+loteria-de-manizales,2026-11-04,combinador,51,0,0.051,,seco,2026-10-28T12:15:03-05:00
+loteria-de-manizales,2026-11-04,frios,51,0,0.051,,seco,2026-10-28T12:15:03-05:00
+loteria-de-manizales,2026-11-04,mayor_anterior,51,0,0.051,,seco,2026-10-28T12:15:03-05:00
+loteria-de-manizales,2026-11-04,recientes,51,0,0.051,,seco,2026-10-28T12:15:03-05:00
+loteria-de-manizales,2026-11-04,series_azar,51,2,1.2781954887218046,196 028,seco,2026-10-28T12:15:03-05:00
+loteria-de-manizales,2026-11-04,series_combinador,51,1,1.2781954887218046,220,seco,2026-10-28T12:15:03-05:00
+loteria-del-meta,2026-11-04,azar,42,0,0.042,,seco,2026-10-28T12:15:03-05:00
+loteria-del-meta,2026-11-04,calientes,42,0,0.042,,seco,2026-10-28T12:15:03-05:00
+loteria-del-meta,2026-11-04,combinador,42,0,0.042,,seco,2026-10-28T12:15:03-05:00
+loteria-del-meta,2026-11-04,frios,42,0,0.042,,seco,2026-10-28T12:15:03-05:00
+loteria-del-meta,2026-11-04,mayor_anterior,42,0,0.042,,seco,2026-10-28T12:15:03-05:00
+loteria-del-meta,2026-11-04,recientes,42,0,0.042,,seco,2026-10-28T12:15:03-05:00
+loteria-del-meta,2026-11-04,series_azar,42,2,2.8187919463087248,006 022,seco,2026-10-28T12:15:03-05:00
+loteria-del-meta,2026-11-04,series_combinador,42,3,2.8187919463087248,137 013 022,seco,2026-10-28T12:15:03-05:00
+loteria-del-valle,2026-11-04,azar,32,0,0.032,,seco,2026-10-28T12:15:03-05:00
+loteria-del-valle,2026-11-04,calientes,32,0,0.032,,seco,2026-10-28T12:15:03-05:00
+loteria-del-valle,2026-11-04,combinador,32,0,0.032,,seco,2026-10-28T12:15:03-05:00
+loteria-del-valle,2026-11-04,frios,32,0,0.032,,seco,2026-10-28T12:15:03-05:00
+loteria-del-valle,2026-11-04,mayor_anterior,32,0,0.032,,seco,2026-10-28T12:15:03-05:00
+loteria-del-valle,2026-11-04,recientes,32,0,0.032,,seco,2026-10-28T12:15:03-05:00
+loteria-del-valle,2026-11-04,series_azar,32,0,1.035598705501618,,seco,2026-10-28T12:15:03-05:00
+loteria-del-valle,2026-11-04,series_combinador,32,1,1.035598705501618,003,seco,2026-10-28T12:15:03-05:00
+loteria-de-bogota,2026-11-05,azar,53,0,0.053,,seco,2026-10-29T12:29:26-05:00
+loteria-de-bogota,2026-11-05,calientes,53,0,0.053,,seco,2026-10-29T12:29:26-05:00
+loteria-de-bogota,2026-11-05,combinador,53,1,0.053,8276,seco,2026-10-29T12:29:26-05:00
+loteria-de-bogota,2026-11-05,frios,53,0,0.053,,seco,2026-10-29T12:29:26-05:00
+loteria-de-bogota,2026-11-05,mayor_anterior,53,1,0.053,9329,seco,2026-10-29T12:29:26-05:00
+loteria-de-bogota,2026-11-05,recientes,53,0,0.053,,seco,2026-10-29T12:29:26-05:00
+loteria-de-bogota,2026-11-05,series_azar,53,1,1.1300639658848615,371,seco,2026-10-29T12:29:26-05:00
+loteria-de-bogota,2026-11-05,series_combinador,53,1,1.1300639658848615,158,seco,2026-10-29T12:29:26-05:00
+loteria-del-quindio,2026-11-05,azar,36,0,0.036,,seco,2026-10-29T12:29:26-05:00
+loteria-del-quindio,2026-11-05,calientes,36,1,0.036,9219,seco,2026-10-29T12:29:26-05:00
+loteria-del-quindio,2026-11-05,combinador,36,1,0.036,1225,seco,2026-10-29T12:29:26-05:00
+loteria-del-quindio,2026-11-05,frios,36,0,0.036,,seco,2026-10-29T12:29:26-05:00
+loteria-del-quindio,2026-11-05,mayor_anterior,36,0,0.036,,seco,2026-10-29T12:29:26-05:00
+loteria-del-quindio,2026-11-05,recientes,36,1,0.036,9219,seco,2026-10-29T12:29:26-05:00
+loteria-del-quindio,2026-11-05,series_azar,36,3,1.8090452261306533,072 166 197,seco,2026-10-29T12:29:26-05:00
+loteria-del-quindio,2026-11-05,series_combinador,36,2,1.8090452261306533,106 051,seco,2026-10-29T12:29:26-05:00
+loteria-de-medellin,2026-11-06,azar,44,0,0.044,,seco,2026-10-30T12:05:35-05:00
+loteria-de-medellin,2026-11-06,calientes,44,0,0.044,,seco,2026-10-30T12:05:35-05:00
+loteria-de-medellin,2026-11-06,combinador,44,0,0.044,,seco,2026-10-30T12:05:35-05:00
+loteria-de-medellin,2026-11-06,frios,44,0,0.044,,seco,2026-10-30T12:05:35-05:00
+loteria-de-medellin,2026-11-06,mayor_anterior,44,0,0.044,,seco,2026-10-30T12:05:35-05:00
+loteria-de-medellin,2026-11-06,recientes,44,0,0.044,,seco,2026-10-30T12:05:35-05:00
+loteria-de-medellin,2026-11-06,series_azar,44,2,0.8817635270541082,057 381,seco,2026-10-30T12:05:35-05:00
+loteria-de-medellin,2026-11-06,series_combinador,44,2,0.8817635270541082,122 122,seco,2026-10-30T12:05:35-05:00
+loteria-de-risaralda,2026-11-06,azar,32,0,0.032,,seco,2026-10-30T12:05:35-05:00
+loteria-de-risaralda,2026-11-06,calientes,32,0,0.032,,seco,2026-10-30T12:05:35-05:00
+loteria-de-risaralda,2026-11-06,combinador,32,0,0.032,,seco,2026-10-30T12:05:35-05:00
+loteria-de-risaralda,2026-11-06,frios,32,0,0.032,,seco,2026-10-30T12:05:35-05:00
+loteria-de-risaralda,2026-11-06,mayor_anterior,32,0,0.032,,seco,2026-10-30T12:05:35-05:00
+loteria-de-risaralda,2026-11-06,recientes,32,0,0.032,,seco,2026-10-30T12:05:35-05:00
+loteria-de-risaralda,2026-11-06,series_azar,32,0,1.0702341137123745,,seco,2026-10-30T12:05:35-05:00
+loteria-de-risaralda,2026-11-06,series_combinador,32,1,1.0702341137123745,293,seco,2026-10-30T12:05:35-05:00
+loteria-de-santander,2026-11-06,azar,69,0,0.069,,seco,2026-10-30T12:05:35-05:00
+loteria-de-santander,2026-11-06,calientes,69,1,0.069,4398,seco,2026-10-30T12:05:35-05:00
+loteria-de-santander,2026-11-06,combinador,69,0,0.069,,seco,2026-10-30T12:05:35-05:00
+loteria-de-santander,2026-11-06,frios,69,0,0.069,,seco,2026-10-30T12:05:35-05:00
+loteria-de-santander,2026-11-06,mayor_anterior,69,0,0.069,,seco,2026-10-30T12:05:35-05:00
+loteria-de-santander,2026-11-06,recientes,69,0,0.069,,seco,2026-10-30T12:05:35-05:00
+loteria-de-santander,2026-11-06,series_azar,69,0,2.0353982300884956,,seco,2026-10-30T12:05:35-05:00
+loteria-de-santander,2026-11-06,series_combinador,69,2,2.0353982300884956,008 008,seco,2026-10-30T12:05:35-05:00
+loteria-de-boyaca,2026-11-07,azar,59,0,0.059,,seco,2026-10-31T11:13:54-05:00
+loteria-de-boyaca,2026-11-07,calientes,59,0,0.059,,seco,2026-10-31T11:13:54-05:00
+loteria-de-boyaca,2026-11-07,combinador,59,0,0.059,,seco,2026-10-31T11:13:54-05:00
+loteria-de-boyaca,2026-11-07,frios,59,0,0.059,,seco,2026-10-31T11:13:54-05:00
+loteria-de-boyaca,2026-11-07,mayor_anterior,59,0,0.059,,seco,2026-10-31T11:13:54-05:00
+loteria-de-boyaca,2026-11-07,recientes,59,0,0.059,,seco,2026-10-31T11:13:54-05:00
+loteria-de-boyaca,2026-11-07,series_azar,59,1,1.2579957356076759,173,seco,2026-10-31T11:13:54-05:00
+loteria-de-boyaca,2026-11-07,series_combinador,59,2,1.2579957356076759,211 173,seco,2026-10-31T11:13:54-05:00
+loteria-del-cauca,2026-11-07,azar,36,0,0.036,,seco,2026-10-31T11:13:54-05:00
+loteria-del-cauca,2026-11-07,calientes,36,0,0.036,,seco,2026-10-31T11:13:54-05:00
+loteria-del-cauca,2026-11-07,combinador,36,0,0.036,,seco,2026-10-31T11:13:54-05:00
+loteria-del-cauca,2026-11-07,frios,36,0,0.036,,seco,2026-10-31T11:13:54-05:00
+loteria-del-cauca,2026-11-07,mayor_anterior,36,0,0.036,,seco,2026-10-31T11:13:54-05:00
+loteria-del-cauca,2026-11-07,recientes,36,0,0.036,,seco,2026-10-31T11:13:54-05:00
+loteria-del-cauca,2026-11-07,series_azar,36,1,1.1650485436893203,129,seco,2026-10-31T11:13:54-05:00
+loteria-del-cauca,2026-11-07,series_combinador,36,2,1.1650485436893203,027 103,seco,2026-10-31T11:13:54-05:00
+loteria-de-cundinamarca,2026-11-09,azar,60,0,0.06,,seco,2026-11-02T15:51:42-05:00
+loteria-de-cundinamarca,2026-11-09,calientes,60,0,0.06,,seco,2026-11-02T15:51:42-05:00
+loteria-de-cundinamarca,2026-11-09,combinador,60,0,0.06,,seco,2026-11-02T15:51:42-05:00
+loteria-de-cundinamarca,2026-11-09,frios,60,0,0.06,,seco,2026-11-02T15:51:42-05:00
+loteria-de-cundinamarca,2026-11-09,mayor_anterior,60,0,0.06,,seco,2026-11-02T15:51:42-05:00
+loteria-de-cundinamarca,2026-11-09,recientes,60,0,0.06,,seco,2026-11-02T15:51:42-05:00
+loteria-de-cundinamarca,2026-11-09,series_azar,60,2,1.7191977077363896,292 152,seco,2026-11-02T15:51:42-05:00
+loteria-de-cundinamarca,2026-11-09,series_combinador,60,0,1.7191977077363896,,seco,2026-11-02T15:51:42-05:00
+loteria-del-tolima,2026-11-09,azar,32,0,0.032,,seco,2026-11-02T15:51:42-05:00
+loteria-del-tolima,2026-11-09,calientes,32,0,0.032,,seco,2026-11-02T15:51:42-05:00
+loteria-del-tolima,2026-11-09,combinador,32,0,0.032,,seco,2026-11-02T15:51:42-05:00
+loteria-del-tolima,2026-11-09,frios,32,0,0.032,,seco,2026-11-02T15:51:42-05:00
+loteria-del-tolima,2026-11-09,mayor_anterior,32,0,0.032,,seco,2026-11-02T15:51:42-05:00
+loteria-del-tolima,2026-11-09,recientes,32,0,0.032,,seco,2026-11-02T15:51:42-05:00
+loteria-del-tolima,2026-11-09,series_azar,32,1,1.146953405017921,215,seco,2026-11-02T15:51:42-05:00
+loteria-del-tolima,2026-11-09,series_combinador,32,1,1.146953405017921,101,seco,2026-11-02T15:51:42-05:00
+loteria-de-la-cruz-roja,2026-11-10,azar,45,0,0.045,,seco,2026-11-03T13:33:59-05:00
+loteria-de-la-cruz-roja,2026-11-10,calientes,45,0,0.045,,seco,2026-11-03T13:33:59-05:00
+loteria-de-la-cruz-roja,2026-11-10,combinador,45,0,0.045,,seco,2026-11-03T13:33:59-05:00
+loteria-de-la-cruz-roja,2026-11-10,frios,45,0,0.045,,seco,2026-11-03T13:33:59-05:00
+loteria-de-la-cruz-roja,2026-11-10,mayor_anterior,45,0,0.045,,seco,2026-11-03T13:33:59-05:00
+loteria-de-la-cruz-roja,2026-11-10,recientes,45,0,0.045,,seco,2026-11-03T13:33:59-05:00
+loteria-de-la-cruz-roja,2026-11-10,series_azar,45,2,1.3677811550151975,020 004,seco,2026-11-03T13:33:59-05:00
+loteria-de-la-cruz-roja,2026-11-10,series_combinador,45,2,1.3677811550151975,240 143,seco,2026-11-03T13:33:59-05:00
+loteria-del-huila,2026-11-10,azar,27,0,0.027,,seco,2026-11-03T13:33:59-05:00
+loteria-del-huila,2026-11-10,calientes,27,0,0.027,,seco,2026-11-03T13:33:59-05:00
+loteria-del-huila,2026-11-10,combinador,27,0,0.027,,seco,2026-11-03T13:33:59-05:00
+loteria-del-huila,2026-11-10,frios,27,0,0.027,,seco,2026-11-03T13:33:59-05:00
+loteria-del-huila,2026-11-10,mayor_anterior,27,0,0.027,,seco,2026-11-03T13:33:59-05:00
+loteria-del-huila,2026-11-10,recientes,27,0,0.027,,seco,2026-11-03T13:33:59-05:00
+loteria-del-huila,2026-11-10,series_azar,27,1,1.5083798882681565,094,seco,2026-11-03T13:33:59-05:00
+loteria-del-huila,2026-11-10,series_combinador,27,3,1.5083798882681565,165 149 133,seco,2026-11-03T13:33:59-05:00
+loteria-del-meta,2026-11-11,azar,42,0,0.042,,seco,2026-11-04T13:45:23-05:00
+loteria-del-meta,2026-11-11,calientes,42,0,0.042,,seco,2026-11-04T13:45:23-05:00
+loteria-del-meta,2026-11-11,combinador,42,0,0.042,,seco,2026-11-04T13:45:23-05:00
+loteria-del-meta,2026-11-11,frios,42,0,0.042,,seco,2026-11-04T13:45:23-05:00
+loteria-del-meta,2026-11-11,mayor_anterior,42,0,0.042,,seco,2026-11-04T13:45:23-05:00
+loteria-del-meta,2026-11-11,recientes,42,0,0.042,,seco,2026-11-04T13:45:23-05:00
+loteria-del-meta,2026-11-11,series_azar,42,0,2.8187919463087248,,seco,2026-11-04T13:45:23-05:00
+loteria-del-meta,2026-11-11,series_combinador,42,2,2.8187919463087248,047 063,seco,2026-11-04T13:45:23-05:00

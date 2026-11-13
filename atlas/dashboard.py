@@ -259,11 +259,82 @@ hacen {A.get('pruebas', 0)} pruebas, el veredicto ya corrige por comparaciones m
 y al combinador de cada lotería, y se califican igual que los números.</p></section>"""
 
 
+def _hits_por_sorteo(S: dict) -> dict:
+    out = {}
+    for d in (S.get("aciertos_registrados") or {}).get("lista", []):
+        out.setdefault((d["slug"], d["fecha"]), []).append(d)
+    return out
+
+
+def _txt_hit(d) -> str:
+    cu = f" · ${n_es(d['cuantia_millones'])} M" if d.get("cuantia_millones") else ""
+    que = "premio mayor" if d["tipo"] == "mayor" else "seco"
+    return (f'<b class="mono">{e(d["numero"])}</b> <span class="tenue">serie {e(d["serie"] or "—")}{e(cu)} · {que}</span> '
+            f'· {e(", ".join(d["metodos"]))} · anunciado el {e(fecha_corta(d["predicho_el"][:10]))}')
+
+
+def seccion_aciertos(S: dict) -> str:
+    A = S.get("aciertos_registrados") or {}
+    lista = A.get("lista", [])
+    t = A.get("total", {})
+    if not A.get("por_metodo"):
+        return ('<section id="aciertos"><h2>Aciertos de ATLAS</h2><p class="vacio">Todavía no hay sorteos jugados con '
+                'predicciones guardadas.</p></section>')
+    k, mu, pv = t.get("aciertos", 0), t.get("esperado", 0.0), t.get("p", 1.0)
+    if pv < 0.01:
+        lect = "Es más de lo que el azar suele dar. Aun así, solo cuenta si se sostiene en sorteos futuros."
+    elif k > mu:
+        lect = (f"Es algo más de lo esperado, pero solo por suerte se llega a {k} aciertos o más "
+                f"{n_es(100 * pv, 0)} de cada 100 veces: todavía no es una señal.")
+    else:
+        lect = "Está dentro de lo que da el azar."
+    filas_m = []
+    for m in A["por_metodo"]:
+        filas_m.append([e(m["nombre"]) + (' <span class="chip">control</span>' if m["control"] else ""),
+                        n_es(m["sorteos"]), n_es(m["premios"]), f"<b>{m['aciertos']}</b>", n_es(m["esperado"], 1),
+                        n_es(100 * m["p"], 0) + " %" if m["aciertos"] else "—"])
+    filas_h = []
+    for d in lista:
+        cu = ("$" + n_es(d["cuantia_millones"]) + " M") if d.get("cuantia_millones") else "—"
+        filas_h.append([e(fecha_corta(d["fecha"])), e(d["loteria"]),
+                        f'<span class="num num-hit">{e(d["numero"])}<small>-{e(d["serie"] or "—")}</small></span>',
+                        "Premio mayor" if d["tipo"] == "mayor" else "Seco", cu, e(", ".join(d["metodos"])),
+                        e(fecha_corta(d["predicho_el"][:10]))])
+    tarjetas = []
+    for L in A.get("por_loteria", []):
+        hs = [d for d in lista if d["slug"] == L["slug"]]
+        cuerpo = ("".join(f'<li>{e(fecha_corta(d["fecha"]))}: {_txt_hit(d)}</li>' for d in hs)
+                  if hs else '<li class="tenue">Sin aciertos todavía.</li>')
+        clase = "met met-hit" if hs else "met"
+        tarjetas.append(f'<div class="{clase}"><div class="met-t">{e(L["loteria"])} '
+                        f'<span class="tenue">· {L["aciertos"]} en {L["sorteos"]} sorteos</span></div>'
+                        f'<ul class="lista">{cuerpo}</ul></div>')
+    tabla_h = (tabla(['Sorteo', 'Lotería', 'Número-serie', 'Premio', 'Valor', 'Método que lo anunció', 'Anunciado el'], filas_h)
+               if filas_h else '<p class="vacio">Ninguno todavía.</p>')
+    kp = (kpi("Números acertados", str(len(lista)), "si dos métodos anunciaron el mismo número, cuenta una vez")
+          + kpi("Aciertos frente al azar", f"{k} de {n_es(mu, 1)}", "observados / esperados por suerte")
+          + kpi("¿Es suerte?", (n_es(100 * pv, 0) + " %") if k else "—",
+                "probabilidad de tener esos aciertos o más solo por azar"))
+    return (f'<section id="aciertos"><h2>Aciertos de ATLAS</h2>'
+            f'<p class="nota">Solo cuentan números que ATLAS dejó guardados con huella SHA-256 <b>antes</b> del sorteo '
+            f'(desde el {e(fecha_corta(A.get("desde", "")))}). Un «acierto» es que uno de los 10 números de un método '
+            f'salió como premio de esa lotería. Para cobrar un seco hay que acertar también la serie.</p>'
+            f'<div class="kpis kpis-in">{kp}</div><p class="aviso">{e(lect)}</p>'
+            f'<h3>Números acertados</h3>{tabla_h}'
+            f'<h3>Por lotería</h3><div class="metodos">{"".join(tarjetas)}</div>'
+            f'<h3>Por método</h3><p class="nota">«¿Suerte?» es la probabilidad de tener esos aciertos o más si el método '
+            f'no supiera nada. Por debajo de 1 % empezaría a ser interesante; los métodos «al azar» son la vara de '
+            f'comparación.</p>'
+            + tabla(['Método', 'Sorteos', 'Premios', 'Aciertos', 'Esperados por azar', '¿Suerte?'], filas_m)
+            + '</section>')
+
+
 def seccion_recientes(S: dict) -> str:
     rec = S.get("recientes", [])
     if not rec:
         return ""
     bloques, fecha_act = [], None
+    H = _hits_por_sorteo(S)
     for r in rec:
         if r["fecha"] != fecha_act:
             if fecha_act is not None:
@@ -272,14 +343,19 @@ def seccion_recientes(S: dict) -> str:
             bloques.append(f'<h3 class="dia">{e(fecha_larga(r["fecha"]))}</h3><div class="sorteos-dia">')
         ico, txt = ESTADO_SORTEO.get(r["estado"], ("·", r["estado"]))
         resumen = (f'{r["secos"]} secos' + (f' ({r["con_cuantia"]} con valor)' if r["con_cuantia"] else "")) if r["secos"] else "sin secos"
+        hs = H.get((r["slug"], r["fecha"]), [])
+        acertados = {d["numero"] for d in hs}
+        marca = ('<span class="chip ok">✓ ATLAS acertó ' + e(" ".join(d["numero"] for d in hs)) + '</span>') if hs else ""
+        caja = ('<div class="acierto-box"><b>ATLAS lo había anunciado antes del sorteo:</b><ul class="lista">'
+                + "".join("<li>" + _txt_hit(d) + "</li>" for d in hs) + "</ul></div>") if hs else ""
         chips = "".join(
-            f'<span class="num{" num-ex" if c != "seco" else ""}" title="{e(c if c != "seco" else "seco independiente")}">'
+            f'<span class="num{" num-ex" if c != "seco" else ""}{" num-hit" if (n in acertados and c == "seco") else ""}" title="{e(c if c != "seco" else "seco independiente")}">'
             f'{e(n)}<small>-{e(se or "—")}{(" · $" + e(cu) + " M") if cu else ""}</small></span>' for n, se, cu, c in r["lista"])
         fuentes = ", ".join(r["fuentes"]) or "—"
         bloques.append(f"""<details class="srt est-{e(r['estado'].replace(' ', '-'))}"><summary>
 <span class="srt-est" aria-label="{e(txt)}">{ico}</span><b>{e(r['loteria'])}</b>
-<span class="mono">{e(r['mayor'] or '—')}</span><span class="tenue">{e(resumen + ' · ' + txt if r['secos'] else txt)}</span></summary>
-<div class="srt-cuerpo"><p class="tenue">Fuente: {e(fuentes)} · <a href="{e(r['verificar'])}" target="_blank" rel="noopener">verificar en LoteríaYa ↗</a>
+<span class="mono">{e(r['mayor'] or '—')}</span><span class="tenue">{e(resumen + ' · ' + txt if r['secos'] else txt)}</span>{marca}</summary>
+<div class="srt-cuerpo">{caja}<p class="tenue">Fuente: {e(fuentes)} · <a href="{e(r['verificar'])}" target="_blank" rel="noopener">verificar en LoteríaYa ↗</a>
 {' · los números grises no cuentan en el análisis (derivados o repetidos)' if r['secos'] > r['independientes'] else ''}</p>
 {'<div class="chips">' + chips + '</div>' if chips else ''}
 <button type="button" class="btn-sec agregar-btn" data-slug="{e(r['slug'])}" data-fecha="{e(r['fecha'])}">{'Agregar o confirmar secos' if r['secos'] else 'Agregar secos'}</button>
@@ -528,9 +604,17 @@ def render(S: dict) -> str:
             f"observados frente a esperados por azar ({fase_ac})"),
     ]) + "</section>")
 
+    n_hit = len((S.get("aciertos_registrados") or {}).get("lista", []))
+    cnt = f' <span class="cnt">{n_hit}</span>' if n_hit else ""
+    out.append('<nav class="pestanas" aria-label="Secciones">'
+               '<a href="#numeros">Números posibles</a>'
+               f'<a href="#aciertos">Aciertos{cnt}</a>'
+               '<a href="#recientes">Últimos sorteos</a><a href="#agregar">Agregar resultados</a>'
+               '<a href="#series">Series</a><a href="#evidencia">Evidencia</a><a href="#datos">Datos</a></nav>')
     out.append(seccion_numeros(S))
-    out.append(seccion_series(S))
+    out.append(seccion_aciertos(S))
     out.append(seccion_recientes(S))
+    out.append(seccion_series(S))
     out.append(seccion_agregar(S))
 
     # ---------------------------------------------------------------- evidencia en el tiempo
@@ -545,7 +629,7 @@ def render(S: dict) -> str:
     for s in series:
         for f, y in s["puntos"][-8:]:
             filas_t.append([e(s["nombre"][:60]), fecha_corta(f), E_txt(y)])
-    out.append(f"""<section><h2>{titulo_g}</h2>
+    out.append(f"""<section id="evidencia"><h2>{titulo_g}</h2>
 <p class="nota">Cada línea es una apuesta que se hace antes de cada sorteo. Si el azar manda, las líneas oscilan y tienden
 a bajar; un patrón real las haría subir sin parar. La escala es logarítmica: cada marca multiplica por 10.</p>
 {leyenda(series)}{svg_lineas(series, log=True, umbrales=thr, etiqueta_y='Puntaje E de evidencia')}
@@ -628,7 +712,7 @@ ganar de cada billete por la cifra de la columna «haría falta».</p>
     rech = ing.get("rechazos", [])
     aud = S.get("auditoria", {})
     clases = d.get("clases", {})
-    out.append(f"""<section><h2>Los datos</h2>
+    out.append(f"""<section id="datos"><h2>Los datos</h2>
 <p class="nota">Las listas publicadas de «secos» incluyen premios que no son extracciones independientes (permutaciones
 del mayor, mayor ± 1, permutaciones de otro seco). Se guardan, pero se excluyen del análisis: dejarlos crea falsos
 patrones. Excluidos hasta hoy: {n_es(d['filas_secos'] - d['secos_independientes'])} de {n_es(d['filas_secos'])} filas.</p>
@@ -761,6 +845,18 @@ border:1px solid var(--base);border-radius:8px;padding:8px 10px;width:100%}
 .form-ag button[type=submit]{justify-self:start}
 .acciones{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.acciones .btn-sec{margin-top:0}
 button:disabled{opacity:.5;cursor:not-allowed}
+html{scroll-behavior:smooth}section[id]{scroll-margin-top:64px}
+.pestanas{position:sticky;top:0;z-index:5;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;
+padding:8px 0;margin:0 0 4px;background:var(--plane);border-bottom:1px solid var(--grid);scrollbar-width:none}
+.pestanas a{flex:none;text-decoration:none;color:var(--ink2);font-size:.88rem;font-weight:600;padding:6px 12px;
+border:1px solid var(--ring);border-radius:999px;background:var(--surface)}
+.pestanas a:hover{color:var(--accent);border-color:var(--accent)}
+.cnt{display:inline-block;min-width:1.4em;padding:0 5px;border-radius:999px;background:var(--okbg);color:var(--ok);font-size:.78rem;text-align:center}
+.num-hit{background:var(--okbg);border-color:var(--ok);color:var(--ok);font-weight:700;opacity:1}
+.met-hit{border-color:var(--ok)}
+.acierto-box{background:var(--okbg);border-radius:8px;padding:8px 12px;margin-bottom:8px}
+.acierto-box .lista{color:var(--ink)}
+.kpis-in{margin:12px 0}
 </style></head><body><main>
 {{CUERPO}}
 </main></body></html>"""
@@ -803,6 +899,17 @@ def render_md(S: dict) -> str:
             if f.get("estado") == "ok":
                 x, c = f["mas_repetidas"][0]
                 L.append(f"| {f['loteria']} | {f['rango']} | {f['secos']} | {x} ({c} veces; normal {f['max_normal']}) | {f['veredicto']} |")
+    A = S.get("aciertos_registrados") or {}
+    if A.get("por_metodo"):
+        t = A["total"]
+        L += ["", "## Aciertos de ATLAS (predicciones guardadas antes del sorteo)", "",
+              f"{t['aciertos']} aciertos frente a {n_es(t['esperado'], 1)} esperados por azar "
+              f"(probabilidad de tantos o más por suerte: {n_es(100 * t['p'], 0)} %).", ""]
+        if A["lista"]:
+            L += ["| Sorteo | Lotería | Número-serie | Premio | Método |", "|---|---|---|---|---|"]
+            for d in A["lista"]:
+                L.append(f"| {fecha_corta(d['fecha'])} | {d['loteria']} | {d['numero']}-{d['serie']} | {d['tipo']} | "
+                         f"{', '.join(d['metodos'])} |")
     rec = S.get("recientes", [])
     if rec:
         L += ["", "## Últimos sorteos", "", "| Fecha | Lotería | Premio mayor | Secos | Estado |", "|---|---|---|---|---|"]

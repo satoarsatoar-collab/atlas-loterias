@@ -102,7 +102,8 @@ def _evaluar_registro(secos, mayores):
         for met, lst in p.get("listas", {}).items():
             h = g[g.numero.isin(set(lst))].numero.tolist()
             filas_met.append(dict(slug=slug, fecha=real, metodo=met, premios=n, aciertos=len(h),
-                                  esperado=n * len(set(lst)) / 1e4, numeros_acertados=" ".join(h)))
+                                  esperado=n * len(set(lst)) / 1e4, numeros_acertados=" ".join(h),
+                                  tipo=tipo, predicho_el=gen))
         if p.get("listas_series") and p.get("series_posibles"):
             n_series = p.get("series_en_juego", 1000)
             val = g[g.serie.astype(str).str.fullmatch(r"\d{3}") & (g.serie.astype(str) != "000")]
@@ -110,12 +111,71 @@ def _evaluar_registro(secos, mayores):
             for met, lst in p["listas_series"].items():
                 h = val[val.serie.isin(set(lst))].serie.tolist()
                 filas_met.append(dict(slug=slug, fecha=real, metodo=met, premios=len(val), aciertos=len(h),
-                                      esperado=len(val) * len(set(lst)) / p["series_posibles"], numeros_acertados=" ".join(h)))
+                                      esperado=len(val) * len(set(lst)) / p["series_posibles"], numeros_acertados=" ".join(h),
+                                      tipo=tipo, predicho_el=gen))
     cols = ["loteria", "slug", "fecha", "tipo", "predicho_el", "premios", "top", "aciertos", "esperado_azar",
             "numeros_acertados", "ultima_cifra_predicha", "aciertos_ultima_cifra"]
     reg = pd.DataFrame(filas, columns=cols).sort_values(["fecha", "slug", "tipo"]) if filas else pd.DataFrame(columns=cols)
-    met = pd.DataFrame(filas_met, columns=["slug", "fecha", "metodo", "premios", "aciertos", "esperado", "numeros_acertados"])
+    met = pd.DataFrame(filas_met, columns=["slug", "fecha", "metodo", "premios", "aciertos", "esperado", "numeros_acertados",
+                                           "tipo", "predicho_el"])
     return reg, met
+
+
+def _p_poisson(k: int, mu: float) -> float:
+    """P(X >= k) para X ~ Poisson(mu): qué tan raro sería por azar tener k aciertos o más."""
+    if k <= 0:
+        return 1.0
+    return float(max(0.0, 1.0 - sum(math.exp(-mu) * mu ** i / math.factorial(i) for i in range(k))))
+
+
+def _aciertos_registrados(met_reg: pd.DataFrame, secos: pd.DataFrame, mayores: pd.DataFrame) -> dict:
+    """Cada número (4 cifras) que un método anunció ANTES del sorteo y luego salió, con su serie y valor reales,
+    más el balance por método y por lotería frente a lo esperado por azar."""
+    nombres = {**{k: v[0] for k, v in patterns.METODOS.items()}, **{k: v[0] for k, v in patterns.METODOS_SERIE.items()}}
+    num = met_reg[~met_reg.metodo.str.startswith("series_")]
+    detalle = []
+    for r in num[num.aciertos > 0].itertuples():
+        base = secos if r.tipo == "seco" else mayores
+        g = base[(base.slug == r.slug) & (base.fecha == r.fecha)]
+        if r.tipo == "seco":
+            g = g[g.clase == "seco"]
+        for n in str(r.numeros_acertados).split():
+            for h in g[g.numero == n].itertuples():
+                cu = getattr(h, "cuantia", None)
+                detalle.append(dict(loteria=NOMBRE.get(r.slug, r.slug), slug=r.slug, fecha=r.fecha, tipo=r.tipo,
+                                    numero=n, serie=str(getattr(h, "serie", "") or ""),
+                                    cuantia_millones=None if cu is None or pd.isna(cu) else float(cu),
+                                    metodo=r.metodo, metodo_nombre=nombres.get(r.metodo, r.metodo),
+                                    predicho_el=str(r.predicho_el or "")))
+    # un mismo número puede venir de varios métodos: se agrupan para mostrarlo una vez
+    agrup = {}
+    for d in detalle:
+        k = (d["slug"], d["fecha"], d["tipo"], d["numero"], d["serie"])
+        if k not in agrup:
+            agrup[k] = {**d, "metodos": [d["metodo_nombre"]], "ids": [d["metodo"]]}
+        elif d["metodo"] not in agrup[k]["ids"]:
+            agrup[k]["metodos"].append(d["metodo_nombre"]); agrup[k]["ids"].append(d["metodo"])
+            agrup[k]["predicho_el"] = min(agrup[k]["predicho_el"], d["predicho_el"])
+    lista = sorted(agrup.values(), key=lambda d: (d["fecha"], d["loteria"]), reverse=True)
+    por_metodo = []
+    for met, g in met_reg.groupby("metodo"):
+        k, mu = int(g.aciertos.sum()), float(g.esperado.sum())
+        por_metodo.append(dict(id=met, nombre=nombres.get(met, met), es_serie=met.startswith("series_"),
+                               control=met.endswith("azar"), sorteos=int(g[["slug", "fecha"]].drop_duplicates().shape[0]),
+                               premios=int(g.premios.sum()), aciertos=k, esperado=mu, p=_p_poisson(k, mu)))
+    orden = list(patterns.METODOS) + list(patterns.METODOS_SERIE)
+    por_metodo.sort(key=lambda m: orden.index(m["id"]) if m["id"] in orden else 99)
+    por_lot = []
+    for slug, g in num.groupby("slug"):
+        hits = [d for d in lista if d["slug"] == slug]
+        por_lot.append(dict(slug=slug, loteria=NOMBRE.get(slug, slug), sorteos=int(g[["fecha"]].drop_duplicates().shape[0]),
+                            aciertos=len(hits), numeros=[f"{d['numero']}-{d['serie']}" for d in hits]))
+    por_lot.sort(key=lambda x: (-x["aciertos"], x["loteria"]))
+    k = sum(m["aciertos"] for m in por_metodo if not m["es_serie"] and not m["control"])
+    mu = sum(m["esperado"] for m in por_metodo if not m["es_serie"] and not m["control"])
+    desde = met_reg.fecha.min() if len(met_reg) else ""
+    return dict(lista=lista, por_metodo=por_metodo, por_loteria=por_lot, desde=desde,
+                total=dict(aciertos=k, esperado=mu, p=_p_poisson(k, mu)))
 
 
 def _marcador(met_motor: pd.DataFrame, met_reg: pd.DataFrame) -> list[dict]:
@@ -325,6 +385,7 @@ def ejecutar(descargar: bool = True, hoy: dt.date | None = None) -> dict:
                               esperado=float(reg.esperado_azar.sum()) if len(reg) else 0.0),
         economia=_economia(),
         metodos=_marcador(R["metodos"], reg_met),
+        aciertos_registrados=_aciertos_registrados(reg_met, t["secos"], t["mayores"]),
         series=series.analizar(M),
         series_en_juego={k: int(v) for k, v in M.S.items()},
         recientes=_recientes(t["secos"], t["mayores"], t["faltantes"], hoy),

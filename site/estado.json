@@ -1,24 +1,24 @@
 {
- "generado": "2026-11-15T07:46:58-05:00",
+ "generado": "2026-11-15T12:54:15-05:00",
  "hoy": "2026-11-15",
  "inicio_prospectivo": "2026-10-17",
  "dias_prospectivos": 29,
- "premios_prospectivos": 2431,
+ "premios_prospectivos": 2532,
  "migrado_ahora": false,
  "datos": {
-  "generado": "2026-11-15T07:47:15-05:00",
+  "generado": "2026-11-15T12:54:32-05:00",
   "mayores": 1444,
   "mayores_prospectivos": 58,
-  "sorteos_con_secos": 162,
-  "filas_secos": 7876,
-  "secos_independientes": 7219,
-  "secos_prospectivos": 2373,
+  "sorteos_con_secos": 164,
+  "filas_secos": 8018,
+  "secos_independientes": 7320,
+  "secos_prospectivos": 2474,
   "secos_con_cuantia": 1331,
   "clases": {
-   "seco": 7219,
-   "derivado_permutacion_mayor": 504,
+   "seco": 7320,
+   "derivado_permutacion_mayor": 522,
+   "derivado_permutacion_seco": 68,
    "derivado_mayor_pm1": 64,
-   "derivado_permutacion_seco": 45,
    "serie_000_ambigua": 34,
    "serie_faltante": 8,
    "duplicado_en_sorteo": 1,
@@ -32,7 +32,7 @@
    "mayor_serie_faltante": 2,
    "discrepancia_fuentes": 1
   },
-  "sorteos_sin_secos": 20,
+  "sorteos_sin_secos": 18,
   "ultimo_dato": "2026-11-14"
  },
  "cobertura": [
@@ -202,11 +202,11 @@
    "dia": "vie",
    "sorteos_esperados": 13,
    "con_mayor": 13,
-   "con_secos": 12,
-   "cobertura_secos_pct": 92.3,
-   "filas_secos": 462,
-   "secos_independientes": 382,
-   "excluidos": 80,
+   "con_secos": 13,
+   "cobertura_secos_pct": 100.0,
+   "filas_secos": 534,
+   "secos_independientes": 414,
+   "excluidos": 120,
    "sorteos_con_cuantia": 0,
    "mayores_historial": 103,
    "historial_desde": "2024-11-08",
@@ -218,11 +218,11 @@
    "dia": "vie",
    "sorteos_esperados": 13,
    "con_mayor": 13,
-   "con_secos": 12,
-   "cobertura_secos_pct": 92.3,
-   "filas_secos": 831,
-   "secos_independientes": 827,
-   "excluidos": 4,
+   "con_secos": 13,
+   "cobertura_secos_pct": 100.0,
+   "filas_secos": 901,
+   "secos_independientes": 896,
+   "excluidos": 5,
    "sorteos_con_cuantia": 0,
    "mayores_historial": 104,
    "historial_desde": "2024-11-22",
@@ -263,20 +263,6 @@
  ],
  "faltantes_recientes": [
   {
-   "loteria": "Risaralda",
-   "slug": "loteria-de-risaralda",
-   "fecha_esperada": "2026-11-13",
-   "tiene_mayor": true,
-   "festivo": false
-  },
-  {
-   "loteria": "Santander",
-   "slug": "loteria-de-santander",
-   "fecha_esperada": "2026-11-13",
-   "tiene_mayor": true,
-   "festivo": false
-  },
-  {
    "loteria": "Boyacá",
    "slug": "loteria-de-boyaca",
    "fecha_esperada": "2026-11-14",
@@ -311,16 +297,14 @@
   "intentos": 8,
   "sorteos_nuevos": 4,
   "errores": [
-   "Risaralda 2026-11-13: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)",
-   "Santander 2026-11-13: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)",
    "Boyacá 2026-11-14: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)",
    "Cauca 2026-11-14: LoteríaYa publicó el premio mayor pero no la lista de secos (puede agregarla a mano)"
   ],
   "estado": "ok",
   "reporte": {
-   "filas_agregadas": 2,
+   "filas_agregadas": 142,
    "cuantias_completadas": 0,
-   "sin_cambio": 2,
+   "sin_cambio": 4,
    "conflictos": [],
    "avisos": []
   }
@@ -334,9 +318,10 @@
   "e_observacion": 20.0,
   "validados": [],
   "en_observacion": [
+   "seco|loteria-de-risaralda|pares|fria",
+   "seco|loteria-de-risaralda|d1|caliente",
    "seco|menor|d1|fria",
-   "seco|loteria-del-huila|t2|arrastre_seco",
-   "seco|loteria-de-risaralda|d1|caliente"
+   "seco|loteria-del-huila|t2|arrastre_seco"
   ],
   "cruzaron_20_retro": 4,
   "esperado_cruzar_20_por_azar_max": 73.2,
@@ -350,19 +335,55 @@
   "rasgo": "número completo",
   "estrategia": "combinador",
   "descripcion": "Combinador global: número completo de los secos, promedio de los combinadores de cada lotería",
-  "premios_evaluados": 7219,
-  "log10E_total": -0.3596445214633174,
-  "premios_prospectivos": 2373,
-  "log10E_prosp": -0.13615224209090196,
+  "premios_evaluados": 7320,
+  "log10E_total": -0.3319955090290605,
+  "premios_prospectivos": 2474,
+  "log10E_prosp": -0.10850322965664509,
   "max_log10E_prosp": 0.2205573650456728,
-  "ventaja_pct_total": -0.011470627762311114,
-  "ventaja_pct_prosp": -0.01321034198099591,
+  "ventaja_pct_total": -0.01044273216820324,
+  "ventaja_pct_prosp": -0.01009803171304613,
   "validado_eBH": false,
   "estado": "sin evidencia"
  },
  "umbral_observacion": 20.0,
  "alfa": 0.1,
  "top_patrones": [
+  {
+   "id": "seco|loteria-de-risaralda|pares|fria",
+   "clase": "regla",
+   "tipo": "seco",
+   "alcance": "Risaralda",
+   "rasgo": "cuántas cifras pares",
+   "estrategia": "fria",
+   "descripcion": "Cuántas cifras pares de los secos (Risaralda): lo que menos ha salido últimamente 'está por salir'",
+   "premios_evaluados": 414,
+   "log10E_total": 0.9136556673095624,
+   "premios_prospectivos": 128,
+   "log10E_prosp": 1.5450630208447909,
+   "max_log10E_prosp": 1.5450630208447909,
+   "ventaja_pct_total": 0.5094502927875499,
+   "ventaja_pct_prosp": 2.8183913597110033,
+   "validado_eBH": false,
+   "estado": "en observación"
+  },
+  {
+   "id": "seco|loteria-de-risaralda|d1|caliente",
+   "clase": "regla",
+   "tipo": "seco",
+   "alcance": "Risaralda",
+   "rasgo": "1.ª cifra",
+   "estrategia": "caliente",
+   "descripcion": "1.ª cifra de los secos (Risaralda): lo que más ha salido en todo el historial seguirá saliendo más",
+   "premios_evaluados": 414,
+   "log10E_total": 1.721551179335561,
+   "premios_prospectivos": 128,
+   "log10E_prosp": 1.4206791751261951,
+   "max_log10E_prosp": 1.6897739711215962,
+   "ventaja_pct_total": 0.9620909132919131,
+   "ventaja_pct_prosp": 2.588588874875186,
+   "validado_eBH": false,
+   "estado": "en observación"
+  },
   {
    "id": "seco|menor|d1|fria",
    "clase": "regla",
@@ -372,10 +393,10 @@
    "estrategia": "fria",
    "descripcion": "1.ª cifra de los secos (menor cuantía): lo que menos ha salido últimamente 'está por salir'",
    "premios_evaluados": 567,
-   "log10E_total": -2.3406944961980254,
+   "log10E_total": -2.3406944961980227,
    "premios_prospectivos": 102,
-   "log10E_prosp": 1.3758106747872223,
-   "max_log10E_prosp": 1.7396682710113298,
+   "log10E_prosp": 1.3758106747872239,
+   "max_log10E_prosp": 1.7396682710113305,
    "ventaja_pct_total": -0.9460517519608191,
    "ventaja_pct_prosp": 3.1545383869201027,
    "validado_eBH": false,
@@ -400,24 +421,6 @@
    "estado": "en observación"
   },
   {
-   "id": "seco|loteria-de-risaralda|d1|caliente",
-   "clase": "regla",
-   "tipo": "seco",
-   "alcance": "Risaralda",
-   "rasgo": "1.ª cifra",
-   "estrategia": "caliente",
-   "descripcion": "1.ª cifra de los secos (Risaralda): lo que más ha salido en todo el historial seguirá saliendo más",
-   "premios_evaluados": 382,
-   "log10E_total": 1.63988970292632,
-   "premios_prospectivos": 96,
-   "log10E_prosp": 1.3390176987169542,
-   "max_log10E_prosp": 1.6897739711215962,
-   "ventaja_pct_total": 0.9933794814421137,
-   "ventaja_pct_prosp": 3.2637996289884397,
-   "validado_eBH": false,
-   "estado": "en observación"
-  },
-  {
    "id": "seco|loteria-de-manizales|serie_u|reciente",
    "clase": "regla",
    "tipo": "seco",
@@ -426,7 +429,7 @@
    "estrategia": "reciente",
    "descripcion": "Última cifra de la serie de los secos (Manizales): lo que más ha salido en las últimas semanas seguirá saliendo más",
    "premios_evaluados": 662,
-   "log10E_total": -0.7584264026856243,
+   "log10E_total": -0.7584264026856248,
    "premios_prospectivos": 204,
    "log10E_prosp": 1.1771086713629588,
    "max_log10E_prosp": 1.1771086713629588,
@@ -450,24 +453,6 @@
    "max_log10E_prosp": 1.1292196583616991,
    "ventaja_pct_total": 0.6169560412083941,
    "ventaja_pct_prosp": 1.5597318635344637,
-   "validado_eBH": false,
-   "estado": "sin evidencia"
-  },
-  {
-   "id": "seco|loteria-de-risaralda|pares|fria",
-   "clase": "regla",
-   "tipo": "seco",
-   "alcance": "Risaralda",
-   "rasgo": "cuántas cifras pares",
-   "estrategia": "fria",
-   "descripcion": "Cuántas cifras pares de los secos (Risaralda): lo que menos ha salido últimamente 'está por salir'",
-   "premios_evaluados": 382,
-   "log10E_total": 0.4768169645112529,
-   "premios_prospectivos": 96,
-   "log10E_prosp": 1.1082243180464801,
-   "max_log10E_prosp": 1.1082243180464801,
-   "ventaja_pct_total": 0.2878248452714782,
-   "ventaja_pct_prosp": 2.693747711165684,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -516,7 +501,7 @@
    "estrategia": "caliente",
    "descripcion": "Última cifra de los secos (Manizales): lo que más ha salido en todo el historial seguirá saliendo más",
    "premios_evaluados": 662,
-   "log10E_total": 0.4931071795297594,
+   "log10E_total": 0.49310717952975935,
    "premios_prospectivos": 204,
    "log10E_prosp": 0.9470424143338072,
    "max_log10E_prosp": 1.04906766035027,
@@ -552,10 +537,10 @@
    "estrategia": "caliente",
    "descripcion": "Suma de las cifras de los secos (Cauca): lo que más ha salido en todo el historial seguirá saliendo más",
    "premios_evaluados": 431,
-   "log10E_total": 0.9114243117438796,
+   "log10E_total": 0.9114243117438753,
    "premios_prospectivos": 144,
-   "log10E_prosp": 0.9349947677984418,
-   "max_log10E_prosp": 0.9829696379284886,
+   "log10E_prosp": 0.9349947677984397,
+   "max_log10E_prosp": 0.9829696379284872,
    "ventaja_pct_total": 0.48810897511397666,
    "ventaja_pct_prosp": 1.506305048245471,
    "validado_eBH": false,
@@ -624,10 +609,10 @@
    "estrategia": "reciente",
    "descripcion": "Suma de las cifras de los secos (Cauca): lo que más ha salido en las últimas semanas seguirá saliendo más",
    "premios_evaluados": 431,
-   "log10E_total": 0.6812624777693861,
+   "log10E_total": 0.6812624777693842,
    "premios_prospectivos": 144,
-   "log10E_prosp": 0.8566907747605841,
-   "max_log10E_prosp": 0.9623529369318331,
+   "log10E_prosp": 0.8566907747605828,
+   "max_log10E_prosp": 0.9623529369318323,
    "ventaja_pct_total": 0.36462249265416524,
    "ventaja_pct_prosp": 1.3792890972005312,
    "validado_eBH": false,
@@ -688,20 +673,38 @@
    "estado": "sin evidencia"
   },
   {
-   "id": "seco|todas|suma|reciente",
+   "id": "seco|loteria-de-risaralda|d4|caliente",
    "clase": "regla",
    "tipo": "seco",
-   "alcance": "todas las loterías",
-   "rasgo": "suma de las cifras",
+   "alcance": "Risaralda",
+   "rasgo": "última cifra",
+   "estrategia": "caliente",
+   "descripcion": "Última cifra de los secos (Risaralda): lo que más ha salido en todo el historial seguirá saliendo más",
+   "premios_evaluados": 414,
+   "log10E_total": 0.29202510294791295,
+   "premios_prospectivos": 128,
+   "log10E_prosp": 0.7933025611649491,
+   "max_log10E_prosp": 0.7933025611649491,
+   "ventaja_pct_total": 0.1625504845168324,
+   "ventaja_pct_prosp": 1.4372989184815,
+   "validado_eBH": false,
+   "estado": "sin evidencia"
+  },
+  {
+   "id": "seco|loteria-de-risaralda|d4|reciente",
+   "clase": "regla",
+   "tipo": "seco",
+   "alcance": "Risaralda",
+   "rasgo": "última cifra",
    "estrategia": "reciente",
-   "descripcion": "Suma de las cifras de los secos (todas las loterías): lo que más ha salido en las últimas semanas seguirá saliendo más",
-   "premios_evaluados": 7219,
-   "log10E_total": -10.75672829677758,
-   "premios_prospectivos": 2373,
-   "log10E_prosp": 0.7435349791565201,
-   "max_log10E_prosp": 2.011275779282266,
-   "ventaja_pct_total": -0.3425106105121478,
-   "ventaja_pct_prosp": 0.07217321139871835,
+   "descripcion": "Última cifra de los secos (Risaralda): lo que más ha salido en las últimas semanas seguirá saliendo más",
+   "premios_evaluados": 414,
+   "log10E_total": 0.32652962656993617,
+   "premios_prospectivos": 128,
+   "log10E_prosp": 0.7681017292459996,
+   "max_log10E_prosp": 0.7681017292459996,
+   "ventaja_pct_total": 0.18177424872052317,
+   "ventaja_pct_prosp": 1.3913241198156623,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -713,13 +716,13 @@
    "rasgo": "1.ª cifra",
    "estrategia": "combinador",
    "descripcion": "Combinador: 1.ª cifra de los secos de Risaralda, mezclando todas las reglas según cómo les ha ido en esa lotería (el azar pesa la mitad al comienzo)",
-   "premios_evaluados": 382,
-   "log10E_total": 0.6878751890294871,
-   "premios_prospectivos": 96,
-   "log10E_prosp": 0.6703042519251047,
+   "premios_evaluados": 414,
+   "log10E_total": 0.7483791358576123,
+   "premios_prospectivos": 128,
+   "log10E_prosp": 0.7308081987532299,
    "max_log10E_prosp": 0.967826605080022,
-   "ventaja_pct_total": 0.41549197710843977,
-   "ventaja_pct_prosp": 1.6207359868000593,
+   "ventaja_pct_total": 0.41710094315061674,
+   "ventaja_pct_prosp": 1.323326401029723,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -760,6 +763,24 @@
    "estado": "sin evidencia"
   },
   {
+   "id": "seco|loteria-de-risaralda|serie_u|fria",
+   "clase": "regla",
+   "tipo": "seco",
+   "alcance": "Risaralda",
+   "rasgo": "última cifra de la serie",
+   "estrategia": "fria",
+   "descripcion": "Última cifra de la serie de los secos (Risaralda): lo que menos ha salido últimamente 'está por salir'",
+   "premios_evaluados": 414,
+   "log10E_total": -2.3703149686713023,
+   "premios_prospectivos": 128,
+   "log10E_prosp": 0.631558916740599,
+   "max_log10E_prosp": 0.631558916740599,
+   "ventaja_pct_total": -1.3096699184984129,
+   "ventaja_pct_prosp": 1.1425861434146034,
+   "validado_eBH": false,
+   "estado": "sin evidencia"
+  },
+  {
    "id": "seco|loteria-de-bogota|t2|caliente",
    "clase": "regla",
    "tipo": "seco",
@@ -786,10 +807,10 @@
    "estrategia": "reciente",
    "descripcion": "Suma de las cifras de los secos (Meta): lo que más ha salido en las últimas semanas seguirá saliendo más",
    "premios_evaluados": 544,
-   "log10E_total": 1.1020876454511175,
+   "log10E_total": 1.1020876454511161,
    "premios_prospectivos": 168,
-   "log10E_prosp": 0.6057119907497591,
-   "max_log10E_prosp": 0.6057119907497591,
+   "log10E_prosp": 0.6057119907497586,
+   "max_log10E_prosp": 0.6057119907497586,
    "ventaja_pct_total": 0.46756959788147867,
    "ventaja_pct_prosp": 0.8336361505003609,
    "validado_eBH": false,
@@ -858,48 +879,12 @@
    "estrategia": "fria",
    "descripcion": "Última cifra de los secos (Valle): lo que menos ha salido últimamente 'está por salir'",
    "premios_evaluados": 415,
-   "log10E_total": -4.654031991177247,
+   "log10E_total": -4.6540319911772565,
    "premios_prospectivos": 127,
-   "log10E_prosp": 0.5667043387597153,
-   "max_log10E_prosp": 0.5667043387597153,
-   "ventaja_pct_total": -2.549187350700377,
-   "ventaja_pct_prosp": 1.0327650564833313,
-   "validado_eBH": false,
-   "estado": "sin evidencia"
-  },
-  {
-   "id": "seco|loteria-del-huila|serie_u|fria",
-   "clase": "regla",
-   "tipo": "seco",
-   "alcance": "Huila",
-   "rasgo": "última cifra de la serie",
-   "estrategia": "fria",
-   "descripcion": "Última cifra de la serie de los secos (Huila): lo que menos ha salido últimamente 'está por salir'",
-   "premios_evaluados": 350,
-   "log10E_total": -1.8006323969468823,
-   "premios_prospectivos": 108,
-   "log10E_prosp": 0.560896725799887,
-   "max_log10E_prosp": 1.1199313341631612,
-   "ventaja_pct_total": -1.1776138678491144,
-   "ventaja_pct_prosp": 1.2030236632433189,
-   "validado_eBH": false,
-   "estado": "sin evidencia"
-  },
-  {
-   "id": "comb|mayor|loteria-de-boyaca|serie_u",
-   "clase": "combinador",
-   "tipo": "mayor",
-   "alcance": "Boyacá",
-   "rasgo": "última cifra de la serie",
-   "estrategia": "combinador",
-   "descripcion": "Combinador: última cifra de la serie de los premios mayores de Boyacá, mezclando todas las reglas según cómo les ha ido en esa lotería (el azar pesa la mitad al comienzo)",
-   "premios_evaluados": 13,
-   "log10E_total": 0.5965647749015661,
-   "premios_prospectivos": 5,
-   "log10E_prosp": 0.5536401203524077,
-   "max_log10E_prosp": 0.5536401203524077,
-   "ventaja_pct_total": 11.14491500558319,
-   "ventaja_pct_prosp": 29.041090363251953,
+   "log10E_prosp": 0.5667043387597073,
+   "max_log10E_prosp": 0.5667043387597073,
+   "ventaja_pct_total": -2.549187350700388,
+   "ventaja_pct_prosp": 1.032765056483309,
    "validado_eBH": false,
    "estado": "sin evidencia"
   }
@@ -913,13 +898,13 @@
    "rasgo": "dos últimas cifras",
    "estrategia": "arrastre_mayor",
    "descripcion": "Dos últimas cifras de los secos (todas las loterías): lo que tuvo el premio mayor anterior de la misma lotería se repite",
-   "premios_evaluados": 7219,
-   "log10E_total": -265.33228504743516,
-   "premios_prospectivos": 2373,
-   "log10E_prosp": -82.58610937645072,
+   "premios_evaluados": 7320,
+   "log10E_total": -268.87060760556204,
+   "premios_prospectivos": 2474,
+   "log10E_prosp": -86.1244319345776,
    "max_log10E_prosp": 0.0,
-   "ventaja_pct_total": -8.114859159129594,
-   "ventaja_pct_prosp": -7.700872850844442,
+   "ventaja_pct_total": -8.109832604608302,
+   "ventaja_pct_prosp": -7.702872636975721,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -931,13 +916,13 @@
    "rasgo": "suma de las cifras",
    "estrategia": "fria",
    "descripcion": "Suma de las cifras de los secos (todas las loterías): lo que menos ha salido últimamente 'está por salir'",
-   "premios_evaluados": 7219,
-   "log10E_total": -182.00775834200456,
-   "premios_prospectivos": 2373,
-   "log10E_prosp": -89.640005249158,
+   "premios_evaluados": 7320,
+   "log10E_total": -182.22288172927992,
+   "premios_prospectivos": 2474,
+   "log10E_prosp": -89.85512863643324,
    "max_log10E_prosp": 0.0,
-   "ventaja_pct_total": -5.640055408740341,
-   "ventaja_pct_prosp": -8.330464783353852,
+   "ventaja_pct_total": -5.570831892801198,
+   "ventaja_pct_prosp": -8.022791876213297,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -949,13 +934,13 @@
    "rasgo": "última cifra",
    "estrategia": "fria",
    "descripcion": "Última cifra de los secos (todas las loterías): lo que menos ha salido últimamente 'está por salir'",
-   "premios_evaluados": 7219,
-   "log10E_total": -149.28763271305988,
-   "premios_prospectivos": 2373,
-   "log10E_prosp": -51.382789373858856,
+   "premios_evaluados": 7320,
+   "log10E_total": -149.33675446559133,
+   "premios_prospectivos": 2474,
+   "log10E_prosp": -51.43191112639033,
    "max_log10E_prosp": 0.0,
-   "ventaja_pct_total": -4.650113960928359,
-   "ventaja_pct_prosp": -4.86355758620578,
+   "ventaja_pct_total": -4.588921716311701,
+   "ventaja_pct_prosp": -4.6740745392189424,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -967,13 +952,13 @@
    "rasgo": "2.ª cifra",
    "estrategia": "fria",
    "descripcion": "2.ª cifra de los secos (todas las loterías): lo que menos ha salido últimamente 'está por salir'",
-   "premios_evaluados": 7219,
-   "log10E_total": -128.4210818986022,
-   "premios_prospectivos": 2373,
-   "log10E_prosp": -51.11020347796619,
+   "premios_evaluados": 7320,
+   "log10E_total": -130.92602173787273,
+   "premios_prospectivos": 2474,
+   "log10E_prosp": -53.61514331723673,
    "max_log10E_prosp": 0.0,
-   "ventaja_pct_total": -4.013383618169019,
-   "ventaja_pct_prosp": -4.8383909208309035,
+   "ventaja_pct_total": -4.034764930576273,
+   "ventaja_pct_prosp": -4.867576686758268,
    "validado_eBH": false,
    "estado": "sin evidencia"
   },
@@ -985,13 +970,13 @@
    "rasgo": "cuántas cifras pares",
    "estrategia": "fria",
    "descripcion": "Cuántas cifras pares de los secos (todas las loterías): lo que menos ha salido últimamente 'está por salir'",
-   "premios_evaluados": 7219,
-   "log10E_total": -97.26201923167484,
-   "premios_prospectivos": 2373,
-   "log10E_prosp": -7.622997956490123,
+   "premios_evaluados": 7320,
+   "log10E_total": -97.55800764106574,
+   "premios_prospectivos": 2474,
+   "log10E_prosp": -7.918986365881025,
    "max_log10E_prosp": 0.8273147784535811,
-   "ventaja_pct_total": -3.054659549712746,
-   "ventaja_pct_prosp": -0.7369508933068425,
+   "ventaja_pct_total": -3.022183103082854,
+   "ventaja_pct_prosp": -0.7343213068613519,
    "validado_eBH": false,
    "estado": "sin evidencia"
   }
@@ -1097,55 +1082,59 @@
      ],
      [
       "2026-11-13",
-      -0.1362
+      -0.1085
      ]
     ]
    },
    {
-    "id": "seco|menor|d1|fria",
-    "nombre": "1.ª cifra de los secos (menor cuantía): lo que menos ha salido últimamente 'está por salir'",
+    "id": "seco|loteria-de-risaralda|pares|fria",
+    "nombre": "Cuántas cifras pares de los secos (Risaralda): lo que menos ha salido últimamente 'está por salir'",
     "puntos": [
      [
       "2026-10-16",
       0.0
      ],
      [
-      "2026-11-04",
-      0.5102
+      "2026-10-23",
+      0.386
      ],
      [
-      "2026-11-07",
-      1.7397
+      "2026-10-30",
+      1.0363
      ],
      [
-      "2026-11-09",
-      1.3758
+      "2026-11-06",
+      1.1082
+     ],
+     [
+      "2026-11-13",
+      1.5451
      ]
     ]
    },
    {
-    "id": "seco|loteria-del-huila|t2|arrastre_seco",
-    "nombre": "Dos últimas cifras de los secos (Huila): las terminaciones de los secos del sorteo anterior se repiten",
+    "id": "seco|loteria-de-risaralda|d1|caliente",
+    "nombre": "1.ª cifra de los secos (Risaralda): lo que más ha salido en todo el historial seguirá saliendo más",
     "puntos": [
      [
       "2026-10-16",
       0.0
      ],
      [
-      "2026-10-20",
-      0.9897
+      "2026-10-23",
+      0.9256
      ],
      [
-      "2026-10-27",
-      1.4066
+      "2026-10-30",
+      1.6898
      ],
      [
-      "2026-11-03",
-      1.4622
+      "2026-11-06",
+      1.339
      ],
      [
-      "2026-11-10",
-      1.3447
+      "2026-11-13",
+      1.4207
      ]
     ]
    }
@@ -1158,9 +1147,9 @@
    "esperado": 4.846000000000001
   },
   "prospectivo": {
-   "premios": 2373,
+   "premios": 2474,
    "aciertos": 2,
-   "esperado": 2.373
+   "esperado": 2.474
   }
  },
  "aciertos_serie": [
@@ -1532,7 +1521,7 @@
   {
    "fecha": "2026-11-13",
    "aciertos": 6,
-   "esperado": 7.219
+   "esperado": 7.32
   }
  ],
  "ultima_cifra_top1": {
@@ -1541,8 +1530,8 @@
    "k": 488
   },
   "prospectivo": {
-   "n": 2373,
-   "k": 249
+   "n": 2474,
+   "k": 259
   }
  },
  "proximos": [
@@ -1551,36 +1540,36 @@
     "combinador": [
      "8232",
      "8632",
+     "8332",
      "8732",
      "8432",
-     "8332",
      "8832",
-     "8132",
      "8532",
+     "8132",
      "8032",
      "8932"
     ],
     "calientes": [
      "2736",
      "2734",
-     "2704",
      "2706",
+     "2704",
      "2739",
      "2709",
      "2738",
-     "2744",
      "2746",
+     "2744",
      "2708"
     ],
     "recientes": [
-     "8023",
-     "8233",
-     "8033",
      "8223",
-     "8235",
-     "8035",
+     "8033",
+     "8233",
+     "8023",
      "8225",
+     "8235",
      "8025",
+     "8035",
      "8833",
      "8823"
     ],
@@ -1590,11 +1579,11 @@
      "4191",
      "4171",
      "9192",
-     "4692",
      "4392",
-     "4152",
+     "4692",
      "9172",
-     "4112"
+     "4112",
+     "4152"
     ],
     "mayor_anterior": [
      "0474",
@@ -1623,52 +1612,52 @@
    },
    "q_posiciones": [
     [
-     0.09996,
-     0.09995,
-     0.10021,
-     0.09994,
-     0.09984,
-     0.09988,
-     0.09993,
-     0.09987,
-     0.10055,
-     0.09987
-    ],
-    [
-     0.09994,
+     0.09999,
      0.09998,
-     0.10015,
-     0.1,
-     0.10001,
+     0.10023,
      0.09997,
-     0.10003,
-     0.10001,
-     0.09998,
-     0.09993
-    ],
-    [
      0.09985,
-     0.09977,
-     0.10001,
-     0.10062,
-     0.10016,
-     0.1,
-     0.09987,
-     0.09988,
-     0.09993,
-     0.0999
+     0.09986,
+     0.09992,
+     0.09985,
+     0.10055,
+     0.0998
     ],
     [
-     0.10276,
-     0.10255,
-     0.10343,
-     0.10163,
-     0.09799,
-     0.09683,
-     0.10215,
-     0.09552,
-     0.10205,
-     0.09508
+     0.09994,
+     0.09996,
+     0.10016,
+     0.10001,
+     0.1,
+     0.09996,
+     0.10006,
+     0.1,
+     0.09999,
+     0.09992
+    ],
+    [
+     0.09991,
+     0.09984,
+     0.10004,
+     0.10058,
+     0.10012,
+     0.09995,
+     0.09983,
+     0.0999,
+     0.09997,
+     0.09986
+    ],
+    [
+     0.10202,
+     0.1024,
+     0.10349,
+     0.10075,
+     0.09814,
+     0.09672,
+     0.10242,
+     0.09755,
+     0.10189,
+     0.09462
     ]
    ],
    "listas_series": {
@@ -1712,21 +1701,21 @@
    "top_numeros": [
     "8232",
     "8632",
+    "8332",
     "8732",
     "8432",
-    "8332",
     "8832",
-    "8132",
     "8532",
+    "8132",
     "8032",
     "8932"
    ],
    "prob_top_numeros": [
     0.0001048,
     0.0001047,
-    0.0001046,
-    0.0001046,
-    0.0001046,
+    0.0001047,
+    0.0001047,
+    0.0001047,
     0.0001046,
     0.0001046,
     0.0001046,
@@ -1736,15 +1725,15 @@
    "ultima_cifra": [
     {
      "cifra": 2,
-     "prob": 0.1034
+     "prob": 0.1035
     },
     {
-     "cifra": 0,
-     "prob": 0.1028
+     "cifra": 6,
+     "prob": 0.1024
     },
     {
      "cifra": 1,
-     "prob": 0.1026
+     "prob": 0.1024
     }
    ],
    "terminaciones": [
@@ -1973,16 +1962,16 @@
   {
    "listas": {
     "combinador": [
-     "7270",
      "7272",
      "7271",
-     "7250",
-     "7252",
-     "7273",
+     "7270",
      "7274",
-     "7251",
+     "7252",
      "7276",
-     "7220"
+     "7251",
+     "7222",
+     "7250",
+     "7221"
     ],
     "calientes": [
      "1963",
@@ -1998,27 +1987,27 @@
     ],
     "recientes": [
      "9651",
-     "9621",
      "9671",
+     "9621",
      "9653",
      "9656",
      "9661",
-     "7651",
      "5651",
      "9251",
-     "9623"
+     "7651",
+     "9673"
     ],
     "frios": [
+     "3539",
+     "3030",
+     "3537",
+     "3530",
      "3039",
      "3037",
-     "3539",
-     "3530",
-     "3537",
-     "3030",
-     "3330",
-     "3339",
-     "3337",
-     "3430"
+     "3439",
+     "3430",
+     "3437",
+     "3330"
     ],
     "mayor_anterior": [
      "7341",
@@ -2047,52 +2036,52 @@
    },
    "q_posiciones": [
     [
-     0.09882,
-     0.10215,
-     0.09545,
-     0.09677,
-     0.09755,
-     0.10251,
-     0.10093,
-     0.10383,
-     0.10049,
-     0.10151
+     0.09888,
+     0.10221,
+     0.09549,
+     0.09684,
+     0.09756,
+     0.10247,
+     0.10091,
+     0.10379,
+     0.10048,
+     0.10137
     ],
     [
-     0.09934,
-     0.0998,
-     0.10244,
-     0.09933,
+     0.09935,
+     0.09949,
+     0.10258,
+     0.09951,
+     0.10008,
+     0.09946,
+     0.10169,
+     0.09973,
+     0.09941,
+     0.09872
+    ],
+    [
+     0.09967,
+     0.09943,
      0.10026,
-     0.09953,
-     0.10119,
-     0.09997,
-     0.09923,
-     0.09891
+     0.09979,
+     0.10009,
+     0.10033,
+     0.09995,
+     0.10065,
+     0.10006,
+     0.09978
     ],
     [
-     0.09958,
-     0.09932,
-     0.10021,
-     0.09984,
-     0.10015,
-     0.10041,
-     0.10002,
-     0.10063,
-     0.10001,
-     0.09983
-    ],
-    [
-     0.10058,
-     0.10045,
-     0.10053,
-     0.10024,
-     0.10024,
-     0.09923,
-     0.10021,
-     0.09898,
-     0.10011,
-     0.09943
+     0.10046,
+     0.1005,
+     0.10056,
+     0.1001,
+     0.10032,
+     0.09912,
+     0.10022,
+     0.0993,
+     0.10005,
+     0.09937
     ]
    ],
    "listas_series": {
@@ -2134,41 +2123,41 @@
    "fecha": "2026-11-17",
    "tipo": "seco",
    "top_numeros": [
-    "7270",
     "7272",
     "7271",
-    "7250",
-    "7252",
-    "7273",
+    "7270",
     "7274",
-    "7251",
+    "7252",
     "7276",
-    "7220"
+    "7251",
+    "7222",
+    "7250",
+    "7221"
    ],
    "prob_top_numeros": [
-    0.0001076,
+    0.0001078,
+    0.0001077,
     0.0001076,
     0.0001075,
     0.0001074,
     0.0001074,
+    0.0001074,
     0.0001073,
     0.0001073,
-    0.0001073,
-    0.0001073,
-    0.0001072
+    0.0001073
    ],
    "ultima_cifra": [
     {
-     "cifra": 0,
+     "cifra": 2,
      "prob": 0.1006
     },
     {
-     "cifra": 2,
+     "cifra": 1,
      "prob": 0.1005
     },
     {
-     "cifra": 1,
-     "prob": 0.1004
+     "cifra": 0,
+     "prob": 0.1005
     }
    ],
    "terminaciones": [
@@ -2182,14 +2171,14 @@
     },
     {
      "t2": "22",
+     "prob": 0.0101
+    },
+    {
+     "t2": "74",
      "prob": 0.01
     },
     {
-     "t2": "96",
-     "prob": 0.01
-    },
-    {
-     "t2": "05",
+     "t2": "63",
      "prob": 0.01
     }
    ],
@@ -2397,16 +2386,16 @@
   {
    "listas": {
     "combinador": [
-     "9748",
      "9648",
-     "9778",
+     "9748",
+     "4648",
      "4748",
      "9678",
+     "7648",
+     "9778",
      "9848",
-     "4648",
-     "9448",
-     "9548",
-     "9248"
+     "7748",
+     "4678"
     ],
     "calientes": [
      "7648",
@@ -2421,28 +2410,28 @@
      "5048"
     ],
     "recientes": [
-     "9748",
      "2748",
-     "9741",
-     "9746",
+     "9748",
      "2746",
-     "2741",
      "2744",
+     "9746",
      "9744",
-     "7748",
-     "9848"
+     "9741",
+     "2741",
+     "2848",
+     "7748"
     ],
     "frios": [
-     "8260",
      "8200",
-     "8300",
-     "8360",
+     "8260",
      "8250",
-     "8290",
-     "0200",
-     "3260",
-     "8220",
-     "8267"
+     "8360",
+     "8300",
+     "3200",
+     "8205",
+     "8350",
+     "8100",
+     "0200"
     ],
     "mayor_anterior": [
      "4988",
@@ -2471,52 +2460,52 @@
    },
    "q_posiciones": [
     [
-     0.09908,
-     0.09925,
-     0.10016,
-     0.09947,
-     0.10073,
-     0.10017,
-     0.09955,
-     0.10057,
-     0.09976,
-     0.10126
+     0.09921,
+     0.09937,
+     0.10024,
+     0.09961,
+     0.10075,
+     0.10009,
+     0.09951,
+     0.10049,
+     0.09974,
+     0.10099
     ],
     [
      0.09991,
-     0.09957,
-     0.1,
-     0.0994,
-     0.10005,
-     0.1,
-     0.1006,
-     0.10068,
-     0.10013,
-     0.09965
-    ],
-    [
+     0.09948,
+     0.10004,
      0.09945,
-     0.09978,
-     0.09985,
-     0.10025,
-     0.10116,
-     0.09986,
-     0.09914,
-     0.10071,
-     0.10006,
-     0.09973
+     0.1,
+     0.09998,
+     0.10074,
+     0.10062,
+     0.10018,
+     0.09959
     ],
     [
-     0.09759,
-     0.10068,
-     0.10082,
-     0.09926,
-     0.10119,
-     0.09908,
-     0.10014,
-     0.10061,
-     0.10235,
-     0.09828
+     0.09952,
+     0.09987,
+     0.09989,
+     0.10021,
+     0.10111,
+     0.0998,
+     0.09909,
+     0.10072,
+     0.1001,
+     0.09968
+    ],
+    [
+     0.0975,
+     0.1007,
+     0.10084,
+     0.09913,
+     0.10123,
+     0.09902,
+     0.10017,
+     0.1009,
+     0.1023,
+     0.09822
     ]
    ],
    "listas_series": {
@@ -2558,41 +2547,41 @@
    "fecha": "2026-11-17",
    "tipo": "seco",
    "top_numeros": [
-    "9748",
     "9648",
-    "9778",
+    "9748",
+    "4648",
     "4748",
     "9678",
+    "7648",
+    "9778",
     "9848",
-    "4648",
-    "9448",
-    "9548",
-    "9248"
+    "7748",
+    "4678"
    ],
    "prob_top_numeros": [
-    0.0001056,
-    0.0001055,
+    0.0001052,
     0.0001051,
     0.000105,
-    0.000105,
-    0.000105,
-    0.0001049,
     0.0001049,
     0.0001048,
-    0.0001048
+    0.0001047,
+    0.0001047,
+    0.0001047,
+    0.0001046,
+    0.0001046
    ],
    "ultima_cifra": [
     {
      "cifra": 8,
-     "prob": 0.1024
+     "prob": 0.1023
     },
     {
      "cifra": 4,
      "prob": 0.1012
     },
     {
-     "cifra": 2,
-     "prob": 0.1008
+     "cifra": 7,
+     "prob": 0.1009
     }
    ],
    "terminaciones": [
@@ -2609,11 +2598,11 @@
      "prob": 0.0102
     },
     {
-     "t2": "61",
+     "t2": "78",
      "prob": 0.0102
     },
     {
-     "t2": "78",
+     "t2": "61",
      "prob": 0.0102
     }
    ],
@@ -2823,50 +2812,50 @@
     "combinador": [
      "9239",
      "4239",
-     "0239",
      "6239",
+     "0239",
      "1239",
+     "9279",
+     "4279",
      "2239",
      "5239",
-     "9279",
-     "8239",
-     "4279"
+     "8239"
     ],
     "calientes": [
+     "9278",
      "9378",
      "9374",
      "9274",
-     "9278",
-     "9204",
-     "9304",
      "9208",
+     "9204",
      "9308",
-     "9275",
-     "9271"
+     "9304",
+     "9371",
+     "9275"
     ],
     "recientes": [
      "6272",
      "9272",
-     "6172",
      "6572",
+     "6172",
      "4272",
      "6273",
-     "9572",
      "9172",
+     "9572",
      "6222",
      "9273"
     ],
     "frios": [
-     "2855",
      "2815",
-     "3815",
-     "2915",
-     "2955",
-     "3855",
-     "2810",
+     "2855",
      "2850",
-     "2845",
-     "2895"
+     "2810",
+     "2955",
+     "3815",
+     "3855",
+     "2915",
+     "2895",
+     "2845"
     ],
     "mayor_anterior": [
      "8349",
@@ -2895,52 +2884,52 @@
    },
    "q_posiciones": [
     [
-     0.10035,
-     0.10023,
-     0.09974,
-     0.09946,
-     0.10057,
-     0.09964,
      0.1003,
-     0.09943,
-     0.09958,
-     0.10071
-    ],
-    [
-     0.09764,
-     0.10482,
-     0.10925,
-     0.09705,
-     0.09821,
-     0.10444,
-     0.09764,
-     0.10167,
-     0.09427,
-     0.095
-    ],
-    [
-     0.09936,
-     0.09861,
-     0.09938,
-     0.10302,
-     0.09968,
-     0.09851,
-     0.09943,
-     0.10191,
+     0.10016,
+     0.09972,
+     0.09944,
+     0.10058,
+     0.09966,
      0.10033,
-     0.09977
+     0.09947,
+     0.0996,
+     0.10073
     ],
     [
-     0.09919,
-     0.09967,
-     0.1004,
-     0.10001,
-     0.09953,
-     0.09874,
-     0.09963,
-     0.0989,
-     0.10014,
-     0.10379
+     0.09765,
+     0.10458,
+     0.10936,
+     0.09718,
+     0.09808,
+     0.10438,
+     0.09802,
+     0.10149,
+     0.0944,
+     0.09486
+    ],
+    [
+     0.09965,
+     0.09896,
+     0.09955,
+     0.10285,
+     0.09949,
+     0.09824,
+     0.0992,
+     0.10198,
+     0.1005,
+     0.09957
+    ],
+    [
+     0.09914,
+     0.09969,
+     0.10041,
+     0.09994,
+     0.09955,
+     0.09871,
+     0.09965,
+     0.09906,
+     0.10011,
+     0.10376
     ]
    ],
    "listas_series": {
@@ -2984,22 +2973,22 @@
    "top_numeros": [
     "9239",
     "4239",
-    "0239",
     "6239",
+    "0239",
     "1239",
+    "9279",
+    "4279",
     "2239",
     "5239",
-    "9279",
-    "8239",
-    "4279"
+    "8239"
    ],
    "prob_top_numeros": [
     0.0001176,
-    0.0001175,
-    0.0001172,
-    0.0001172,
+    0.0001174,
     0.0001171,
-    0.0001165,
+    0.0001171,
+    0.0001169,
+    0.0001166,
     0.0001164,
     0.0001164,
     0.0001163,
@@ -3021,11 +3010,11 @@
    ],
    "terminaciones": [
     {
-     "t2": "83",
+     "t2": "62",
      "prob": 0.011
     },
     {
-     "t2": "62",
+     "t2": "83",
      "prob": 0.011
     },
     {
@@ -3257,21 +3246,21 @@
      "5260"
     ],
     "calientes": [
-     "5104",
      "5100",
+     "5104",
      "5700",
      "5704",
-     "5130",
      "5134",
+     "5130",
      "5190",
      "5194",
      "5102",
-     "5730"
+     "5734"
     ],
     "recientes": [
      "5690",
-     "7690",
      "3690",
+     "7690",
      "5694",
      "5650",
      "2690",
@@ -3287,9 +3276,9 @@
      "1919",
      "1465",
      "1969",
-     "1925",
-     "1419",
      "1975",
+     "1419",
+     "1925",
      "1985"
     ],
     "mayor_anterior": [
@@ -3315,52 +3304,52 @@
    },
    "q_posiciones": [
     [
-     0.10002,
-     0.09971,
-     0.09998,
-     0.10019,
-     0.0996,
-     0.10046,
      0.10003,
+     0.09972,
+     0.09999,
      0.1002,
+     0.0996,
+     0.10045,
+     0.10002,
+     0.10019,
      0.09965,
-     0.10017
+     0.10014
     ],
     [
      0.09969,
-     0.10009,
-     0.10043,
-     0.10011,
+     0.10005,
+     0.10045,
+     0.10013,
+     0.09982,
      0.09985,
-     0.09986,
-     0.1002,
-     0.1002,
-     0.09998,
-     0.0996
+     0.10028,
+     0.10016,
+     0.1,
+     0.09956
     ],
     [
-     0.09998,
-     0.09996,
+     0.09999,
      0.09997,
-     0.10005,
-     0.10003,
+     0.09998,
+     0.10004,
+     0.10002,
      0.1,
-     0.09996,
+     0.09995,
      0.10002,
      0.10001,
      0.10003
     ],
     [
-     0.10619,
-     0.10291,
-     0.10309,
-     0.09879,
-     0.10348,
-     0.0949,
-     0.10151,
-     0.09509,
-     0.09774,
-     0.09629
+     0.10592,
+     0.10293,
+     0.10313,
+     0.09846,
+     0.10358,
+     0.09477,
+     0.10158,
+     0.09583,
+     0.09765,
+     0.09616
     ]
    ],
    "listas_series": {
@@ -3414,25 +3403,25 @@
     "5260"
    ],
    "prob_top_numeros": [
-    0.0001072,
-    0.0001072,
-    0.0001072,
-    0.0001071,
-    0.0001071,
-    0.0001071,
-    0.0001071,
-    0.0001071,
-    0.0001071,
-    0.0001071
+    0.0001069,
+    0.0001069,
+    0.0001069,
+    0.0001069,
+    0.0001069,
+    0.0001069,
+    0.0001069,
+    0.0001069,
+    0.0001068,
+    0.0001068
    ],
    "ultima_cifra": [
     {
      "cifra": 0,
-     "prob": 0.1062
+     "prob": 0.1059
     },
     {
      "cifra": 4,
-     "prob": 0.1035
+     "prob": 0.1036
     },
     {
      "cifra": 2,
@@ -3445,19 +3434,19 @@
      "prob": 0.01
     },
     {
-     "t2": "40",
-     "prob": 0.01
-    },
-    {
      "t2": "91",
      "prob": 0.01
     },
     {
-     "t2": "05",
+     "t2": "40",
      "prob": 0.01
     },
     {
      "t2": "86",
+     "prob": 0.01
+    },
+    {
+     "t2": "05",
      "prob": 0.01
     }
    ],
@@ -3673,20 +3662,20 @@
      "2336",
      "5333",
      "7331",
-     "9333",
-     "7336"
+     "7336",
+     "5337"
     ],
     "calientes": [
      "5333",
      "2333",
-     "9333",
      "7333",
-     "2313",
+     "9333",
      "5313",
+     "2313",
      "5323",
      "2323",
-     "9313",
-     "7313"
+     "7313",
+     "9313"
     ],
     "recientes": [
      "5331",
@@ -3694,11 +3683,11 @@
      "5336",
      "9336",
      "5131",
-     "5341",
      "5311",
+     "5341",
      "9131",
      "2331",
-     "5337"
+     "5333"
     ],
     "frios": [
      "1795",
@@ -3706,11 +3695,11 @@
      "1805",
      "1895",
      "1785",
-     "1798",
      "1794",
      "6795",
-     "1708",
-     "1704"
+     "6705",
+     "1704",
+     "1798"
     ],
     "mayor_anterior": [
      "5273",
@@ -3739,52 +3728,52 @@
    },
    "q_posiciones": [
     [
-     0.09921,
-     0.09951,
-     0.10054,
-     0.09902,
-     0.09994,
-     0.10124,
-     0.09942,
-     0.1003,
+     0.09922,
+     0.09953,
+     0.10056,
+     0.09904,
+     0.09995,
+     0.10122,
+     0.09941,
+     0.10029,
      0.09978,
-     0.10104
+     0.101
     ],
     [
      0.09756,
-     0.10251,
-     0.10143,
-     0.10847,
-     0.09964,
-     0.09869,
-     0.09824,
-     0.0958,
-     0.09722,
-     0.10045
+     0.10237,
+     0.10151,
+     0.10853,
+     0.09956,
+     0.09866,
+     0.09848,
+     0.09569,
+     0.0973,
+     0.10035
     ],
     [
-     0.09485,
-     0.10348,
-     0.10234,
-     0.10592,
-     0.10138,
-     0.0975,
-     0.0986,
-     0.10105,
-     0.09695,
-     0.09794
+     0.0949,
+     0.10355,
+     0.10237,
+     0.1059,
+     0.10134,
+     0.09745,
+     0.09856,
+     0.10106,
+     0.09697,
+     0.0979
     ],
     [
-     0.1,
-     0.10127,
-     0.09996,
-     0.1005,
-     0.09875,
-     0.09909,
-     0.10123,
-     0.10005,
-     0.09986,
-     0.09929
+     0.09992,
+     0.10129,
+     0.09997,
+     0.10041,
+     0.09879,
+     0.09904,
+     0.10124,
+     0.10025,
+     0.09983,
+     0.09926
     ]
    ],
    "listas_series": {
@@ -3834,20 +3823,20 @@
     "2336",
     "5333",
     "7331",
-    "9333",
-    "7336"
+    "7336",
+    "5337"
    ],
    "prob_top_numeros": [
     0.0001178,
-    0.0001177,
+    0.0001178,
     0.0001176,
     0.0001175,
+    0.0001171,
     0.000117,
-    0.0001169,
-    0.0001169,
+    0.0001168,
+    0.0001168,
     0.0001167,
-    0.0001167,
-    0.0001167
+    0.0001166
    ],
    "ultima_cifra": [
     {
@@ -3860,7 +3849,7 @@
     },
     {
      "cifra": 3,
-     "prob": 0.1005
+     "prob": 0.1004
     }
    ],
    "terminaciones": [
@@ -3877,11 +3866,11 @@
      "prob": 0.0103
     },
     {
-     "t2": "31",
+     "t2": "39",
      "prob": 0.0103
     },
     {
-     "t2": "39",
+     "t2": "31",
      "prob": 0.0103
     }
    ],
@@ -4091,20 +4080,20 @@
     "combinador": [
      "9672",
      "9676",
-     "9632",
      "9677",
+     "9632",
      "9670",
-     "9636",
      "9272",
+     "9636",
      "9637",
      "9276",
-     "9630"
+     "9772"
     ],
     "calientes": [
      "9677",
      "9676",
-     "9617",
      "9672",
+     "9617",
      "9616",
      "9697",
      "9670",
@@ -4113,14 +4102,14 @@
      "9696"
     ],
     "recientes": [
-     "7692",
      "7622",
+     "7692",
      "9692",
      "9622",
-     "7672",
+     "7682",
      "7697",
      "7627",
-     "7682",
+     "7672",
      "7092",
      "7022"
     ],
@@ -4133,8 +4122,8 @@
      "8261",
      "0264",
      "0851",
-     "0863",
-     "0868"
+     "0868",
+     "0863"
     ],
     "mayor_anterior": [
      "1067",
@@ -4163,52 +4152,52 @@
    },
    "q_posiciones": [
     [
-     0.09843,
-     0.09851,
-     0.09915,
-     0.10016,
-     0.10055,
-     0.10032,
-     0.10036,
-     0.10079,
-     0.10032,
-     0.10142
+     0.09863,
+     0.09873,
+     0.09928,
+     0.10038,
+     0.10058,
+     0.10017,
+     0.10029,
+     0.10066,
+     0.10028,
+     0.10098
     ],
     [
      0.1,
-     0.10002,
-     0.10011,
-     0.09986,
-     0.0999,
-     0.10001,
-     0.10025,
-     0.10004,
-     0.09992,
-     0.09989
+     0.1,
+     0.10012,
+     0.09987,
+     0.09989,
+     0.1,
+     0.10028,
+     0.10003,
+     0.09993,
+     0.09988
     ],
     [
-     0.09925,
-     0.09986,
-     0.1001,
-     0.10061,
-     0.10025,
-     0.09972,
-     0.099,
-     0.10068,
-     0.10016,
-     0.10038
+     0.09932,
+     0.09995,
+     0.10015,
+     0.10057,
+     0.1002,
+     0.09965,
+     0.09894,
+     0.10069,
+     0.1002,
+     0.10034
     ],
     [
-     0.10013,
+     0.10012,
      0.09986,
      0.10025,
-     0.09988,
+     0.09987,
      0.09992,
      0.0998,
      0.1002,
-     0.10014,
-     0.09986,
-     0.09996
+     0.10017,
+     0.09985,
+     0.09995
     ]
    ],
    "listas_series": {
@@ -4252,26 +4241,26 @@
    "top_numeros": [
     "9672",
     "9676",
-    "9632",
     "9677",
+    "9632",
     "9670",
-    "9636",
     "9272",
+    "9636",
     "9637",
     "9276",
-    "9630"
+    "9772"
    ],
    "prob_top_numeros": [
-    0.0001026,
-    0.0001026,
-    0.0001025,
-    0.0001025,
-    0.0001025,
-    0.0001025,
-    0.0001025,
-    0.0001024,
-    0.0001024,
-    0.0001024
+    0.0001022,
+    0.0001022,
+    0.0001021,
+    0.0001021,
+    0.0001021,
+    0.0001021,
+    0.000102,
+    0.000102,
+    0.000102,
+    0.000102
    ],
    "ultima_cifra": [
     {
@@ -4284,7 +4273,7 @@
     },
     {
      "cifra": 7,
-     "prob": 0.1001
+     "prob": 0.1002
     }
    ],
    "terminaciones": [
@@ -4516,20 +4505,20 @@
      "4233",
      "5233",
      "7233",
-     "9233",
      "8233",
      "4243",
+     "4283",
+     "9233",
+     "4273",
      "5243",
-     "7243",
-     "9243",
-     "4283"
+     "5283"
     ],
     "calientes": [
      "5351",
      "2351",
-     "2350",
      "5350",
      "5354",
+     "2350",
      "2354",
      "5251",
      "2251",
@@ -4551,13 +4540,13 @@
     "frios": [
      "3029",
      "3829",
-     "3629",
-     "3129",
-     "3027",
      "3929",
      "0029",
+     "3027",
+     "3629",
+     "3129",
      "3529",
-     "3028",
+     "3099",
      "3039"
     ],
     "mayor_anterior": [
@@ -4587,50 +4576,50 @@
    },
    "q_posiciones": [
     [
-     0.0998,
-     0.09977,
-     0.09987,
-     0.09988,
+     0.09984,
+     0.09982,
+     0.0999,
+     0.09993,
      0.1002,
-     0.10017,
-     0.09995,
-     0.10013,
-     0.10011,
-     0.10011
-    ],
-    [
-     0.09968,
-     0.09966,
-     0.10188,
-     0.09958,
-     0.10028,
-     0.09951,
-     0.10075,
-     0.10007,
-     0.0997,
-     0.0989
+     0.10015,
+     0.09993,
+     0.1001,
+     0.1001,
+     0.10003
     ],
     [
      0.09967,
-     0.09976,
-     0.09989,
-     0.10036,
-     0.10022,
-     0.10009,
-     0.0997,
-     0.10014,
-     0.10014,
-     0.10004
+     0.09939,
+     0.10202,
+     0.09975,
+     0.10012,
+     0.09945,
+     0.10119,
+     0.09985,
+     0.09984,
+     0.09873
     ],
     [
-     0.1001,
+     0.09972,
+     0.09983,
+     0.09992,
+     0.10033,
+     0.10018,
+     0.10004,
+     0.09966,
+     0.10015,
+     0.10017,
+     0.1
+    ],
+    [
+     0.10009,
      0.10075,
      0.09947,
-     0.10157,
+     0.10156,
      0.0996,
-     0.10094,
+     0.10093,
      0.10055,
-     0.09898,
+     0.09901,
      0.09942,
      0.09862
     ]
@@ -4677,25 +4666,25 @@
     "4233",
     "5233",
     "7233",
-    "9233",
     "8233",
     "4243",
+    "4283",
+    "9233",
+    "4273",
     "5243",
-    "7243",
-    "9243",
-    "4283"
+    "5283"
    ],
    "prob_top_numeros": [
+    0.0001042,
+    0.0001041,
+    0.0001041,
     0.0001041,
     0.000104,
     0.000104,
     0.000104,
     0.000104,
     0.0001039,
-    0.0001039,
-    0.0001038,
-    0.0001038,
-    0.0001038
+    0.0001039
    ],
    "ultima_cifra": [
     {
@@ -4708,16 +4697,16 @@
     },
     {
      "cifra": 1,
-     "prob": 0.1007
+     "prob": 0.1008
     }
    ],
    "terminaciones": [
     {
-     "t2": "50",
+     "t2": "80",
      "prob": 0.0103
     },
     {
-     "t2": "80",
+     "t2": "50",
      "prob": 0.0103
     },
     {
@@ -4940,13 +4929,13 @@
      "8214",
      "4214",
      "5214",
+     "3214",
      "7214",
-     "9214",
      "8217",
-     "8294",
      "4217",
      "5217",
-     "3214"
+     "8294",
+     "9214"
     ],
     "calientes": [
      "3219",
@@ -4955,33 +4944,33 @@
      "3299",
      "3210",
      "3289",
-     "7219",
      "0219",
+     "7219",
      "3292",
-     "3215"
+     "3217"
     ],
     "recientes": [
      "3215",
-     "3210",
-     "3212",
      "3219",
+     "3212",
+     "3210",
      "8215",
-     "3265",
      "3295",
-     "3213",
+     "3265",
      "3218",
+     "3213",
      "5215"
     ],
     "frios": [
      "4424",
      "9424",
      "2424",
+     "2124",
      "9124",
      "4124",
-     "2124",
+     "9427",
      "2427",
      "4427",
-     "9427",
      "1424"
     ],
     "mayor_anterior": [
@@ -5011,52 +5000,52 @@
    },
    "q_posiciones": [
     [
-     0.09794,
-     0.09602,
-     0.09714,
-     0.10055,
-     0.1018,
-     0.10176,
-     0.09954,
-     0.10155,
-     0.10218,
-     0.10152
+     0.09853,
+     0.09668,
+     0.09754,
+     0.10123,
+     0.10188,
+     0.10133,
+     0.09934,
+     0.10115,
+     0.10208,
+     0.10025
     ],
     [
      0.11099,
-     0.0848,
-     0.12675,
-     0.09353,
-     0.09002,
+     0.08478,
+     0.12676,
+     0.09355,
+     0.09001,
      0.10035,
-     0.10349,
-     0.09534,
-     0.09544,
-     0.09929
+     0.10352,
+     0.09532,
+     0.09545,
+     0.09927
     ],
     [
-     0.09796,
-     0.10446,
-     0.09459,
-     0.10036,
-     0.09801,
-     0.09879,
-     0.10107,
-     0.09976,
-     0.10209,
-     0.10291
+     0.09812,
+     0.10465,
+     0.09468,
+     0.10028,
+     0.0979,
+     0.09864,
+     0.10095,
+     0.0998,
+     0.10217,
+     0.10281
     ],
     [
-     0.0985,
-     0.1005,
-     0.09894,
-     0.0993,
-     0.10397,
-     0.09735,
-     0.10165,
-     0.10276,
-     0.09904,
-     0.098
+     0.09842,
+     0.10052,
+     0.09895,
+     0.09919,
+     0.10401,
+     0.09729,
+     0.10166,
+     0.10299,
+     0.09901,
+     0.09796
     ]
    ],
    "listas_series": {
@@ -5101,25 +5090,25 @@
     "8214",
     "4214",
     "5214",
+    "3214",
     "7214",
-    "9214",
     "8217",
-    "8294",
     "4217",
     "5217",
-    "3214"
+    "8294",
+    "9214"
    ],
    "prob_top_numeros": [
-    0.0001407,
-    0.0001401,
-    0.0001401,
+    0.0001408,
+    0.0001406,
     0.0001398,
-    0.0001398,
-    0.000139,
-    0.0001386,
-    0.0001385,
+    0.0001397,
+    0.0001396,
+    0.0001395,
+    0.0001392,
     0.0001384,
-    0.0001384
+    0.0001384,
+    0.0001383
    ],
    "ultima_cifra": [
     {
@@ -5128,11 +5117,11 @@
     },
     {
      "cifra": 7,
-     "prob": 0.1028
+     "prob": 0.103
     },
     {
      "cifra": 6,
-     "prob": 0.1016
+     "prob": 0.1017
     }
    ],
    "terminaciones": [
@@ -5145,15 +5134,15 @@
      "prob": 0.0106
     },
     {
+     "t2": "75",
+     "prob": 0.0106
+    },
+    {
+     "t2": "46",
+     "prob": 0.0106
+    },
+    {
      "t2": "44",
-     "prob": 0.0106
-    },
-    {
-     "t2": "97",
-     "prob": 0.0106
-    },
-    {
-     "t2": "03",
      "prob": 0.0106
     }
    ],
@@ -5362,15 +5351,15 @@
    "listas": {
     "combinador": [
      "8298",
-     "8798",
      "8698",
      "8398",
-     "8898",
+     "8798",
      "8278",
-     "8098",
+     "8898",
      "8238",
-     "8498",
-     "8248"
+     "8248",
+     "8098",
+     "8258"
     ],
     "calientes": [
      "8292",
@@ -5382,7 +5371,7 @@
      "8152",
      "8852",
      "8692",
-     "8592"
+     "8492"
     ],
     "recientes": [
      "8298",
@@ -5390,15 +5379,15 @@
      "8198",
      "8218",
      "8278",
-     "8288",
      "8268",
-     "8299",
+     "8288",
      "8295",
+     "8299",
      "0298"
     ],
     "frios": [
-     "5344",
      "9344",
+     "5344",
      "9744",
      "1344",
      "5744",
@@ -5406,7 +5395,7 @@
      "9304",
      "2344",
      "1744",
-     "5354"
+     "9334"
     ],
     "mayor_anterior": [
      "5724",
@@ -5435,52 +5424,52 @@
    },
    "q_posiciones": [
     [
-     0.10013,
-     0.09928,
-     0.09954,
-     0.10006,
-     0.10026,
-     0.09931,
-     0.10083,
-     0.09982,
+     0.10015,
+     0.0993,
+     0.09955,
+     0.10009,
+     0.10027,
+     0.0993,
+     0.10082,
+     0.09981,
      0.1014,
-     0.09936
+     0.09931
     ],
     [
      0.09993,
-     0.09985,
-     0.10033,
-     0.10008,
-     0.09992,
-     0.09983,
-     0.10013,
-     0.10013,
-     0.09995,
-     0.09985
+     0.09979,
+     0.10036,
+     0.10011,
+     0.09989,
+     0.09981,
+     0.10023,
+     0.10009,
+     0.09999,
+     0.09981
     ],
     [
-     0.09972,
-     0.09976,
-     0.09959,
-     0.10022,
-     0.1002,
+     0.09977,
+     0.09982,
+     0.09962,
      0.10019,
-     0.09939,
-     0.10024,
-     0.10008,
-     0.10061
+     0.10017,
+     0.10014,
+     0.09935,
+     0.10025,
+     0.1001,
+     0.10058
     ],
     [
-     0.097,
-     0.09569,
-     0.10221,
-     0.10108,
-     0.09237,
-     0.10183,
-     0.09674,
-     0.09576,
-     0.11524,
-     0.10207
+     0.09685,
+     0.09572,
+     0.10223,
+     0.10088,
+     0.09244,
+     0.10174,
+     0.09677,
+     0.0962,
+     0.11517,
+     0.10199
     ]
    ],
    "listas_series": {
@@ -5523,27 +5512,27 @@
    "tipo": "seco",
    "top_numeros": [
     "8298",
-    "8798",
     "8698",
     "8398",
-    "8898",
+    "8798",
     "8278",
-    "8098",
+    "8898",
     "8238",
-    "8498",
-    "8248"
+    "8248",
+    "8098",
+    "8258"
    ],
    "prob_top_numeros": [
-    0.000118,
+    0.0001179,
     0.0001177,
-    0.0001177,
-    0.0001177,
+    0.0001176,
+    0.0001176,
     0.0001175,
     0.0001175,
-    0.0001175,
-    0.0001175,
-    0.0001175,
-    0.0001175
+    0.0001174,
+    0.0001174,
+    0.0001174,
+    0.0001174
    ],
    "ultima_cifra": [
     {
@@ -5556,7 +5545,7 @@
     },
     {
      "cifra": 9,
-     "prob": 0.1021
+     "prob": 0.102
     }
    ],
    "terminaciones": [
@@ -5785,52 +5774,52 @@
   {
    "listas": {
     "combinador": [
-     "4239",
-     "4439",
-     "4839",
-     "4639",
-     "4539",
-     "4739",
-     "4339",
-     "4039",
-     "4139",
-     "4299"
+     "4237",
+     "4297",
+     "4287",
+     "4637",
+     "4697",
+     "4837",
+     "4897",
+     "4337",
+     "4687",
+     "4397"
     ],
     "calientes": [
-     "4545",
      "4547",
-     "4345",
-     "4347",
-     "4245",
      "4247",
-     "4575",
-     "4577",
+     "4347",
      "4047",
-     "4747"
+     "4545",
+     "4245",
+     "4647",
+     "4847",
+     "4345",
+     "4577"
     ],
     "recientes": [
-     "4468",
-     "4498",
-     "4898",
-     "4868",
-     "4467",
-     "4497",
-     "4495",
-     "4465",
-     "4895",
-     "4897"
+     "7897",
+     "4897",
+     "7297",
+     "7867",
+     "4297",
+     "7497",
+     "7697",
+     "7895",
+     "7898",
+     "4867"
     ],
     "frios": [
      "0973",
-     "0953",
-     "0976",
-     "0073",
-     "0903",
      "0173",
-     "0943",
+     "0953",
+     "0903",
      "0153",
-     "0956",
-     "0053"
+     "0943",
+     "0103",
+     "0971",
+     "0773",
+     "0970"
     ],
     "mayor_anterior": [
      "8362",
@@ -5859,52 +5848,52 @@
    },
    "q_posiciones": [
     [
-     0.09103,
-     0.08751,
-     0.08399,
-     0.10968,
-     0.13285,
-     0.09649,
-     0.09678,
-     0.11194,
-     0.08804,
-     0.1017
+     0.08977,
+     0.0889,
+     0.08389,
+     0.11227,
+     0.13216,
+     0.09465,
+     0.09659,
+     0.11553,
+     0.08788,
+     0.09836
     ],
     [
-     0.09973,
-     0.09971,
-     0.10042,
-     0.09991,
-     0.10034,
-     0.10009,
-     0.10014,
-     0.1,
-     0.10029,
-     0.09936
-    ],
-    [
-     0.0976,
-     0.09924,
-     0.09946,
-     0.10213,
-     0.10125,
-     0.09883,
-     0.09971,
      0.09993,
-     0.10047,
-     0.10138
+     0.09965,
+     0.10065,
+     0.10006,
+     0.09996,
+     0.09993,
+     0.1003,
+     0.09989,
+     0.10021,
+     0.09942
     ],
     [
-     0.0992,
-     0.0996,
-     0.10143,
-     0.09564,
-     0.10193,
-     0.09968,
-     0.09976,
+     0.09748,
      0.09996,
-     0.09841,
-     0.10439
+     0.09949,
+     0.10183,
+     0.1005,
+     0.09883,
+     0.09911,
+     0.09948,
+     0.10155,
+     0.10176
+    ],
+    [
+     0.09758,
+     0.09672,
+     0.10042,
+     0.09394,
+     0.10027,
+     0.10292,
+     0.0998,
+     0.10545,
+     0.10044,
+     0.10247
     ]
    ],
    "listas_series": {
@@ -5912,13 +5901,13 @@
      "088",
      "256",
      "114",
+     "130",
      "016",
+     "020",
+     "150",
+     "167",
      "049",
-     "155",
-     "293",
-     "039",
-     "062",
-     "103"
+     "127"
     ],
     "series_azar": [
      "009",
@@ -5946,102 +5935,102 @@
    "fecha": "2026-11-20",
    "tipo": "seco",
    "top_numeros": [
-    "4239",
-    "4439",
-    "4839",
-    "4639",
-    "4539",
-    "4739",
-    "4339",
-    "4039",
-    "4139",
-    "4299"
+    "4237",
+    "4297",
+    "4287",
+    "4637",
+    "4697",
+    "4837",
+    "4897",
+    "4337",
+    "4687",
+    "4397"
    ],
    "prob_top_numeros": [
+    0.0001428,
+    0.0001427,
+    0.0001424,
+    0.0001423,
+    0.0001423,
     0.0001422,
     0.0001421,
     0.000142,
-    0.0001418,
-    0.0001418,
-    0.0001416,
-    0.0001415,
-    0.0001413,
-    0.0001412,
-    0.0001412
+    0.000142,
+    0.0001419
    ],
    "ultima_cifra": [
     {
+     "cifra": 7,
+     "prob": 0.1054
+    },
+    {
+     "cifra": 5,
+     "prob": 0.1029
+    },
+    {
      "cifra": 9,
-     "prob": 0.1044
-    },
-    {
-     "cifra": 4,
-     "prob": 0.1019
-    },
-    {
-     "cifra": 2,
-     "prob": 0.1014
+     "prob": 0.1025
     }
    ],
    "terminaciones": [
     {
-     "t2": "18",
-     "prob": 0.0104
-    },
-    {
-     "t2": "95",
-     "prob": 0.0103
-    },
-    {
-     "t2": "47",
-     "prob": 0.0103
+     "t2": "97",
+     "prob": 0.0105
     },
     {
      "t2": "57",
-     "prob": 0.0102
+     "prob": 0.0104
     },
     {
-     "t2": "71",
-     "prob": 0.0102
+     "t2": "27",
+     "prob": 0.0104
+    },
+    {
+     "t2": "98",
+     "prob": 0.0104
+    },
+    {
+     "t2": "86",
+     "prob": 0.0104
     }
    ],
    "reglas_usadas": {
     "d1": [
      {
       "regla": "seco|loteria-de-risaralda|d1|caliente",
-      "peso": 0.746
+      "peso": 0.783
      },
      {
       "regla": "azar",
-      "peso": 0.103
+      "peso": 0.089
      },
      {
       "regla": "seco|todas|d1|caliente",
-      "peso": 0.093
+      "peso": 0.082
      }
     ],
     "d2": [
      {
       "regla": "azar",
-      "peso": 0.928
+      "peso": 0.927
      },
      {
       "regla": "seco|todas|d2|caliente",
-      "peso": 0.03
+      "peso": 0.038
      },
      {
-      "regla": "seco|loteria-de-risaralda|d2|reciente",
-      "peso": 0.023
+      "regla": "seco|todas|d2|reciente",
+      "peso": 0.016
      }
     ],
     "d3": [
      {
       "regla": "azar",
-      "peso": 0.489
+      "peso": 0.517
      },
      {
       "regla": "seco|todas|d3|caliente",
-      "peso": 0.278
+      "peso": 0.279
      },
      {
       "regla": "seco|todas|d3|reciente",
@@ -6051,29 +6040,29 @@
     "d4": [
      {
       "regla": "azar",
-      "peso": 0.6
+      "peso": 0.556
      },
      {
       "regla": "seco|todas|d4|markov",
-      "peso": 0.181
+      "peso": 0.121
      },
      {
-      "regla": "seco|loteria-de-risaralda|d4|markov",
-      "peso": 0.109
+      "regla": "seco|loteria-de-risaralda|d4|reciente",
+      "peso": 0.118
      }
     ],
     "t2": [
      {
       "regla": "azar",
-      "peso": 0.756
+      "peso": 0.732
      },
      {
       "regla": "seco|loteria-de-risaralda|t2|reciente",
-      "peso": 0.169
+      "peso": 0.147
      },
      {
-      "regla": "seco|loteria-de-risaralda|t2|caliente",
-      "peso": 0.031
+      "regla": "seco|todas|t2|arrastre_seco",
+      "peso": 0.04
      }
     ]
    }
@@ -6209,52 +6198,52 @@
   {
    "listas": {
     "combinador": [
-     "7233",
-     "7243",
-     "7283",
-     "7236",
-     "7238",
-     "7273",
-     "7246",
-     "7248",
-     "7293",
-     "7253"
+     "0236",
+     "0286",
+     "0246",
+     "0276",
+     "0238",
+     "0288",
+     "0248",
+     "0278",
+     "0296",
+     "0256"
     ],
     "calientes": [
      "0346",
-     "4346",
      "0386",
-     "4386",
-     "0446",
+     "4346",
      "0336",
-     "0356",
-     "4446",
-     "8346",
+     "0446",
+     "0316",
+     "4386",
+     "0341",
+     "0344",
      "0348"
     ],
     "recientes": [
-     "7556",
-     "7536",
-     "7550",
-     "7551",
-     "7553",
-     "7554",
-     "7356",
-     "7156",
-     "7056",
-     "7546"
+     "0601",
+     "0611",
+     "3601",
+     "3611",
+     "0614",
+     "0604",
+     "3614",
+     "3604",
+     "0606",
+     "0616"
     ],
     "frios": [
-     "9227",
-     "8227",
-     "5227",
-     "9229",
-     "5229",
-     "8229",
-     "4227",
-     "9228",
-     "9225",
-     "9297"
+     "9295",
+     "9895",
+     "9298",
+     "9265",
+     "9297",
+     "9795",
+     "9495",
+     "9299",
+     "9898",
+     "9865"
     ],
     "mayor_anterior": [
      "5198",
@@ -6283,66 +6272,66 @@
    },
    "q_posiciones": [
     [
-     0.10034,
-     0.09976,
-     0.10004,
-     0.10039,
-     0.1,
-     0.09956,
-     0.09978,
-     0.10079,
-     0.09974,
-     0.09961
-    ],
-    [
+     0.10132,
      0.10014,
-     0.09956,
-     0.10236,
-     0.09936,
-     0.09966,
-     0.09915,
-     0.10081,
-     0.10021,
-     0.09972,
-     0.09902
-    ],
-    [
-     0.09988,
-     0.09994,
-     0.09992,
-     0.10012,
-     0.10009,
-     0.10002,
-     0.09991,
-     0.10003,
-     0.10007,
-     0.10002
-    ],
-    [
-     0.10003,
-     0.10013,
-     0.10009,
      0.10042,
-     0.10004,
-     0.09959,
-     0.10036,
-     0.0997,
-     0.10036,
-     0.09926
+     0.10085,
+     0.10034,
+     0.09904,
+     0.09951,
+     0.09986,
+     0.09984,
+     0.09869
+    ],
+    [
+     0.10012,
+     0.09912,
+     0.10289,
+     0.09951,
+     0.09942,
+     0.09896,
+     0.10155,
+     0.09994,
+     0.09988,
+     0.09862
+    ],
+    [
+     0.09993,
+     0.09997,
+     0.09996,
+     0.10009,
+     0.10006,
+     0.09999,
+     0.0999,
+     0.10005,
+     0.10006,
+     0.1
+    ],
+    [
+     0.09995,
+     0.10013,
+     0.10025,
+     0.10017,
+     0.10005,
+     0.09958,
+     0.10034,
+     0.09993,
+     0.10031,
+     0.09929
     ]
    ],
    "listas_series": {
     "series_combinador": [
-     "008",
-     "062",
      "111",
-     "334",
-     "047",
+     "008",
+     "039",
      "058",
+     "062",
      "064",
-     "079",
-     "081",
-     "135"
+     "151",
+     "220",
+     "275",
+     "334"
     ],
     "series_azar": [
      "007",
@@ -6362,7 +6351,7 @@
    "franja_serie": {
     "desde": "034",
     "hasta": "067",
-    "prob": 0.1013,
+    "prob": 0.1009,
     "azar": 0.1003
    },
    "loteria": "Santander",
@@ -6370,44 +6359,48 @@
    "fecha": "2026-11-20",
    "tipo": "seco",
    "top_numeros": [
-    "7233",
-    "7243",
-    "7283",
-    "7236",
-    "7238",
-    "7273",
-    "7246",
-    "7248",
-    "7293",
-    "7253"
+    "0236",
+    "0286",
+    "0246",
+    "0276",
+    "0238",
+    "0288",
+    "0248",
+    "0278",
+    "0296",
+    "0256"
    ],
    "prob_top_numeros": [
-    0.0001037,
-    0.0001037,
-    0.0001037,
-    0.0001037,
-    0.0001037,
-    0.0001036,
-    0.0001036,
-    0.0001036,
-    0.0001036,
-    0.0001036
+    0.0001047,
+    0.0001047,
+    0.0001047,
+    0.0001047,
+    0.0001047,
+    0.0001046,
+    0.0001046,
+    0.0001046,
+    0.0001046,
+    0.0001046
    ],
    "ultima_cifra": [
     {
-     "cifra": 3,
-     "prob": 0.1004
-    },
-    {
      "cifra": 6,
-     "prob": 0.1004
+     "prob": 0.1003
     },
     {
      "cifra": 8,
-     "prob": 0.1004
+     "prob": 0.1003
+    },
+    {
+     "cifra": 2,
+     "prob": 0.1002
     }
    ],
    "terminaciones": [
+    {
+     "t2": "01",
+     "prob": 0.01
+    },
     {
      "t2": "48",
      "prob": 0.01
@@ -6417,15 +6410,11 @@
      "prob": 0.01
     },
     {
-     "t2": "36",
+     "t2": "44",
      "prob": 0.01
     },
     {
      "t2": "30",
-     "prob": 0.01
-    },
-    {
-     "t2": "19",
      "prob": 0.01
     }
    ],
@@ -6433,57 +6422,57 @@
     "d1": [
      {
       "regla": "azar",
-      "peso": 0.914
+      "peso": 0.896
      },
      {
       "regla": "seco|loteria-de-santander|d1|reciente",
-      "peso": 0.043
+      "peso": 0.057
      },
      {
-      "regla": "seco|todas|d1|caliente",
-      "peso": 0.027
+      "regla": "seco|loteria-de-santander|d1|caliente",
+      "peso": 0.026
      }
     ],
     "d2": [
      {
       "regla": "azar",
-      "peso": 0.726
+      "peso": 0.686
      },
      {
       "regla": "seco|todas|d2|caliente",
-      "peso": 0.14
+      "peso": 0.16
      },
      {
       "regla": "seco|todas|d2|reciente",
-      "peso": 0.134
+      "peso": 0.153
      }
     ],
     "d3": [
      {
       "regla": "azar",
-      "peso": 0.974
+      "peso": 0.979
      },
      {
       "regla": "seco|todas|d3|caliente",
-      "peso": 0.016
+      "peso": 0.015
      },
      {
       "regla": "seco|todas|d3|reciente",
-      "peso": 0.008
+      "peso": 0.005
      }
     ],
     "d4": [
      {
       "regla": "azar",
-      "peso": 0.902
+      "peso": 0.909
      },
      {
       "regla": "seco|todas|d4|reciente",
-      "peso": 0.05
+      "peso": 0.047
      },
      {
       "regla": "seco|todas|d4|caliente",
-      "peso": 0.021
+      "peso": 0.023
      }
     ],
     "t2": [
@@ -6493,7 +6482,7 @@
      },
      {
       "regla": "seco|loteria-de-santander|t2|reciente",
-      "peso": 0.002
+      "peso": 0.003
      },
      {
       "regla": "seco|loteria-de-santander|t2|caliente",
@@ -6634,15 +6623,15 @@
    "listas": {
     "combinador": [
      "5236",
-     "9236",
      "4236",
+     "9236",
      "5636",
-     "7236",
+     "4636",
      "3236",
      "9636",
-     "4636",
-     "6236",
-     "8236"
+     "7236",
+     "5286",
+     "4286"
     ],
     "calientes": [
      "4836",
@@ -6659,26 +6648,26 @@
     "recientes": [
      "6030",
      "6036",
-     "6032",
      "3030",
      "3036",
+     "6032",
      "6090",
+     "6086",
      "6096",
      "6080",
-     "6086",
      "3032"
     ],
     "frios": [
      "7574",
-     "7274",
      "7374",
-     "7544",
+     "7274",
      "7514",
+     "7544",
      "1574",
+     "7244",
      "1374",
-     "1274",
-     "7314",
-     "7214"
+     "7344",
+     "1274"
     ],
     "mayor_anterior": [
      "4483",
@@ -6707,50 +6696,50 @@
    },
    "q_posiciones": [
     [
-     0.09985,
-     0.0996,
-     0.09953,
-     0.10004,
-     0.10031,
-     0.1004,
-     0.09997,
-     0.10005,
      0.09992,
-     0.10033
-    ],
-    [
+     0.09967,
+     0.09957,
      0.10013,
-     0.09989,
-     0.10092,
-     0.09962,
-     0.09962,
-     0.09968,
-     0.10059,
-     0.10006,
+     0.10033,
+     0.10034,
+     0.09995,
      0.10001,
-     0.09948
+     0.09992,
+     0.10018
     ],
     [
-     0.09895,
-     0.09952,
-     0.09939,
-     0.10112,
-     0.10054,
-     0.10004,
-     0.09943,
-     0.10025,
-     0.10058,
-     0.10017
+     0.10011,
+     0.09973,
+     0.101,
+     0.09972,
+     0.09955,
+     0.09965,
+     0.10083,
+     0.09994,
+     0.10009,
+     0.09939
     ],
     [
-     0.10196,
+     0.09916,
+     0.09976,
+     0.09953,
+     0.10102,
+     0.1004,
+     0.09986,
+     0.09926,
+     0.1003,
+     0.10067,
+     0.10004
+    ],
+    [
+     0.10195,
      0.10165,
      0.10419,
-     0.0971,
-     0.09535,
-     0.09623,
+     0.09708,
+     0.09536,
+     0.09622,
      0.10651,
-     0.10126,
+     0.10128,
      0.10092,
      0.09483
     ]
@@ -6795,23 +6784,23 @@
    "tipo": "seco",
    "top_numeros": [
     "5236",
-    "9236",
     "4236",
+    "9236",
     "5636",
-    "7236",
+    "4636",
     "3236",
     "9636",
-    "4636",
-    "6236",
-    "8236"
+    "7236",
+    "5286",
+    "4286"
    ],
    "prob_top_numeros": [
-    0.0001091,
-    0.0001091,
     0.000109,
+    0.000109,
+    0.0001089,
+    0.0001089,
     0.0001088,
     0.0001088,
-    0.0001087,
     0.0001087,
     0.0001087,
     0.0001087,
@@ -7059,50 +7048,50 @@
     "combinador": [
      "5953",
      "5954",
-     "9953",
-     "9954",
      "5983",
-     "5952",
-     "5973",
      "5984",
+     "5973",
+     "5974",
      "5933",
-     "5974"
+     "5952",
+     "5934",
+     "5982"
     ],
     "calientes": [
-     "7922",
      "7952",
+     "7922",
      "7972",
-     "0952",
-     "0922",
-     "5952",
      "5922",
-     "7252",
+     "0922",
+     "0952",
+     "5952",
      "7222",
+     "7252",
      "7962"
     ],
     "recientes": [
-     "5954",
-     "5964",
      "9964",
      "9954",
-     "5963",
-     "4954",
-     "5953",
+     "5954",
+     "5964",
      "4964",
-     "2954",
-     "2964"
+     "9963",
+     "2964",
+     "5953",
+     "5963",
+     "4954"
     ],
     "frios": [
-     "3591",
      "3590",
+     "3591",
      "3501",
      "3500",
-     "3580",
-     "3581",
-     "3521",
-     "3520",
-     "3511",
-     "3510"
+     "3790",
+     "3791",
+     "3505",
+     "3701",
+     "3595",
+     "3700"
     ],
     "mayor_anterior": [
      "3633",
@@ -7125,50 +7114,50 @@
    },
    "q_posiciones": [
     [
-     0.09913,
-     0.09854,
-     0.09957,
-     0.09936,
-     0.10042,
-     0.10122,
-     0.09986,
-     0.10068,
-     0.10012,
-     0.10109
+     0.09937,
+     0.09881,
+     0.09971,
+     0.09965,
+     0.10048,
+     0.10102,
+     0.09978,
+     0.10051,
+     0.10011,
+     0.10056
     ],
     [
-     0.09717,
-     0.09983,
-     0.10195,
-     0.10028,
-     0.10204,
-     0.09568,
+     0.09716,
+     0.0997,
+     0.10202,
+     0.10035,
+     0.10198,
+     0.09565,
+     0.09999,
+     0.09856,
+     0.10045,
+     0.10415
+    ],
+    [
+     0.09904,
      0.09977,
-     0.09867,
-     0.10038,
-     0.10423
-    ],
-    [
-     0.09892,
-     0.09963,
-     0.0998,
-     0.10025,
-     0.10015,
-     0.10054,
-     0.10017,
-     0.10028,
+     0.09988,
+     0.10019,
+     0.10008,
+     0.10043,
+     0.10007,
      0.10031,
-     0.09994
+     0.10036,
+     0.09986
     ],
     [
-     0.09938,
+     0.09937,
      0.10001,
      0.1003,
-     0.10056,
-     0.1005,
-     0.09913,
+     0.10054,
+     0.10051,
+     0.09912,
      0.10021,
-     0.0998,
+     0.09983,
      0.10001,
      0.1001
     ]
@@ -7214,31 +7203,31 @@
    "top_numeros": [
     "5953",
     "5954",
-    "9953",
-    "9954",
     "5983",
-    "5952",
-    "5973",
     "5984",
+    "5973",
+    "5974",
     "5933",
-    "5974"
+    "5952",
+    "5934",
+    "5982"
    ],
    "prob_top_numeros": [
-    0.0001067,
-    0.0001066,
-    0.0001065,
-    0.0001065,
-    0.0001064,
-    0.0001064,
-    0.0001064,
-    0.0001064,
-    0.0001064,
-    0.0001063
+    0.0001062,
+    0.0001062,
+    0.0001062,
+    0.0001061,
+    0.0001061,
+    0.0001061,
+    0.000106,
+    0.000106,
+    0.0001059,
+    0.0001059
    ],
    "ultima_cifra": [
     {
      "cifra": 3,
-     "prob": 0.1006
+     "prob": 0.1005
     },
     {
      "cifra": 4,
@@ -8889,6 +8878,20 @@
    "aciertos_ultima_cifra": 0
   },
   {
+   "loteria": "Risaralda",
+   "slug": "loteria-de-risaralda",
+   "fecha": "2026-11-13",
+   "tipo": "seco",
+   "predicho_el": "2026-11-06T13:11:47-05:00",
+   "premios": 32,
+   "top": 10,
+   "aciertos": 0,
+   "esperado_azar": 0.032,
+   "numeros_acertados": "",
+   "ultima_cifra_predicha": 4,
+   "aciertos_ultima_cifra": 2
+  },
+  {
    "loteria": "Santander",
    "slug": "loteria-de-santander",
    "fecha": "2026-11-13",
@@ -8901,6 +8904,20 @@
    "numeros_acertados": "",
    "ultima_cifra_predicha": 7,
    "aciertos_ultima_cifra": 0
+  },
+  {
+   "loteria": "Santander",
+   "slug": "loteria-de-santander",
+   "fecha": "2026-11-13",
+   "tipo": "seco",
+   "predicho_el": "2026-11-06T13:11:47-05:00",
+   "premios": 69,
+   "top": 10,
+   "aciertos": 0,
+   "esperado_azar": 0.069,
+   "numeros_acertados": "",
+   "ultima_cifra_predicha": 2,
+   "aciertos_ultima_cifra": 8
   },
   {
    "loteria": "Boyacá",
@@ -8932,9 +8949,9 @@
   }
  ],
  "registro_resumen": {
-  "sorteos": 104,
+  "sorteos": 106,
   "aciertos": 4,
-  "esperado": 2.2329999999999997
+  "esperado": 2.3340000000000005
  },
  "economia": [
   {
@@ -8974,15 +8991,15 @@
     "numeros": "8015 2221 1317 2355"
    },
    "nuevos": {
-    "premios": 2373,
+    "premios": 2474,
     "aciertos": 2,
-    "esperado": 2.373,
+    "esperado": 2.474,
     "numeros": "7372 7273"
    },
    "registrado": {
-    "premios": 2206,
+    "premios": 2307,
     "aciertos": 4,
-    "esperado": 2.206,
+    "esperado": 2.307,
     "numeros": "7372 4278 8276 1225"
    }
   },
@@ -8992,20 +9009,20 @@
    "descripcion": "En cada posición, las cifras que más han salido en esta lotería en todo el historial.",
    "historial": {
     "premios": 4846,
-    "aciertos": 0,
+    "aciertos": 3,
     "esperado": 4.846000000000001,
-    "numeros": ""
+    "numeros": "9993 2325 7088"
    },
    "nuevos": {
-    "premios": 2373,
+    "premios": 2474,
     "aciertos": 3,
-    "esperado": 2.373,
+    "esperado": 2.474,
     "numeros": "7372 2736 8192"
    },
    "registrado": {
-    "premios": 2206,
+    "premios": 2307,
     "aciertos": 3,
-    "esperado": 2.206,
+    "esperado": 2.307,
     "numeros": "2736 9219 4398"
    }
   },
@@ -9015,20 +9032,20 @@
    "descripcion": "En cada posición, las cifras que más han salido en esta lotería en las últimas 4 semanas.",
    "historial": {
     "premios": 4846,
-    "aciertos": 2,
+    "aciertos": 4,
     "esperado": 4.846000000000001,
-    "numeros": "1317 2842"
+    "numeros": "9993 2325 1317 2842"
    },
    "nuevos": {
-    "premios": 2373,
+    "premios": 2474,
     "aciertos": 1,
-    "esperado": 2.373,
+    "esperado": 2.474,
     "numeros": "4400"
    },
    "registrado": {
-    "premios": 2206,
+    "premios": 2307,
     "aciertos": 2,
-    "esperado": 2.206,
+    "esperado": 2.307,
     "numeros": "3952 9219"
    }
   },
@@ -9038,20 +9055,20 @@
    "descripcion": "En cada posición, las cifras que menos han salido últimamente («están por salir»).",
    "historial": {
     "premios": 4846,
-    "aciertos": 3,
+    "aciertos": 5,
     "esperado": 4.846000000000001,
-    "numeros": "9942 4613 2453"
+    "numeros": "9993 6395 9942 4613 2453"
    },
    "nuevos": {
-    "premios": 2373,
+    "premios": 2474,
     "aciertos": 1,
-    "esperado": 2.373,
+    "esperado": 2.474,
     "numeros": "7231"
    },
    "registrado": {
-    "premios": 2206,
+    "premios": 2307,
     "aciertos": 2,
-    "esperado": 2.206,
+    "esperado": 2.307,
     "numeros": "7231 1047"
    }
   },
@@ -9066,15 +9083,15 @@
     "numeros": "0268 6607 0919 8108"
    },
    "nuevos": {
-    "premios": 2373,
+    "premios": 2474,
     "aciertos": 2,
-    "esperado": 2.3412,
+    "esperado": 2.4422,
     "numeros": "2240 1453"
    },
    "registrado": {
-    "premios": 2206,
+    "premios": 2307,
     "aciertos": 3,
-    "esperado": 2.1742,
+    "esperado": 2.2752,
     "numeros": "2240 1453 9329"
    }
   },
@@ -9089,15 +9106,15 @@
     "numeros": "8935 0597"
    },
    "nuevos": {
-    "premios": 2373,
+    "premios": 2474,
     "aciertos": 0,
-    "esperado": 2.373,
+    "esperado": 2.474,
     "numeros": ""
    },
    "registrado": {
-    "premios": 2206,
+    "premios": 2307,
     "aciertos": 0,
-    "esperado": 2.206,
+    "esperado": 2.307,
     "numeros": ""
    }
   },
@@ -9112,15 +9129,15 @@
     "numeros": "002 008 008 009 004 010 001 009 007 009 004 004 005 007 003 114 021 040 040 070 070 180 105 174 038 028 043 049 043 100 049 272 042 038 038 044 216 216 207 065 065 319 243 091 108 009 026 018 007 012 "
    },
    "nuevos": {
-    "premios": 2373,
-    "aciertos": 77,
-    "esperado": 77.90361422631011,
+    "premios": 2474,
+    "aciertos": 79,
+    "esperado": 81.00924657011097,
     "numeros": "014 262 112 156 352 013 036 022 001 037 051 155 065 065 041 247 093 018 228 062 044 027 008 182 156 165 165 103 103 352 150 295 013 022 106 191 106 091 074 335 335 010 008 027 158 291 105 142 103 189 "
    },
    "registrado": {
-    "premios": 2206,
-    "aciertos": 70,
-    "esperado": 72.60440890372975,
+    "premios": 2307,
+    "aciertos": 75,
+    "esperado": 75.71004124753061,
     "numeros": "156 352 013 036 022 001 037 051 155 065 065 041 247 093 018 228 062 044 308 096 352 150 295 013 022 106 191 106 091 074 335 335 010 008 027 158 291 105 187 103 166 189 220 137 013 022 003 158 106 051 "
    }
   },
@@ -9135,15 +9152,15 @@
     "numeros": "309 223 318 162 358 037 125 077 284 049 116 236 445 334 271 176 153 199 006 129 004 042 234 153 298 398 144 214 272 198 440 163 211 043 256 009 179 135 044 242 276 104 009 196 237 237 174 437 378 198 "
    },
    "nuevos": {
-    "premios": 2373,
-    "aciertos": 73,
-    "esperado": 77.90361422631011,
+    "premios": 2474,
+    "aciertos": 77,
+    "esperado": 81.00924657011097,
     "numeros": "228 019 013 141 115 295 022 078 090 037 284 284 021 294 233 054 184 287 105 177 033 324 057 140 055 251 346 307 307 251 010 033 099 112 451 295 458 458 074 282 163 076 166 001 196 028 006 022 371 072 "
    },
    "registrado": {
-    "premios": 2206,
-    "aciertos": 69,
-    "esperado": 72.60440890372975,
+    "premios": 2307,
+    "aciertos": 73,
+    "esperado": 75.71004124753061,
     "numeros": "228 019 013 141 115 295 022 078 090 037 284 284 021 294 233 054 184 287 105 177 033 251 346 307 307 251 010 033 099 112 451 295 458 458 074 282 163 076 166 001 196 028 006 022 371 072 166 197 057 381 "
    }
   }
@@ -9393,65 +9410,65 @@
     "nombre": "Combinador ATLAS",
     "es_serie": false,
     "control": false,
-    "sorteos": 50,
-    "premios": 2206,
+    "sorteos": 52,
+    "premios": 2307,
     "aciertos": 4,
-    "esperado": 2.206,
-    "p": 0.1818286939639746
+    "esperado": 2.307,
+    "p": 0.20207761683987824
    },
    {
     "id": "calientes",
     "nombre": "Calientes",
     "es_serie": false,
     "control": false,
-    "sorteos": 50,
-    "premios": 2206,
+    "sorteos": 52,
+    "premios": 2307,
     "aciertos": 3,
-    "esperado": 2.206,
-    "p": 0.3788946691805197
+    "esperado": 2.307,
+    "p": 0.40581661366061483
    },
    {
     "id": "recientes",
     "nombre": "Recientes",
     "es_serie": false,
     "control": false,
-    "sorteos": 50,
-    "premios": 2206,
+    "sorteos": 52,
+    "premios": 2307,
     "aciertos": 2,
-    "esperado": 2.206,
-    "p": 0.6468901023852502
+    "esperado": 2.307,
+    "p": 0.6707567915809487
    },
    {
     "id": "frios",
     "nombre": "Fríos",
     "es_serie": false,
     "control": false,
-    "sorteos": 50,
-    "premios": 2206,
+    "sorteos": 52,
+    "premios": 2307,
     "aciertos": 2,
-    "esperado": 2.206,
-    "p": 0.6468901023852502
+    "esperado": 2.307,
+    "p": 0.6707567915809487
    },
    {
     "id": "mayor_anterior",
     "nombre": "Del mayor anterior",
     "es_serie": false,
     "control": false,
-    "sorteos": 50,
-    "premios": 2206,
+    "sorteos": 52,
+    "premios": 2307,
     "aciertos": 3,
-    "esperado": 2.1742,
-    "p": 0.37036034417797503
+    "esperado": 2.2752,
+    "p": 0.39737420344591456
    },
    {
     "id": "azar",
     "nombre": "Al azar (control)",
     "es_serie": false,
     "control": true,
-    "sorteos": 50,
-    "premios": 2206,
+    "sorteos": 52,
+    "premios": 2307,
     "aciertos": 0,
-    "esperado": 2.206,
+    "esperado": 2.307,
     "p": 1.0
    },
    {
@@ -9459,22 +9476,22 @@
     "nombre": "Series · combinador",
     "es_serie": true,
     "control": false,
-    "sorteos": 50,
-    "premios": 2206,
-    "aciertos": 70,
-    "esperado": 72.60440890372975,
-    "p": 0.6357945480173887
+    "sorteos": 52,
+    "premios": 2307,
+    "aciertos": 75,
+    "esperado": 75.71004124753061,
+    "p": 0.5478389277596243
    },
    {
     "id": "series_azar",
     "nombre": "Series · al azar (control)",
     "es_serie": true,
     "control": true,
-    "sorteos": 50,
-    "premios": 2206,
-    "aciertos": 69,
-    "esperado": 72.60440890372975,
-    "p": 0.679591657034167
+    "sorteos": 52,
+    "premios": 2307,
+    "aciertos": 73,
+    "esperado": 75.71004124753061,
+    "p": 0.6376751694095991
    }
   ],
   "por_loteria": [
@@ -9557,7 +9574,7 @@
    {
     "slug": "loteria-de-santander",
     "loteria": "Santander",
-    "sorteos": 3,
+    "sorteos": 4,
     "aciertos": 1,
     "numeros": [
      "4398-094"
@@ -9580,7 +9597,7 @@
    {
     "slug": "loteria-de-risaralda",
     "loteria": "Risaralda",
-    "sorteos": 3,
+    "sorteos": 4,
     "aciertos": 0,
     "numeros": []
    },
@@ -9602,8 +9619,8 @@
   "desde": "2026-10-19",
   "total": {
    "aciertos": 14,
-   "esperado": 10.9982,
-   "p": 0.21854218460368413
+   "esperado": 11.5032,
+   "p": 0.26727999524173685
   }
  },
  "series": {
@@ -9847,9 +9864,9 @@
     "loteria": "Risaralda",
     "series_en_juego": 300,
     "rango": "001–299",
-    "secos": 382,
+    "secos": 414,
     "estado": "ok",
-    "esperado_por_serie": 1.28,
+    "esperado_por_serie": 1.38,
     "mas_repetidas": [
      [
       "006",
@@ -9860,24 +9877,24 @@
       5
      ],
      [
+      "127",
+      5
+     ],
+     [
       "256",
       5
      ],
      [
       "043",
       4
-     ],
-     [
-      "055",
-      4
      ]
     ],
     "max_veces": 5,
     "max_normal": "5–7",
-    "p_franjas": 0.923519120219945,
-    "p_ultima": 0.686078480379905,
-    "p_repeticion": 0.9556814395201599,
-    "nunca_salieron": 91,
+    "p_franjas": 0.9177705573606598,
+    "p_ultima": 0.9125218695326168,
+    "p_repeticion": 0.9850049983338887,
+    "nunca_salieron": 83,
     "p_holm_min": 1.0,
     "veredicto": "pareja, como el azar"
    },
@@ -9886,9 +9903,9 @@
     "loteria": "Santander",
     "series_en_juego": 340,
     "rango": "001–339",
-    "secos": 827,
+    "secos": 896,
     "estado": "ok",
-    "esperado_por_serie": 2.44,
+    "esperado_por_serie": 2.64,
     "mas_repetidas": [
      [
       "062",
@@ -9899,24 +9916,24 @@
       7
      ],
      [
+      "124",
+      7
+     ],
+     [
+      "228",
+      7
+     ],
+     [
       "023",
-      6
-     ],
-     [
-      "047",
-      6
-     ],
-     [
-      "066",
       6
      ]
     ],
     "max_veces": 7,
     "max_normal": "7–10",
-    "p_franjas": 0.43764058985253684,
-    "p_ultima": 0.9637590602349413,
-    "p_repeticion": 0.9900033322225925,
-    "nunca_salieron": 30,
+    "p_franjas": 0.3411647088227943,
+    "p_ultima": 0.9505123719070232,
+    "p_repeticion": 1.0,
+    "nunca_salieron": 25,
     "p_holm_min": 1.0,
     "veredicto": "pareja, como el azar"
    },
@@ -9952,9 +9969,9 @@
     ],
     "max_veces": 5,
     "max_normal": "5–7",
-    "p_franjas": 0.7868032991752062,
-    "p_ultima": 0.5601099725068733,
-    "p_repeticion": 0.9903365544818394,
+    "p_franjas": 0.7893026743314171,
+    "p_ultima": 0.55936015996001,
+    "p_repeticion": 0.9910029990003332,
     "nunca_salieron": 77,
     "p_holm_min": 1.0,
     "veredicto": "pareja, como el azar"
@@ -9991,9 +10008,9 @@
     ],
     "max_veces": 8,
     "max_normal": "5–8",
-    "p_franjas": 0.05373656585853537,
-    "p_ultima": 0.7710572356910772,
-    "p_repeticion": 0.15494835054981673,
+    "p_franjas": 0.055236190952261933,
+    "p_ultima": 0.7735566108472882,
+    "p_repeticion": 0.16327890703098968,
     "nunca_salieron": 25,
     "p_holm_min": 1.0,
     "veredicto": "pareja, como el azar"
@@ -10030,9 +10047,9 @@
     ],
     "max_veces": 9,
     "max_normal": "8–12",
-    "p_franjas": 0.5191202199450138,
-    "p_ultima": 0.5203699075231192,
-    "p_repeticion": 0.8683772075974675,
+    "p_franjas": 0.5298675331167209,
+    "p_ultima": 0.5156210947263185,
+    "p_repeticion": 0.8720426524491836,
     "nunca_salieron": 5,
     "p_holm_min": 1.0,
     "veredicto": "pareja, como el azar"
@@ -10069,9 +10086,9 @@
     ],
     "max_veces": 6,
     "max_normal": "4–7",
-    "p_franjas": 0.884028992751812,
-    "p_ultima": 0.3739065233691577,
-    "p_repeticion": 0.3368877040986338,
+    "p_franjas": 0.8837790552361909,
+    "p_ultima": 0.37340664833791554,
+    "p_repeticion": 0.34121959346884373,
     "nunca_salieron": 51,
     "p_holm_min": 1.0,
     "veredicto": "pareja, como el azar"
@@ -10110,7 +10127,7 @@
     "max_normal": "3–6",
     "p_franjas": 0.6308422894276431,
     "p_ultima": 0.918270432391902,
-    "p_repeticion": 0.3312229256914362,
+    "p_repeticion": 0.3292235921359547,
     "nunca_salieron": 123,
     "p_holm_min": 1.0,
     "veredicto": "pareja, como el azar"
@@ -10147,9 +10164,9 @@
     ],
     "max_veces": 6,
     "max_normal": "5–7",
-    "p_franjas": 0.6075981004748813,
-    "p_ultima": 0.06698325418645339,
-    "p_repeticion": 0.5494835054981673,
+    "p_franjas": 0.6050987253186704,
+    "p_ultima": 0.0667333166708323,
+    "p_repeticion": 0.538487170943019,
     "nunca_salieron": 87,
     "p_holm_min": 1.0,
     "veredicto": "pareja, como el azar"
@@ -10210,30 +10227,884 @@
    "loteria": "Santander",
    "fecha": "2026-11-13",
    "mayor": "5198-291",
-   "secos": 0,
-   "independientes": 0,
+   "secos": 70,
+   "independientes": 69,
    "con_cuantia": 0,
    "fuentes": [
     "LoteríaYa"
    ],
    "verificar": "https://www.loteriaya.com.co/loteria/loteria-de-santander/resultado/2026-11-13",
-   "lista": [],
-   "estado": "sin secos"
+   "lista": [
+    [
+     "9401",
+     "338",
+     "",
+     "seco"
+    ],
+    [
+     "2521",
+     "187",
+     "",
+     "seco"
+    ],
+    [
+     "5563",
+     "013",
+     "",
+     "seco"
+    ],
+    [
+     "0278",
+     "232",
+     "",
+     "seco"
+    ],
+    [
+     "0608",
+     "146",
+     "",
+     "seco"
+    ],
+    [
+     "3980",
+     "030",
+     "",
+     "seco"
+    ],
+    [
+     "0397",
+     "020",
+     "",
+     "seco"
+    ],
+    [
+     "2213",
+     "051",
+     "",
+     "seco"
+    ],
+    [
+     "6274",
+     "332",
+     "",
+     "seco"
+    ],
+    [
+     "6716",
+     "035",
+     "",
+     "seco"
+    ],
+    [
+     "1058",
+     "024",
+     "",
+     "seco"
+    ],
+    [
+     "1600",
+     "165",
+     "",
+     "seco"
+    ],
+    [
+     "1617",
+     "293",
+     "",
+     "seco"
+    ],
+    [
+     "1712",
+     "257",
+     "",
+     "seco"
+    ],
+    [
+     "2155",
+     "336",
+     "",
+     "seco"
+    ],
+    [
+     "3017",
+     "004",
+     "",
+     "seco"
+    ],
+    [
+     "8409",
+     "312",
+     "",
+     "seco"
+    ],
+    [
+     "0344",
+     "245",
+     "",
+     "seco"
+    ],
+    [
+     "2419",
+     "002",
+     "",
+     "seco"
+    ],
+    [
+     "4648",
+     "283",
+     "",
+     "seco"
+    ],
+    [
+     "5685",
+     "016",
+     "",
+     "seco"
+    ],
+    [
+     "6283",
+     "275",
+     "",
+     "seco"
+    ],
+    [
+     "6639",
+     "185",
+     "",
+     "seco"
+    ],
+    [
+     "8720",
+     "111",
+     "",
+     "seco"
+    ],
+    [
+     "0467",
+     "241",
+     "",
+     "seco"
+    ],
+    [
+     "0504",
+     "228",
+     "",
+     "seco"
+    ],
+    [
+     "1863",
+     "218",
+     "",
+     "seco"
+    ],
+    [
+     "3539",
+     "214",
+     "",
+     "seco"
+    ],
+    [
+     "4084",
+     "136",
+     "",
+     "seco"
+    ],
+    [
+     "4501",
+     "256",
+     "",
+     "seco"
+    ],
+    [
+     "4676",
+     "275",
+     "",
+     "seco"
+    ],
+    [
+     "5406",
+     "281",
+     "",
+     "seco"
+    ],
+    [
+     "8477",
+     "005",
+     "",
+     "seco"
+    ],
+    [
+     "9273",
+     "247",
+     "",
+     "seco"
+    ],
+    [
+     "0229",
+     "301",
+     "",
+     "seco"
+    ],
+    [
+     "0355",
+     "076",
+     "",
+     "seco"
+    ],
+    [
+     "0689",
+     "230",
+     "",
+     "seco"
+    ],
+    [
+     "0791",
+     "054",
+     "",
+     "seco"
+    ],
+    [
+     "1341",
+     "264",
+     "",
+     "seco"
+    ],
+    [
+     "1801",
+     "064",
+     "",
+     "seco"
+    ],
+    [
+     "2706",
+     "195",
+     "",
+     "seco"
+    ],
+    [
+     "2914",
+     "097",
+     "",
+     "seco"
+    ],
+    [
+     "3809",
+     "058",
+     "",
+     "seco"
+    ],
+    [
+     "4001",
+     "151",
+     "",
+     "seco"
+    ],
+    [
+     "4042",
+     "263",
+     "",
+     "seco"
+    ],
+    [
+     "4531",
+     "262",
+     "",
+     "seco"
+    ],
+    [
+     "5322",
+     "220",
+     "",
+     "seco"
+    ],
+    [
+     "7622",
+     "166",
+     "",
+     "seco"
+    ],
+    [
+     "8874",
+     "116",
+     "",
+     "seco"
+    ],
+    [
+     "0902",
+     "022",
+     "",
+     "seco"
+    ],
+    [
+     "1562",
+     "174",
+     "",
+     "seco"
+    ],
+    [
+     "1881",
+     "272",
+     "",
+     "seco"
+    ],
+    [
+     "2373",
+     "266",
+     "",
+     "seco"
+    ],
+    [
+     "2628",
+     "232",
+     "",
+     "seco"
+    ],
+    [
+     "2637",
+     "097",
+     "",
+     "seco"
+    ],
+    [
+     "3111",
+     "092",
+     "",
+     "seco"
+    ],
+    [
+     "3144",
+     "190",
+     "",
+     "seco"
+    ],
+    [
+     "3252",
+     "039",
+     "",
+     "seco"
+    ],
+    [
+     "3370",
+     "265",
+     "",
+     "seco"
+    ],
+    [
+     "3876",
+     "171",
+     "",
+     "seco"
+    ],
+    [
+     "4834",
+     "187",
+     "",
+     "seco"
+    ],
+    [
+     "5426",
+     "273",
+     "",
+     "seco"
+    ],
+    [
+     "5714",
+     "274",
+     "",
+     "seco"
+    ],
+    [
+     "6137",
+     "130",
+     "",
+     "seco"
+    ],
+    [
+     "6327",
+     "124",
+     "",
+     "seco"
+    ],
+    [
+     "7640",
+     "188",
+     "",
+     "seco"
+    ],
+    [
+     "8120",
+     "019",
+     "",
+     "seco"
+    ],
+    [
+     "8910",
+     "039",
+     "",
+     "seco"
+    ],
+    [
+     "8972",
+     "289",
+     "",
+     "seco"
+    ],
+    [
+     "8915",
+     "291",
+     "",
+     "derivado_permutacion_mayor"
+    ]
+   ],
+   "estado": "completo"
   },
   {
    "slug": "loteria-de-risaralda",
    "loteria": "Risaralda",
    "fecha": "2026-11-13",
    "mayor": "8362-118",
-   "secos": 0,
-   "independientes": 0,
+   "secos": 72,
+   "independientes": 32,
    "con_cuantia": 0,
    "fuentes": [
     "LoteríaYa"
    ],
    "verificar": "https://www.loteriaya.com.co/loteria/loteria-de-risaralda/resultado/2026-11-13",
-   "lista": [],
-   "estado": "sin secos"
+   "lista": [
+    [
+     "2859",
+     "187",
+     "",
+     "seco"
+    ],
+    [
+     "3886",
+     "174",
+     "",
+     "seco"
+    ],
+    [
+     "3616",
+     "020",
+     "",
+     "seco"
+    ],
+    [
+     "7517",
+     "128",
+     "",
+     "seco"
+    ],
+    [
+     "1938",
+     "017",
+     "",
+     "seco"
+    ],
+    [
+     "0257",
+     "024",
+     "",
+     "seco"
+    ],
+    [
+     "1303",
+     "089",
+     "",
+     "seco"
+    ],
+    [
+     "7427",
+     "074",
+     "",
+     "seco"
+    ],
+    [
+     "0097",
+     "162",
+     "",
+     "seco"
+    ],
+    [
+     "2017",
+     "191",
+     "",
+     "seco"
+    ],
+    [
+     "4030",
+     "183",
+     "",
+     "seco"
+    ],
+    [
+     "4398",
+     "117",
+     "",
+     "seco"
+    ],
+    [
+     "5345",
+     "068",
+     "",
+     "seco"
+    ],
+    [
+     "1297",
+     "070",
+     "",
+     "seco"
+    ],
+    [
+     "8627",
+     "142",
+     "",
+     "seco"
+    ],
+    [
+     "9162",
+     "180",
+     "",
+     "seco"
+    ],
+    [
+     "1242",
+     "150",
+     "",
+     "seco"
+    ],
+    [
+     "2385",
+     "263",
+     "",
+     "seco"
+    ],
+    [
+     "3528",
+     "127",
+     "",
+     "seco"
+    ],
+    [
+     "4855",
+     "277",
+     "",
+     "seco"
+    ],
+    [
+     "6215",
+     "200",
+     "",
+     "seco"
+    ],
+    [
+     "3666",
+     "157",
+     "",
+     "seco"
+    ],
+    [
+     "3886",
+     "167",
+     "",
+     "seco"
+    ],
+    [
+     "5887",
+     "130",
+     "",
+     "seco"
+    ],
+    [
+     "6072",
+     "131",
+     "",
+     "seco"
+    ],
+    [
+     "6297",
+     "021",
+     "",
+     "seco"
+    ],
+    [
+     "7034",
+     "220",
+     "",
+     "seco"
+    ],
+    [
+     "7266",
+     "003",
+     "",
+     "seco"
+    ],
+    [
+     "7685",
+     "241",
+     "",
+     "seco"
+    ],
+    [
+     "7994",
+     "086",
+     "",
+     "seco"
+    ],
+    [
+     "8691",
+     "085",
+     "",
+     "seco"
+    ],
+    [
+     "8788",
+     "099",
+     "",
+     "seco"
+    ],
+    [
+     "2638",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "8623",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "8263",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "8236",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "3628",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "3268",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "3286",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "3826",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "6328",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "6238",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "6283",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "6823",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "2386",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "2368",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "2683",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "2863",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "2836",
+     "118",
+     "",
+     "derivado_permutacion_mayor"
+    ],
+    [
+     "1398",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "1389",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "1839",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "1893",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "1983",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "9318",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "9381",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "9831",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "9813",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "9183",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "9138",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "3918",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "3981",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "3891",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "3819",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "3189",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "3198",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "8913",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "8931",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "8391",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "8319",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "8139",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ],
+    [
+     "8193",
+     "017",
+     "",
+     "derivado_permutacion_seco"
+    ]
+   ],
+   "estado": "completo"
   },
   {
    "slug": "loteria-de-medellin",
@@ -14179,6 +15050,13 @@
     "Cruz Roja",
     "s"
    ],
+   "0097": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
+    "s"
+   ],
    "0098": [
     1,
     0,
@@ -14746,6 +15624,13 @@
     "Medellín",
     "s"
    ],
+   "0229": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "0230": [
     1,
     0,
@@ -14859,10 +15744,10 @@
     "m"
    ],
    "0257": [
-    3,
+    4,
     0,
-    "2026-11-10",
-    "Cruz Roja",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "0259": [
@@ -14961,6 +15846,13 @@
     0,
     "2026-10-24",
     "Boyacá",
+    "s"
+   ],
+   "0278": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "0279": [
@@ -15265,11 +16157,11 @@
     "s"
    ],
    "0344": [
-    0,
     1,
-    "2025-03-20",
-    "Bogotá",
-    "m"
+    1,
+    "2026-11-13",
+    "Santander",
+    "s"
    ],
    "0347": [
     1,
@@ -15307,10 +16199,10 @@
     "s"
    ],
    "0355": [
-    1,
+    2,
     0,
-    "2026-11-11",
-    "Manizales",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "0357": [
@@ -15496,10 +16388,10 @@
     "m"
    ],
    "0397": [
-    1,
+    2,
     0,
-    "2026-08-31",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "0398": [
@@ -15803,6 +16695,13 @@
     "Santander",
     "s"
    ],
+   "0467": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "0469": [
     1,
     0,
@@ -15947,6 +16846,13 @@
     1,
     0,
     "2026-10-30",
+    "Santander",
+    "s"
+   ],
+   "0504": [
+    1,
+    0,
+    "2026-11-13",
     "Santander",
     "s"
    ],
@@ -16328,6 +17234,13 @@
     "Medellín",
     "s"
    ],
+   "0608": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "0611": [
     2,
     0,
@@ -16634,6 +17547,13 @@
     0,
     "2026-11-12",
     "Bogotá",
+    "s"
+   ],
+   "0689": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "0690": [
@@ -17043,10 +17963,10 @@
     "s"
    ],
    "0791": [
-    2,
+    3,
     0,
-    "2026-11-09",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "0794": [
@@ -17407,11 +18327,11 @@
     "m"
    ],
    "0902": [
-    0,
     1,
-    "2026-10-26",
-    "Tolima",
-    "m"
+    1,
+    "2026-11-13",
+    "Santander",
+    "s"
    ],
    "0903": [
     0,
@@ -18013,6 +18933,13 @@
     0,
     "2026-10-22",
     "Bogotá",
+    "s"
+   ],
+   "1058": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "1059": [
@@ -18744,10 +19671,10 @@
     "s"
    ],
    "1242": [
-    1,
+    2,
     0,
-    "2026-10-02",
-    "Santander",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "1243": [
@@ -18996,10 +19923,10 @@
     "s"
    ],
    "1297": [
-    1,
+    2,
     0,
-    "2026-10-17",
-    "Cauca",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "1299": [
@@ -19028,6 +19955,13 @@
     0,
     "2026-08-26",
     "Manizales",
+    "s"
+   ],
+   "1303": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "1306": [
@@ -19150,10 +20084,10 @@
     "s"
    ],
    "1341": [
-    1,
+    2,
     0,
-    "2026-10-07",
-    "Manizales",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "1344": [
@@ -20060,10 +20994,10 @@
     "s"
    ],
    "1562": [
-    1,
+    2,
     0,
-    "2026-09-28",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "1563": [
@@ -20214,10 +21148,10 @@
     "s"
    ],
    "1600": [
-    1,
+    2,
     0,
-    "2026-11-03",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "1601": [
@@ -20291,10 +21225,10 @@
     "s"
    ],
    "1617": [
+    2,
     1,
-    1,
-    "2026-10-17",
-    "Cauca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "1618": [
@@ -20669,10 +21603,10 @@
     "s"
    ],
    "1712": [
-    1,
+    2,
     0,
-    "2026-10-27",
-    "Huila",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "1713": [
@@ -21039,6 +21973,13 @@
     "Santander",
     "s"
    ],
+   "1801": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "1802": [
     1,
     0,
@@ -21257,10 +22198,10 @@
     "s"
    ],
    "1863": [
-    1,
+    2,
     0,
-    "2026-10-03",
-    "Boyacá",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "1865": [
@@ -21327,10 +22268,10 @@
     "s"
    ],
    "1881": [
-    2,
+    3,
     0,
-    "2026-10-07",
-    "Manizales",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "1882": [
@@ -21562,6 +22503,13 @@
     0,
     "2026-08-31",
     "Cundinamarca",
+    "s"
+   ],
+   "1938": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "1939": [
@@ -21912,6 +22860,13 @@
     0,
     "2026-09-11",
     "Medellín",
+    "s"
+   ],
+   "2017": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "2019": [
@@ -22433,10 +23388,10 @@
     "s"
    ],
    "2155": [
-    2,
+    3,
     0,
-    "2026-09-29",
-    "Huila",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "2156": [
@@ -22664,9 +23619,9 @@
     "s"
    ],
    "2213": [
-    1,
+    2,
     0,
-    "2026-10-09",
+    "2026-11-13",
     "Santander",
     "s"
    ],
@@ -23280,10 +24235,10 @@
     "s"
    ],
    "2373": [
-    1,
+    2,
     0,
-    "2026-11-09",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "2374": [
@@ -23326,6 +24281,13 @@
     0,
     "2026-10-23",
     "Medellín",
+    "s"
+   ],
+   "2385": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "2386": [
@@ -23441,10 +24403,10 @@
     "s"
    ],
    "2419": [
-    1,
+    2,
     0,
-    "2026-10-23",
-    "Medellín",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "2420": [
@@ -23909,6 +24871,13 @@
     "Valle",
     "s"
    ],
+   "2521": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "2523": [
     1,
     0,
@@ -24316,10 +25285,10 @@
     "s"
    ],
    "2628": [
-    1,
+    2,
     0,
-    "2026-09-11",
-    "Medellín",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "2636": [
@@ -24330,10 +25299,10 @@
     "m"
    ],
    "2637": [
-    1,
+    2,
     0,
-    "2026-09-03",
-    "Bogotá",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "2638": [
@@ -24659,9 +25628,9 @@
     "s"
    ],
    "2706": [
-    1,
+    2,
     0,
-    "2026-08-28",
+    "2026-11-13",
     "Santander",
     "s"
    ],
@@ -25260,6 +26229,13 @@
     "Valle",
     "s"
    ],
+   "2859": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
+    "s"
+   ],
    "2861": [
     1,
     1,
@@ -25460,7 +26436,7 @@
     2,
     0,
     "2026-11-12",
-    "Bogotá",
+    "Quindío",
     "s"
    ],
    "2900": [
@@ -25517,6 +26493,13 @@
     0,
     "2026-08-25",
     "Cruz Roja",
+    "s"
+   ],
+   "2914": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "2916": [
@@ -25933,10 +26916,10 @@
     "s"
    ],
    "3017": [
-    1,
+    2,
     0,
-    "2026-10-29",
-    "Bogotá",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "3018": [
@@ -26303,6 +27286,13 @@
     "Valle",
     "s"
    ],
+   "3111": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "3114": [
     1,
     0,
@@ -26430,10 +27420,10 @@
     "s"
    ],
    "3144": [
-    2,
+    3,
     0,
-    "2026-10-28",
-    "Manizales",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "3148": [
@@ -26766,10 +27756,10 @@
     "s"
    ],
    "3252": [
-    1,
+    2,
     0,
-    "2026-11-12",
-    "Bogotá",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "3253": [
@@ -27298,10 +28288,10 @@
     "s"
    ],
    "3370": [
+    2,
     1,
-    1,
-    "2026-09-11",
-    "Risaralda",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "3371": [
@@ -27976,6 +28966,13 @@
     "Meta",
     "s"
    ],
+   "3528": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
+    "s"
+   ],
    "3530": [
     1,
     0,
@@ -28012,11 +29009,11 @@
     "s"
    ],
    "3539": [
-    0,
     1,
-    "2024-09-26",
-    "Quindío",
-    "m"
+    1,
+    "2026-11-13",
+    "Santander",
+    "s"
    ],
    "3540": [
     2,
@@ -28333,6 +29330,13 @@
     "Medellín",
     "s"
    ],
+   "3616": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
+    "s"
+   ],
    "3618": [
     1,
     0,
@@ -28537,10 +29541,10 @@
     "s"
    ],
    "3666": [
-    1,
+    2,
     0,
-    "2026-10-31",
-    "Boyacá",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "3667": [
@@ -29181,10 +30185,10 @@
     "s"
    ],
    "3809": [
-    1,
+    2,
     0,
-    "2026-09-14",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "3812": [
@@ -29468,10 +30472,10 @@
     "s"
    ],
    "3876": [
-    4,
+    5,
     0,
-    "2026-10-23",
-    "Risaralda",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "3880": [
@@ -29503,10 +30507,10 @@
     "s"
    ],
    "3886": [
-    1,
+    3,
     0,
-    "2026-10-17",
-    "Boyacá",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "3887": [
@@ -29859,6 +30863,13 @@
     "Bogotá",
     "s"
    ],
+   "3980": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "3981": [
     0,
     1,
@@ -29920,6 +30931,13 @@
     0,
     "2026-11-13",
     "Medellín",
+    "s"
+   ],
+   "4001": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "4004": [
@@ -30020,6 +31038,13 @@
     "Cauca",
     "m"
    ],
+   "4030": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
+    "s"
+   ],
    "4032": [
     1,
     1,
@@ -30066,6 +31091,13 @@
     1,
     0,
     "2026-09-04",
+    "Santander",
+    "s"
+   ],
+   "4042": [
+    1,
+    0,
+    "2026-11-13",
     "Santander",
     "s"
    ],
@@ -30217,10 +31249,10 @@
     "s"
    ],
    "4084": [
+    2,
     1,
-    1,
-    "2026-10-01",
-    "Bogotá",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "4085": [
@@ -31484,10 +32516,10 @@
     "s"
    ],
    "4398": [
-    3,
+    4,
     0,
-    "2026-11-06",
-    "Santander",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "4399": [
@@ -31931,6 +32963,13 @@
     "Santander",
     "s"
    ],
+   "4501": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "4503": [
     1,
     0,
@@ -32055,6 +33094,13 @@
     0,
     "2026-11-11",
     "Valle",
+    "s"
+   ],
+   "4531": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "4532": [
@@ -32520,10 +33566,10 @@
     "s"
    ],
    "4648": [
-    2,
+    3,
     1,
-    "2026-11-04",
-    "Meta",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "4649": [
@@ -32642,6 +33688,13 @@
     1,
     0,
     "2026-08-21",
+    "Santander",
+    "s"
+   ],
+   "4676": [
+    1,
+    0,
+    "2026-11-13",
     "Santander",
     "s"
    ],
@@ -33381,9 +34434,9 @@
     "s"
    ],
    "4834": [
-    1,
+    2,
     0,
-    "2026-09-18",
+    "2026-11-13",
     "Santander",
     "s"
    ],
@@ -33465,11 +34518,11 @@
     "s"
    ],
    "4855": [
-    0,
     1,
-    "2026-03-05",
-    "Quindío",
-    "m"
+    1,
+    "2026-11-13",
+    "Risaralda",
+    "s"
    ],
    "4856": [
     1,
@@ -35467,10 +36520,10 @@
     "m"
    ],
    "5322": [
-    1,
+    2,
     0,
-    "2026-09-03",
-    "Bogotá",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "5324": [
@@ -35544,10 +36597,10 @@
     "s"
    ],
    "5345": [
-    2,
+    3,
     0,
-    "2026-09-08",
-    "Huila",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "5346": [
@@ -35796,10 +36849,10 @@
     "s"
    ],
    "5406": [
+    2,
     1,
-    1,
-    "2026-10-13",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "5407": [
@@ -35870,6 +36923,13 @@
     0,
     "2026-11-04",
     "Valle",
+    "s"
+   ],
+   "5426": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "5428": [
@@ -36489,10 +37549,10 @@
     "s"
    ],
    "5563": [
-    2,
+    3,
     0,
-    "2026-10-05",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "5564": [
@@ -37007,10 +38067,10 @@
     "s"
    ],
    "5685": [
-    1,
+    2,
     0,
-    "2026-09-22",
-    "Cruz Roja",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "5686": [
@@ -37098,10 +38158,10 @@
     "s"
    ],
    "5714": [
-    2,
+    3,
     0,
-    "2026-10-21",
-    "Valle",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "5715": [
@@ -37756,10 +38816,10 @@
     "s"
    ],
    "5887": [
-    1,
+    2,
     0,
-    "2026-10-31",
-    "Boyacá",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "5889": [
@@ -38427,6 +39487,13 @@
     "Quindío",
     "s"
    ],
+   "6072": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
+    "s"
+   ],
    "6073": [
     3,
     0,
@@ -38687,10 +39754,10 @@
     "s"
    ],
    "6137": [
-    1,
+    2,
     0,
-    "2026-08-19",
-    "Manizales",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "6138": [
@@ -39023,10 +40090,10 @@
     "s"
    ],
    "6215": [
+    2,
     1,
-    1,
-    "2026-09-26",
-    "Boyacá",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "6216": [
@@ -39233,10 +40300,10 @@
     "s"
    ],
    "6274": [
-    1,
+    2,
     0,
-    "2026-10-28",
-    "Valle",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "6277": [
@@ -39268,10 +40335,10 @@
     "m"
    ],
    "6283": [
-    1,
+    2,
     0,
-    "2026-10-19",
-    "Cundinamarca",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "6285": [
@@ -39321,6 +40388,13 @@
     0,
     "2026-10-19",
     "Cundinamarca",
+    "s"
+   ],
+   "6297": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "6298": [
@@ -39433,6 +40507,13 @@
     1,
     "2026-09-15",
     "Cruz Roja",
+    "s"
+   ],
+   "6327": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "6328": [
@@ -40710,11 +41791,11 @@
     "m"
    ],
    "6639": [
-    2,
+    3,
     1,
-    "2026-11-03",
-    "Huila",
-    "m"
+    "2026-11-13",
+    "Santander",
+    "s"
    ],
    "6641": [
     0,
@@ -40990,10 +42071,10 @@
     "s"
    ],
    "6716": [
-    1,
+    2,
     0,
-    "2026-11-07",
-    "Boyacá",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "6717": [
@@ -42264,10 +43345,10 @@
     "s"
    ],
    "7034": [
-    1,
+    2,
     0,
-    "2026-09-23",
-    "Manizales",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "7040": [
@@ -43251,10 +44332,10 @@
     "s"
    ],
    "7266": [
+    2,
     1,
-    1,
-    "2026-09-03",
-    "Bogotá",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "7272": [
@@ -43930,9 +45011,9 @@
     "s"
    ],
    "7427": [
-    2,
+    3,
     0,
-    "2026-11-06",
+    "2026-11-13",
     "Risaralda",
     "s"
    ],
@@ -44333,6 +45414,13 @@
     0,
     "2026-10-30",
     "Santander",
+    "s"
+   ],
+   "7517": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "7518": [
@@ -44770,9 +45858,9 @@
     "s"
    ],
    "7622": [
-    3,
+    4,
     0,
-    "2026-10-02",
+    "2026-11-13",
     "Santander",
     "s"
    ],
@@ -44833,10 +45921,10 @@
     "s"
    ],
    "7640": [
+    2,
     1,
-    1,
-    "2026-11-04",
-    "Manizales",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "7642": [
@@ -45029,10 +46117,10 @@
     "s"
    ],
    "7685": [
-    1,
+    2,
     0,
-    "2026-09-04",
-    "Medellín",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "7688": [
@@ -46267,6 +47355,13 @@
     "Valle",
     "s"
    ],
+   "7994": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
+    "s"
+   ],
    "7995": [
     1,
     0,
@@ -46821,10 +47916,10 @@
     "s"
    ],
    "8120": [
-    1,
+    2,
     0,
-    "2026-10-13",
-    "Huila",
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "8121": [
@@ -48045,6 +49140,13 @@
     "Cundinamarca",
     "s"
    ],
+   "8409": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "8411": [
     2,
     0,
@@ -48358,6 +49460,13 @@
     0,
     "2026-09-22",
     "Huila",
+    "s"
+   ],
+   "8477": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "8478": [
@@ -48941,6 +50050,13 @@
     "Santander",
     "s"
    ],
+   "8627": [
+    1,
+    0,
+    "2026-11-13",
+    "Risaralda",
+    "s"
+   ],
    "8628": [
     1,
     0,
@@ -49194,10 +50310,10 @@
     "s"
    ],
    "8691": [
-    1,
+    2,
     0,
-    "2026-10-02",
-    "Santander",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "8692": [
@@ -49296,6 +50412,13 @@
     0,
     "2026-10-10",
     "Boyacá",
+    "s"
+   ],
+   "8720": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "8721": [
@@ -49558,10 +50681,10 @@
     "s"
    ],
    "8788": [
-    1,
+    2,
     0,
-    "2026-10-02",
-    "Santander",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "8791": [
@@ -49914,6 +51037,13 @@
     "Cundinamarca",
     "s"
    ],
+   "8874": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
+    "s"
+   ],
    "8875": [
     1,
     0,
@@ -50080,6 +51210,13 @@
     0,
     "2026-10-21",
     "Manizales",
+    "s"
+   ],
+   "8910": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "8911": [
@@ -50332,6 +51469,13 @@
     0,
     "2026-09-24",
     "Bogotá",
+    "s"
+   ],
+   "8972": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "8973": [
@@ -51091,10 +52235,10 @@
     "s"
    ],
    "9162": [
-    2,
+    3,
     0,
-    "2026-10-16",
-    "Santander",
+    "2026-11-13",
+    "Risaralda",
     "s"
    ],
    "9163": [
@@ -51525,9 +52669,9 @@
     "s"
    ],
    "9273": [
-    1,
+    2,
     0,
-    "2026-10-23",
+    "2026-11-13",
     "Santander",
     "s"
    ],
@@ -52124,6 +53268,13 @@
     0,
     "2026-08-26",
     "Meta",
+    "s"
+   ],
+   "9401": [
+    1,
+    0,
+    "2026-11-13",
+    "Santander",
     "s"
    ],
    "9402": [
@@ -54642,7 +55793,7 @@
   },
   "secos_desde": "2026-08-18",
   "mayores_desde": "2024-08-29",
-  "total_secos": 7219,
+  "total_secos": 7320,
   "total_mayores": 1444,
   "lots": [
    "loteria-de-bogota",
@@ -56205,6 +57356,10 @@
     [
      4,
      "239"
+    ],
+    [
+     7,
+     "130"
     ]
    ],
    "5538": [
@@ -57087,6 +58242,10 @@
     [
      7,
      "094"
+    ],
+    [
+     6,
+     "117"
     ]
    ],
    "0672": [
@@ -62661,6 +63820,10 @@
     [
      3,
      "214"
+    ],
+    [
+     6,
+     "024"
     ]
    ],
    "0472": [
@@ -63687,6 +64850,10 @@
     [
      7,
      "147"
+    ],
+    [
+     7,
+     "195"
     ]
    ],
    "3260": [
@@ -63807,6 +64974,10 @@
     [
      1,
      "329"
+    ],
+    [
+     7,
+     "185"
     ]
    ],
    "6794": [
@@ -64627,6 +65798,10 @@
     [
      2,
      "111"
+    ],
+    [
+     7,
+     "020"
     ]
    ],
    "2790": [
@@ -64719,6 +65894,10 @@
     [
      13,
      "155"
+    ],
+    [
+     7,
+     "274"
     ]
    ],
    "6652": [
@@ -66287,6 +67466,10 @@
     [
      7,
      "262"
+    ],
+    [
+     6,
+     "180"
     ]
    ],
    "4430": [
@@ -66523,6 +67706,10 @@
     [
      0,
      "213"
+    ],
+    [
+     7,
+     "220"
     ]
    ],
    "7888": [
@@ -66559,6 +67746,10 @@
     [
      0,
      "018"
+    ],
+    [
+     7,
+     "097"
     ]
    ],
    "4533": [
@@ -66629,6 +67820,10 @@
     [
      0,
      "126"
+    ],
+    [
+     6,
+     "003"
     ]
    ],
    "8621": [
@@ -67047,6 +68242,10 @@
     [
      5,
      "008"
+    ],
+    [
+     6,
+     "241"
     ]
    ],
    "8527": [
@@ -67353,6 +68552,10 @@
     [
      9,
      "159"
+    ],
+    [
+     6,
+     "068"
     ]
    ],
    "3296": [
@@ -69759,6 +70962,10 @@
     [
      7,
      "065"
+    ],
+    [
+     7,
+     "166"
     ]
    ],
    "2325": [
@@ -70337,6 +71544,10 @@
     [
      6,
      "145"
+    ],
+    [
+     7,
+     "171"
     ]
    ],
    "5828": [
@@ -70569,6 +71780,10 @@
     [
      4,
      "240"
+    ],
+    [
+     7,
+     "190"
     ]
    ],
    "1645": [
@@ -70649,6 +71864,10 @@
     [
      5,
      "086"
+    ],
+    [
+     7,
+     "232"
     ]
    ],
    "4091": [
@@ -70755,6 +71974,10 @@
     [
      6,
      "248"
+    ],
+    [
+     7,
+     "265"
     ]
    ],
    "7360": [
@@ -72463,6 +73686,10 @@
     [
      2,
      "329"
+    ],
+    [
+     7,
+     "058"
     ]
    ],
    "0895": [
@@ -73967,6 +75194,10 @@
     [
      10,
      "137"
+    ],
+    [
+     7,
+     "283"
     ]
    ],
    "2205": [
@@ -74539,6 +75770,10 @@
     [
      7,
      "006"
+    ],
+    [
+     7,
+     "187"
     ]
    ],
    "3588": [
@@ -75161,6 +76396,10 @@
     [
      2,
      "040"
+    ],
+    [
+     7,
+     "013"
     ]
    ],
    "5195": [
@@ -75377,6 +76616,10 @@
     [
      9,
      "116"
+    ],
+    [
+     7,
+     "336"
     ]
    ],
    "6774": [
@@ -75867,6 +77110,10 @@
     [
      3,
      "190"
+    ],
+    [
+     7,
+     "016"
     ]
    ],
    "0420": [
@@ -76193,6 +77440,10 @@
     [
      4,
      "086"
+    ],
+    [
+     6,
+     "220"
     ]
    ],
    "0483": [
@@ -76945,6 +78196,10 @@
     [
      6,
      "065"
+    ],
+    [
+     6,
+     "074"
     ]
    ],
    "6588": [
@@ -77063,6 +78318,10 @@
     [
      4,
      "228"
+    ],
+    [
+     7,
+     "272"
     ]
    ],
    "6706": [
@@ -78247,6 +79506,10 @@
     [
      1,
      "454"
+    ],
+    [
+     6,
+     "200"
     ]
    ],
    "7072": [
@@ -78755,6 +80018,10 @@
     [
      2,
      "101"
+    ],
+    [
+     7,
+     "174"
     ]
    ],
    "6939": [
@@ -79679,6 +80946,10 @@
     [
      0,
      "337"
+    ],
+    [
+     7,
+     "136"
     ]
    ],
    "4808": [
@@ -80187,6 +81458,10 @@
     [
      7,
      "263"
+    ],
+    [
+     6,
+     "085"
     ]
    ],
    "1719": [
@@ -80333,6 +81608,10 @@
     [
      7,
      "075"
+    ],
+    [
+     6,
+     "099"
     ]
    ],
    "8993": [
@@ -80389,6 +81668,10 @@
     [
      7,
      "099"
+    ],
+    [
+     6,
+     "150"
     ]
    ],
    "2172": [
@@ -80757,6 +82040,10 @@
     [
      1,
      "026"
+    ],
+    [
+     7,
+     "218"
     ]
    ],
    "9662": [
@@ -81537,6 +82824,10 @@
     [
      4,
      "067"
+    ],
+    [
+     7,
+     "264"
     ]
    ],
    "6948": [
@@ -82797,6 +84088,10 @@
     [
      7,
      "225"
+    ],
+    [
+     7,
+     "051"
     ]
    ],
    "1664": [
@@ -83555,6 +84850,10 @@
     [
      2,
      "001"
+    ],
+    [
+     7,
+     "281"
     ]
    ],
    "9772": [
@@ -84037,6 +85336,10 @@
     [
      9,
      "166"
+    ],
+    [
+     7,
+     "019"
     ]
    ],
    "2729": [
@@ -85545,6 +86848,14 @@
     [
      1,
      "105"
+    ],
+    [
+     6,
+     "174"
+    ],
+    [
+     6,
+     "167"
     ]
    ],
    "3938": [
@@ -85731,6 +87042,10 @@
     [
      8,
      "102"
+    ],
+    [
+     7,
+     "293"
     ]
    ],
    "2359": [
@@ -85777,6 +87092,10 @@
     [
      8,
      "261"
+    ],
+    [
+     6,
+     "070"
     ]
    ],
    "0378": [
@@ -85885,6 +87204,10 @@
     [
      2,
      "323"
+    ],
+    [
+     7,
+     "275"
     ]
    ],
    "9151": [
@@ -87557,6 +88880,10 @@
     [
      5,
      "392"
+    ],
+    [
+     7,
+     "002"
     ]
    ],
    "6730": [
@@ -87823,6 +89150,10 @@
     [
      7,
      "073"
+    ],
+    [
+     7,
+     "247"
     ]
    ],
    "9978": [
@@ -88445,6 +89776,10 @@
     [
      2,
      "276"
+    ],
+    [
+     7,
+     "054"
     ]
    ],
    "1428": [
@@ -88939,6 +90274,10 @@
     [
      9,
      "171"
+    ],
+    [
+     7,
+     "257"
     ]
    ],
    "3837": [
@@ -89341,6 +90680,10 @@
     [
      13,
      "236"
+    ],
+    [
+     7,
+     "332"
     ]
    ],
    "8927": [
@@ -89569,6 +90912,10 @@
     [
      0,
      "319"
+    ],
+    [
+     7,
+     "004"
     ]
    ],
    "4755": [
@@ -90377,6 +91724,10 @@
     [
      1,
      "450"
+    ],
+    [
+     6,
+     "157"
     ]
    ],
    "3750": [
@@ -90511,6 +91862,10 @@
     [
      1,
      "264"
+    ],
+    [
+     6,
+     "130"
     ]
    ],
    "1580": [
@@ -90667,6 +92022,10 @@
     [
      2,
      "135"
+    ],
+    [
+     7,
+     "165"
     ]
    ],
    "9143": [
@@ -91271,6 +92630,10 @@
     [
      4,
      "275"
+    ],
+    [
+     7,
+     "188"
     ]
    ],
    "9466": [
@@ -92525,6 +93888,10 @@
     [
      1,
      "025"
+    ],
+    [
+     7,
+     "035"
     ]
    ],
    "6827": [
@@ -92785,6 +94152,10 @@
     [
      2,
      "260"
+    ],
+    [
+     7,
+     "266"
     ]
    ],
    "3247": [
@@ -93149,6 +94520,10 @@
     [
      4,
      "143"
+    ],
+    [
+     7,
+     "076"
     ]
    ],
    "5213": [
@@ -93529,6 +94904,10 @@
     [
      0,
      "254"
+    ],
+    [
+     7,
+     "039"
     ]
    ],
    "1427": [
@@ -93941,6 +95320,270 @@
     [
      5,
      "025"
+    ]
+   ],
+   "2859": [
+    [
+     6,
+     "187"
+    ]
+   ],
+   "3616": [
+    [
+     6,
+     "020"
+    ]
+   ],
+   "7517": [
+    [
+     6,
+     "128"
+    ]
+   ],
+   "1938": [
+    [
+     6,
+     "017"
+    ]
+   ],
+   "1303": [
+    [
+     6,
+     "089"
+    ]
+   ],
+   "0097": [
+    [
+     6,
+     "162"
+    ]
+   ],
+   "2017": [
+    [
+     6,
+     "191"
+    ]
+   ],
+   "4030": [
+    [
+     6,
+     "183"
+    ]
+   ],
+   "8627": [
+    [
+     6,
+     "142"
+    ]
+   ],
+   "2385": [
+    [
+     6,
+     "263"
+    ]
+   ],
+   "3528": [
+    [
+     6,
+     "127"
+    ]
+   ],
+   "4855": [
+    [
+     6,
+     "277"
+    ]
+   ],
+   "6072": [
+    [
+     6,
+     "131"
+    ]
+   ],
+   "6297": [
+    [
+     6,
+     "021"
+    ]
+   ],
+   "7994": [
+    [
+     6,
+     "086"
+    ]
+   ],
+   "9401": [
+    [
+     7,
+     "338"
+    ]
+   ],
+   "2521": [
+    [
+     7,
+     "187"
+    ]
+   ],
+   "0278": [
+    [
+     7,
+     "232"
+    ]
+   ],
+   "0608": [
+    [
+     7,
+     "146"
+    ]
+   ],
+   "3980": [
+    [
+     7,
+     "030"
+    ]
+   ],
+   "1058": [
+    [
+     7,
+     "024"
+    ]
+   ],
+   "8409": [
+    [
+     7,
+     "312"
+    ]
+   ],
+   "0344": [
+    [
+     7,
+     "245"
+    ]
+   ],
+   "8720": [
+    [
+     7,
+     "111"
+    ]
+   ],
+   "0467": [
+    [
+     7,
+     "241"
+    ]
+   ],
+   "0504": [
+    [
+     7,
+     "228"
+    ]
+   ],
+   "3539": [
+    [
+     7,
+     "214"
+    ]
+   ],
+   "4501": [
+    [
+     7,
+     "256"
+    ]
+   ],
+   "4676": [
+    [
+     7,
+     "275"
+    ]
+   ],
+   "8477": [
+    [
+     7,
+     "005"
+    ]
+   ],
+   "0229": [
+    [
+     7,
+     "301"
+    ]
+   ],
+   "0689": [
+    [
+     7,
+     "230"
+    ]
+   ],
+   "1801": [
+    [
+     7,
+     "064"
+    ]
+   ],
+   "2914": [
+    [
+     7,
+     "097"
+    ]
+   ],
+   "4001": [
+    [
+     7,
+     "151"
+    ]
+   ],
+   "4042": [
+    [
+     7,
+     "263"
+    ]
+   ],
+   "4531": [
+    [
+     7,
+     "262"
+    ]
+   ],
+   "8874": [
+    [
+     7,
+     "116"
+    ]
+   ],
+   "0902": [
+    [
+     7,
+     "022"
+    ]
+   ],
+   "3111": [
+    [
+     7,
+     "092"
+    ]
+   ],
+   "5426": [
+    [
+     7,
+     "273"
+    ]
+   ],
+   "6327": [
+    [
+     7,
+     "124"
+    ]
+   ],
+   "8910": [
+    [
+     7,
+     "039"
+    ]
+   ],
+   "8972": [
+    [
+     7,
+     "289"
     ]
    ]
   },
@@ -95919,40 +97562,44 @@
     "049": 5,
     "256": 5,
     "006": 5,
+    "127": 5,
     "043": 4,
     "106": 4,
+    "191": 4,
     "274": 4,
     "291": 4,
     "231": 4,
     "289": 4,
     "055": 4,
+    "142": 4,
     "091": 4,
     "155": 4,
     "194": 4,
     "165": 4,
-    "127": 4,
+    "068": 4,
     "102": 4,
     "293": 4,
     "114": 4,
     "088": 4,
     "248": 3,
-    "191": 3,
     "199": 3,
     "080": 3,
+    "200": 3,
     "116": 3,
     "032": 3,
     "039": 3,
+    "089": 3,
     "119": 3,
-    "142": 3,
+    "131": 3,
     "103": 3,
     "044": 3,
     "148": 3,
     "251": 3,
     "007": 3,
-    "068": 3,
     "224": 3,
     "062": 3,
     "219": 3,
+    "130": 3,
     "173": 3,
     "192": 3,
     "067": 3,
@@ -95967,35 +97614,38 @@
     "138": 2,
     "288": 2,
     "294": 2,
+    "180": 2,
     "095": 2,
-    "200": 2,
     "266": 2,
+    "074": 2,
     "097": 2,
     "171": 2,
     "037": 2,
     "204": 2,
     "149": 2,
-    "089": 2,
     "009": 2,
     "217": 2,
     "260": 2,
     "061": 2,
     "258": 2,
     "182": 2,
-    "131": 2,
     "226": 2,
+    "017": 2,
+    "086": 2,
     "205": 2,
+    "174": 2,
     "286": 2,
     "036": 2,
     "023": 2,
     "134": 2,
     "075": 2,
+    "070": 2,
     "254": 2,
     "018": 2,
     "290": 2,
     "295": 2,
-    "130": 2,
     "076": 2,
+    "263": 2,
     "015": 2,
     "209": 2,
     "234": 2,
@@ -96007,12 +97657,17 @@
     "233": 2,
     "060": 2,
     "112": 2,
+    "024": 2,
     "058": 2,
     "087": 2,
     "278": 2,
+    "117": 2,
     "153": 2,
+    "162": 2,
     "071": 2,
     "246": 2,
+    "277": 2,
+    "128": 2,
     "122": 2,
     "228": 2,
     "252": 2,
@@ -96024,19 +97679,21 @@
     "141": 2,
     "227": 2,
     "031": 2,
+    "183": 2,
     "016": 2,
+    "020": 2,
+    "167": 2,
+    "150": 2,
     "203": 1,
     "195": 1,
     "281": 1,
     "029": 1,
-    "180": 1,
     "090": 1,
     "125": 1,
     "151": 1,
     "053": 1,
     "159": 1,
     "057": 1,
-    "074": 1,
     "144": 1,
     "212": 1,
     "179": 1,
@@ -96044,43 +97701,33 @@
     "012": 1,
     "225": 1,
     "198": 1,
-    "017": 1,
-    "086": 1,
     "273": 1,
     "077": 1,
     "265": 1,
     "270": 1,
-    "174": 1,
     "082": 1,
     "042": 1,
     "255": 1,
     "276": 1,
     "271": 1,
     "120": 1,
-    "070": 1,
     "229": 1,
     "132": 1,
     "169": 1,
-    "263": 1,
     "259": 1,
     "110": 1,
     "137": 1,
     "213": 1,
     "164": 1,
-    "024": 1,
     "257": 1,
     "066": 1,
     "098": 1,
     "005": 1,
-    "117": 1,
-    "162": 1,
     "109": 1,
     "072": 1,
     "064": 1,
     "178": 1,
     "170": 1,
-    "277": 1,
-    "128": 1,
     "210": 1,
     "230": 1,
     "092": 1,
@@ -96097,14 +97744,12 @@
     "129": 1,
     "084": 1,
     "094": 1,
-    "183": 1,
     "215": 1,
     "121": 1,
     "196": 1,
     "028": 1,
     "013": 1,
     "160": 1,
-    "020": 1,
     "038": 1,
     "056": 1,
     "014": 1,
@@ -96114,126 +97759,147 @@
     "143": 1,
     "244": 1,
     "025": 1,
-    "167": 1,
     "189": 1,
     "124": 1,
     "297": 1,
     "146": 1,
     "065": 1,
-    "150": 1,
     "113": 1,
     "140": 1,
-    "163": 1
+    "163": 1,
+    "187": 1,
+    "157": 1,
+    "021": 1,
+    "220": 1,
+    "003": 1,
+    "241": 1,
+    "085": 1,
+    "099": 1
    },
    "loteria-de-santander": {
+    "228": 7,
     "062": 7,
     "079": 7,
-    "228": 6,
+    "124": 7,
+    "247": 6,
     "047": 6,
+    "293": 6,
     "135": 6,
+    "264": 6,
+    "275": 6,
+    "064": 6,
+    "097": 6,
     "327": 6,
-    "124": 6,
     "066": 6,
     "023": 6,
     "308": 6,
     "334": 6,
+    "024": 6,
     "162": 5,
-    "247": 5,
-    "293": 5,
+    "004": 5,
+    "272": 5,
+    "039": 5,
+    "281": 5,
+    "262": 5,
+    "265": 5,
+    "130": 5,
     "101": 5,
-    "264": 5,
     "046": 5,
     "213": 5,
-    "064": 5,
     "268": 5,
     "029": 5,
     "075": 5,
     "326": 5,
     "224": 5,
+    "289": 5,
     "170": 5,
+    "058": 5,
     "169": 5,
+    "283": 5,
+    "214": 5,
     "239": 5,
     "122": 5,
     "152": 5,
     "001": 5,
-    "024": 5,
+    "220": 5,
+    "111": 5,
     "259": 4,
-    "004": 4,
     "145": 4,
     "222": 4,
     "175": 4,
     "238": 4,
     "127": 4,
     "339": 4,
-    "272": 4,
-    "281": 4,
-    "262": 4,
+    "195": 4,
     "318": 4,
-    "265": 4,
+    "151": 4,
     "161": 4,
     "236": 4,
     "261": 4,
     "299": 4,
     "056": 4,
     "072": 4,
-    "130": 4,
     "183": 4,
     "315": 4,
     "099": 4,
     "131": 4,
-    "275": 4,
-    "097": 4,
+    "187": 4,
     "198": 4,
     "147": 4,
     "010": 4,
+    "030": 4,
     "057": 4,
     "065": 4,
     "059": 4,
     "244": 4,
-    "289": 4,
-    "058": 4,
     "018": 4,
     "021": 4,
-    "283": 4,
     "148": 4,
     "296": 4,
-    "214": 4,
     "223": 4,
     "119": 4,
     "008": 4,
     "200": 4,
+    "051": 4,
     "033": 4,
     "186": 4,
+    "165": 4,
     "027": 4,
+    "232": 4,
     "276": 4,
     "330": 4,
-    "220": 4,
-    "111": 4,
+    "116": 4,
+    "230": 4,
+    "301": 4,
+    "338": 3,
     "137": 3,
     "015": 3,
     "040": 3,
     "067": 3,
     "126": 3,
     "168": 3,
-    "039": 3,
-    "195": 3,
     "191": 3,
-    "151": 3,
     "288": 3,
     "210": 3,
     "302": 3,
+    "312": 3,
+    "190": 3,
+    "005": 3,
     "044": 3,
     "280": 3,
+    "185": 3,
     "080": 3,
     "118": 3,
     "227": 3,
     "225": 3,
     "253": 3,
     "209": 3,
+    "256": 3,
     "158": 3,
-    "030": 3,
+    "218": 3,
     "138": 3,
     "125": 3,
+    "241": 3,
     "258": 3,
     "069": 3,
     "235": 3,
@@ -96258,59 +97924,53 @@
     "294": 3,
     "287": 3,
     "073": 3,
+    "035": 3,
     "129": 3,
-    "051": 3,
+    "013": 3,
     "133": 3,
     "094": 3,
     "104": 3,
     "042": 3,
-    "165": 3,
     "012": 3,
     "087": 3,
+    "263": 3,
     "045": 3,
+    "274": 3,
+    "136": 3,
     "189": 3,
+    "016": 3,
     "037": 3,
+    "245": 3,
     "314": 3,
-    "116": 3,
-    "230": 3,
     "271": 3,
     "048": 3,
-    "301": 3,
     "325": 3,
     "117": 3,
+    "002": 3,
     "081": 3,
     "089": 2,
     "156": 2,
-    "338": 2,
     "134": 2,
     "041": 2,
     "155": 2,
     "303": 2,
-    "312": 2,
     "216": 2,
     "106": 2,
-    "190": 2,
-    "005": 2,
     "295": 2,
     "331": 2,
     "060": 2,
-    "185": 2,
     "248": 2,
     "167": 2,
     "285": 2,
     "082": 2,
     "153": 2,
-    "187": 2,
     "083": 2,
     "132": 2,
     "063": 2,
     "050": 2,
     "150": 2,
-    "256": 2,
-    "218": 2,
     "003": 2,
     "193": 2,
-    "241": 2,
     "254": 2,
     "034": 2,
     "205": 2,
@@ -96320,50 +97980,52 @@
     "207": 2,
     "085": 2,
     "310": 2,
+    "257": 2,
     "032": 2,
     "246": 2,
     "234": 2,
     "269": 2,
     "323": 2,
-    "035": 2,
+    "188": 2,
     "204": 2,
     "249": 2,
     "211": 2,
     "196": 2,
     "121": 2,
-    "013": 2,
     "240": 2,
     "006": 2,
+    "019": 2,
     "173": 2,
     "154": 2,
     "298": 2,
     "201": 2,
     "184": 2,
+    "273": 2,
     "319": 2,
     "086": 2,
     "115": 2,
     "317": 2,
+    "092": 2,
+    "174": 2,
     "251": 2,
     "139": 2,
-    "232": 2,
-    "263": 2,
     "114": 2,
     "107": 2,
-    "274": 2,
     "300": 2,
-    "136": 2,
-    "016": 2,
+    "166": 2,
+    "022": 2,
     "316": 2,
-    "245": 2,
     "143": 2,
     "113": 2,
     "109": 2,
     "055": 2,
     "078": 2,
-    "002": 2,
     "026": 2,
+    "336": 2,
     "007": 2,
     "250": 2,
+    "076": 2,
+    "266": 2,
     "284": 1,
     "291": 1,
     "215": 1,
@@ -96377,23 +98039,17 @@
     "324": 1,
     "231": 1,
     "329": 1,
-    "257": 1,
     "049": 1,
-    "188": 1,
     "070": 1,
     "159": 1,
     "305": 1,
     "208": 1,
     "176": 1,
     "278": 1,
-    "019": 1,
     "043": 1,
     "110": 1,
-    "273": 1,
     "306": 1,
     "096": 1,
-    "092": 1,
-    "174": 1,
     "009": 1,
     "304": 1,
     "182": 1,
@@ -96401,9 +98057,7 @@
     "098": 1,
     "313": 1,
     "260": 1,
-    "166": 1,
     "178": 1,
-    "022": 1,
     "320": 1,
     "095": 1,
     "243": 1,
@@ -96419,7 +98073,6 @@
     "038": 1,
     "160": 1,
     "025": 1,
-    "336": 1,
     "011": 1,
     "197": 1,
     "217": 1,
@@ -96430,11 +98083,14 @@
     "282": 1,
     "140": 1,
     "141": 1,
-    "076": 1,
     "068": 1,
     "036": 1,
-    "266": 1,
-    "031": 1
+    "031": 1,
+    "146": 1,
+    "020": 1,
+    "332": 1,
+    "054": 1,
+    "171": 1
    },
    "loteria-del-cauca": {
     "027": 5,
@@ -97512,8 +99168,8 @@
    "loteria-de-la-cruz-roja": 425,
    "loteria-de-manizales": 662,
    "loteria-de-medellin": 571,
-   "loteria-de-risaralda": 382,
-   "loteria-de-santander": 827,
+   "loteria-de-risaralda": 414,
+   "loteria-de-santander": 896,
    "loteria-del-cauca": 431,
    "loteria-del-huila": 350,
    "loteria-del-meta": 544,
@@ -97561,7 +99217,7 @@
     "enunciado": "Los secos de loterías del mismo día comparten terminaciones de 2 cifras más de lo esperado.",
     "regla": "Poisson unilateral tras 8 semanas; se sostiene si p < 0,01 y la razón > 1,03.",
     "progreso": "4,0 de 8 semanas",
-    "resultado": "485 observadas vs 498,1 esperadas (razón 0,974), p = 0,73",
+    "resultado": "521 observadas vs 536,6 esperadas (razón 0,971), p = 0,75",
     "completa": false,
     "veredicto": "en curso"
    }

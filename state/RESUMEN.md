@@ -1,13 +1,13 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado sáb 14 nov 2026 12:14 (Colombia) · último sorteo con datos: vie 13 nov 2026_
+_Actualizado dom 15 nov 2026 07:46 (Colombia) · último sorteo con datos: sáb 14 nov 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
 | Indicador | Valor |
 |---|---|
-| Premios guardados | 7.219 secos independientes · 1.442 mayores |
-| Seguimiento en datos nuevos | 28 días · 2.429 premios |
+| Premios guardados | 7.219 secos independientes · 1.444 mayores |
+| Seguimiento en datos nuevos | 29 días · 2.431 premios |
 | Patrones vigilados | 1.463 (validar uno exige E ≥ 14.620) |
 | Combinador principal | E = 0,73 (datos nuevos; se valida con E ≥ 20) |
 | Validados / en observación | 0 / 3 |
@@ -22,10 +22,10 @@ _Actualizado sáb 14 nov 2026 12:14 (Colombia) · último sorteo con datos: vie 
 | Última cifra de la serie de los secos (Manizales): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 15 | 0,17 |
 | Cuántas cifras pares de los secos (Meta): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 13 | 28 |
 | Cuántas cifras pares de los secos (Risaralda): lo que menos ha salido últimamente 'está por salir' | sin evidencia | 13 | 3,00 |
+| Última cifra de la serie de los premios mayores (Boyacá): lo que tuvo el premio mayor anterior de la misma lotería se repite | sin evidencia | 12 | 25 |
 | 2.ª cifra de los secos (Quindío): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 11 | 11 |
 | Última cifra de los secos (Manizales): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 8,85 | 3,11 |
 | 2.ª cifra de los secos (Quindío): lo que más ha salido en las últimas semanas seguirá saliendo más | sin evidencia | 8,71 | 6,76 |
-| Suma de las cifras de los secos (Cauca): lo que más ha salido en todo el historial seguirá saliendo más | sin evidencia | 8,61 | 8,16 |
 
 ## Números posibles
 
@@ -41,24 +41,6 @@ _Actualizado sáb 14 nov 2026 12:14 (Colombia) · último sorteo con datos: vie 
 | Al azar (control) | 2 | 4,8 | 0 de 2,4 | 0 de 2,2 |
 | Series · combinador | 157 | 155,8 | 77 de 77,9 | 70 de 72,6 |
 | Series · al azar (control) | 159 | 155,8 | 73 de 77,9 | 69 de 72,6 |
-
-**Boyacá · sáb 14 nov**
-
-- Combinador ATLAS: `4236 9236 3236 5236 8236 6236 7236 4636 0236 1236`
-- Calientes: `4836 3836 5836 4846 3846 4896 0836 3896 4886 4806`
-- Recientes: `6037 3037 4037 3036 6036 3097 6097 4036 3030 6030`
-- Fríos: `7574 7514 7524 7564 2574 7374 7579 2514 2524 7314`
-- Del mayor anterior: `1552 2551 1255 1525 2155 2515 5125 5152 5215 5251`
-- Al azar (control): `3045 8298 6421 5827 5750 4103 4464 4557 2084 1191`
-
-**Cauca · sáb 14 nov**
-
-- Combinador ATLAS: `9453 9473 9953 9452 9433 9973 9454 8453 9472 9952`
-- Calientes: `7922 7952 7972 0952 0922 5952 5922 7252 7222 7962`
-- Recientes: `5453 2453 5452 5454 5953 2454 2452 8453 5463 2953`
-- Fríos: `7501 6501 3501 1501 7601 7301 7591 6601 1601 7511`
-- Del mayor anterior: `2073 3702 0237 0273 0327 0372 0723 0732 2037 2307`
-- Al azar (control): `2304 7639 8116 1586 0343 1308 1356 6674 4601 9617`
 
 **Cundinamarca · mar 17 nov**
 
@@ -174,7 +156,7 @@ _Actualizado sáb 14 nov 2026 12:14 (Colombia) · último sorteo con datos: vie 
 - Calientes: `4836 3836 5836 4846 3846 4896 0836 3896 4886 4806`
 - Recientes: `6030 6036 6032 3030 3036 6090 6096 6080 6086 3032`
 - Fríos: `7574 7274 7374 7544 7514 1574 1374 1274 7314 7214`
-- Del mayor anterior: `1552 2551 1255 1525 2155 2515 5125 5152 5215 5251`
+- Del mayor anterior: `4483 3844 3448 3484 4348 4384 4438 4834 4843 8344`
 - Al azar (control): `1424 4451 8731 9050 9372 8665 8612 2482 3727 4105`
 
 **Cauca · sáb 21 nov**
@@ -183,7 +165,7 @@ _Actualizado sáb 14 nov 2026 12:14 (Colombia) · último sorteo con datos: vie 
 - Calientes: `7922 7952 7972 0952 0922 5952 5922 7252 7222 7962`
 - Recientes: `5954 5964 9964 9954 5963 4954 5953 4964 2954 2964`
 - Fríos: `3591 3590 3501 3500 3580 3581 3521 3520 3511 3510`
-- Del mayor anterior: `2073 3702 0237 0273 0327 0372 0723 0732 2037 2307`
+- Del mayor anterior: `3633 3363 3336 6333`
 - Al azar (control): `9791 2286 2965 4635 0039 4596 3024 1172 8465 3771`
 
 ## Series
@@ -229,6 +211,8 @@ _Actualizado sáb 14 nov 2026 12:14 (Colombia) · último sorteo con datos: vie 
 
 | Fecha | Lotería | Premio mayor | Secos | Estado |
 |---|---|---|---|---|
+| sáb 14 nov | Cauca | 3633-102 | 0 | sin secos |
+| sáb 14 nov | Boyacá | 4483-012 | 0 | sin secos |
 | vie 13 nov | Santander | 5198-291 | 0 | sin secos |
 | vie 13 nov | Risaralda | 8362-118 | 0 | sin secos |
 | vie 13 nov | Medellín | 5724-045 | 44 | completo |
@@ -243,15 +227,12 @@ _Actualizado sáb 14 nov 2026 12:14 (Colombia) · último sorteo con datos: vie 
 | lun 9 nov | Cundinamarca | 0474-015 | 61 | completo |
 | sáb 7 nov | Cauca | 2073-040 | 36 | completo |
 | sáb 7 nov | Boyacá | 1552-312 | 59 | completo |
-| vie 6 nov | Santander | 7151-204 | 69 | completo |
-| vie 6 nov | Risaralda | 8434-109 | 32 | completo |
-| vie 6 nov | Medellín | 5609-266 | 44 | completo |
 
 ## Datos
 
-- Descarga automática: ok · sorteos nuevos: 3
+- Descarga automática: ok · sorteos nuevos: 4
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Risaralda 13 nov, Santander 13 nov
+- Sorteos sin secos (últimas 4 semanas): Risaralda 13 nov, Santander 13 nov, Boyacá 14 nov, Cauca 14 nov
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

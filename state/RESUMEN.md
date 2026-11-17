@@ -1,15 +1,15 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 14 nov 2026_
+_Actualizado mar 17 nov 2026 14:57 (Colombia) · último sorteo con datos: sáb 14 nov 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
 | Indicador | Valor |
 |---|---|
-| Premios guardados | 7.320 secos independientes · 1.444 mayores |
-| Seguimiento en datos nuevos | 29 días · 2.532 premios |
+| Premios guardados | 7.415 secos independientes · 1.444 mayores |
+| Seguimiento en datos nuevos | 29 días · 2.627 premios |
 | Patrones vigilados | 1.463 (validar uno exige E ≥ 14.620) |
-| Combinador principal | E = 0,78 (datos nuevos; se valida con E ≥ 20) |
+| Combinador principal | E = 0,77 (datos nuevos; se valida con E ≥ 20) |
 | Validados / en observación | 0 / 4 |
 
 ## Patrones con más evidencia
@@ -33,18 +33,18 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 | Método | Aciertos historial | Esperados por azar | Datos nuevos | Guardadas |
 |---|---|---|---|---|
-| Combinador ATLAS | 4 | 4,8 | 2 de 2,5 | 4 de 2,3 |
-| Calientes | 0 | 4,8 | 3 de 2,5 | 3 de 2,3 |
-| Recientes | 2 | 4,8 | 1 de 2,5 | 2 de 2,3 |
-| Fríos | 3 | 4,8 | 1 de 2,5 | 2 de 2,3 |
-| Del mayor anterior | 4 | 4,6 | 2 de 2,4 | 3 de 2,3 |
-| Al azar (control) | 2 | 4,8 | 0 de 2,5 | 0 de 2,3 |
-| Series · combinador | 157 | 155,8 | 79 de 81,0 | 75 de 75,7 |
-| Series · al azar (control) | 159 | 155,8 | 77 de 81,0 | 73 de 75,7 |
+| Combinador ATLAS | 4 | 4,8 | 2 de 2,6 | 4 de 2,4 |
+| Calientes | 0 | 4,8 | 3 de 2,6 | 3 de 2,4 |
+| Recientes | 2 | 4,8 | 1 de 2,6 | 2 de 2,4 |
+| Fríos | 3 | 4,8 | 1 de 2,6 | 2 de 2,4 |
+| Del mayor anterior | 4 | 4,6 | 2 de 2,5 | 3 de 2,4 |
+| Al azar (control) | 2 | 4,8 | 0 de 2,6 | 0 de 2,4 |
+| Series · combinador | 157 | 155,8 | 83 de 83,4 | 78 de 78,1 |
+| Series · al azar (control) | 159 | 155,8 | 79 de 83,4 | 75 de 78,1 |
 
 **Cruz Roja · mar 17 nov**
 
-- Combinador ATLAS: `7272 7271 7270 7274 7252 7276 7251 7222 7250 7221`
+- Combinador ATLAS: `7272 7271 7276 7274 7270 7252 7273 7251 7222 7282`
 - Calientes: `1963 1263 7963 1663 7263 1973 1563 7663 1273 1063`
 - Recientes: `9651 9621 9671 9653 9656 9661 7651 5651 9251 9623`
 - Fríos: `3039 3037 3539 3530 3537 3030 3330 3339 3337 3430`
@@ -53,7 +53,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Huila · mar 17 nov**
 
-- Combinador ATLAS: `9648 9748 4648 4748 9678 7648 9778 9848 7748 4678`
+- Combinador ATLAS: `9648 9748 9678 4648 9778 4748 9848 7648 9548 4678`
 - Calientes: `7648 5648 4648 7048 7448 7678 7644 7647 7948 5048`
 - Recientes: `9748 2748 9741 9746 2746 2741 2744 9744 7748 9848`
 - Fríos: `8260 8200 8300 8360 8250 8290 0200 3260 8220 8267`
@@ -62,7 +62,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Manizales · mié 18 nov**
 
-- Combinador ATLAS: `5230 5290 5240 5270 5280 5250 5200 5220 5210 5260`
+- Combinador ATLAS: `5230 5290 5270 5240 5280 5250 5200 5220 5210 5260`
 - Calientes: `5104 5100 5700 5704 5130 5134 5190 5194 5102 5730`
 - Recientes: `5690 7690 3690 5694 5650 2690 5691 7694 3694 3650`
 - Fríos: `1915 1965 1415 1919 1465 1969 1925 1419 1975 1985`
@@ -71,7 +71,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Meta · mié 18 nov**
 
-- Combinador ATLAS: `5331 5336 9331 9336 2331 2336 5333 7331 7336 5337`
+- Combinador ATLAS: `5336 5331 9336 9331 2336 2331 5333 7336 7331 9333`
 - Calientes: `5333 2333 9333 7333 2313 5313 5323 2323 9313 7313`
 - Recientes: `5331 9331 5336 9336 5131 5341 5311 9131 2331 5337`
 - Fríos: `1795 1705 1805 1895 1785 1798 1794 6795 1708 1704`
@@ -80,7 +80,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Valle · mié 18 nov**
 
-- Combinador ATLAS: `9672 9676 9677 9632 9670 9272 9636 9637 9276 9772`
+- Combinador ATLAS: `9672 9676 9677 9670 9272 9632 9276 9636 9772 9572`
 - Calientes: `9677 9676 9617 9672 9616 9697 9670 6677 9612 9696`
 - Recientes: `7692 7622 9692 9622 7672 7697 7627 7682 7092 7022`
 - Fríos: `0261 0861 0251 0263 0268 8261 0264 0851 0863 0868`
@@ -89,7 +89,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Bogotá · jue 19 nov**
 
-- Combinador ATLAS: `4233 5233 7233 8233 4243 4283 9233 4273 5243 5283`
+- Combinador ATLAS: `4233 5233 7233 9233 4273 8233 4283 4243 5273 5283`
 - Calientes: `5351 2351 2350 5350 5354 2354 5251 2251 2353 5353`
 - Recientes: `5285 5280 5250 5255 5281 5260 5265 5251 5284 5261`
 - Fríos: `3029 3829 3629 3129 3027 3929 0029 3529 3028 3039`
@@ -98,7 +98,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Quindío · jue 19 nov**
 
-- Combinador ATLAS: `8214 4214 5214 3214 7214 8217 4217 5217 8294 9214`
+- Combinador ATLAS: `4214 5214 3214 8214 7214 4217 9214 5217 3217 8217`
 - Calientes: `3219 3212 3213 3299 3210 3289 7219 0219 3292 3215`
 - Recientes: `3215 3210 3212 3219 8215 3265 3295 3213 3218 5215`
 - Fríos: `4424 9424 2424 9124 4124 2124 2427 4427 9427 1424`
@@ -107,7 +107,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Medellín · vie 20 nov**
 
-- Combinador ATLAS: `8298 8698 8398 8798 8278 8898 8238 8248 8098 8258`
+- Combinador ATLAS: `8298 8698 8398 8798 8278 8898 8238 8678 8098 8248`
 - Calientes: `8292 8892 8192 8252 8298 8242 8152 8852 8692 8592`
 - Recientes: `8298 6298 8198 8218 8278 8288 8268 8299 8295 0298`
 - Fríos: `5344 9344 9744 1344 5744 5304 9304 2344 1744 5354`
@@ -116,7 +116,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Risaralda · vie 20 nov**
 
-- Combinador ATLAS: `4237 4297 4287 4637 4697 4837 4897 4337 4687 4397`
+- Combinador ATLAS: `4237 4297 4287 4637 4837 4697 4337 4897 4687 4537`
 - Calientes: `4247 4547 4347 4047 4245 4545 4647 4847 4345 4277`
 - Recientes: `7897 4897 7297 7867 4297 7497 7697 7895 7898 4867`
 - Fríos: `0973 0173 0953 0903 0971 0943 0773 0103 0153 0970`
@@ -125,7 +125,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Santander · vie 20 nov**
 
-- Combinador ATLAS: `0236 0286 0246 0276 0238 0288 0248 0278 0296 0256`
+- Combinador ATLAS: `0236 0276 0286 0246 0296 0256 0216 0232 0226 0206`
 - Calientes: `0346 0386 4346 0336 0446 0316 4386 0344 0348 0341`
 - Recientes: `0611 0601 0614 0604 3601 3611 3614 3604 0616 0606`
 - Fríos: `9295 9895 9298 9265 9795 9297 9495 9299 9898 9865`
@@ -134,25 +134,25 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Boyacá · sáb 21 nov**
 
-- Combinador ATLAS: `5236 4236 9236 5636 4636 3236 9636 7236 5286 4286`
-- Calientes: `4836 3836 5836 4846 3846 4896 0836 3896 4886 4806`
-- Recientes: `6030 6036 6032 3030 3036 6090 6096 6080 6086 3032`
-- Fríos: `7574 7274 7374 7544 7514 1574 1374 1274 7314 7214`
+- Combinador ATLAS: `5236 4236 5636 3236 4636 9236 5286 4286 3636 0236`
+- Calientes: `3836 4836 3806 4806 5836 5806 0836 0806 3896 4846`
+- Recientes: `3036 0036 0032 3032 3006 0006 0096 3096 6036 3092`
+- Fríos: `7374 1374 7324 7344 1324 8374 7379 2374 1344 7354`
 - Del mayor anterior: `4483 3844 3448 3484 4348 4384 4438 4834 4843 8344`
 - Al azar (control): `1424 4451 8731 9050 9372 8665 8612 2482 3727 4105`
 
 **Cauca · sáb 21 nov**
 
-- Combinador ATLAS: `5953 5954 5983 5984 5973 5974 5933 5952 5934 5982`
-- Calientes: `7922 7952 7972 0952 0922 5952 5922 7252 7222 7962`
-- Recientes: `5954 5964 9964 9954 5963 4954 5953 4964 2954 2964`
-- Fríos: `3591 3590 3501 3500 3580 3581 3521 3520 3511 3510`
+- Combinador ATLAS: `5973 5976 5953 5983 9973 7973 5956 5972 5974 5986`
+- Calientes: `7952 7972 1952 1972 7922 1922 0952 6952 0972 6972`
+- Recientes: `9953 9954 9854 9853 9952 9852 5953 5954 2953 2954`
+- Fríos: `3201 3200 3205 3501 3701 3291 3700 3500 3705 3505`
 - Del mayor anterior: `3633 3363 3336 6333`
 - Al azar (control): `9791 2286 2965 4635 0039 4596 3024 1172 8465 3771`
 
 **Cundinamarca · lun 23 nov**
 
-- Combinador ATLAS: `8232 8632 8832 8332 8732 8032 8532 8432 8132 8242`
+- Combinador ATLAS: `8232 8632 8832 8332 8732 8032 8532 8432 8132 8932`
 - Calientes: `2736 2734 2704 2706 2739 2709 2738 2744 2746 2708`
 - Recientes: `8833 8033 8233 8803 8043 8003 8843 8203 8243 8035`
 - Fríos: `9981 4981 9181 4181 3981 7981 3181 7181 3681 7681`
@@ -161,7 +161,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Tolima · lun 23 nov**
 
-- Combinador ATLAS: `9539 4539 9239 4239 1539 1239 0539 0239 6539 9579`
+- Combinador ATLAS: `4539 9539 4579 1539 9579 0539 6539 4239 9239 1579`
 - Calientes: `9378 9374 9274 9278 9204 9304 9208 9308 9275 9271`
 - Recientes: `6562 6522 9562 4562 6262 4522 9522 0562 6572 9262`
 - Fríos: `1945 7945 7640 1940 7940 1640 7645 1645 7630 7635`
@@ -170,7 +170,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Cruz Roja · mar 24 nov**
 
-- Combinador ATLAS: `7272 7242 7252 7276 7262 7672 7246 7256 7266 7642`
+- Combinador ATLAS: `7272 7276 7672 7242 7262 7252 7676 7246 7266 7256`
 - Calientes: `1963 1263 7963 1663 7263 1973 1563 7663 1273 1063`
 - Recientes: `9226 9266 9246 9626 9656 9646 9256 9666 9676 9276`
 - Fríos: `3037 2037 3087 3035 2087 2035 2085 3085 3017 2038`
@@ -179,7 +179,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 **Huila · mar 24 nov**
 
-- Combinador ATLAS: `5648 7648 5678 9648 7678 5548 4648 2648 5248 9678`
+- Combinador ATLAS: `5648 7648 5678 9648 7678 5548 9678 7548 4648 5578`
 - Calientes: `7648 5648 4648 7048 7448 7678 7644 7647 7948 5048`
 - Recientes: `7648 7548 2648 9648 9548 2548 7948 7578 7678 9948`
 - Fríos: `8360 0360 0260 8310 0390 0367 0365 8365 8390 8260`
@@ -191,8 +191,8 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 | Lotería | Series | Secos | Más repetida | Veredicto |
 |---|---|---|---|---|
 | Bogotá | 001–469 | 634 | 125 (6 veces; normal 5–7) | pareja, como el azar |
-| Boyacá | 001–469 | 707 | 008 (7 veces; normal 5–8) | pareja, como el azar |
-| Cauca | 001–309 | 431 | 027 (5 veces; normal 5–7) | pareja, como el azar |
+| Boyacá | 001–469 | 766 | 008 (7 veces; normal 6–8) | pareja, como el azar |
+| Cauca | 001–309 | 467 | 027 (5 veces; normal 5–8) | pareja, como el azar |
 | Cruz Roja | 001–329 | 425 | 007 (5 veces; normal 5–7) | pareja, como el azar |
 | Cundinamarca | 001–349 | 790 | 207 (7 veces; normal 7–9) | pareja, como el azar |
 | Huila | 001–179 | 350 | 103 (8 veces; normal 5–8) | pareja, como el azar |
@@ -207,7 +207,7 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 ## Aciertos de ATLAS (predicciones guardadas antes del sorteo)
 
-14 aciertos frente a 11,5 esperados por azar (probabilidad de tantos o más por suerte: 27 %).
+14 aciertos frente a 12,0 esperados por azar (probabilidad de tantos o más por suerte: 32 %).
 
 | Sorteo | Lotería | Número-serie | Premio | Método |
 |---|---|---|---|---|
@@ -229,8 +229,8 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 
 | Fecha | Lotería | Premio mayor | Secos | Estado |
 |---|---|---|---|---|
-| sáb 14 nov | Cauca | 3633-102 | 0 | sin secos |
-| sáb 14 nov | Boyacá | 4483-012 | 0 | sin secos |
+| sáb 14 nov | Cauca | 3633-102 | 37 | completo |
+| sáb 14 nov | Boyacá | 4483-012 | 59 | completo |
 | vie 13 nov | Santander | 5198-291 | 70 | completo |
 | vie 13 nov | Risaralda | 8362-118 | 72 | completo |
 | vie 13 nov | Medellín | 5724-045 | 44 | completo |
@@ -249,6 +249,5 @@ _Actualizado mar 17 nov 2026 09:28 (Colombia) · último sorteo con datos: sáb 
 - Descarga automática: ok · sorteos nuevos: 2
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Boyacá 14 nov, Cauca 14 nov
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

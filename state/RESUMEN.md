@@ -1,6 +1,6 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado dom 22 nov 2026 08:23 (Colombia) · último sorteo con datos: sáb 21 nov 2026_
+_Actualizado dom 22 nov 2026 13:36 (Colombia) · último sorteo con datos: sáb 21 nov 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 

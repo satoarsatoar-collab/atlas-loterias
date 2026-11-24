@@ -1,12 +1,12 @@
 {
- "generado": "2026-11-24T10:55:21-05:00",
+ "generado": "2026-11-24T16:26:25-05:00",
  "hoy": "2026-11-24",
  "inicio_prospectivo": "2026-10-17",
  "dias_prospectivos": 38,
  "premios_prospectivos": 3168,
  "migrado_ahora": false,
  "datos": {
-  "generado": "2026-11-24T10:55:38-05:00",
+  "generado": "2026-11-24T16:26:42-05:00",
   "mayores": 1460,
   "mayores_prospectivos": 74,
   "sorteos_con_secos": 178,
@@ -318,9 +318,9 @@
   ],
   "estado": "ok",
   "reporte": {
-   "filas_agregadas": 2,
+   "filas_agregadas": 0,
    "cuantias_completadas": 0,
-   "sin_cambio": 2,
+   "sin_cambio": 4,
    "conflictos": [],
    "avisos": []
   }

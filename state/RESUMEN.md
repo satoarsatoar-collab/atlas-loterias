@@ -1,13 +1,13 @@
 # ATLAS · Hay patrones en observación, ninguno validado
 
-_Actualizado mar 24 nov 2026 16:26 (Colombia) · último sorteo con datos: lun 23 nov 2026_
+_Actualizado mié 25 nov 2026 10:39 (Colombia) · último sorteo con datos: mar 24 nov 2026_
 
 > **En observación.** Algún patrón superó E = 20 en datos nuevos. Con más de mil patrones vigilados esto ocurre por azar con frecuencia; solo cuenta si pasa la corrección e-BH.
 
 | Indicador | Valor |
 |---|---|
-| Premios guardados | 7.940 secos independientes · 1.460 mayores |
-| Seguimiento en datos nuevos | 38 días · 3.168 premios |
+| Premios guardados | 7.940 secos independientes · 1.462 mayores |
+| Seguimiento en datos nuevos | 39 días · 3.170 premios |
 | Patrones vigilados | 1.463 (validar uno exige E ≥ 14.620) |
 | Combinador principal | E = 0,85 (datos nuevos; se valida con E ≥ 20) |
 | Validados / en observación | 0 / 3 |
@@ -41,24 +41,6 @@ _Actualizado mar 24 nov 2026 16:26 (Colombia) · último sorteo con datos: lun 2
 | Al azar (control) | 2 | 4,8 | 0 de 3,1 | 0 de 2,9 |
 | Series · combinador | 157 | 155,8 | 106 de 101,3 | 94 de 96,0 |
 | Series · al azar (control) | 159 | 155,8 | 94 de 101,3 | 90 de 96,0 |
-
-**Cruz Roja · mar 24 nov**
-
-- Combinador ATLAS: `8272 4272 9272 7272 5272 8672 8276 8262 4672 9672`
-- Calientes: `1963 1973 1965 1563 7963 1975 1573 1263 1063 7973`
-- Recientes: `9276 8276 9266 4276 8266 4266 9279 9275 9271 8279`
-- Fríos: `3437 3438 2437 2438 0438 0437 3434 2434 0434 0417`
-- Del mayor anterior: `3828 8283 2388 2838 2883 3288 3882 8238 8328 8382`
-- Al azar (control): `0024 5381 0696 4000 2900 7236 5783 3930 0268 4156`
-
-**Huila · mar 24 nov**
-
-- Combinador ATLAS: `9548 7548 5548 6548 9648 4548 9948 7648 5648 9848`
-- Calientes: `7648 7448 7948 7048 5648 5948 4648 5448 7148 7548`
-- Recientes: `9548 7548 6548 9948 7948 7542 9542 6948 2548 5548`
-- Fríos: `8267 8167 0267 8265 8260 8261 8367 0167 3267 4267`
-- Del mayor anterior: `8566 6658 5668 5686 5866 6568 6586 6685 6856 6865`
-- Al azar (control): `2939 2307 4836 1199 0624 7285 0866 8497 5643 4896`
 
 **Manizales · mié 25 nov**
 
@@ -170,21 +152,48 @@ _Actualizado mar 24 nov 2026 16:26 (Colombia) · último sorteo con datos: lun 2
 
 **Cruz Roja · mar 1 dic**
 
-- Combinador ATLAS: `8572 8576 8574 8571 8578 8872 8876 6572 4572 6576`
+- Combinador ATLAS: `8572 8571 8574 8872 8576 6572 4572 8871 6571 4571`
 - Calientes: `1963 1973 1965 1563 7963 1975 1573 1263 1063 7973`
 - Recientes: `8579 8575 8576 8179 8176 8175 8279 8979 4579 8276`
 - Fríos: `0432 0438 0412 0418 2418 2432 2412 2438 0410 0430`
-- Del mayor anterior: `3828 8283 2388 2838 2883 3288 3882 8238 8328 8382`
+- Del mayor anterior: `3572 2753 2357 2375 2537 2573 2735 3257 3275 3527`
 - Al azar (control): `3315 0807 0447 9780 6670 4088 9045 8461 4886 8258`
 
 **Huila · mar 1 dic**
 
-- Combinador ATLAS: `6548 5548 9548 7548 6948 5948 9948 4548 6578 5578`
+- Combinador ATLAS: `6542 5542 9542 6548 5548 9548 7542 7548 6942 5942`
 - Calientes: `7648 7448 7948 7048 5648 5948 4648 5448 7148 7548`
 - Recientes: `9548 7548 5548 6548 9948 3548 9542 9448 1548 6948`
 - Fríos: `2617 2667 2627 8667 8617 8627 2637 2687 2657 8657`
-- Del mayor anterior: `8566 6658 5668 5686 5866 6568 6586 6685 6856 6865`
+- Del mayor anterior: `2227 7222 2272 2722`
 - Al azar (control): `1282 2383 3768 8038 1546 7802 0215 7842 9970 9094`
+
+**Manizales · mié 2 dic**
+
+- Combinador ATLAS: `5694 5644 5684 5634 5674 5664 5654 5604 5614 5894`
+- Calientes: `5104 5100 5134 5102 5704 5194 5130 5700 5101 5190`
+- Recientes: `5641 5644 7641 4644 8644 7644 4641 8641 5642 5691`
+- Fríos: `2980 2280 0280 0980 0920 2230 2220 0200 0220 0230`
+- Del mayor anterior: `7300 0037 0073 0307 0370 0703 0730 3007 3070 3700`
+- Al azar (control): `1803 9374 2178 1499 9438 8151 9154 6154 4362 9568`
+
+**Meta · mié 2 dic**
+
+- Combinador ATLAS: `9336 7336 5336 2336 9331 6336 7331 4336 8336 1336`
+- Calientes: `2333 9333 2331 7333 9331 5333 7331 2336 5331 9336`
+- Recientes: `9336 7336 9331 9376 9346 9036 7331 7346 7376 6336`
+- Fríos: `3524 1524 1504 3504 3904 1924 1904 3924 3564 3502`
+- Del mayor anterior: `6121 1216 1126 1162 1261 1612 1621 2116 2161 2611`
+- Al azar (control): `8062 8699 4146 9635 6378 0946 2413 9126 7969 4378`
+
+**Valle · mié 2 dic**
+
+- Combinador ATLAS: `6679 6699 6579 6879 6599 6899 6179 6279 6779 6199`
+- Calientes: `9672 9677 9676 9612 9692 6672 9617 9616 9696 9697`
+- Recientes: `9590 6590 9595 9690 9540 3590 7590 6690 6595 9695`
+- Fríos: `0384 1384 0389 0304 0334 1389 2384 0388 0383 0381`
+- Del mayor anterior: `7366 6637 3667 3676 3766 6367 6376 6673 6736 6763`
+- Al azar (control): `8925 0296 6275 1196 6603 7914 7493 1794 6204 7407`
 
 ## Series
 
@@ -232,6 +241,8 @@ _Actualizado mar 24 nov 2026 16:26 (Colombia) · último sorteo con datos: lun 2
 
 | Fecha | Lotería | Premio mayor | Secos | Estado |
 |---|---|---|---|---|
+| mar 24 nov | Huila | 2227-051 | 0 | sin secos |
+| mar 24 nov | Cruz Roja | 3572-275 | 0 | sin secos |
 | lun 23 nov | Tolima | 1625-182 | 0 | sin secos |
 | lun 23 nov | Cundinamarca | 5486-220 | 0 | sin secos |
 | sáb 21 nov | Cauca | 2151-020 | 0 | sin secos |
@@ -254,6 +265,6 @@ _Actualizado mar 24 nov 2026 16:26 (Colombia) · último sorteo con datos: lun 2
 - Descarga automática: ok · sorteos nuevos: 4
 - Última carga manual: 0 archivo(s), 0 filas nuevas, 0 rechazadas
 - Conflictos entre fuentes: 0
-- Sorteos sin secos (últimas 4 semanas): Cundinamarca 23 nov, Tolima 23 nov, Boyacá 21 nov, Cauca 21 nov
+- Sorteos sin secos (últimas 4 semanas): Cundinamarca 23 nov, Tolima 23 nov, Cruz Roja 24 nov, Huila 24 nov, Boyacá 21 nov, Cauca 21 nov
 
 El tablero completo está en `site/index.html` (o en GitHub Pages si lo activó).

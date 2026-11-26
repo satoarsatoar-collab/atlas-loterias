@@ -134,9 +134,16 @@ Santander,loteria-de-santander,2026-11-20,seco,2026-11-13T13:38:50-05:00,69,10,0
 Boyacá,loteria-de-boyaca,2026-11-21,mayor,2026-11-14T12:14:57-05:00,1,5,0,0.0005,,2,0
 Cauca,loteria-del-cauca,2026-11-21,mayor,2026-11-14T12:14:57-05:00,1,5,0,0.0005,,8,0
 Cundinamarca,loteria-de-cundinamarca,2026-11-23,mayor,2026-11-16T16:09:14-05:00,1,5,0,0.0005,,4,0
+Cundinamarca,loteria-de-cundinamarca,2026-11-23,seco,2026-11-16T16:09:14-05:00,61,10,0,0.061,,2,5
 Tolima,loteria-del-tolima,2026-11-23,mayor,2026-11-16T16:09:14-05:00,1,5,0,0.0005,,8,0
+Tolima,loteria-del-tolima,2026-11-23,seco,2026-11-16T16:09:14-05:00,32,10,0,0.032,,9,2
 Cruz Roja,loteria-de-la-cruz-roja,2026-11-24,mayor,2026-11-17T14:57:46-05:00,1,5,0,0.0005,,8,0
+Cruz Roja,loteria-de-la-cruz-roja,2026-11-24,seco,2026-11-17T14:57:46-05:00,45,10,0,0.045,,2,5
 Huila,loteria-del-huila,2026-11-24,mayor,2026-11-17T14:57:46-05:00,1,5,0,0.0005,,8,0
+Huila,loteria-del-huila,2026-11-24,seco,2026-11-17T14:57:46-05:00,27,10,0,0.027,,8,3
 Manizales,loteria-de-manizales,2026-11-25,mayor,2026-11-18T14:28:53-05:00,1,5,0,0.0005,,9,0
+Manizales,loteria-de-manizales,2026-11-25,seco,2026-11-18T14:28:53-05:00,51,10,0,0.051,,0,4
 Meta,loteria-del-meta,2026-11-25,mayor,2026-11-18T14:28:53-05:00,1,5,0,0.0005,,2,0
+Meta,loteria-del-meta,2026-11-25,seco,2026-11-18T14:28:53-05:00,42,10,0,0.042,,6,5
 Valle,loteria-del-valle,2026-11-25,mayor,2026-11-18T14:28:53-05:00,1,5,0,0.0005,,4,0
+Valle,loteria-del-valle,2026-11-25,seco,2026-11-18T14:28:53-05:00,32,10,0,0.032,,2,1
